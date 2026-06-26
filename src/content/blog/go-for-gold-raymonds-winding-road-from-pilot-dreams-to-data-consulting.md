@@ -2,12 +2,12 @@
 title: 'Go for Gold: Raymond''s Winding Road from Pilot Dreams to Data Consulting'
 description: A trained data scientist who once wanted to fly planes on building career
   capital, surviving a brutal French master's, and being patient with yourself.
-pubDate: 2025-06-10
+pubDate: 2026-06-26
 guest: Raymond Ewin Amklutse
 guestBio: A Ghana-raised, trained data scientist working as a data consultant at BigSpark
   in the UK. Musician, polyglot, and host of the TechSaf Podcast.
-videoId: PLACEHOLDER_VIDEO_ID
-videoUrl: https://youtube.com/watch?v=PLACEHOLDER_VIDEO_ID
+videoId: wFP7X5yOItQ
+videoUrl: https://www.youtube.com/watch?v=wFP7X5yOItQ
 tags:
 - data-science
 - consulting
@@ -68,11 +68,11 @@ His examples were grounded — predicting house prices in an area over time, wei
 
 If there's a chapter that earns the "go for gold" mantra, it's the master's.
 
-Raymond didn't even land in the data programme at first — he was admitted to IoT, the very networking-flavoured world that gave him "headache" with Cisco Packet Tracer back in Ghana. His parents encouraged him to take it as a foot in the door and pivot later. So off he went to Brest, on France's western Atlantic coast — "the only Ghanaian in my school," studying in both French and English, in a rigorous system that had him spending "my entire day indoors."
+Raymond didn't even land in the data programme at first — he was admitted to IoT, the very networking-flavoured world that gave him "headache" with Cisco Packet Tracer back in Ghana. His parents encouraged him to take it as a foot in the door and pivot later. So off he went to Brest, on France's western Atlantic coast — the "only Ghanaian in my school," studying in both French and English, in a rigorous system that had him spending "my entire day indoors."
 
 To switch into data science, he had to perform. He broke his back in the library, passed the gatekeeping courses — and then, in a cruel twist, found that a couple of grades he thought he'd passed actually failed, leaving him resitting two modules *while* starting the data science programme, *in French*. There were 3D-modelling projects on bio-friendly bassoon reeds, signal processing, Fourier transforms — and a class so intense one student dropped out entirely.
 
-"It was such a challenging one," he said of the experience, "but it really built me in so many ways and I'm really grateful for that." He's not romanticizing it. He's saying both things are true at once: it was brutal, and it made him.
+The experience "was such a challenging one," he said, "but it really built me in so many ways and I'm really grateful for that." He's not romanticizing it. He's saying both things are true at once: it was brutal, and it made him.
 
 ## Wearing every hat at BigSpark
 
