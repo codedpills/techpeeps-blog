@@ -27,6 +27,9 @@ fetch: ## Refresh the playlist into state.json
 transcribe: ## Transcribe the next pending video (override with ID=<video_id>)
 	$(PY) pipeline/transcribe.py $(if $(ID),$(ID),--next)
 
+remap: ## Re-run HOST/GUEST mapping on existing transcripts (no API cost; ID= optional)
+	$(PY) pipeline/transcribe.py --remap $(ID)
+
 style-guide: ## Build style-guide.md from the longest 3-4 transcripts
 	$(PY) pipeline/make_style_guide.py --auto
 

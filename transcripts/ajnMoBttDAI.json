@@ -1,0 +1,297 @@
+{
+  "video_id": "ajnMoBttDAI",
+  "title": "How to build a future-proof career while making impact",
+  "duration_sec": 2263,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 176,
+      "end_ms": 33739,
+      "text": "Hi guys, and welcome to another episode of TechPeeps Diaspora. If you are interested in AI, um, data analytics, and also music, this episode might just be for you. Um, so today I'm talking to Otima. She's, um, a data analyst, um, also co-founder of Because She Can, and I hear she also has some mad DJ skills. So Um, yeah, looking forward to this conversation. Hi Otima and welcome to my channel. Could you give a brief introduction about yourself?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 34604,
+      "end_ms": 71842,
+      "text": "Okay. Hi Zach. Um, thank you for having me. So my name is Otima Nyerinchi and I'm a data scientist. There's the two I normally use interchangeably, but I'm a data scientist and I am currently studying in Sweden. I'm studying, um, image analysis and machine learning. And like you said, I'm also a co-founder of BikoshiKan, which is a women in tech community based in Ghana, but our reach spreads beyond the continent and other parts. So, um, yeah, and also musically inclined. I'm also a writer. Um, yeah, that's brief about me."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 72853,
+      "end_ms": 99142,
+      "text": "Nice. Uh, yeah, I'm itching to go into the music bit, um, but, uh, maybe um, later. So you currently live in Sweden, um, and I'm guessing like moving from Ghana to Sweden, you know, there might have been some cultural differences. So did you encounter, um, any culture shock so far? What are some of the cultural differences, um, that you've seen like living in Sweden?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 99735,
+      "end_ms": 162403,
+      "text": "Okay, um, I think Swedish people are very nice. They are very open But I think some of the cultural shocks I got, one was the weather. Sweden is, it can be very cold, and I'm enjoying the summer now even though it's not as I would have expected. It's not as warm as I expect, but we have some pretty warm days, so that's good. So that's very different from the Ghanaian weather. Um, I think Ghanaians are more communal than Sweden. Like, people in Sweden, it's very more like a bit more individualistic than Ghana is. So that's another difference. It has its pros and cons. And, um, I think another culture shock, which is a more like, I guess, serious one, is like in the school setting, because I'm studying and the education or the style of teaching and learning is very different from what I'm used to in Ghana. So These are the few cultural shocks that I've had."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 164260,
+      "end_ms": 179835,
+      "text": "Yeah, it's, uh, I'm, I'm curious about like what's the education, um, like the educational style in Sweden, um, it's like compared to Ghana. What are some of the like main differences that you noticed?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 180141,
+      "end_ms": 264656,
+      "text": "Okay, so in Ghana there's a lot of chew and pour, which is like you just learn what you have to learn according to what is in like the textbook or what the teacher tells you, and you just regurgitate that onto your paper during exam. It's like whatever you learn, you just put the same thing, and some teachers can even penalize you for exploring or being innovative with your answers. But here they very much encourage you to write exam like you're talking to your friend, how you explain it in your own words, and that's the, like, the, the approach or the style of, like, learning. Which I struggled with in the beginning because I wasn't used to that. And some of them don't really have strict deadlines for a lot of assignments. And in my head I'm like, it says submit at this date, why do I have a leeway to submit a month later, 2 months later? It's crazy like that. So it was a way of getting used to, but I, um, I've gotten a grip of it now, so that's good. So that's very different from the Ghanaian way of teaching. It allows you to think outside the box a lot. I mean, I did go to Ashesi University, which I think also helps people to think outside the box, but in terms of like the traditional Ghanaian, um, educational system, it's very different from Sweden. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 264720,
+      "end_ms": 311769,
+      "text": "Yeah, that's, that's, um, very interesting. That's also like what I imagine, cause like, um, I also, um, know some friends who, um, schooled here and like their experiences have been very similar. I wonder if in Sweden, like when you go to the supermarket, um, to, to buy stuff, do you like— do they give you free bags, like bags to take your stuff? Okay, okay. So I guess it's, it's like in Germany, because for me that was one of the culture shocks. Like, I went to the supermarket, bought some stuff, and then they put their stuff on there, and I was staring at the lady like I was expecting them to package it in a rubber and give it to me, and apparently it wasn't like that."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 311947,
+      "end_ms": 314544,
+      "text": "No, you either send your own bag or you pay for it."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 316535,
+      "end_ms": 351151,
+      "text": "Yeah, okay. So, um, you know, you— I'm guessing like you grew up in Ghana and probably like lived almost like majority of your life in Ghana, or is it like, um, growing up in Ghana and going through the Ghanaian school system and all the way to the point where you somehow got into data science. Yeah. And now you're also doing some stuff with AI. So what was that journey like for you?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 352574,
+      "end_ms": 646938,
+      "text": "I think I have always been encouraged to explore different should I say, career paths growing up and different interests. I wasn't really boxed into, oh, you have to be a doctor or an engineer or something like that. I mean, I think my dad did want one of us to be a doctor, but none of us ended up being one, and it was okay, you know. But I've always explored different things. At some point I wanted to be an architect, at some point I wanted to be an author, like I wanted to write books, which I still want to be because I'm still a writer. Um, I, I've just wanted to do so many things, but I think in primary school I liked ICT a lot, so I wanted to— I knew at some point that I wanted to be in the space of technology. I just didn't know exactly what I wanted to do. So I did— I like sciences and all those things, ICT. Secondary school, I went to Achimota School. The best high school in Ghana, thank you. Um, and then I did General Science. I think we had like ICT in our first year or first semester or something, but that was it. In other schools you had the option to do elective ICT, but, um, was it Information Communication Technology? But we didn't have the option, so I had to drop it. But when I was going into university, I knew that I wanted to do something with engineering or technology. It had to be in that field. I just found it exciting, and I just, when I was growing up, reading a lot about like tech and wanting to take up, open up the remote or the TV or something, know how things work and stuff like that. So I've always been interested in technology. So I went to Ashesi University, but before I went to Ashesi University, I did do, um, a high school program at Ashesi called AIX, um, Ashesi Innovation Experience. And I did a robotics course for one summer, and then I was like, okay, now I really want to do tech, I want to do robotics, I want to do something that I feel like I knew at that point. So I did go into computer engineering because I like engineering and I like computers. So I was like, okay, instead of doing computer science, I'll do computer engineering and get like the best of both worlds. So I did computer engineering. Going into data science, I had no idea about data science till I was done with HSE. So I didn't really do anything related to data except maybe IoT, internet, uh, internet of things. I did that course, and that also kind of sparked my interest in like data, big data. And after school, I found out about a training program that was happening by a company called Azubi Africa. So I did like 3 to 4 months training of in data science. I took Microsoft certification exams, and then I started working as a junior data scientist for my national service. And then after that, I, I did work as a data analyst after doing my junior data science, uh, first job as a junior data scientist. Then I went on to work in the field of data in another company that did a bit of data engineering, data science, and backend engineering stuff. And now I'm studying machine learning and, uh, image analysis. So the transition from pure data science to AI and machine learning, I knew that After I had decided to go into data science, I had the opportunity to talk to somebody who worked at Google like 2 years before I did my master's, and we had a discussion about how the world was moving towards like AI. So then I knew that, okay, if I study data science, I still want a job that I'll be relevant for the next couple of years, and it looked like that's where the world was heading towards. I was like, okay, then I have to do my master's, not in data science, because I know that now. So something that is going to be more advanced in where the world is moving towards. So that's why I did image analysis and machine learning. And the image analysis bit is more about like computer vision, facial recognition, because I'm passionate about, um, people of color. And I want— I find that a lot of the technology now that's not is not so inclusive sometimes. So I want to work in a space where people of color or like diverse, uh, the technology is diverse enough to cater to all, like all people regardless of skin color, anything like that. So yeah, that's how I ended up here."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 647178,
+      "end_ms": 687466,
+      "text": "Yeah. Very interesting. Like I, I would like to talk, um, you know, a bit more about, you know, like what exactly it is that you are studying, um, in terms of like image recognition. I see you already like wrote some articles about, you know, that field and I'm very much interested to explore that. But before that, yeah, you, you mentioned like in your previous roles where you were basically like doing some data analyst jobs and some data engineering jobs, like for those jobs, like what were the things that were actually involved like in your day-to-day um, work?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 688253,
+      "end_ms": 890807,
+      "text": "Okay, so I think, uh, data is very— it's very broad, but it's also very intertwined. So they— if I had to simply describe, like, you would first do data engineering. I mean, the pipeline of a work, like a data work, would be data engineering, data analyst, and then data science. So With data engineering, it's like where you are sourcing your data from, because before you can analyze data or make predictions on it, you have to derive it from somewhere. You have to get the data for— if it's image data, some photos, videos, text from forms people fill, from whatever. And, um, and obviously the data is stored in certain like, uh, data warehouses. Like Amazon, Google Cloud, like all those kind of architecture. So the data engineering job is finding a way to seamlessly get the data from such storage facilities for the analysts to— even data engineering, you do a bit of like data cleaning because all the data that comes in might not be in a good format for you to be able to work with. So data engineer is going to— after getting the sources of data or creating the pipelines for the data, you have to clean that data, sort it in a way that is going to be easy for the analyst to work with. And now the analyst— for example, I worked in the logistics industry where we were, um, it's basically— we had, well, different components. So the logistics bit was importing, exporting goods within, from Ghana, outside. But we also had like a payment, uh, platform where customers will be able to pay for their, for the logistics and stuff like that. So we have customers inputting their data through an app, we are storing that data, we have a payment side. So my, my work as an analyst is to maybe want to see how many customers we had in the month, how many customers we had in the next month. Is it the same customers in month 1 that are paying month 2? Are they new customers? So customer churn, customer retention, that kind of thing. So I'm doing data analytics and tying to the business to help the business people know that, okay, these are the next steps we need to take because this is what our customer base looks like, this is their behavior. So that's like a data analyst role. Creating dashboards, showing it to the business side, letting them know how much customers are spending, how much they are spending through the app, and all that kind of thing. So that's the data analyst side. So now the data scientist is now going to see, okay, over the, over the last 6 months, this is how our customers have behaved. This is how much they leave, like how often they leave, or how often they are— they return to the app. How often they open the app, stuff like that. You can record them and then look at the trend and say that, okay, because of their behavior in the last 6 months, this is what we expect to do— we expect them to do in the next 6 months. So that's like what my job was as a data scientist, basically."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 891031,
+      "end_ms": 958246,
+      "text": "And I, I can like see like the how, you know, you would make the transition from, you know, data analyst, data engineering role into AI, cause it kind of feeds, it's the basis for AI, right? Like you have some data, you train the models on that data, and now the AI can, you know, make some assumptions or sometimes based on that data. So now from there, like now you are studying AI in the field of image processing? Like, why was that? You mentioned a bit that, you know, like in the field of computer vision, there is no good representation for, you know, people of color, and that's why that was interesting for you. Is there any— do you have any specific applications in mind or use cases in mind that you want to use this experience or knowledge, um, from this that is to do? Do you already have ideas of what you want to do with that?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 958392,
+      "end_ms": 1144352,
+      "text": "Right now I don't have specific ideas of what I want to do with like the knowledge that I will get from studying this, but there are so many, um, should I say applications or like even case studies that show that there's underrepresentation presentation. For example, even say, even with NIB, some technology would identify some, somebody and say that, okay, this is the description of the person who broke into one bank and then stole money. And then they will see somebody, and then because they, their, the technology is not robust in a way to identify faces it will pick the closest person and say, okay, this was the person because our technology says you match the features. So something like that, it's like wrongful arrest because of AI or because of like some machine learning algorithm that said you are the one, so then you're the one. That's like one case study which can alter somebody's life based on some program that was written. And there's a lot of, um, discussion that has been going on. Sometimes there's a discussion where it's like, is it just that we don't have enough data for the algorithm to train on and identify like different features of different people? Or is it that the, like, the math is not done well in a way that it's able to write the right algorithm to identify 5 people. So it's, it's different, I don't know, like avenues that you can explore to see like how well, um, to, I don't know, include people or make it more diverse. I personally, I just have a strong inclination that it is more on the data that we collect because one time I had a project to work on and you know this, um, AI generator for like images. So maybe you, you are looking for— you just want a random image to plaster on like a document or something. You don't have rights to use somebody's picture, so you just go, okay, I'm looking for a female Black girl or Black woman or a male Black man. And I searched through, and I had to search through like tens and hundreds of pictures before I finally got somebody that looked like me, somebody I wanted to put on my document and that was very frustrating. So I feel like even not, we don't have enough like data to be able to, for the algorithm to run and then like make its own deductions or generations because you see, uh, for the picture that I settled on for this project, it was like a light-skinned person. It's like close enough, but if they had more representation of darker-skinned people, then I'm sure they would've been able to generate more images of dark skin or darker skin people. So yeah, stuff like that."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1145890,
+      "end_ms": 1171191,
+      "text": "Yeah. And yeah, just when you were saying that, I was also thinking, um, you know, it could be a combination of that and also like underrepresentation of, you know, Black people being part of the, um, the engineering team who, you know, like having a voice. From that perspective would put in inputs, um, for that, and also having more Black creators and stuff."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1171239,
+      "end_ms": 1221103,
+      "text": "So yeah, that's so true. And I think that's one of the things that also influenced my decision, because I would never blame somebody who does not look like me to, to think for me, because it's not going to come naturally. You're going to naturally look at or solve issues that pertain to you before you think about outsiders. So it's not a fault of somebody to think about someone else when they are creating a product. They're going to create a product to solve an issue that affects them. So if you have more people on the team, then they can also bring in their personal experiences and their own like diverse opinions, and then we can create like a robust like, uh, system or technology that affects everybody because the team is diverse. They would think about like diverse solutions. So I think that's just what Steve— Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1222208,
+      "end_ms": 1295499,
+      "text": "Yeah. Also reminds me of like, I've seen, um, there's one Ghanaian guy and one of my friends works with him. Um, and yeah, they made, um, this AI product, um, for makeup and like mostly being able to identify darker skin tones and suggest like the right products when it comes to makeup. So Yeah, definitely having, you know, people, that representation where, you know, Africans, you know, build products to solve African problems, like from that perspective. Yeah, definitely helps. And I'm happy to, to see that you are one of those people who are trying to push those boundaries. Um, yeah. So could you tell me a little bit about about, you know, like your work. I know you, you are the co-founder of Because She Can, and it's, you know, one of the things or the projects that you are very passionate about. What is this about? Um, why did you start this? And, um, yeah, like, how important is Because She Can to you?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1296478,
+      "end_ms": 1549640,
+      "text": "Um, 100% important. My whole life. Okay, not my whole life, but a big part of my life. But obviously, like you said, having Africans solve African problems is in the same vein having women solve women's problems. Because I'm a woman in technology, I have faced— or I have— aside the fact that I have faced or experienced certain things, there's also women who have experienced more for things to their disadvantage being in the space where they, they are the only people that they look like. There's nobody else that looks like them. And their problems, they are, they are, they experience their problems alone. They can't share with anybody else on the team. The other people on the team are not women, so they would not understand them. So starting my— we actually started brainstorming about setting up the company, me and my co-founder Kweyekwu, we went to Achimota School together, and then after we finished university, we did the Azubi program together. So, um, we were studying together to write the certification exams, and then we started to talk about how it felt like being a woman in in this space because we did— we, we— she studied, um, IT at University of Ghana, and then I also studied computer engineering. So we already, from the classroom, we already see the disparity. But now going into the workforce too, we knew that like there was more ahead of us, and we didn't want to wait until we were like established women in the field before trying to solve the issues that affect us, right? And we felt like building a community where we can get women who are in the same field, or even at the same level, or some higher level, or a level below in terms of like career or professional advancement. We could all come together and help each other because somebody who has been there before can help somebody who is now starting. People who are also now starting can be a support or for each other. So we decided to build a community that would create a safe space for girls to be honest with each other and be able to share their experiences, share what they are going through, and help each other to study and to learn and to advance themselves professionally. So that's why we started, and we are like 3 years in now. We officially launched in 2021, and now we are 3SN, we have mentorship programs, yearly mentorship programs where we pair girls to industry professionals. And also we have the December for Women Who Code, which is a fundraising project to get financial resources, laptops, um, credits, like airtime, because some of the things that affect all these girls is also airtime to be able to even get onto the internet. And then browse or find courses to study and stuff like that. This program is specifically for women who are economically disadvantaged, who don't have a means to progress in their professional life. So we do the December for Women Who Code project for them, and then help them also with mentorship. So we enroll them in our mentorship, yearly mentorship program where we pair them with like an industry professional. These mentors are both male and female because it's even hard to get women who would be mentors because there are not even that many to start with. Yeah, so there are some guys as well who also are mentors to some of these women in our community, and they help them to build projects. By the end of the ment— the 3-month mentorship program, they have built a project, something that they can stand on to help them to build their confidence in the field and then like move forward. So we had a lot of success stories from that. We are still on it because we are trying to narrow the digital divide. So it's a long way away, but we are getting there."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1550870,
+      "end_ms": 1616209,
+      "text": "Yeah, but it sounds, already sounds like very impressive. Like I, I've seen, you know, some posts on LinkedIn about this and I think recently I also saw like a collaboration with Coltrane. Um, yeah, on some projects. So yeah, like it's, um, it's always good to see, you know, like organizations like this where I, I think, you know, being a Black person or an African person in globally, like in the tech space is already like a lonely thing, right? Like most of the time, like, um, we don't really have that huge of a, of a community. I think now it's, it's better compared to before, at least in Ghana. Um, so I can imagine like for women how it's, it's gonna be, it's going to be extremely, extremely, extremely lonely. So it's, it's nice that like, um, people like you are already, you know, um, trying to make it better for the, the next generation or other people that are now coming to the space."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1616594,
+      "end_ms": 1617413,
+      "text": "Okay. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1618441,
+      "end_ms": 1661064,
+      "text": "So, um, Yeah, I guess the other thing is like one thing that maybe, um, people, people that, you know, want to follow a similar path, like want to become, um, now AI is like a huge thing, right? Um, and I'm sure there are people who are considering, you know, pursuing a career in AI or like in this, in a similar field, data analytics. Analytics and data engineering, is there like some sort of clear roadmap or something like for someone starting out, um, to follow to, you know, at least, um, make a professional career out of this?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1661707,
+      "end_ms": 1827681,
+      "text": "Uh, yes. Uh, okay. So for example, at Because She Can, we have resources that we give to people to guide them on some, um, maybe videos to to watch. So there's different ways. If you don't have the financial means, there's a lot of free resources online that you can start with. There's some videos that I, I absolutely recommend to people anytime they reach out to me. Um, it's like first learning a programming language, so which is Python, because now data science and data engineering, Python language is normally used, or becoming the most popular, or it is the most popular. So learning a programming language and then learning how to use a programming language for data manipulation, and then also other resources to watch. There's so many free resources on YouTube and stuff to read online. There's also certification courses that you can, you can take. For example, I did the Microsoft certification courses. Um, there's also others on, I think, Coursera, Udemy. There's also the route of maybe going to a place physically. For example, in Ghana, there's a lot of boot camps and workshops that are done by certain organizations like Code Train, Blossom Academy, Serenqua Academy. There's a lot of places that you can go in, I think some online, but physically to— you can go to a place where you have people in a cohort type of learning environment, and then you can learn. You can also go the route of school, so you can do your undergrad in— I'm not sure if there's undergrad degrees in data science, but for your master's, yes, you can do it in data science or artificial intelligence or something like that. So a lot of free online resources and the school route. But like I mentioned, I didn't know about data science until I was done with my undergrad, so I had to learn it outside. And then I went— I did— mine was online, like online workshops. Um, the program was purely online for 3 months, and then we— so they gave us resources. It was like a flipped learning approach. They give us resources to read. And then I think after the first month you do the first certification exam, you go and write it at the center. And then there's another certification exam that you write at the center, but most of the learning is done on your own or with your friends or something. There's presentations as well, so it's like there's accountability as well when you are in a type of program like that. And then, yeah, and then I started working Okay."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1827922,
+      "end_ms": 1858048,
+      "text": "Yeah. Um, yeah, I guess it's kind of similar. Um, you know, if you wanna become like a developer or something, I was wondering if like there's, uh, a barrier to entry in, in the sense that, you know, for some roles you definitely need some certificates or at least like a degree or something. Is, is it the same or like employers, you usually look out for, like the technical skills. If you can, you have a proven track record that you can get a job done."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1859070,
+      "end_ms": 1997882,
+      "text": "Yes. I think that with data and technology, you don't necessarily need a degree. For example, I worked in data science. I didn't have any degree in data science, but I had a similar or something in the line of technology. So I guess that also makes me a good candidate. One misconception that people have, especially for data science, there's a lot of people that say, oh, it's a way to get people to come and sign up to their bootcamps. I don't know, but people say you don't need to know programming to learn data science. You don't need to know programming to— you, you don't need to know math to learn data science. Like, you need it, you need it bad. You need it if you want to advance. You need it if you want to. And, um, back to— let me go back to the degree part. I, I also— if I think in terms of management, if you want to move from just purely a, a developer or a data scientist or analyst and you want to go into a more managerial role over a tech department, I think then you you need to advance your education and get more qualification in either management or even still in the tech field. But if you just want to do like entry level, you don't really need a degree yet, but there are certain things that you need to know. So you need to know the basics of the field, and data science is very heavily built on math, and I think it makes you a better data scientist is when you have the skills in math, in statistics. Those are like the two, and then obviously programming as well. Like, you need it to be able to be a good or a better data scientist. You can be okay with maybe drag and drop stuff because now things are easier. You can just drag and drop things with Microsoft Azure Synapse and stuff like this, some platforms like that, but I think to be a very good or the best data scientist or data engineer, you need to have the fundamentals, which is mathematics, statistics, and programming. Yeah, so that's like a misconception that people need to get rid of."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1999180,
+      "end_ms": 2004133,
+      "text": "So yeah, the people swerving the maths, you can't serve the maths on this one."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2004230,
+      "end_ms": 2035136,
+      "text": "You can't serve it for too long. At least if you want to advance at some point, you will, because some of the algorithms that you'll be using, or some of— yeah, that you'll be writing, or maybe even reading from some library or something, you still need to understand why it's working the way it is, so that you— if you have to make a tweak or explain why your algorithm is acting this way, or why your machine learning model is acting this way, you know the math behind it, so you can— it will help you to be a better scientist."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2035329,
+      "end_ms": 2047724,
+      "text": "Yeah. And now to the— I think to the long-awaited parts, like when are you having the collaboration with Uncle Waffles for the DJ?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2048094,
+      "end_ms": 2049715,
+      "text": "Very soon, very soon."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2050197,
+      "end_ms": 2075663,
+      "text": "But the DJing bit, so what do you like? Do you, um, you know, I don't know if there are any, you know, like there's a huge or any African or Ghanaian community in Sweden where you guys organize like parties and stuff. But like, is this something that you just do at home for yourself, like make playlist and play, or you actually go to play for other people?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2075968,
+      "end_ms": 2121158,
+      "text": "No, I don't play for other— wait, but before we go into the music, there's one more thing I want to say about like the more serious bit of this. There's also— so aside, um, studying, I also work as a research assistant, right? And it's for women. It's— well, it's for advancing, um, research in technology and AI, data science, and computational and theoretical thinking in between like European universities and African universities. So that also ties into the work I do at Because You Can. We are focusing on increasing the representation of women in research in such areas. So yeah, I just wanted to put that out there. So in case anybody wants to advance in research, they should reach out to me."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2122032,
+      "end_ms": 2156509,
+      "text": "Okay, okay. So if you want to advance in research, uh, reach out to Otima. Yeah, it's, it's been a pleasure talking to you. Um, yeah, I'm I'm also sure, like, uh, people that watch this, um, will learn a lot from this and also, you know, can get some inspiration for this, especially like the, the women and people that are trying to swerve maths. Like, I used to be one of those people, but yeah, but, uh, thanks a lot for, um, being on the show and yeah, the music. Thanks for sticking with us."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2156557,
+      "end_ms": 2158509,
+      "text": "Yeah, great to talk about the music part."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2159461,
+      "end_ms": 2164760,
+      "text": "Oh, let's talk about the music part. The playlist. Yeah, let's talk about the playlist part."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2165210,
+      "end_ms": 2174360,
+      "text": "No, so I, I create my own playlist because I just like it. But when I was in Ghana, at every party, every family party, I'm always the one behind the playlist."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2175210,
+      "end_ms": 2177050,
+      "text": "Ah, you're one of those people."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2177050,
+      "end_ms": 2196805,
+      "text": "Yes, I have to be. I need to, I need to make sure everybody is feeling good, you know. I just really love music a lot, and I actually don't DJ. I just started to learn how to DJ when I came to Sweden. And but what I do since I was in Ghana was I make, I make beats. So like I'm a music producer."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2198240,
+      "end_ms": 2198644,
+      "text": "Yeah, nice."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2199000,
+      "end_ms": 2218818,
+      "text": "I just uploaded my first Spotify song. So yeah, so I just, I produce music and I like to make playlists. I like to mix songs. And yeah, very soon I'll be on the stage at GoWaffles and headlining."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2219107,
+      "end_ms": 2249395,
+      "text": "Who knows? Guys, we are gonna post, uh, Otima's Spotify link, uh, in the comments. And also, like, uh, I think, uh, we also gonna share your LinkedIn, um, people that want to reach out to you, um, yeah, can reach out to you. Um, yeah. And if you have any questions or any comments feel free to put them in the comment section. And, um, I have to forward them to Otima to give you an answer. I'm gonna do that. Thanks."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2249653,
+      "end_ms": 2252971,
+      "text": "Anything, so send them my way."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2254179,
+      "end_ms": 2261205,
+      "text": "Okay, thanks, thanks for sticking with us. Um, yeah, until the next time, bye-bye."
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}

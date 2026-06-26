@@ -1,0 +1,367 @@
+{
+  "video_id": "bE-mpnLZNh4",
+  "title": "How I built my freelance business as a product designer",
+  "duration_sec": 2826,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 0,
+      "end_ms": 1214,
+      "text": "Hey Lacey, how are you doing?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2380,
+      "end_ms": 4080,
+      "text": "I'm good, how about you?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 4550,
+      "end_ms": 20693,
+      "text": "Yeah, I'm okay. How is the weather in Ghana? I hear these days like the weather is really hot. It's like, um, living in a sauna and you probably need to get like 20 ACs to survive."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 21096,
+      "end_ms": 29385,
+      "text": "It's actually true, the weather is like really hot here. Yeah, and like you need a lot of easy to survive, literally. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 29497,
+      "end_ms": 37156,
+      "text": "And, um, what's also not helping is the doom and gloom situation. Like, it's gotten worse. Too bad."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 37220,
+      "end_ms": 41395,
+      "text": "Yeah, it has gotten really bad. A lot of people want to leave the country now."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 42583,
+      "end_ms": 79178,
+      "text": "Oh, come on. Okay, I, I feel like it's gonna sound inconsiderate to say, oh no, don't leave, right? Considering I also left. So let's not, you know, go into that now. Um, so like, would— do you, um, like to refer to yourself more as a product, um, designer or like UI/UX? Like, there's so much buzz around these terms now. Sometimes I don't know if they mean the same thing or they refer to the same thing."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 80749,
+      "end_ms": 161264,
+      "text": "Well, good question. I refer to myself as a product designer. The thing is, product design and UI/UX can be used interchangeably, but there is a difference. So basically, with, um, UI/UX design, it's basically, um, more about like the users, like, um, you designing something to more like fit like the user. Everything a UI/UX designer does is mostly pertaining to the user, whereas with product design, everything a product designer does, it pertains to both the user and then the business. So the product designer looks out for the business goals, the resources they have, and also the user needs. So, um, you see that product designers are basically, um, they are in the process from start to finish. Same for UI/UX design, the difference is they look out for both the business goals and then the user needs. And then they also get to work with, um, most of like the teams in the company— marketing, sales— like they come together with all the— they collaborate with all these other people. UI/UX designers also do the same, but it's more pertains to what the user needs. Yes."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 162065,
+      "end_ms": 204670,
+      "text": "Um, yeah, that sounds interesting. Like, I, I think another thing is also, you know, like UI/UX, like you just said, mostly they are used together, right? UI/UX. But, um, are there also like, are these, could they also be like separate roles? Like where you have maybe, because sometimes I see like when, um, companies are hiring, right, on the title you see a UI designer, and then some companies also say like UX designer, um, which in my mind implies like these two could also be two separate roles, but sometimes they are combined."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 206464,
+      "end_ms": 252351,
+      "text": "Um, well, we in most companies, like big companies like Google, Amazon, Microsoft, they have specialties. So they have UI designers, they have UX designers, they have interaction designers, motion designers. But when you come down to, um, smaller companies and startups, they rather would, um, go for someone who is knowledgeable in both UI and UX so they don't have to hire more people. But, um, UI and UX both stands on its own individually. But I would say it depends on the company, cuz most smaller companies and startups just go in for someone who can do both or more. But like big companies, like the ones I mentioned earlier, just go for like the specialties. Like they each stand on their own."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 253169,
+      "end_ms": 273609,
+      "text": "Yeah. So if, um, let's say someone is hired as a, specifically as a UX designer, um, what would be expected from like this person, um, compared to like someone also being hired solely as a UI designer? Like what would be the differences between these roles?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 274523,
+      "end_ms": 328545,
+      "text": "Okay, so basically if someone hires you as a UI designer, you are in charge of the visual design. So basically the visual design comprises of the typography, the color, and all of those stuff that— like the grid and all of those stuff that makes it visually appealing. But whereas when they hire you as the UX designer, you are mostly in charge of, um, the journey of the users. So when I say the journey of the users, basically how a user moves from point A to point B. You are in charge of that. You don't really focus much more on the UI. But these days, companies will put up looking for UX designers and they still have a bunch of like UI, um, roles in them. So it gets you thinking whether they are hiring for a UI, UX, or UI/UX designer."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 330508,
+      "end_ms": 428955,
+      "text": "Yeah, I guess it's similar to like, um, you know, sometimes when companies say, okay, we are looking for a junior like web developer, and then you go there and like the requirements on the job post is looking for, you know, someone who does like builds rockets and, you know, same here. Um, you can't really blame the companies. I mean, they wanna maximize their, you know, the return they pay for having one employee to do everything. Although that's not the best way to, you know, approach that. So like, having been in this industry for like several years now, so like, you are a freelancer, so mostly like you get your own clients. In most cases, you sometimes work on multiple projects at a time, or like even sometimes work with multiple clients. Um, like, how does it feel, first of all, to like work as a product designer? Is this something that you find exciting? Um, and also, like, uh, is this something that you think like, okay, most people can do, or it's only reserved for like some kind of people who have maybe certain temperaments Well, um, so before I answer the question, fortunately for me, I did computer science in uni, in university, so I think it helped a lot."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 429597,
+      "end_ms": 582725,
+      "text": "And also, I was doing software development, specifically front-end development. At the point, I wanted to do mobile apps, but then That's another story for another day. But, um, I would say because I have a background in computer science and also I did like software development a bit, it helped— it has helped me come like a long way, um, because basically, I mean, if you know how to code, in a way, when you are designing, you know there are some things that are not realistic to code. So it kind of like helps you when you are designing. And with product design, it's something that I really like personally, like enjoy. Um, I remember the first time I was introduced to Figma, like I didn't know how to use it or anything. I didn't know anything about it, but like when I started, um, using it and then I realized that something that I actually did enjoy more than the coding So that's how come I transitioned to product, and I really love product design. Like, I don't think I would ever stop, like, learning how to— like, like, learning or working, like, like, doing product design, like, as a whole. I don't think I would ever stop because I really enjoy it. And even though I came from a background of software development, computer science, people who want to actually, um start like product design as a career, it doesn't matter whichever background you come from. It doesn't matter because, um, with product design, I would say, um, the learning journey for me, I would say it's quite easy. Like, learning how to become a product designer is actually quite easy, um, for like anyone who actually wants to start. And I think, um, learning product design Um, if you are someone who is, I think, analytical, it helps a lot if you are someone like that. Because, um, this is someone who is like, um, maybe like logical. Most people like that would prefer maybe coding, doing backend and things. If you are someone like— not saying I'm not logical, but if you possess that, like, it's easier for you to actually do product like design because then it wouldn't be tedious for you. Yeah, so anyone from any background can start learning product design. It doesn't matter which background you are coming from."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 584123,
+      "end_ms": 681807,
+      "text": "Yeah, I'm gonna go, um, um, like, want us to talk a bit more about like the projects and also dive into like the freelancing part of things. But I just realized that because, you know, we know each other for a long time and, you know, we are close I didn't, uh, really consider properly, you know, introducing you and like letting you talk a little bit about your background for, you know, the people that are watching that don't know you that well. And thanks for bailing me a little bit on that one. I'm sharing some, you know, information about how you got here, but do you mind, um, you know, at least, uh, for people that don't know you working as go through a little bit about like your personal journey, um, more about, like you mentioned, you studied computer science, um, um, but now you are doing, uh, product design. Um, I mean, I can see like a bridge where you could transition from that, but you know, for most people, maybe that's not like the first thing that comes to their mind, you know, and there has to be some things that you experimented along the way, which made, you know, uh, made you decide to go, um, do product design. So do you wanna share a little bit about like your background? Um, you know, like growing up, the things that you were interested in, probably it wasn't even related to design. Um, and you know what you studied and you know, like how you made this transition to product design."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 683105,
+      "end_ms": 861760,
+      "text": "Okay. So basically, growing up, I grew up in Ghana, like Takoradi to be precise. And when I was a kid, I wanted to become a doctor, a lawyer, never a teacher or a nurse. But I, I didn't really know what I wanted to do when I grew up, so I was always saying something like, I'll do this, I'll do that, but I really didn't know what I was gonna do. And then I finished like, um, SHS, and then I finished DHS junior high, and then when I went to senior high, they offered me— they gave me home economics. And I was like, you know, I'm gonna do general arts, what am I gonna do with home economics? Because yeah, yeah. And then, um, I, I still did it, like I still did the home economics, which has nothing related to what I wanted to do when I go to uni, even though I didn't know what I wanted to do, but it just didn't make sense to me what I was going to use it for when I enter uni. So I finished school, and when I finished like senior high, um, I still didn't know what I wanted to do. But then, um, some way somehow, I started uni right after SHS. I went to Ghana Technology University, and I think now it's called GCTU. I can't mention it in full, but for me, it's still Ghana Telecom. So I went to Ghana TECOM, and I did a diploma. But then while I was actually doing the diploma, I think that was when I started doing like IT, and it kind of piqued my interest because initially I had no idea what I wanted to do before I went there. My— I would say my parents kind of forced me into it, which I'm so glad they did. I know African parents kind of tend to push their kids in certain professions, but I'm glad it's not those like conventional professions like law, lesson. Like, I'm so glad they did. They actually picked this for me because they actually spoke to some people they know and they recommended IT for them. So they kind of pushed me in it, and I'm so grateful that they did because look where I am now. So yeah, from home economics, SHS, to like doing IT, it's not something you would think you would do when you go to uni after doing home economics, but then I, I did it. And, um, Fortunately, I think it was quite helpful because I did get good people like around me going through it. So after I finished, I did like my top-up. I did my degree in Coventry University, in GTUC, um, Accra campus. And it was around that time that I was introduced to Coacheng because Coacheng came to GTUC, my school, to— I have forgotten what Kotyen came to do. I mean, Kotyen is, it's got the best coding school in Ghana. I mean, I tell people I, I'm from there and I think we, we, we had a, a bootcamp there. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 861984,
+      "end_ms": 881593,
+      "text": "Um, sometime like, uh, like to introduce, you know, university. We're doing this, uh, trip around like most campuses in Ghana in the universities to introduce people to coding. I think it was around that time. I don't think I came for that particular event, but, uh, I, I remember, I remember that."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 881818,
+      "end_ms": 881962,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 882139,
+      "end_ms": 883086,
+      "text": "GTVC."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 883728,
+      "end_ms": 1147660,
+      "text": "Mm-hmm. So it was around that time that even though I heard of programming, I didn't like, I learned HTML CSS on my own, but like I didn't really dive into deep. So when Coach N came, it kind of like opened, um, my mind to like the possibilities. Um, when Coach N came. You guys talked about so many stuff. Then I was like, you know what, I'm gonna join Code Train, I'm gonna become a software developer. So I did join Code Train, and basically I would say, um, joining Code Train was literally, I would say, like the best thing that happened to me. Because through Code Train, I would say I met like really good people that helped me throughout like my career, even till now, including you. And like, I would always say like, I'm so grateful for like all those like times and like all these opportunities are coming because of like my whole journey and it's been like amazing so far because from Code Train, after Code Train I actually, um, was still learning, um, software development and then I wanted to become a mobile app developer but then along the lines I was introduced to Figma in Code Train. I think that was when I realized that I actually liked the design more than the coding, but I didn't really know that it was a whole career. There was a whole career out there. I had no idea. I remember telling Awal, like my mentor, literally I asked him, \"Awal, I want you to be my mentor.\" And then he was like, \"Okay, yeah, sure.\" And I remember telling him that I want to focus on that instead, knowing— I didn't know there was no career. I just did it I didn't know there was— I didn't know there was a whole world of UI/UX product design going on. But then he took a leap of faith in me, and then he was like, you know, I should just go for it if that's what I want to do. He didn't— even though he was a software developer, he kind of encouraged me to go for what I want to go for. And so, um, from there I started learning UI/UX and he got me like courses. So initially it was self-taught. It wasn't, um, it wasn't like I had someone who was teaching me. It was self-taught from videos, some tutorials that I'd been to watch and did projects on. And then I also remember, um, a while bringing in Kevin in order to kind of like help me because I didn't know how I was going to start with the freelancing because I had never done it before, and we didn't know anyone who was actually doing freelancing with product design. So basically he brought him in, and I remember he— him hopping on calls with me and kind of like telling me what I need to do, stuff I need to put in place to be a successful like freelancer. And honestly, it has helped me so much like up to this point, and I'm grateful for for all those people that were in my life at that time. Yeah, so I would say, um, my, um, journey, it wasn't like it was like smooth. I remember being depressed at certain times when I was learning. Um, it was not like it was smooth, and then I remember being depressed, broke, and everything. Like, it was not like easy, but like, I would say, I mean, um, Anything good is like no pain, no gain. So like you have to suffer through it, yeah, to be able to get there. And I would say when people, um, start learning, like there are some people that I have tried mentoring and they are like, why is this taking too long? When am I gonna finish? Like it's never like that. You have to give it your 100% and wherever it is, even if it takes you a year or two, just make sure you are just doing it. Because I realized, I remember a while my mentor always kept telling me, if I don't give up, I will succeed. As long as I don't give up, I will succeed. It doesn't matter how long it takes. And it kind of like stuck with me even up to now. Like, as long as I'm doing something and I don't stop, I will achieve it eventually. Yeah. So yeah, so I would say the journey was not like super smooth, but I would say it was kind of like very smooth in a way because I had people to help me along like every stage."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1148270,
+      "end_ms": 1159734,
+      "text": "Yeah, like, um, it's— I mean, I know, you know, like I was there. I, I, I know like the stuff that you had to go through. I mean, it wasn't—"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1159766,
+      "end_ms": 1159895,
+      "text": "it was—"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1160232,
+      "end_ms": 1227065,
+      "text": "it wasn't smooth. Like, it was— it took a lot of hard work, you know, and, um, lots of grit, um, to to persevere to get to this point. But, um, like, yeah, I, I really, um, like the points that you made about having like a community that, you know, was very supportive, like really resonates with me. I think, um, that's one thing that's like most people, or like people that's especially like people that go theirself taught throughout, sometimes they lack having this community, right? Because like Kevin, you mentioned Kevin, and Kevin was also part of like the coaching community, myself, like Awal, and several other people. And we all used to help each other, like whenever someone was going through a journey and they needed help. And yeah, sometimes it can get a bit frustrating and hard. And when you don't have the supportive community, it's kind of— that's where like most people would usually give up."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1227997,
+      "end_ms": 1247744,
+      "text": "Yes. Yeah, most people give up because it really helps when you have, um, someone who believes in what you are doing and they are willing to kind of like help you actually get there. Yeah, someone you can talk to about your struggles who have either been there on the journey with you. It helps a lot."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1248485,
+      "end_ms": 1266926,
+      "text": "Yeah. And it, it also helps you like have some structure, like at least like you have some structure on like, you know, the things that you are learning. Like, um, you know, from here you go there and from the learning you go to this phase and all of that. Um, and that's also something that really helps."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1268441,
+      "end_ms": 1279990,
+      "text": "Yeah, it's something that helps. And I would always say like, I'm grateful to Code Train and I'm grateful for Code Train bringing me to all the people that like I know from Code Train. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1280520,
+      "end_ms": 1300944,
+      "text": "So now like after all that, you know, you are a boss now. Like, you know, like you, you like a product designer. I know like you've worked with multiple like companies in the US, um, you know, worked on multiple exciting project. Do you want to talk a little bit about that?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1302522,
+      "end_ms": 1474810,
+      "text": "Yes. So, um, I remember I, I, I remember my first project did not go smoothly because it was my first time. Um, getting the job was like the easy part because I remember practicing with my mentor like how I'm gonna answer the interview questions what questions I'm gonna ask the client. So getting the job, I would say I remember my first, um, gig that I got on Upwork. The first interview I did, I got it. So, um, Upwork is basically a platform where I used to get jobs as a freelancer, and that's what a lot of freelancers also use. And it was very easy to get my first job, but I didn't know that getting the job was the easy part. Um, working on the project, even I thought I knew how to design, but when I started working on the project, I realized that we— I, I felt like I was even cheating the clients because it felt like I was not doing enough. And I'm so grateful that the client actually was so understanding that he was literally helping me through, like, throughout the, like, project. He literally held my hand throughout the project. So, like, I just want to say that when, when you finish learning, either your bootcamp, self-taught, and everything, you might think, um, okay, like, getting the job and doing it, like, it's never— like, it's always a new experience. So definitely everything is gonna— it's not gonna go smoothly. It might either be you flop your interview, or you might even do well, but the job you might not actually like do well. So like something would definitely go wrong since it's your first time, but I'm trying to say like it's actually quite fine because it's like a learning process. So like my first job, I didn't do like well, but the client helped me along. If you don't actually get lucky and the client doesn't, um, hold your hand, it's still fine because Even if they take you off the project, you still learn something. You, you made a mistake, so you learn from it. Yeah. And so I would say from there, I remember getting another project, and that project, um, this project was from a client. The first client was a client in US. All the clients I've worked with are actually from US. The second client was another client from US, which, um, she took me off the project. Yes, she was, she was not ready to come and handhold me doing— so she took me off the project, which, which made me, um, sad. But then like I picked myself up and then I was like, like I was actually really sad because I was like, wait, they just took me off the project."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1475053,
+      "end_ms": 1489428,
+      "text": "But then, um, like why do you think like, why do you think, uh, what were they— was they like expecting, um, that you weren't doing? Of course, like, you knew how to design and stuff, right?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1490295,
+      "end_ms": 1621690,
+      "text": "Yes. What I would say, it was not my fault or the client's fault, but, um, initially I was like, wait, why is that? Why did they take me off the project? I'm doing everything. Like, but then when I sat back and I realized that, no, like I was just a beginner. It was clearly— I would say it was clearly my fault. From where I am now, I would not repeat that mistake. It was my fault, it was not the client's fault. So basically, the clients wanted me to do the project a certain way, and I was like, no, I want to do it this, this, this. But you see, there's a clear difference between a senior and a junior. A senior product designer, junior product designer How they communicate what they want for the users or the clients is different from how a junior or senior would communicate it. Even though I was telling them, the client, that this is how you should do it, if I had the experience I have now, I would have said it in a certain way or showed them certain graphics for them to know, okay, this is the best way to go about it. Since I was a beginner, I thought they were not being fair to me, but I just didn't know how to communicate. Educate to them because every client has a vision of what they want. You can't just swoop in and come and go. You need to show proof that you know what you're talking about, which I didn't. So in a way, I was incompetent to them. It didn't matter what I was saying. You need to show that this is what you are about. So it was my fault for not— because I was still like a beginner. So they took me off the project and I didn't hear from them till now. So I would say like, yeah. And also I want to put it out there that most of the time when people are working with clients and something goes wrong, they are like, they blame the clients. Most of the time it's not the client's fault. You just remember that, you should just remember, it's their business. You are just another person working on their project. So if there's something that, if something happens, people tend to blame clients unless, I don't know, maybe unless they are not paying you and you've done a good job and they are looking. But if it's something about like the project itself, you should come down to your level and listen, because it's not about you, it's about— it's about the project, it's never about you, the designer."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1621690,
+      "end_ms": 1670458,
+      "text": "Yeah, like, hey, it's really interesting, like, the stuff that you just said, because like, you know, like, people would say, okay, it should be easy, right? Like, when you're a designer Um, they give you stuff, you just design. But, um, like, it seems it goes like deeper than that. It's more way than that, right? Like, like you spoke about communication. Um, yeah. And that begs like the question, like, how, like, what's a typical, um, you know, day for a designer? Like, like for yourself, like So what, what goes into the process of, you know, you know, working on a project together with your clients? You know, like the whole cycle, what does it look like?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1670860,
+      "end_ms": 2071109,
+      "text": "Okay, so, um, working on a project with a client differs from client to client because there are clients that are individual clients, clients that are companies. And so working with these two, um, clients is different. So I'll start from an individual client and bring it to a company client. So if it's an individual client, um, you mostly communicate through either email or I would say maybe Trello. I use Trello if it's an individual client because I think it's free. And so they mostly don't have Slack, so the, um, the project management software I use communicating with individual clients is Trello. And so it just makes it easier to kind of like add, um, tasks and then like keep moving it from maybe like to-do, um, in process, this, this, to done. So basically, um, the process is like once I have— let's say assuming that I've already had the interview with the client on Upwork and I have the job. So once I start, um, the project, I just make sure I know exactly what the client wants. This is very important because what a client wants is always different from what you think the client wants. So you always have to make sure what the client wants aligns with exactly what you think the client wants. And this is how you do it. So basically, a client can come and go like, oh, can you design a marketing landing page for me? Or like, build like a budget like app for me. So you ask, you, you hop in a call, you ask the client, um, what is your goal, what is your vision? They are like, oh, um, I guess some of them, like most clients don't even know exactly what they want, but they know what like they don't want. So you have to be like very careful. They can tell you what— like they don't know what they want, but when you present something they don't like, they'll tell you they don't like it. Yeah. So with this, for me, I just ask you, um, like, what is your vision? What is your goal? They are like, okay, design a marketing landing page. We want to make sales. You want something minimal. We want big fonts like with pops of colors. You see, they say all this stuff and then you sit down, don't you sit down and then you think about this. You don't start designing for a client like that. So before you even start, um, everything, um, you go on any of these design platforms like Dribbble, Behance, Upwork, Muzli, and Pinterest and all of that, and then go and search the kind of, um, designs you think they want. So you search for them and then you present it to them on a call and then ask them, is this what you were talking about? Is this how you want to go about it? They themselves will tell you, okay, this is not the minimum I'm looking for. So you pick a variety of like, um, maybe if it's a website or a mobile, a variety of like images that you think is something they would like they would want or something they envision, you show it to them, they will tell you which one they are going for. You never assume with clients, do not assume. So like, you show them, and then I would say after you show them that, that's when the real design begins. You don't still start designing. Firstly, most of them don't have requirements that they don't, they don't even know what's going to go on the pages. So you start by gathering requirements for them. And I would say gathering requirements, if the client themselves don't know what requirement they are gathering, it's just easier to start asking them questions, um, to create like a user flow. Like, what— once you start asking their questions, they kind of like start talking about, okay, this is what I want the site to do, this is that. And so you gather the requirement for them. When you gather the requirement, for now you already have your mood board. You still go over it with them again to make sure you both agree on what you want the designs to, um, kind of like look like. The mood board is like a guide. It's not— yeah, it's not like you're gonna copy what is on the design. It's just a guide for you and then your client to make sure you, you meet like the same, at the same— yeah. So, um, after you gather your comments, you have your mood board and everything, if it's a small project, starting to design is very easy. Like, you can just start design after you gather your environment, you do your user stories, you show your mood board, you can start designing. But like, if it's a bigger project, you don't start designing, um, after this. You make sure that, um, you do a lot of like research, you, um, create like personas and things that would help you. You focus more on like the user journey because it's a big project. If it's just a landing page, you don't much. But if it's a big project, focus all your research, mostly focus on like the user like journey to make sure everything comes out like good. So like it differs from company to company. And with a bigger company, you realize that once you enter a big company, you don't use your Figma because the company has their own company Figma with a bunch of like files. You are using their Slack, you're using all the softwares they are using. Now you are part of them. You are using Jira, Jira is a— I mean, for most people who don't know, but Jira is a project management software. Project management, yes. Yeah, so like, and it's actually very easy to use. It's kind of like, um, Trello, just the interface is a bit like different and it looks like it has more stuff. But yeah, it's still like a bit like— it's still easier to use. You can just watch a few YouTube videos and you'll be fine. So basically when work with a bigger company, the difference is, um, now you're dealing with more people. Sometimes it is not fun, but sometimes, um, the people that you are dealing with, they, they kind of know what you're about and what the process is, so it kind of makes it easier. But yeah, so bigger companies, you deal with like more people, more softwares to work with, and then the process is kind of like a lot. Sometimes you will not be the only designer working on the project. They'll bring in another designer. You'll be having meetings with the developers and like all of that. So like if the company is big, your, your process becomes kind of like bigger because you deal with so many people like while like working on a project."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2071269,
+      "end_ms": 2106965,
+      "text": "Yeah, it sounds more like, uh, there's a lot of, you know, like Um, stakeholder management, you know, collaborating with people, like having meetings, um, you know, setting expectations, you know, aligning on stuff. And the design part is kind of like— it sounds like the design part is like the easiest part where, where you just sit down to design something, right? But the bulk of the work is aligning with, um, there are multiple stakeholders And yeah, yeah, sounds like a lot."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2107529,
+      "end_ms": 2310482,
+      "text": "Yeah, yeah, yeah. Um, I would say it does sound a lot because when I, when I started, I was working with individual like clients, like not like, like actual, like most of them were like at the earliest start of their company. So it was like working was like one-to-one with like the client. And then I remember the first gig that I got that I was on like a big team was, um, with this company called BrightUp in US where there were like a lot of people. That was the first time I had a lot of people going through my designs and that. And you see, in the beginning it's quite like overwhelming because you've never had that before. But like, like it's overwhelming, but like as time goes on you you kind of learn to like adapt because eventually it will happen. Once you start, you still get like a bigger company where you are on site with a lot of, um, people in different positions in the company. So like it gets overwhelming in the beginning, but like, you know, it gets easier as time, um, goes on. And over there you realize there is much more to do. You have meetings all the time because you're in a bigger company you know, you're gonna have meetings. So like this time it's not just one-on-one, you have like maybe multiple meetings during the week and like all of that. But one nice thing I would say about freelancing is, um, if the company is a bit flexible, you can schedule your own calls. Because I think after this role, after that role, when I moved to a new role as a freelancer, what I did was I was scheduling scheduling like the calls, um, most like almost all the time because I think I had gone to the point that like I knew, um, the ins and outs of like how to run. I mean, freelancing is a business, like I have to run it by myself. So I ended up scheduling my calls and I'll say it helped me a lot because like I knew like it, and, and it's not like you're gonna go like a whole week without hitting the person you're supposed to have a call with, you know, you have to be consistent. And I'll say one thing that helps a lot is updating them, like updating them even if you don't have calls, updating them what you are doing, what— where the project has gotten to, if you have any questions and those stuff. So then if you don't schedule a call, you are not having a call with them, it kind of feels like they're already in the loop of what you are doing. So it's not like like, it's like the company, the business is still running smoothly. So that's one thing, you need to be like constantly like updating, um, your like employer or whoever you're working with what's going on and all of that. So yeah, like freelancing, running a freelancing business, I would say you have to always be like up on your game, like especially the communication, like communicating with whoever you are working with. Because it's not like it's a full-time where you have assigned time for meeting and all of that. Because otherwise, you realize you would have gone far in your career but still be treated as a junior designer. Because like, those are the things that makes you a senior. Not when someone does not micromanage you, they feel like they can trust you with their work and like you know what you are doing. No one is micromanaging you, so it's easier for them to give you tasks and and they know you can handle it. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2310930,
+      "end_ms": 2337287,
+      "text": "Is there a reason why, like, you prefer to do, like, the— to go the freelancing route? Because it sounds like a lot of work, like, versus, you know, having a full-time job. Because, like, you are good enough to, you know, work at any, you know, company as a product designer. But why do you, you know, go through all the stress of you know, freelance, right? Is it the money?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2339922,
+      "end_ms": 2440085,
+      "text": "Well, in the beginning I didn't think I was gonna do freelancing. I wanted a full-time job, like that's what I wanted. But then, um, I didn't get it. I did a couple of interviews but I didn't get it. So, um, I remembered like when I started working on like smaller projects with freelancing that was when I actually started to learn and grow because I realized that most companies, they don't want to take chances on someone who is very new, like an entry-level, who doesn't have any work experience, nothing. So like, but freelancing kind of like opened like the door to kind of receive someone who doesn't have any like experience. So I wasn't getting any full-time when then I started with freelancing, but I I would say from the time I started freelancing till now, I am glad I did freelancing because like freelancing provides you with much more flexibility because, um, I mean, aside it's being remote, you kind of like work when you want to. Like I sometimes work on weekends, like anytime you want to work you can work, like it's not— it's just flexible. Like, like I said, you can schedule your own calls and all of that. It's like really flexible to like do freelancing than full-time, in my opinion. Also, that's why I feel like the freelancing— also with freelancing, you see, you have the opportunity to work on multiple projects because with— yeah, like your contract doesn't stop you from working on multiple projects. So you can be juggling 3 projects at a time, making your bag, and like no one No one cares. But with full-time, you can't do that."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2441015,
+      "end_ms": 2467488,
+      "text": "Talking about making the bag, like, would you recommend, like, people to go into, like, uh, UI/UX? Like, what's their, you know, their pay like compared to, you know— I, I know, like, people, you know, have this thing, like, software engineering crazy, like, making tons of money and other roles. Um, what is it like for, you know, the design bits? Like, is there money there too?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2469040,
+      "end_ms": 2520602,
+      "text": "Yes, there is. So I would actually say that, like, um, how much— you know, a lot of designers, including myself, make more than some developers. And the reason being that it's basically how much value you think you you offer. So if you think you can offer this value to these companies, then you can charge as much as you think your value is worth, like what you are, you are going to give them. So like, um, doing like UI/UX, product design, like as a whole, you could make, um, so much, as much as, um, a full-time software developer or even more. Depends on how much value you think you'll be able to bring to the table. Yes."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2521984,
+      "end_ms": 2556842,
+      "text": "Okay, maybe I need to switch to design then. Yeah, that was just funny. I, I can't resist asking this question on behalf of, you know, the software developers. Like, why do designers stress out, uh, stress us out, um, and design like really weird, complicated things. Um, and this is for most especially like the front-end developers, you know, you bring these weird interactions and expect us to code it. Like, is that like to punish us for all the sins that we've committed in our lives?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2557660,
+      "end_ms": 2678210,
+      "text": "Well, um, initially when I started, I, I did see that I'm coming from a software development background influences my design a lot because there are some stuff I design and I'm like, I sit back and I'm like, can I code this? Like, I, I think about it that, hey, let's see, can you code this? Then I'm like, nah, I can't code it. So I'll definitely say it's not to punish you guys, but, um, most mostly when I design, I always strive to design something that is like a bit simple and something that I think like it will be easier for developers to code, but it's not about us punishing developers because like, um, I would say it depends on the company. Like a company like Apple, their interface is really simple and like really amazing. It's something like, um, every designer I would say would strive to, you know, emulate. So, um, there are some designers who do, um, really, um, advanced like stuff which developers think, like you said, is punishment. But I would say they just want to show you like they can do it. Like, I have the skill, why not use it, right? I mean, as long as the— as long as the company wants it, like, I have the skill, you should be able to code it. But I would actually say that there are some designs that I see personally that I can design, but once you start coding it, it becomes really cumbersome. So we are not trying to punish you. Some designers just want to show to the world that, you know, I can do this. So I, I just want my fellow designers to be able to like do it, but I also hope that they would also think about, um, how it's gonna influence like the business, because some designs will take forever to code, like in my opinion, and it kind of slows down the, the pro— like the the progress of like the entire project. So I would say they should kind of bring it down, turn it down like a little so that like businesses can move on like faster."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2680053,
+      "end_ms": 2701498,
+      "text": "Please, all designers that are watching, please listen to Lacey's advice and stop punishing us with their crazy designs. Um, yeah, so unfortunately that's all the time we have. Um, thanks a lot for, you know, jumping on to share your experience. And if people want to reach out to you, like, yeah, they reach out to you."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2702204,
+      "end_ms": 2709767,
+      "text": "Well, if, um, they can reach out to me on my LinkedIn. So should I give my LinkedIn out?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2709911,
+      "end_ms": 2719272,
+      "text": "Yeah, uh, it's Lovelace Fierce, and I think I'll put a link in the description of this video. Okay, yeah, Lovelace Fierce on LinkedIn."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2720332,
+      "end_ms": 2720589,
+      "text": "Okay."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2722066,
+      "end_ms": 2723604,
+      "text": "Yeah, uh, yeah."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2724073,
+      "end_ms": 2725433,
+      "text": "And can I say one more thing?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2726177,
+      "end_ms": 2727149,
+      "text": "Yes, go ahead."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2727246,
+      "end_ms": 2756630,
+      "text": "Yes, and I also want to say that, um, if anyone wants to start, um, product design, UI/UX, or any, um, tech, um, career, or any other career, just don't be scared to reach out to people on LinkedIn and ADP listeners, because there are a lot of people who are willing to actually mentor you. For free. So you need to be reaching out to people. I mean, if they reject you, what the worst thing that can— you just move on to the next available person you think can mentor you."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2757040,
+      "end_ms": 2761920,
+      "text": "Yeah, yeah. Okay, one last thing, um, anime recommendation."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2763160,
+      "end_ms": 2783380,
+      "text": "Okay, so I need to get my all-time favorite anime is Hunter x Hunter, and I don't care what anyone says, everyone should watch Hunter x Hunter. Like, definitely watch Hunter x Hunter. I mean, Attack on Titan was good, but the ending— I mean, that one is very controversial, so I don't want to say anything yet, but it's also good. But yeah, my all-time favorite, just watch Hunter x Hunter."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2784090,
+      "end_ms": 2801975,
+      "text": "A good one, it's really a good one. I watched that one. Okay folks, um, thanks a lot for tuning in for today. I hope you enjoyed the show. Don't forget to like, comment, and subscribe, and see you next time. Cheers! Oh, that was fun."
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}

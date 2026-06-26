@@ -1,4 +1,50 @@
 {
-  "playlist_url": "",
-  "videos": {}
+  "playlist_url": "https://www.youtube.com/playlist?list=PLkTC9ELc7A40QsoHNx2NONNwZdh1gbFY5",
+  "videos": {
+    "wFP7X5yOItQ": {
+      "title": "How to balance it all - Career lessons from a multitalented data consultant #techpeepsDiaspora",
+      "status": "transcribed",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "added_at": "2026-06-26T10:44:07+00:00",
+      "updated_at": "2026-06-26T10:47:10+00:00"
+    },
+    "bE-mpnLZNh4": {
+      "title": "How I built my freelance business as a product designer",
+      "status": "transcribed",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "added_at": "2026-06-26T10:44:07+00:00",
+      "updated_at": "2026-06-26T10:50:59+00:00"
+    },
+    "KAxjaa4-HYY": {
+      "title": "How Princess landed an international software engineer role fresh out of college.",
+      "status": "pending",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "added_at": "2026-06-26T10:44:07+00:00",
+      "updated_at": "2026-06-26T10:44:07+00:00"
+    },
+    "ajnMoBttDAI": {
+      "title": "How to build a future-proof career while making impact",
+      "status": "transcribed",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "added_at": "2026-06-26T10:44:07+00:00",
+      "updated_at": "2026-06-26T10:49:44+00:00"
+    },
+    "kfmN0FKgsto": {
+      "title": "A Day in the Life of an Engineering Manager at Cliffhanger Games",
+      "status": "transcribed",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "added_at": "2026-06-26T10:44:07+00:00",
+      "updated_at": "2026-06-26T10:48:42+00:00"
+    }
+  }
 }

@@ -93,6 +93,18 @@ make clip ID=<video_id> START=01:23 END=01:28 SLUG=<slug>   # re-cut the hero cl
 Status ladder: `pending → transcribed → drafted → published`. Each step is
 idempotent; pass `--force` to a script to redo work.
 
+If a transcript's HOST/GUEST labels look swapped (the heuristic handles
+cold-open teaser clips and length-normalized question density, but isn't
+infallible), re-run the mapping **without** re-transcribing — no API cost:
+
+```bash
+make remap                 # re-map every transcript in transcripts/
+make remap ID=<video_id>   # re-map just one
+```
+
+Mappings flagged `confidence: low` are surfaced in the PR for you to confirm or
+flip during review.
+
 ## The approval gate
 
 Nothing publishes automatically — **the PR is the gate.** Each draft PR includes

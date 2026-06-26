@@ -1,0 +1,206 @@
+{
+  "video_id": "kfmN0FKgsto",
+  "title": "A Day in the Life of an Engineering Manager at Cliffhanger Games",
+  "duration_sec": 2550,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1300,
+      "end_ms": 9235,
+      "text": "Hello guys, thanks for tuning in again to TechPeeps Diaspora. Today on the show, um, our guest is Chioma. Hi Chioma, how are you doing?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 9925,
+      "end_ms": 13443,
+      "text": "I'm good, thank you for having me. I'm excited to be here."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 14165,
+      "end_ms": 19048,
+      "text": "Thanks for joining us on the show today too. Could you briefly introduce yourself?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 20493,
+      "end_ms": 80480,
+      "text": "Yeah, um, my name is Chioma Asor. Um, I am Nigerian Nigerian born. I moved to the US to study and I have been in the US longer than I've been in Nigeria. Coincidentally, just recently, but I am currently wearing many hats. I am an engineering manager at Cliffhanger Games, which is part of EA, Electronic Arts, the gaming company. Company, and we have a new game coming out. We're really excited about that. And I also am the president and the founder of our nonprofit called Steam Divers, and I'm also a mom of two teenagers. So that's the many hats I wear, but that's a short introduction about me. Wow."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 82677,
+      "end_ms": 133326,
+      "text": "As someone who also likes video games, I think this is going to be really interesting for me. And yeah, I have my PS5 sitting right there. And I also— so it's good to, you know, have someone who is on the other side, you know, where the games are made. So that's really interesting for me. Chioma, one thing that I'm curious about is so far on the show, like, most of their profiles have interviewed are like software engineers, um, you know, project managers. Um, but I, I haven't yet had someone with your profile, like in, um, in management, especially in engineering management. And maybe, um, other people might also be curious, like what is a senior engineering manager? What does an engineering manager do?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 135152,
+      "end_ms": 228879,
+      "text": "Oh. Uh, this is quite a good question. Um, an engineering manager, uh, is someone who typically has an engineering experience and decided to move into management, and you usually manage other engineers. I've had the good fortune to manage electrical engineers, and now I manage software engineers. I've been able to do both because I've worked in both automation and software and hardware in a sense. I hire engineers, I help them with their careers. I see myself as the person that brings out the best within them. I'm able to identify where they're grayed out and enable them to bring out their best self and figure out how I can make the team work together like a machine, like a robot. So I'm bringing your strength and their strength and mitigating your weakness with some other person's strength. And so we can build the best machine out there to provide the results that we want. So that's typically what it is like to do my job. And day to day, day to day is like you never know what you're going to get. You know, you can come in, you're trying to put fires and Some days are just slow and you are in meetings and you're coming up with processes and you're proving ideas and you're listening to people's ideas and trying to understand how to fit in with the big picture, things like that."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 231297,
+      "end_ms": 254266,
+      "text": "So I'm wondering, or maybe this might also be different based on the organization, but is an engineering manager, or in this case yourself, are you typically responsible for like engineers across like the organization or engineers in a particular team? Or is this like a cross-functional team thing?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 255976,
+      "end_ms": 307789,
+      "text": "Well, in my, in my current role right now, I am responsible for engineers in the gameplay engineering area. Um, but I've been in situations where I've, I've been an engineering manager for 3 different roles. I've been an engineering manager that I was responsible for a particular group. That was when I was working in space. I was the engineering manager for the avionics team. So that covered every one of the packages that is on the rocket, on the equipment section. But then I've also been an engineer when it was just the Frostbite engine and I was responsible for like the migration and integration team. So it just depends on what it is, but typically you have a bunch of engineers that report to you, uh, and then your scope can be as small or as wide as your group of engineers are."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 309058,
+      "end_ms": 359135,
+      "text": "Yeah. And I imagine, you know, as the person responsible for like, um, engineers, you need to have some level of, you know, technical, um, skills or technical experience. Um, but I'm not sure how much, you know, how much of a technical background that typically does an engineering manager need to have versus management skills and stuff. And at the same time, I'm wondering, are there times where you would need to step in to do the, let's say, the hard work, the typical step in and quench fires by yourself by implementing stuff? Or do you always have to stay at the management level where you guide people or the engineers on what to do?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 360388,
+      "end_ms": 481217,
+      "text": "Yeah, I think a great engineering manager should not have to step into roles. When I started as an engineering manager, I was a tech lead for a particular package and I got into the engineering management role and I made the mistake of trying to do the work I was doing before. And when we did a 360 review, I got feedback back that the idea of me— and I thought I was doing something great and I thought I was being a good manager and I was doing the work. I was like, I'm in the trenches with my team, you know? And then I got the feedback and it was quite a surprise to find out that the fact that I was in the trenches with my team, I was making them not feel valuable, stepping in to do the work. It shows that I'm not good at managing my team. My job is to make sure my team is able to do the job that they were hired for. So either I did a terrible job hiring, I hired someone who's not able to do their job, or I have not been able to motivate them to be able to put their best self first. So, um, a good engineering manager should be able to stay in the background and motivate your team to be able to do the things that they need to do and do it well. My job is to, uh, direct them, coach them, allow them to be able to see what they're capable of. And having a good understanding of engineering does help. So when they're talking to you about things, you can understand what they're saying, or you can figure out if a process is not going to work and you can ask them the right questions so that they can think outside of the box of what they know. So being able to have both engineering and management skill works, but I think you'll be relying more on your management skills with dealing with people and your engineering skills when dealing with the process or the, the work that they're working on."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 482515,
+      "end_ms": 535169,
+      "text": "Um, so, um, just what you mentioned, like, um, you dealing with people and dealing with your engineers. So I guess, you know, you have two kinds of, should I say, stakeholders that you deal with. I'm guessing, you know, other managers and upper management, um, from the business side, and also like your, your engineers. So, um, on the upper management side of things, what are, you know, some things that maybe also like trying to, um, help shape the vision of the product, I guess, and Um, probably you might also need to step in to, you know, shield your engineers whenever like unrealistic expectations are being set. These are things that I can guess that you do, but, um, yeah, it would be interesting to hear what it's like dealing with, um, upper management and those stakeholders."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 536325,
+      "end_ms": 735129,
+      "text": "Yeah. Uh, I always say I manage in 4 ways. I manage up, I manage down, I manage in, and I manage out, right? So basically, the upper management, which I would call my stakeholders, right? Every, every, every one of us, whatever we do, we have customers, right? Internal and external. So those are the people that are the people that have something to gain or win, the stakeholders within whatever I'm producing, right? And so in some instances when I have to communicate messages, I have to know how to communicate what needs to be done without creating riots, without giving the wrong information. So that communication is really a very big skill. And then listening, like hearing what people are trying to say without what they are not saying. That's also another skill that is very huge. 'Cause sometimes stakeholders will not tell you exactly why they're upset about the experiences they're getting from your team. And so all of those things, part of the things that I manage within my role. And then there's sometimes there are processes that you're trying to implement or improve on that requires people's buy-in.. So you have to know how to manage all of that communications, all of that support. And I have tons of certifications and training that I've taken. So the thing about this role of being a manager is, is very— is a challenging role. Most people, if you want to do it well, of course, most people just use it like a promotion too, but it's not. It's a different path. There is technical role that is existing. And then if you want to go into management, it's not like I'm going to go into management because I want to grow. No, but management is a whole different ball game. And so I'm constantly training in this role. I'm constantly learning. I'm constantly learning people. I'm constantly learning how to communicate with people, how to get my point across. And, uh, one of the certifications I have is a Green Belt certification. Learning how to facilitate stuff and get people to work together. And that's been useful in, in this environment. I also have a project management certification because then I'm working within projects, knowing how to bring people together and get the project out. And that's been useful in a sense, even though I'm still an engineering manager. So a good engineering manager needs to have a lot of training. I have a coaching certificate. I know how to coach people. So even though I'm getting all of the skills, I'm constantly reading about being a leader, motivating people and things of that nature, which is very good for me because I have a nonprofit. And most times when you have nonprofit, people are not getting paid. So you have to find other ways to motivate them out of money, right? So there's the skills that I'm using both in my day, my work at EA and also my work at Steve Davis, which is a nonprofit."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 736728,
+      "end_ms": 779329,
+      "text": "I wonder how, cause like you mentioned lots of stuff and sounds like lots of work, right? And dealing with lots of people. I once saw the calendar of my engineering manager and I'm like, one person couldn't possibly be having all these meetings and be dealing with all these people and, you know, switching different contents. How are you able to manage all that? And in a way that you still have some energy left at the end of the day to pursue other things? And like you said, you have kids, have some energy left, you know, for the family, for the kids, and even for your nonprofit. How are you able to balance that workload?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 780163,
+      "end_ms": 939445,
+      "text": "I'm very intentional about time. I don't like wasting time on things that is not necessary. You have to remember that a lot of people, when they jump into work, they're coming in with all kinds of trauma. They're dealing with all kinds of things. Some people don't feel valued unless they're doing something or being visible or being in meetings. And so I identify when that's one of those meetings and I call it short. I'm not doing that. I'm very intentional about time. I feel like that's the most valuable thing I have in this life. You cannot pay me enough money for time. I can lose money and I will make it back. I can't make time back. So for me, every single time that I am using is important. So I don't usually have my calendar full. My goal is to make sure that I know who needs to be where and needs to be doing what they need to do, and that my job is to provide all the necessary tools and resources that they need. How do I flag myself when I'm doing badly? Is how my inability to manage my time. So I do get into periods where my calendar gets full and I have a lot of things going on. And when I, when that happens, I tend to like, okay, I need to take a minute and I need to figure out, do I, am I putting too much on my plate and why? And I need to understand the why. If I'm feeling like I need to prove something, then I need to understand why do I need to prove something? And I do the same thing with my team members. If I feel like you're getting overwhelmed, you've become too busy. I need to start digging into why you too busy. Why do you feel the need to be in every meeting? Why don't you trust your team? Why are you feeling insecure about the fact that you're not there? You know, things like that. So those are, those are some of the psychological work I have to do within myself. So for me, being busy is an indicator that something is wrong and I have to take the time off and manage it efficiently. Of course, I do understand that sometimes things happen, uh, and so you can get like a clear indication that, oh, we lost an engineer here, or we need to move this product out, or something is happening is making us to be busy at that period. I like to be clear that this is what's happening and this is, this is how long it's going to last, and I can accomplish it around that time. But to be busy all the time, for me, it's a flag. I'm like, oh, I'm doing something wrong, I need to take a minute. And evaluate what am I doing wrong here? What, why am I so busy? And is there something that's going on with me psychologically, mentally that's making me not to trust my team to do what I hire them for?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 940858,
+      "end_ms": 986402,
+      "text": "Hmm. I see. Makes, makes a lot of sense. Um, yeah. And also like sometimes I wonder, cause I'm also getting to that, um, level in my career where I'm wondering, okay, do I want to go into management? You know, can I do this? But This, this definitely helps, you know, to at least shed some light on some of the things to expect if I want to go into that direction. So that's very helpful. Chioma, how did you get here? Like, I'm now, you know, trying to paint a picture of, okay, what was little Chioma like growing up? Did you always— Yeah. So now, now we are getting there. Now I want to learn more about how did you get here?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 988710,
+      "end_ms": 1288520,
+      "text": "Uh, that's a really interesting question. I feel like my life has been a series of events, right? Um, what— when I was growing up, um, my mom, my mom was one of those very liberal, strong-minded women. Anyway, the way she raised us, like, she was like, you can do whatever you want to do, right? And so growing up as a female, I always had You know, I wanted to be an engineer, which is not usually very female acceptable role. And so I'll be like, no, I want to be an engineer. Like, they'll be like, oh, you can be a doctor. No, I want to be an engineer. I've always wanted to be an engineer. And I had, and anytime people come around to fix something in my house, you know, like we don't, not like now, we used to, we repair things. Things go bad, you get the repairman. I'll be hanging around for the guy to fix everything. Once he leaves, I know how to fix everything. I'm fixing the thing right away. After him and destroying things in the process. So I've been breaking and fixing for a while, and I have had a lot of hands-on experience with my mom's small TV to her radio. I've just, you know, and it's so funny because I break and fix, um, it gets to a point that it'll be like, go call her, go call Chiamasa, come and fix this stuff. You know, it's like, you know, I just, I get a reputation of fixing stuff. However, I didn't know which engineering I wanted to go to because I didn't really have A lot of people telling me that this is the engineering, or these are the different types. So I switched, like, I'll be a civil engineer and then I'll be this engineer. Eventually I decided I was going to be an electrical engineer because I worked a lot with a lot of electrical stuff. Then I started college in Nigeria, then I moved over to the US to finish up. And in the US, I was still doing electrical engineering. And they, my My college, University of Texas at Dallas, was growing at that time and we didn't have a computer engineering department. So they bought computer engineering and they included it with our department. So by then our experience with coding was like assembly language, and I'm aging myself here, assembly language and things like that. And so they were like, oh, there's this new thing called OOP. I was like, all right. So they bought C++, but I studied C++ as procedural. Okay. It was not OOP then. So we're doing like, you know, like very procedural. Procedural type thinking. And then I was like, \"I mean, I like this.\" And so our computer engineering department was merging with us. So we were experiencing some of the computer engineering stuff. And then as they're growing, they were like, \"Okay, we're going to switch. You guys have to pick one.\" And I was like, \"I'm not picking.\" So I stayed with electrical engineering, but I was still self-teaching myself coding because I enjoyed coding. It was just like, people, you stick with what you know, stick with what you like. Don't listen to schools because schools are trying to make things work for everybody. So, um, and so my first real, like, when I graduated, I did RF, which is funny, you know, I was like, I'm going to do RF when I get out of school. But my first real engineering job was in test automation, which is building test systems. Which required hardware and software skills. And the software skills I acquired just because I like programming was the skills that ended up becoming useful right along with the hardware skills that I got in school. So that's how I got this job. And I was working building test systems, doing test automation. There was no robotics. Now my passion really growing up was I was going to build a robot because I was a lazy youth. I was like, I don't want to, I don't want to wash dishes. I'm going to build a robot that will do my dishes. I don't want to do this chore. I'm going to build a robot that will do this chore. Right. And, and, you know, I was like, always had that imagination. And so I was like, I'm going to build robots. So even, you know, the software thing was like making my mind to think about the possibilities of building the robots and things of that nature. So test automation was as close to robotics as you can get. Back then. It's not that old, it's not that bad back then, but you know, it was not like AI has come or anything like that. It was just like, oh, robotics, that's cute, you know. Uh, yeah, build test systems because that's what you need to do so we could automate things, um, as best as we can. So it's just pretty much like different systems. And so I built a lot of, um, test systems, wrote a lot of code. Because sometimes we're building test systems for systems that are not already existing. So we're building some, writing some codes from scratch. We're making things happen that doesn't exist. I loved it because then you'll be like, oh, this program is coming. Some, some projects fail along the way, which you work on, some, some go, and you'll be like, yeah, I remember when we were doing this before it becomes part of the whole, uh, systems out in the world where everyone is using it, right?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1288520,
+      "end_ms": 1294234,
+      "text": "So it was kind of fun, like you get in What industries were these test systems?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1295134,
+      "end_ms": 1730023,
+      "text": "Oh, it was— I was working for a contract manufacturing industry, so they're basically manufacturing. So like Jabil Circuits, what they do is like we build washing machines, cell phones, whatever. Like, so most times people build their products as a prototype, and then when they want to mass produce, They take it over to us and say, you know, can you mass produce? Like, think about Apple phones. Apple doesn't really build their phones. They have like maybe like a small manufacturing industry and then they give it to, what's the name of that industry? I've worked with them too. No, I didn't work for them. They worked with me, but they build, they're in Jalisco in Guadalajara. They build Apple phones You know, and then they mass produce it and then they put the Apple logo on it and things of that nature. Well, that's what we used to do in Jabil Circuitry. We built, we would compete with this company and we would, you know, compete for the products. So there were, there were like all this new products coming in and we would just get them, uh, Whirlpool, Sharp., you know, all of their products, they're coming and we build the test systems for them because you want to automate as much as possible in the manufacturing process. So even Cisco, I remember my Cisco boards. So I've always worked with different industry, mechatronics systems, you know, and sometimes, you know, all kinds of industries. We do medical. Everyone has their rules, but they're all still electronics. PCB boards. So you understand the whole PCB boards, soldering, all of that. So that was what it was like in that environment. So there was quick change, quick knowledge, you're picking up, you're learning new things on the fly all the time. So I love that because I was, I love the idea of, you know, learning new things. One of the good things that came out of it was I learned how to document. As an engineer, I didn't like documenting. But they were pulling me out of place to place. So once you get pulled out, you come back, you're starting from scratch if you didn't document properly. So yeah, in that industry, it was fast-paced and really fun. Built a lot of— I wrote a lot of code, wrote a lot of instrument drivers to work with my code. And it was like every system, it was like, yeah, we're going to use TCL. Okay, we're going to use basics. So I was moving from language to language, you know, like I couldn't really, you know, say, okay, I'm going to stick with this language, which was good. I was language agnostic. I was learning the patterns, you know, and I worked there for a while. And then I started having kids and it slowed down a little bit. And so I moved into more OEM, original equipment manufacturer, I think more like Apple themselves manufacturing their own products. So instead of having too many different industries and moving from point A to point B, you just have one product you're building and it's always like very similar. And so the OEM I moved to was Fire Signs, and what we did build was electronic billboards. All those signs you see in New York Times Square, you know, it's like a, it's like a, think about like LEDs, like a big TV. But you have this little computer inside of it that does all kinds of things. Um, and you have your, your, your LEDs in little modules. And I built the test systems for those. And, uh, it was automation, you know, because you want to manufacture and have less people putting their hands on things. So that was quite interesting time. I built a lot of, um, LEDs, uh, price signs in gas stations.. So there was a lot of, uh, automation there too. Um, but after working in that industry, I wanted to try something different. Um, I wanted to get a vehicular experience, you know, building something that has a vehicle. So I was like, I'll go to building cars or, you know, building robots. No, uh, space vehicles. I was in transportation one way or another, right? So I went to Lockheed Martin and in the space systems and I was building, I was working as part of the avionics team. I was a tech lead. I was a principal engineer for a particular package, supporting it on the space vehicle. From there, I had a great manager and I was like, oh, if you have a good manager, you can thrive as an engineer, right? So I was like, well, I can do this. I can come in and manage people efficiently and help them thrive. I can build many of me, right? Instead of one. I was thinking about it from that perspective. You know, a lot of times I've heard people like, you know, they were like, oh yeah, you know, you can lead this project, you should lead this project, you know, and stuff like that. So I was like, you know what, I could create many of me, right? Through management, I can manage people to understand what they're good at. Uh, I was, I was struggling with it for a while because I didn't really want to lose my technical skills. So I was like, well, I can do my technical stuff some other way. I don't have to do it at work. I can be doing my tech stuff also and fulfilling my passion. So even though I had my nonprofit going on, I was like, I can focus on that area and also do side stuff so I can still focus on being a manager while I still have experiences with technical things. So yeah, uh, then from there, um, I got pulled into the gaming industry. So I'm like everywhere. I was in I was working in space and they were like, yeah, we think you'd be a great manager for the Frostbite engine. You know, Frostbite, they do the FIFA games and all that. I was like, yeah, you know, great. Let me try that. I'll manage electrical engineers. Let me see what it's like to manage software engineers. And so I was with the Frostbite team. We're building engines. We're working with like a large amount of people. So we're like a central team, um, and so you're supporting so many different people. Every, every game studio is different, you know, so it was quite interesting being in that kind of environment. And then this opportunity came up with my Cliffhanger team, and it's more like a game studio. They were like, we're looking for an engineering manager for the gameplay engine. I was like, yeah, sure, I'm down. So I'm with Cliffhanger now. It's a great team. So that's my, that's my little history."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1730199,
+      "end_ms": 1789893,
+      "text": "That's very, very exciting. So exciting to have to like go through all these experiences and yeah, to, to get to the level that you are now. Um, for, um, you know, robotics engineering, um, I'm wondering what, like now you don't get to hear lots of people, I mean, uh, like electronic engineering. Like, I rarely hear people say, okay, I want to be an electronics engineer, or like, um, wanna go into that role. And mostly you hear about software engineers. I wonder if there's not a lot of maybe opportunities, or people are not aware what opportunities are out there for electronic engineers and how to navigate them. If you could share, um, maybe a little bit about that, how, like, what opportunities are there for electronic engineering and how does one navigate, you know, those opportunities?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1791034,
+      "end_ms": 2115647,
+      "text": "Oh my goodness. Uh, electrical engineering is the base. I might be biased, but it's the base of it all. Like, I don't care how much software you write, you need somewhere to put it. Like when I, when I talk to people about talking about AI, I'm just like, yeah. AI is cute, but AI needs hardware, and that's why robotics is going to actually be the eventual location. So as an electronic engineer or electrical engineer, whichever, I just think those are semantics, to be honest. There's so many areas that you can cover, right? I said I did RF, which is radio frequency, which covers your cell phones and your wireless production and radio and, and, uh, new technologies that we haven't even seen. Then there is the telecommunications, and I'm sticking in just one area, right? The telecommunication area, that's another area of interest. Then you haven't talked about the devices, like where you talk about the basic devices, IC. Like, you know, you know how every one of those chips that you have that you're making wafer depositions on and you designing it, that's electronic engineering. Um, and, um, everything that you use in the hospital is— it's an electronic engineer built it, like your X-ray machine, everything, literally everything that you touch. And I feel like when it comes to engineering, electronic engineering touches everywhere. Our hands is in every part. So that's kind of like the skills that you, you can have and you can diversify yourself into any kind of role that you want to jump into. It doesn't, it doesn't force you into like, oh, this is all you're gonna do. You can be anywhere. You can work in manufacturing, you can work in hospitals, you can work even in, um, uh, AI, you know, because your computer is like, it's like electronics engineer, you know, like they, they built the parts, like the PCBs, the layouts, the— it's, it's the working space you can work in, like me, I've been working everywhere, right? Because I have an electrical engineering background and somewhere, somewhere you're going to need something that I, that I know and do. And so it's, I don't know if I think a lot of people go into electrical engineering, but I think sometimes it's hard because there's a lot of math. There's a lot of studying. It's hard. Um, so it's not something you can just do by yourself and say, oh, you know, like online programming, you'd be like, oh, I'm a self-taught programmer and you can just jump in and go where you want to go. But electrical is like, okay, have you gone through the process? Because when you're building houses, there's safety issues, there's certain levels of things. So I don't think it's as easy. To get into. Maybe what we should be thinking about is how can we remove some of the roadblocks for people to get into there. But it's a very, very diverse area of study. Like, I just feel like it's the base of everything. It's electrons. It's a building block of everything. So I can't think of any industry that you don't have lights, in that you wouldn't need an electrical person to do something for you, right? So it's, it's one of those areas, it's just one of those fields that is very diverse. Like when I, when I was doing my master's, I was learning wafer deposition, uh, which is kind of like how you build IC chips, uh, you know, like it's not, it's not It's an electrical engineering course. Like everything you people need to be able to run your data, your AI. Yeah. It's like, yeah, there's such chips. We're dealing with chips shortage. Like that's the core of the things. Like that's the main core. It's great. You can write your code, but you need a computer. Like anything you do software related, you need, you need an electrician somewhere to be doing something to give you the base of foundation for you. The way I like to think about software and hardware is that software is like the spirit and hardware is like the physical body. Like you need the body to exist on Earth, but the spirit is great because then it helps you exist on Earth, right? So I personally think that a lot of this, a lot of correlation between both sides, but hardware has just been around for so long, it's established. It's known. And so whenever, you know, you're going to software areas and they're coming up with these new ideas and you're just like, oh, that's cute, we've been doing it for a while. We've been doing it for a while, you know, that's interesting. We have been, you know, we have been, you know, it's always funny, they always have a different name and you're just like, I know what that is. We— that's cute, but we've been doing this for a while. We've established processes. It's a name, it's something, but go on, go on with yourself. Go on with your software. You can call it a name. Well, you know, we know what it is."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2115983,
+      "end_ms": 2139647,
+      "text": "Yeah. Fair, fair. That makes sense. Um, yeah. Earlier you talked about, you know, your nonprofits and it sounds like this is something that you've been doing for a long time and it's something that, you know, you are passionate about. And if I, if. I recall it's called STEAM Divas. Um, what is STEAM Divas and what do you do with that?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2141090,
+      "end_ms": 2369881,
+      "text": "Okay, STEAM Divas is a nonprofit that is focused on increasing women in STEM. And the way we do it is we try to go into the things that girls like and then we introduce STEM into it. We— that is where the mixture of the arts coming with the arts mixed with STEM. That's why we're called STEAM and not STEM Divas. We're STEAM Divas. And we give the girls hands-on experience so that they can increase their confidence and recognize that they too can do STEM. And that came about with the fact that I'm always in environments where I am the only, and I got tired of seeing that. I was like, maybe I can do something about that by putting things in front of young girls so that they too, they can realize that they can do this and motivate them to be able to discover how they too can do STEM their way. So whether you're taking arts into STEM or STEM into arts, we don't care which, as long as you know that you too can do STEM. And so we are very, very mobile, very hands-on. We want everyone, every girl, no matter where she is, to be able to have access to understanding STEM, to have access to doing things with STEM. We build our curriculum because most times, most, this is where we are different. Most things like that, they looking for girls who think that, oh, I like STEM, I'm gonna make opportunities for it. We are looking for girls who think like STEM is not for me. This is not our thing. And I'll be like, all right, let's see how we can trick you into liking STEM by finding something you like and then put STEM into it. And then you find an area of interest. Like we had, so we do workshops and the workshops, we try to do 3 workshops. We're really small, so we try not to grow too big. And we, also do some virtual things too, some virtual workshops. And so we, an example of a curriculum that we just did recently was called SciTech Trees. We had the girls do hairstyles, but we had them use servo motors and Arduino to get the hair to rotate. So they were styling the hair their own way and then they were using Arduino in it. So we are kind of merging the arts with the STEM. We try to look for things like that. So sometimes we have to build our curriculum from scratch and get them excited about what they're doing and get them to be excited about STEM stuff. That way, even if they're not trying to be engineers, they can still come up with STEM ideas within the space. Because I strongly believe that as a, our best self is when we include arts within our STEM experiences, humanizing the STEM. And I don't understand how we can be existing but will not use all of our brains, right? It's like, how can I be like, I'm just all STEM but no arts? Like, it doesn't make any sense. Like, it's like you're killing out one part of yourself. Like, well, I'm all arts, no STEM. I'm like, why? I mean, the best is when you combine both, right? So I feel like STEAM is where every one of us should be going anyway. So I am just creating a bunch of STEAM divers. So once they get that experience building hands-on stuff, it builds their confidence, which is the number one thing you need anyway in STEM. So yeah, that's what STEAM Divers is about."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2370219,
+      "end_ms": 2390240,
+      "text": "The world is lucky to have someone like you. Thank you. How does— is this only, you know, open to girls in the US and I'm wondering like how does other girls who are like in Ghana for instance, or in Nigeria, how could they benefit from your organization?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2391715,
+      "end_ms": 2504622,
+      "text": "Oh, we are open worldwide. Uh, but our hands-on events typically at this time because of my schedule, we tend to do it within one location. Okay. Um, you can go to our website, it's teamdivas.org. And register as a student, as a volunteer or mentor, or as a parent, because we know that some parents don't have girls, but they have boys, and you can get access to some of the things that we are providing there. We are saying women, but we also open to non-binary folks. You know, what we wanna do is create a safe space for women Sometimes women in environments where there's males, unless you're kind of like me, some people will just shift to the corner because of, you know, a lot of subliminal things, you know, their confidence gets shaken. And so we wanted to create a space where they can at least build their confidence. So we are like women, non-binary folks, but if you're a parent that you have a male child that you can join, sign up as a parent and you will give tools and resources and you can still use it to encourage, uh, your child. Um, eventually what we're hoping to do is to grow such a way where, uh, when we are having our hands-on events, people can use our curriculum. We have volunteers that can use our curriculum in different locations around the world and they can have the same experience. They can all connect via some internet connection and we can all work together in that environment. That's what we're looking for in the future for West Indies. But we are actually worldwide. We have kids that signed up from all over the place because our virtual events, anyone can attend those ones."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2505697,
+      "end_ms": 2537107,
+      "text": "That's amazing. That's amazing. I'm going to leave the Um, website link in the description. And guys, I'm also going to, um, share Chioma's, um, information in the description in case you want to connect with her on LinkedIn and how you can also benefit from, um, Steam Deves. And yeah, Chioma, thanks a lot for joining us today and sharing with us your amazing, um, experiences and also like your journey."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2537920,
+      "end_ms": 2544357,
+      "text": "Thank you, thank you. It was great being here. So nice to meet you, Zach. I really enjoyed, uh, talking with you all."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2545199,
+      "end_ms": 2546464,
+      "text": "All right, bye-bye."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2547308,
+      "end_ms": 2547438,
+      "text": "Bye."
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}
