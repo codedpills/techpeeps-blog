@@ -23,7 +23,7 @@ from lib import config, state  # noqa: E402
 def enumerate_playlist(url: str) -> list[tuple[str, str]]:
     """Return [(video_id, title), ...] using yt-dlp flat enumeration."""
     cmd = [
-        "yt-dlp",
+        *config.ytdlp_cmd(),
         "--flat-playlist",
         "--print",
         "%(id)s\t%(title)s",

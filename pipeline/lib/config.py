@@ -8,6 +8,7 @@ message when a key is missing.
 from __future__ import annotations
 
 import os
+import shutil
 import sys
 from pathlib import Path
 
@@ -46,3 +47,19 @@ def get(key: str, default: str = "") -> str:
 
 def anthropic_model() -> str:
     return get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
+
+
+def ytdlp_cmd() -> list[str]:
+    """Return the yt-dlp invocation. Prefers the `yt-dlp` binary on PATH; falls
+    back to `python -m yt_dlp` (pip often installs the script to a user bin that
+    is not on PATH)."""
+    if shutil.which("yt-dlp"):
+        return ["yt-dlp"]
+    try:
+        import yt_dlp  # noqa: F401
+
+        return [sys.executable, "-m", "yt_dlp"]
+    except ImportError:
+        # Neither available — return the bare name so the caller's clear
+        # "not installed" error fires.
+        return ["yt-dlp"]

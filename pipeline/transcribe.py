@@ -27,7 +27,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib import assemblyai, state  # noqa: E402
+from lib import assemblyai, config, state  # noqa: E402
 from lib.config import REPO_ROOT  # noqa: E402
 
 WORK_DIR = REPO_ROOT / "work"
@@ -50,7 +50,7 @@ def download_audio(video_id: str) -> Path:
     WORK_DIR.mkdir(exist_ok=True)
     out_tmpl = str(WORK_DIR / f"{video_id}.%(ext)s")
     cmd = [
-        "yt-dlp",
+        *config.ytdlp_cmd(),
         "-x",
         "--audio-format",
         "mp3",

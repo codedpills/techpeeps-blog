@@ -26,6 +26,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib import config  # noqa: E402
 from lib.config import REPO_ROOT  # noqa: E402
 
 WORK_DIR = REPO_ROOT / "work"
@@ -55,7 +56,7 @@ def video_duration_seconds(video_id: str) -> float | None:
     """Best-effort source duration via yt-dlp; None if unavailable."""
     try:
         out = subprocess.run(
-            ["yt-dlp", "--print", "%(duration)s", "--skip-download",
+            [*config.ytdlp_cmd(), "--print", "%(duration)s", "--skip-download",
              f"https://www.youtube.com/watch?v={video_id}"],
             check=True, capture_output=True, text=True,
         ).stdout.strip()
@@ -73,7 +74,7 @@ def download_segment(video_id: str, start_s: float, end_s: float) -> Path:
     out_tmpl = str(WORK_DIR / f"{video_id}_clip.%(ext)s")
     section = f"*{start_s:.3f}-{end_s:.3f}"
     cmd = [
-        "yt-dlp",
+        *config.ytdlp_cmd(),
         "-f", "bestvideo[height<=1080]+bestaudio/best",
         "--download-sections", section,
         "--force-keyframes-at-cuts",
