@@ -38,13 +38,20 @@ GitHub PR  ── human review ──▶ merge = publish ──▶ Astro build �
 ## Setup
 
 Prerequisites: **Python 3.10+**, **Node 18+**, **ffmpeg**, and the **GitHub CLI
-(`gh`)** authenticated (`gh auth login`) or a `GITHUB_TOKEN`. `yt-dlp` installs
-via pip.
+(`gh`)** authenticated (`gh auth login`) or a `GITHUB_TOKEN`. On macOS install the
+system tools with Homebrew: `brew install ffmpeg gh`. `yt-dlp` installs via pip
+into the project virtualenv.
 
 ```bash
 cp .env.example .env        # then fill in real values
-make install                # pip + npm install
+make install                # creates .venv, installs Python deps there + npm
 ```
+
+`make install` creates a project-local `.venv` and installs into it, so it works
+on Homebrew Python (which blocks system-wide `pip install` via PEP 668). Every
+`make` target runs Python through `.venv` automatically — you do **not** need to
+activate it. If you run a script directly instead of via `make`, use the venv
+interpreter: `.venv/bin/python pipeline/fetch_playlist.py`.
 
 Required env vars (see `.env.example`): `ASSEMBLYAI_API_KEY`,
 `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` (defaults to `claude-sonnet-4-6`),

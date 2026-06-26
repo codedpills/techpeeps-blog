@@ -1,13 +1,23 @@
 .DEFAULT_GOAL := help
-PY := python3
 
-.PHONY: help fetch transcribe generate next style-guide clip publish site-dev site-build install
+# All Python runs through a project-local virtualenv so macOS/Homebrew's
+# PEP 668 "externally-managed-environment" rule never blocks installs.
+VENV := .venv
+PY := $(VENV)/bin/python
+
+.PHONY: help fetch transcribe generate next style-guide clip publish site-dev site-build install venv
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-14s\033[0m %s\n", $$1, $$2}'
 
-install: ## Install Python + Node deps
+$(PY):
+	python3 -m venv $(VENV)
+
+venv: $(PY) ## Create the .venv (done automatically by install)
+
+install: $(PY) ## Create .venv and install Python + Node deps
+	$(PY) -m pip install --upgrade pip
 	$(PY) -m pip install -r requirements.txt
 	npm install
 
