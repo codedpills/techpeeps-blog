@@ -3,13 +3,13 @@ title: 'Building Many of Herself: Chioma Asor on Engineering Management, Space, 
   and STEAM Divas'
 description: Chioma Asor went from fixing her mom's radio in Nigeria to managing engineers
   at EA. Her secret? Time is the one thing you can't make back.
-pubDate: 2025-01-30
+pubDate: 2026-06-26
 guest: Chioma Asor
 guestBio: Engineering Manager at Cliffhanger Games (EA), founder and president of
   STEAM Divas nonprofit, and mom of two teenagers. Chioma has led engineering teams
   across aerospace, manufacturing, and gaming.
-videoId: PLACEHOLDER_VIDEO_ID
-videoUrl: https://www.youtube.com/watch?v=PLACEHOLDER_VIDEO_ID
+videoId: kfmN0FKgsto
+videoUrl: https://www.youtube.com/watch?v=kfmN0FKgsto
 tags:
 - engineering-management
 - women-in-stem
@@ -35,7 +35,7 @@ Chioma is the kind of profile that doesn't show up on tech podcasts very often �
 
 ---
 
-## From Lagos to Lockheed: How Chioma Got Here
+## From Nigeria to Lockheed: How Chioma Got Here
 
 The origin story begins, as the best ones often do, with a child who wouldn't leave the repairman alone.
 
@@ -73,7 +73,7 @@ Perhaps the most counterintuitive thing Chioma says — and the thing that linge
 
 Most people treat a full calendar as evidence of importance. Chioma treats it as a red flag. "Being busy is an indicator that something is wrong and I have to take the time off and manage it efficiently." When she notices her schedule filling up beyond what feels right, she doesn't push through — she pauses and asks *why*. Is she trying to prove something? Does she not trust her team? Is there something psychological driving the need to be visible in every meeting?
 
-She applies the same diagnostic lens to her engineers. "If I feel like you're getting overwhelmed, you've become too busy — I need to start digging into why you're too busy. Why do you feel the need to be in every meeting? Why don't you trust your team?" The question underneath the calendar, she suggests, is almost always about confidence or control.
+She applies the same diagnostic lens to her engineers. "If I feel like you're getting overwhelmed, you've become too busy — I need to start digging into why you too busy. Why do you feel the need to be in every meeting? Why don't you trust your team?" The question underneath the calendar, she suggests, is almost always about confidence or control.
 
 This is where her nonprofit work and her day job quietly reinforce each other. Running STEAM Divas means motivating volunteers who aren't getting paid — which means finding ways to make the work meaningful beyond a salary. The same muscle she uses to motivate engineers at EA, she uses to keep a nonprofit running on goodwill and purpose.
 
@@ -83,7 +83,7 @@ This is where her nonprofit work and her day job quietly reinforce each other. R
 
 Readers who come from software backgrounds may find Chioma's perspective on electrical engineering a useful corrective. She is, by her own admission, a little biased — but the bias is well-earned.
 
-"Electrical engineering is the base," she says flatly. "I don't care how much software you write, you need somewhere to put it." Every hospital device, every chip shortage headline, every AI model that needs a GPU to run — all of it traces back to hardware. She describes the relationship between software and hardware with an analogy that stays with you: "Software is like the spirit and hardware is like the physical body. You need the body to exist on Earth, but the spirit is great because then it helps you exist on Earth."
+"Electrical engineering is the base," she says flatly. "I don't care how much software you write, you need somewhere to put it." Every hospital device, every chip shortage headline, every AI model that needs a GPU to run — all of it traces back to hardware. She describes the relationship between software and hardware with an analogy that stays with you: "Software is like the spirit and hardware is like the physical body. Like you need the body to exist on Earth, but the spirit is great because then it helps you exist on Earth."
 
 The breadth of what electrical engineering covers is part of why it doesn't always get the attention it deserves in conversations about tech careers. RF and wireless, telecommunications, semiconductor design, medical devices, manufacturing automation, aerospace avionics — Chioma has personally touched most of these areas, and she's still in her career. The challenge, she acknowledges, is that the field is genuinely hard to enter without formal training. There's significant mathematics, safety considerations, and a depth of foundational knowledge that doesn't lend itself to the kind of self-taught, portfolio-driven entry that has opened software engineering to so many people. "Maybe what we should be thinking about is how can we remove some of the roadblocks for people to get into there."
 
@@ -93,15 +93,15 @@ The breadth of what electrical engineering covers is part of why it doesn't alwa
 
 That question — how do you remove the roadblocks? — is also the animating question behind STEAM Divas, the nonprofit Chioma founded.
 
-The origin is personal. She has spent her career being the only woman in the room, and she got tired of it. "I got tired of seeing that. I was like, maybe I can do something about that by putting things in front of young girls so that they too can realize that they can do this."
+The origin is personal. She has spent her career being the only woman in the room, and she got tired of it. "I got tired of seeing that. I was like, maybe I can do something about that by putting things in front of young girls so that they too, they can realize that they can do this."
 
-What makes STEAM Divas different from similar organisations, she explains, is the target audience. Most STEM outreach programs attract girls who are already curious about science and engineering. STEAM Divas deliberately goes after the girls who have already decided it isn't for them. "We are looking for girls who think STEM is not for me. And I'll be like, all right, let's see how we can trick you into liking STEM by finding something you like and then put STEM into it."
+What makes STEAM Divas different from similar organisations, she explains, is the target audience. Most STEM outreach programs attract girls who are already curious about science and engineering. STEAM Divas deliberately goes after the girls who have already decided it isn't for them. "We are looking for girls who think like STEM is not for me. This is not our thing. And I'll be like, all right, let's see how we can trick you into liking STEM by finding something you like and then put STEM into it."
 
 The "A" in STEAM is the key. By weaving arts into the curriculum, the organisation finds entry points that feel familiar and exciting before the engineering concepts arrive. A recent workshop called SciTech Trees had participants styling hair — and then using servo motors and Arduino to make the hair rotate. The STEM is real; the gateway is something the girls already care about.
 
 The confidence-building is intentional and central. "Once they get that experience building hands-on stuff, it builds their confidence, which is the number one thing you need anyway in STEM." The organisation is deliberately kept small enough to maintain quality, running roughly three in-person workshops alongside virtual events that anyone worldwide can attend. The long-term vision is to grow a volunteer network that can run STEAM Divas curriculum in multiple locations simultaneously, all connected online.
 
-STEAM Divas is open to girls and women worldwide, as well as non-binary individuals, and parents of any child can register to access resources. The website is [steamdivas.org](https://steamdivas.org).
+STEAM Divas is open to girls and women worldwide, as well as non-binary individuals, and parents of any child can register to access resources. The website is **[TODO: confirm the STEAM Divas URL — it was not stated in the interview]**.
 
 ---
 
@@ -115,4 +115,4 @@ The world, as it turns out, is lucky to have someone like her thinking about all
 
 ---
 
-*You can connect with Chioma Asor on LinkedIn, and learn more about STEAM Divas at [steamdivas.org](https://steamdivas.org). The full conversation is available on the Tech Peeps Diaspora YouTube channel — well worth watching in its entirety.*
+*You can connect with Chioma Asor on LinkedIn, and learn more about STEAM Divas **[TODO: confirm URL]**. The full conversation is available on the Tech Peeps Diaspora YouTube channel — well worth watching in its entirety.*
