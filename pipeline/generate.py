@@ -28,6 +28,7 @@ import json
 import re
 import subprocess
 import sys
+from datetime import date as _date
 from pathlib import Path
 
 import yaml
@@ -358,6 +359,13 @@ def main() -> int:
         if isinstance(fm.get("heroClip"), dict):
             alt = fm["heroClip"].get("alt", "")
         fm["heroClip"] = {**hero_paths, "alt": alt or f"Clip from the {guest} interview"}
+
+        # Inject the REAL video id/url — never trust the model for these (it tends
+        # to emit a placeholder). The pipeline knows the canonical value.
+        fm["videoId"] = video_id
+        fm["videoUrl"] = f"https://www.youtube.com/watch?v={video_id}"
+        # Default pubDate to today rather than a model-hallucinated date.
+        fm["pubDate"] = _date.today().isoformat()
 
         # Write the draft on the branch.
         BLOG_DIR.mkdir(parents=True, exist_ok=True)
