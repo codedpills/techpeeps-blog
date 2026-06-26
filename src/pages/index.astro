@@ -43,7 +43,8 @@ const jsonLd = {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#b3431f" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f1e8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#15130e" />
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -85,9 +86,11 @@ const jsonLd = {
                     alt={post.data.heroClip.alt}
                     loading="lazy"
                   />
-                  <p class="card-guest">{post.data.guest}</p>
-                  <h2>{post.data.title}</h2>
-                  <p class="card-desc">{post.data.description}</p>
+                  <div class="card-body">
+                    <p class="card-guest">{post.data.guest}</p>
+                    <h2>{post.data.title}</h2>
+                    <p class="card-desc">{post.data.description}</p>
+                  </div>
                 </a>
               </li>
             ))}

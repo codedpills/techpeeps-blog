@@ -120,12 +120,36 @@ this checklist:
 **Merging the PR = publishing. Reverting = unpublishing.** Full history is kept.
 `generate.py` never writes to `main` and never marks a post `published`.
 
+### Automated checks (the machine-verifiable half of the checklist)
+
+`pipeline/verify_post.py` turns several checklist items into a hard gate:
+
+- every multi-word quoted span must appear **verbatim** in the transcript
+  (fails on a fabricated quote; warns if filler was removed inside quotes);
+- frontmatter contract (title, description ≤155, 4–6 tags, heroClip, guest/bio);
+- `videoUrl` matches `videoId` and contains no `PLACEHOLDER`;
+- hero clip files exist, the MP4 is **silent** (checked with `ffprobe`) and small;
+- `mapping_confidence: low` is surfaced as a warning.
+
+It runs in three places: `make verify`, on every PR via CI, and inside
+`generate.py` **before** a PR is opened (a hard failure commits the draft to the
+branch for inspection but refuses to open the PR). Human-judgement items —
+whether HOST/GUEST is truly correct, whether a paraphrase invents a *fact*,
+whether the clip moment is right — remain manual.
+
 ## The site
 
 Astro static site with a `blog` content collection validated by
 `src/content/config.ts` (zod). A malformed draft **fails the build**. Hero clips
 render as `<video autoplay loop muted playsinline>` with a poster fallback, so
 they read like GIFs but stay small and sharp.
+
+**Design:** a "paper screen" editorial look — a warm reading-paper light theme
+and a dim warm dark theme, switched automatically by the reader's system
+preference (`prefers-color-scheme`, no JavaScript). Type is a book-serif stack
+(Iowan Old Style / Palatino / Georgia) for reading with a system sans for small
+UI labels; profile openings get a drop cap. All colors are CSS custom properties
+in `public/styles/global.css`, so retheming is a one-file change.
 
 ```bash
 make site-dev      # local dev server
