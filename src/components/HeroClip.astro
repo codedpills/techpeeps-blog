@@ -1,0 +1,47 @@
+---
+// HeroClip.astro (PRD §11)
+// Autoplay/loop/muted silent <video> that reads like a GIF, with a poster
+// fallback when a browser blocks autoplay. WebM is preferred, MP4 is fallback.
+interface Props {
+  mp4: string;
+  webm: string;
+  poster: string;
+  alt: string;
+}
+const { mp4, webm, poster, alt } = Astro.props;
+---
+
+<figure class="hero-clip">
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    preload="metadata"
+    poster={poster}
+    aria-label={alt}
+  >
+    <source src={webm} type="video/webm" />
+    <source src={mp4} type="video/mp4" />
+    <!-- Poster shows if <video> or autoplay is unsupported. -->
+    <img src={poster} alt={alt} />
+  </video>
+</figure>
+
+<style>
+  .hero-clip {
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #0e0e10;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
+  }
+  .hero-clip video,
+  .hero-clip img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>

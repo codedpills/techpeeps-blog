@@ -1,0 +1,16 @@
+[project]
+name = "techpeeps-pipeline"
+version = "0.1.0"
+description = "Video-to-blog pipeline for the Tech Peeps Diaspora channel."
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+    "yt-dlp>=2024.1.0",
+    "assemblyai>=0.30",
+    "anthropic>=0.40",
+    "PyYAML>=6.0",
+]
+
+[tool.setuptools]
+py-modules = []

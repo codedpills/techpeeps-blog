@@ -1,0 +1,59 @@
+---
+// index.astro (PRD §11) — reverse-chronological list of published posts.
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const site = Astro.site;
+const ogImage = site ? new URL("/styles/og-default.jpg", site).toString() : undefined;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tech Peeps Diaspora — Profiles</title>
+    <meta
+      name="description"
+      content="Feature profiles of tech professionals across the diaspora, drawn from the Tech Peeps Diaspora interview series."
+    />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <main class="home">
+      <header class="home-header">
+        <h1>Tech Peeps Diaspora</h1>
+        <p>Profiles of tech professionals across the diaspora.</p>
+      </header>
+
+      {
+        posts.length === 0 ? (
+          <p style="text-align:center;color:var(--muted)">
+            No published profiles yet. Merge a draft PR to publish one.
+          </p>
+        ) : (
+          <ul class="post-grid">
+            {posts.map((post) => (
+              <li class="card">
+                <a href={`/blog/${post.slug}/`}>
+                  <img
+                    class="thumb"
+                    src={post.data.heroClip.poster}
+                    alt={post.data.heroClip.alt}
+                    loading="lazy"
+                  />
+                  <p class="card-guest">{post.data.guest}</p>
+                  <h2>{post.data.title}</h2>
+                  <p class="card-desc">{post.data.description}</p>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </main>
+  </body>
+</html>

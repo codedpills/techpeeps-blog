@@ -1,0 +1,42 @@
+---
+// InlineClip.astro (PRD §11)
+// Same mechanics as HeroClip, used sparingly in the body when a moment is
+// genuinely visual. Default is NOT to use it.
+interface Props {
+  mp4: string;
+  webm: string;
+  poster: string;
+  alt: string;
+  caption?: string;
+}
+const { mp4, webm, poster, alt, caption } = Astro.props;
+---
+
+<figure class="inline-clip">
+  <video autoplay loop muted playsinline preload="metadata" poster={poster} aria-label={alt}>
+    <source src={webm} type="video/webm" />
+    <source src={mp4} type="video/mp4" />
+    <img src={poster} alt={alt} />
+  </video>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<style>
+  .inline-clip {
+    margin: 2rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .inline-clip video,
+  .inline-clip img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .inline-clip figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--muted, #666);
+    text-align: center;
+  }
+</style>

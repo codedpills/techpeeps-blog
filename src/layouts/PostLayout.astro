@@ -1,0 +1,81 @@
+---
+// PostLayout.astro (PRD §11)
+// Hero clip at top, then title, guest line + video link, then article body.
+// Includes meta description + Open Graph tags (poster as og:image).
+import HeroClip from "../components/HeroClip.astro";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+const { post } = Astro.props;
+const { title, description, pubDate, guest, guestBio, videoUrl, heroClip, tags } =
+  post.data;
+
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImage = new URL(heroClip.poster, Astro.site).toString();
+const dateStr = pubDate.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} — Tech Peeps Diaspora</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <main class="post">
+      <HeroClip
+        mp4={heroClip.mp4}
+        webm={heroClip.webm}
+        poster={heroClip.poster}
+        alt={heroClip.alt}
+      />
+
+      <header class="post-header">
+        <p class="kicker"><a href="/">Tech Peeps Diaspora</a></p>
+        <h1>{title}</h1>
+        <p class="byline">
+          A profile of <strong>{guest}</strong> · {guestBio}
+        </p>
+        <p class="meta">
+          {dateStr} ·
+          <a href={videoUrl} rel="noopener" target="_blank">Watch the interview ↗</a>
+        </p>
+      </header>
+
+      <article class="prose">
+        <slot />
+      </article>
+
+      <footer class="post-footer">
+        <ul class="tags">
+          {tags.map((t) => <li>#{t}</li>)}
+        </ul>
+        <p class="back-to-video">
+          This profile is drawn from a conversation with {guest} on Tech Peeps
+          Diaspora. <a href={videoUrl} rel="noopener" target="_blank">Watch the full
+          interview ↗</a>
+        </p>
+        <p><a href="/">← All profiles</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
