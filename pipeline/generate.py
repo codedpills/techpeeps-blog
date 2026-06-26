@@ -95,17 +95,39 @@ def parse_frontmatter(article: str) -> dict | None:
 
 
 def frontmatter_valid(fm: dict | None) -> bool:
+    """Mirror the zod schema (src/content/config.ts) so bad output triggers the
+    retry rather than opening a PR that later fails `astro build`."""
     if not isinstance(fm, dict):
         return False
     if not all(k in fm for k in REQUIRED_FM_KEYS):
         return False
+
+    # Non-empty required strings.
+    for k in ("title", "guest", "guestBio", "videoId"):
+        if not isinstance(fm.get(k), str) or not fm[k].strip():
+            return False
+
+    # description: non-empty, <= 155 chars.
+    desc = fm.get("description")
+    if not isinstance(desc, str) or not (1 <= len(desc) <= 155):
+        return False
+
+    # videoUrl: must look like a URL (zod uses .url()).
+    url = fm.get("videoUrl")
+    if not isinstance(url, str) or not url.startswith(("http://", "https://")):
+        return False
+
+    # heroClip: object with all four keys present.
     hero = fm.get("heroClip")
     if not isinstance(hero, dict) or not all(
         k in hero for k in ("mp4", "webm", "poster", "alt")
     ):
         return False
+
+    # tags: 4-6 entries.
     if not isinstance(fm.get("tags"), list) or not (4 <= len(fm["tags"]) <= 6):
         return False
+
     return True
 
 
@@ -180,23 +202,29 @@ def current_branch() -> str:
     return _git("rev-parse", "--abbrev-ref", "HEAD").stdout.strip()
 
 
-def ensure_branch(branch: str) -> None:
-    """Create or switch to `branch` off the current main. Idempotent."""
+def ensure_branch(branch: str, base: str) -> None:
+    """Create or switch to `branch`, forked explicitly off `base`. Idempotent.
+
+    Forking off `base` (not the current HEAD) guarantees the PR diff contains
+    only this post, even if a prior run left HEAD on a stale post branch.
+    """
     existing = _git("branch", "--list", branch).stdout.strip()
     if existing:
         _git("checkout", branch)
     else:
-        _git("checkout", "-b", branch)
+        # `checkout -b <branch> <base>` creates the branch from base directly.
+        _git("checkout", "-b", branch, base)
 
 
-def open_pr(branch: str, title: str, body: str) -> str | None:
+def open_pr(branch: str, title: str, body: str, base: str) -> str | None:
     """Open a PR via gh CLI. Returns the PR URL or None if gh unavailable."""
+    cmd = ["gh", "pr", "create", "--title", title, "--body", body,
+           "--base", base, "--head", branch, "--draft"]
+    repo = config.get("GITHUB_REPO")
+    if repo:
+        cmd += ["--repo", repo]
     try:
-        proc = subprocess.run(
-            ["gh", "pr", "create", "--title", title, "--body", body,
-             "--base", "main", "--head", branch, "--draft"],
-            cwd=str(REPO_ROOT), capture_output=True, text=True,
-        )
+        proc = subprocess.run(cmd, cwd=str(REPO_ROOT), capture_output=True, text=True)
     except FileNotFoundError:
         print(
             "WARNING: `gh` CLI not found — branch pushed but no PR opened. "
@@ -303,12 +331,13 @@ def main() -> int:
     slug = slugify(str(fm.get("title", video.get("title", video_id))))
     guest = fm.get("guest")
 
-    # Guardrail: never operate on main directly.
+    # Guardrail: never operate on the base branch directly.
+    base_branch = config.get("BASE_BRANCH", "main")
     starting_branch = current_branch()
     branch = f"post/{slug}"
 
     try:
-        ensure_branch(branch)
+        ensure_branch(branch, base_branch)
 
         # Cut the hero clip from candidate #1 (best effort; warn but continue).
         hero_paths = {
@@ -337,8 +366,16 @@ def main() -> int:
         out_md.write_text(f"---\n{front}\n---\n\n{body}\n", encoding="utf-8")
         print(f"Wrote draft: {out_md}")
 
-        # Commit everything on the branch.
-        _git("add", "-A")
+        # Stage ONLY this post's files (never `add -A`, which would sweep up
+        # uncommitted transcripts/state into the draft commit).
+        _git("add", str(out_md))
+        clip_files = [
+            REPO_ROOT / "public" / "clips" / f"{slug}.{ext}"
+            for ext in ("mp4", "webm", "jpg")
+        ]
+        existing_clips = [str(p) for p in clip_files if p.exists()]
+        if existing_clips:
+            _git("add", *existing_clips)
         _git("commit", "-m", f"Draft: {fm.get('title', slug)}", check=False)
 
         pr_url = None
@@ -350,10 +387,20 @@ def main() -> int:
             else:
                 body_text = pr_body(fm, transcript.get("mapping_confidence", "high"),
                                     candidates)
-                pr_url = open_pr(branch, f"Draft: {fm.get('title', slug)}", body_text)
+                pr_url = open_pr(
+                    branch, f"Draft: {fm.get('title', slug)}", body_text, base_branch
+                )
     finally:
         # Return to the original branch so the working tree is left clean.
         _git("checkout", starting_branch, check=False)
+        # Guardrail check: confirm we are NOT left on the base branch with the
+        # draft sitting in the working tree.
+        if current_branch() == branch:
+            print(
+                f"WARNING: still on {branch} (checkout back to {starting_branch} "
+                "failed). Resolve the working tree manually before re-running.",
+                file=sys.stderr,
+            )
 
     # Update state — status 'drafted' only; NEVER 'published'.
     state.update_video(

@@ -67,6 +67,9 @@ def video_duration_seconds(video_id: str) -> float | None:
 def download_segment(video_id: str, start_s: float, end_s: float) -> Path:
     """Download just the needed segment with yt-dlp --download-sections."""
     WORK_DIR.mkdir(exist_ok=True)
+    # Clear any stale segment from a prior run so the glob below is unambiguous.
+    for stale in WORK_DIR.glob(f"{video_id}_clip.*"):
+        stale.unlink()
     out_tmpl = str(WORK_DIR / f"{video_id}_clip.%(ext)s")
     section = f"*{start_s:.3f}-{end_s:.3f}"
     cmd = [
@@ -86,11 +89,14 @@ def download_segment(video_id: str, start_s: float, end_s: float) -> Path:
             f"Segment download failed.\n  stderr: {exc.stderr.strip()}"
         ) from exc
 
-    matches = sorted(WORK_DIR.glob(f"{video_id}_clip.*"))
-    matches = [m for m in matches if m.suffix.lower() in (".mp4", ".mkv", ".webm")]
+    matches = [
+        m for m in WORK_DIR.glob(f"{video_id}_clip.*")
+        if m.suffix.lower() in (".mp4", ".mkv", ".webm")
+    ]
     if not matches:
         raise RuntimeError("Downloaded segment file not found.")
-    return matches[0]
+    # Freshest file wins (handles muxed container variations).
+    return max(matches, key=lambda p: p.stat().st_mtime)
 
 
 def _run_ffmpeg(args: list[str]) -> None:

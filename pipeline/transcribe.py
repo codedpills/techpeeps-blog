@@ -194,6 +194,10 @@ def main() -> int:
     try:
         audio = download_audio(video_id)
         tr = assemblyai.transcribe_file(audio, speakers_expected=2)
+    except SystemExit:
+        # Missing required env var (config.require already printed the reason).
+        print("Status left at 'pending'. No transcript written.", file=sys.stderr)
+        return 1
     except RuntimeError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         print("Status left at 'pending'. No transcript written.", file=sys.stderr)
@@ -204,7 +208,12 @@ def main() -> int:
         json.dump(data, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
 
-    state.set_status(st, video_id, "transcribed")
+    if args.force:
+        # A forced re-transcribe changes content; reset downstream status so the
+        # post is re-drafted and re-reviewed rather than silently diverging.
+        state.update_video(st, video_id, status="transcribed")
+    else:
+        state.set_status(st, video_id, "transcribed")
     state.save(st)
 
     print(f"Wrote {out_path}")

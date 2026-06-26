@@ -5,7 +5,7 @@ const blog = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string().min(1),
-    description: z.string().max(155), // meta description
+    description: z.string().min(1).max(155), // meta description
     pubDate: z.coerce.date(),
     guest: z.string().min(1), // guest full name
     guestBio: z.string().min(1), // one line
