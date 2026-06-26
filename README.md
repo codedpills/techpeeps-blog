@@ -132,13 +132,45 @@ make site-dev      # local dev server
 make site-build    # production build (fails on invalid frontmatter)
 ```
 
-Hosting: push `main` to Cloudflare Pages or Netlify (free tier) for git-push
-auto-deploy.
+### SEO & GEO
+
+Built in and generated automatically at build time:
+
+- **Sitemap** (`/sitemap-index.xml`) via `@astrojs/sitemap`, **RSS** (`/rss.xml`),
+  and a dynamic **`/robots.txt`** that points at the sitemap.
+- **Open Graph + Twitter** tags and a canonical URL on every page; the hero
+  poster is the `og:image`.
+- **JSON-LD structured data**: each profile emits `Article` + `Person` (the
+  guest) + `VideoObject` (the source interview); the home page emits `Blog`.
+  This is what drives Google rich results and lets AI/answer engines attribute
+  and cite the content.
+- **`/llms.txt`** — a curated, machine-readable index of published profiles for
+  generative-search crawlers.
+- Custom `404`, favicon, and `theme-color`.
+
+## Deploying (Cloudflare Pages)
+
+1. Push `main` to GitHub (already your remote).
+2. In Cloudflare Pages, create a project from the repo with:
+   - **Build command:** `npm run build`
+   - **Output directory:** `dist`
+3. **Set the `SITE_URL` environment variable** to your real domain (e.g.
+   `https://techpeeps.dev`). Canonical URLs, OG tags, the sitemap, RSS, and
+   `llms.txt` all derive from it — without it they fall back to a placeholder.
+4. Security headers ship in `public/_headers` (CSP + HSTS + `X-Content-Type-Options`
+   + `Referrer-Policy` + `Permissions-Policy`) and are applied by Cloudflare Pages
+   automatically. If you later embed a YouTube `<iframe>`, widen the CSP `frame-src`
+   as noted in that file.
+5. Merging a post PR to `main` triggers an auto-deploy. Reverting unpublishes.
+
+CI: `.github/workflows/ci.yml` runs `npm ci && npm run build` (plus a placeholder
+guard) on every PR, so a malformed post can't merge.
 
 ## Notes
 
-- An example post (`src/content/blog/example-profile.md`) and its placeholder
-  clip assets ship with the repo so the site builds out of the box. **Delete
-  them before going live.**
 - All source footage is the channel owner's own content; clips and quotes link
   back to the source video.
+- **Maintenance:** the site is pinned to Astro 4.x. `npm audit` reports advisories
+  in Astro's SSR / dev-server / middleware code paths — this site uses none of
+  them (it's fully static, no adapter/middleware), so production exposure is low,
+  but plan a staged upgrade to the current Astro major when convenient.

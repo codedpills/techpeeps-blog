@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tech Peeps Diaspora">
+  <rect width="64" height="64" rx="14" fill="#16161a"/>
+  <text x="50%" y="52%" dy=".35em" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-size="30"
+        font-weight="700" fill="#b3431f">TP</text>
+</svg>

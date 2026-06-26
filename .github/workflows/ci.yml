@@ -1,0 +1,32 @@
+name: CI
+
+# Build-check every PR and push so a malformed post (bad frontmatter, leftover
+# placeholders) fails CI before it can be merged. Reinforces the PR approval gate.
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Guard against unresolved placeholders in posts
+        run: |
+          if grep -rn "PLACEHOLDER_" src/content/blog/; then
+            echo "::error::Found PLACEHOLDER_ token(s) in a post — fill them before merging."
+            exit 1
+          fi
+
+      - name: Build site (fails on invalid frontmatter)
+        run: npm run build
