@@ -30,6 +30,9 @@ transcribe: ## Transcribe the next pending video (override with ID=<video_id>)
 remap: ## Re-run HOST/GUEST mapping on existing transcripts (no API cost; ID= optional)
 	$(PY) pipeline/transcribe.py --remap $(ID)
 
+verify: ## Verify published posts against transcripts (quotes verbatim, frontmatter, clip)
+	$(PY) pipeline/verify_post.py --all
+
 style-guide: ## Build style-guide.md from the longest 3-4 transcripts
 	$(PY) pipeline/make_style_guide.py --auto
 

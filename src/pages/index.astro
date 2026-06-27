@@ -1,12 +1,39 @@
 ---
 // index.astro (PRD §11) — reverse-chronological list of published posts.
 import { getCollection } from "astro:content";
+import { postFilter, isPreviewBuild } from "../lib/site";
 
-const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+const preview = isPreviewBuild();
+const posts = (await getCollection("blog", postFilter)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
-const site = Astro.site;
-const ogImage = site ? new URL("/styles/og-default.jpg", site).toString() : undefined;
+
+const description =
+  "Feature profiles of tech professionals across the diaspora, drawn from the Tech Peeps Diaspora interview series.";
+const canonical = Astro.site ? new URL("/", Astro.site).toString() : "/";
+// Default OG image = newest post's poster, if any (no broken placeholder file).
+const ogImage =
+  posts.length && Astro.site
+    ? new URL(posts[0].data.heroClip.poster, Astro.site).toString()
+    : undefined;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  name: "Tech Peeps Diaspora",
+  description,
+  url: canonical,
+  inLanguage: "en",
+  blogPost: posts.map((p) => ({
+    "@type": "BlogPosting",
+    headline: p.data.title,
+    datePublished: p.data.pubDate.toISOString(),
+    url: Astro.site
+      ? new URL(`/blog/${p.slug}/`, Astro.site).toString()
+      : `/blog/${p.slug}/`,
+    about: { "@type": "Person", name: p.data.guest },
+  })),
+};
 ---
 
 <!doctype html>
@@ -15,12 +42,29 @@ const ogImage = site ? new URL("/styles/og-default.jpg", site).toString() : unde
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tech Peeps Diaspora — Profiles</title>
-    <meta
-      name="description"
-      content="Feature profiles of tech professionals across the diaspora, drawn from the Tech Peeps Diaspora interview series."
+    <meta name="description" content={description} />
+    {preview && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f1e8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#15130e" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Tech Peeps Diaspora — Profiles"
+      href="/rss.xml"
     />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tech Peeps Diaspora — Profiles" />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Tech Peeps Diaspora" />
     {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="stylesheet" href="/styles/global.css" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
     <main class="home">
@@ -45,9 +89,11 @@ const ogImage = site ? new URL("/styles/og-default.jpg", site).toString() : unde
                     alt={post.data.heroClip.alt}
                     loading="lazy"
                   />
-                  <p class="card-guest">{post.data.guest}</p>
-                  <h2>{post.data.title}</h2>
-                  <p class="card-desc">{post.data.description}</p>
+                  <div class="card-body">
+                    <p class="card-guest">{post.data.guest}</p>
+                    <h2>{post.data.title}</h2>
+                    <p class="card-desc">{post.data.description}</p>
+                  </div>
                 </a>
               </li>
             ))}

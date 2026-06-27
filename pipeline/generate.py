@@ -28,12 +28,14 @@ import json
 import re
 import subprocess
 import sys
+from datetime import date as _date
 from pathlib import Path
 
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import clip as clip_mod  # noqa: E402
+import verify_post  # noqa: E402
 from lib import config, llm, prompts, state  # noqa: E402
 from lib.config import REPO_ROOT  # noqa: E402
 
@@ -335,6 +337,7 @@ def main() -> int:
     base_branch = config.get("BASE_BRANCH", "main")
     starting_branch = current_branch()
     branch = f"post/{slug}"
+    verify_ok = False
 
     try:
         ensure_branch(branch, base_branch)
@@ -359,12 +362,31 @@ def main() -> int:
             alt = fm["heroClip"].get("alt", "")
         fm["heroClip"] = {**hero_paths, "alt": alt or f"Clip from the {guest} interview"}
 
+        # Inject the REAL video id/url — never trust the model for these (it tends
+        # to emit a placeholder). The pipeline knows the canonical value.
+        fm["videoId"] = video_id
+        fm["videoUrl"] = f"https://www.youtube.com/watch?v={video_id}"
+        # Default pubDate to today rather than a model-hallucinated date.
+        fm["pubDate"] = _date.today().isoformat()
+
         # Write the draft on the branch.
         BLOG_DIR.mkdir(parents=True, exist_ok=True)
         out_md = BLOG_DIR / f"{slug}.md"
         front = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True).strip()
         out_md.write_text(f"---\n{front}\n---\n\n{body}\n", encoding="utf-8")
         print(f"Wrote draft: {out_md}")
+
+        # Automated gate (PRD §8): verify quotes are verbatim, frontmatter is
+        # valid, the video link is real, and the clip is present + silent. On a
+        # hard failure we commit for inspection but do NOT push or open a PR.
+        v_errors, v_warnings = verify_post.verify_file(out_md)
+        for w in v_warnings:
+            print(f"  ⚠️  {w}")
+        verify_ok = not v_errors
+        if not verify_ok:
+            print("VERIFICATION FAILED — not opening a PR:", file=sys.stderr)
+            for e in v_errors:
+                print(f"  ✗ {e}", file=sys.stderr)
 
         # Stage ONLY this post's files (never `add -A`, which would sweep up
         # uncommitted transcripts/state into the draft commit).
@@ -379,7 +401,7 @@ def main() -> int:
         _git("commit", "-m", f"Draft: {fm.get('title', slug)}", check=False)
 
         pr_url = None
-        if not args.no_pr:
+        if verify_ok and not args.no_pr:
             push = _git("push", "-u", "origin", branch, check=False)
             if push.returncode != 0:
                 print(f"WARNING: git push failed:\n{push.stderr.strip()}",
@@ -401,6 +423,16 @@ def main() -> int:
                 "failed). Resolve the working tree manually before re-running.",
                 file=sys.stderr,
             )
+
+    if not verify_ok:
+        # Hard failure: record slug/guest but keep status 'transcribed' so the
+        # video is re-drafted, not treated as a finished draft. No PR was opened.
+        state.update_video(st, video_id, guest=guest, slug=slug)
+        state.save(st)
+        print(f"\nDraft committed on branch {branch} for inspection, but it FAILED "
+              "verification — no PR opened. Fix and re-run with --force.",
+              file=sys.stderr)
+        return 1
 
     # Update state — status 'drafted' only; NEVER 'published'.
     state.update_video(
