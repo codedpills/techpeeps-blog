@@ -92,6 +92,20 @@ a:hover {
   font-weight: 700;
 }
 
+/* ---------- Draft preview banner ---------- */
+.draft-banner {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.7rem 1.25rem;
+  line-height: 1.45;
+}
+.draft-banner strong {
+  letter-spacing: 0.02em;
+}
+
 /* ---------- Post page ---------- */
 .post {
   max-width: 50rem;

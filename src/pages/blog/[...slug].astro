@@ -2,10 +2,12 @@
 // blog/[...slug].astro (PRD §11) — one route per post.
 import { getCollection } from "astro:content";
 import PostLayout from "../../layouts/PostLayout.astro";
+import { postFilter } from "../../lib/site";
 
 export async function getStaticPaths() {
-  // Drafts live on branches; never build a public route for one even if merged.
-  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  // Published posts always; drafts only on Cloudflare preview builds, so a guest
+  // can review via the PR preview URL before merge.
+  const posts = await getCollection("blog", postFilter);
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },

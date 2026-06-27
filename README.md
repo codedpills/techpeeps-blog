@@ -190,6 +190,31 @@ Built in and generated automatically at build time:
 CI: `.github/workflows/ci.yml` runs `npm ci && npm run build` (plus a placeholder
 guard) on every PR, so a malformed post can't merge.
 
+### Previewing a draft on the PR (for the guest)
+
+Each PR gets a Cloudflare Pages **preview deployment**. Production builds (the
+`main` branch) never include drafts, but a **preview build renders the draft
+post** so you can share it with the guest before publishing:
+
+- Cloudflare sets `CF_PAGES_BRANCH` per build; `src/lib/site.ts` treats any
+  non-production branch as a preview and includes `draft: true` posts only then.
+- The draft renders with a "Draft preview" banner and `noindex`, and the whole
+  preview deployment returns `robots.txt → Disallow: /`, so nothing leaks to
+  search or to production.
+- The guest visits `<preview-url>/blog/<slug>/`, reads it, and leaves edits on
+  the PR. Merging to `main` publishes the real (banner-free, indexable) page.
+
+Enable this in Cloudflare: Pages project → Settings → Builds & deployments →
+ensure **preview deployments** are on (default) and the GitHub integration posts
+the preview URL on each PR. If your production branch isn't `main`, set a
+`PRODUCTION_BRANCH` environment variable to match.
+
+> **Heads-up for the two PRs already open:** they were branched before this
+> change, so their branches don't contain the preview logic yet. Merge the
+> latest `main` into each branch (`git checkout <branch> && git merge main`) and
+> push — the refreshed preview will then show the draft. Posts generated from now
+> on branch off `main` and get it automatically.
+
 ## Notes
 
 - All source footage is the channel owner's own content; clips and quotes link

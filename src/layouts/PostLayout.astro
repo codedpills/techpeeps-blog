@@ -3,12 +3,16 @@
 // Hero clip at top, then title, guest line + video link, then article body.
 // Includes meta description + Open Graph tags (poster as og:image).
 import HeroClip from "../components/HeroClip.astro";
+import { isPreviewBuild } from "../lib/site";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
   post: CollectionEntry<"blog">;
 }
 const { post } = Astro.props;
+const isDraft = post.data.draft === true;
+// Keep preview deployments and any draft out of search engines.
+const noindex = isDraft || isPreviewBuild();
 const {
   title,
   description,
@@ -67,6 +71,7 @@ const jsonLd = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title} — Tech Peeps Diaspora</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f1e8" />
@@ -96,6 +101,12 @@ const jsonLd = {
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
+    {isDraft && (
+      <div class="draft-banner" role="status">
+        <strong>Draft preview</strong> — this profile is not yet published. Shared
+        for review on the pull request; please suggest any edits there.
+      </div>
+    )}
     <main class="post">
       <HeroClip
         mp4={heroClip.mp4}

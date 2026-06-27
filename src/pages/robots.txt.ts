@@ -1,8 +1,15 @@
 import type { APIRoute } from "astro";
+import { isPreviewBuild } from "../lib/site";
 
-// Dynamic robots.txt so the Sitemap URL always matches the configured site
-// origin (SITE_URL) instead of a hardcoded placeholder.
+// Dynamic robots.txt. On Cloudflare preview deployments we disallow everything
+// so draft preview URLs never get indexed. On production we allow crawling and
+// point at the sitemap (URL always matches the configured SITE_URL origin).
 export const GET: APIRoute = ({ site }) => {
+  if (isPreviewBuild()) {
+    return new Response("User-agent: *\nDisallow: /\n", {
+      headers: { "Content-Type": "text/plain; charset=utf-8" },
+    });
+  }
   const sitemap = new URL("sitemap-index.xml", site).href;
   const body = `User-agent: *
 Allow: /

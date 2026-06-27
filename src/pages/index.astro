@@ -1,8 +1,10 @@
 ---
 // index.astro (PRD §11) — reverse-chronological list of published posts.
 import { getCollection } from "astro:content";
+import { postFilter, isPreviewBuild } from "../lib/site";
 
-const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+const preview = isPreviewBuild();
+const posts = (await getCollection("blog", postFilter)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
@@ -41,6 +43,7 @@ const jsonLd = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tech Peeps Diaspora — Profiles</title>
     <meta name="description" content={description} />
+    {preview && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f1e8" />
