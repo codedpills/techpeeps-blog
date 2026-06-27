@@ -34,7 +34,7 @@ Most of the profiles I've featured here are software engineers in a fairly tidy 
 
 Let's rewind, because you can't understand where Raymond landed without seeing where little Raymond was pointed.
 
-He grew up in Ghana, went through junior high and on to senior high at Infansfim, where — as he put it almost reluctantly — "I had the chance to be the domestic head prefect." Before any of that, though, there was French. His dad travelled a lot and kept coming home with language CDs, and somewhere in there a "crazy interest for the French language" took hold. He went to Alliance Française for three months and got good enough that, by his account, his professor was "very excited by the way I was writing my essays."
+He grew up in Ghana, went through junior high and on to senior high at Mfantsipim, where — as he put it almost reluctantly — "I had the chance to be the domestic head prefect." Before any of that, though, there was French. His dad travelled a lot and kept coming home with language CDs, and somewhere in there a "crazy interest for the French language" took hold. He went to Alliance Française for three months and got good enough that, by his account, his professor was "very excited by the way I was writing my essays."
 
 But the dream wasn't language. The dream was the cockpit. "I wanted to be a pilot," he said — and then, tellingly, "Some parts of me still want to be a pilot."
 
@@ -44,9 +44,9 @@ So Raymond read IT at the University of Ghana — not out of passion, but as a "
 
 ### The final-year project that finally clicked
 
-For a course that felt "very theoretical" — classes coding in Visual Basic or Java that "just felt so far away" — the turning point was his final-year project: a traffic navigation system for Ghana, built in Android Studio, back when Google had no traffic data for the country. He taught himself the Google API, played with the A* and Dijkstra's algorithms, and ran around his own house just to test whether the app could detect speed.
+For a course that felt "very theoretical" — classes coding in Visual Basic or Java that "just felt so far away" — the turning point was his final-year project: a traffic navigation system for Ghana, built in Android Studio, back when Google had no traffic data for the country. He taught himself the Google API, played with Dijkstra's algorithms, and ran around his own house just to test whether the app could detect speed.
 
-It wasn't pretty — "I'm not a UI/UX designer," he laughed (a man after my own heart) — but it was the first time the work "really reflected the skills that I had." His sister, he says, still can't quite believe he stuck around in tech given how much he wrestled with it.
+It wasn't pretty — "I'm not a UI/UX designer," he laughed. But it was the first time the work "really reflected the skills that I had." His sister, he says, still can't quite believe he stuck around in tech given how much he wrestled with it.
 
 ## The detour that became the door
 
@@ -86,7 +86,7 @@ He's aware of how it lands. "Some of my friends will probably be watching this v
 
 ## "Skills trump passion" — and being patient with yourself
 
-This is where Raymond and I really connected, because I'm at that stage of wondering about the *next* thing myself. He's reading *So Good They Can't Ignore You* by Cal Newport, and it's reframed how he thinks: "you're building your career is not destination is a journey."
+This is where Raymond and I really connected, because I'm at that stage of wondering about the *next* thing myself. He's reading *So Good They Can't Ignore You* by Cal Newport, and it's reframed how he thinks: "building your career is not destination is a journey."
 
 He had a line about all of us that I won't soon forget: "Who really goes to university and says their passion is writing programs?" And then, honestly: "The reason why we are doing this programming thing is because we need to pay our bills." It's not anti-passion — it's a case for building skills so good that people *want* to pay you for them, and leaving yourself free to evolve.
 
@@ -94,7 +94,7 @@ That same gentleness extends to how he treats himself. He doesn't have "a clear 
 
 ## The podcast, and the bigger point about tech
 
-Outside work, Raymond runs the **TechSaf Podcast** — "my baby," as he calls it — built on a conviction that "tech is not the final destination. Tech is enabling us solve some problem." He platforms people who've used tech to pivot somewhere surprising: a friend who became a chef (Chef Keeks), a classmate who became a travel experience designer, pharmacists turned product managers. "It's my little light that I'm trying to shine in the tech space."
+Outside work, Raymond runs **[The Tech Surf Podcast](https://open.spotify.com/show/4ryC5dBocN8VHBH4jq8Me3?si=0d7b28f4412348de)** — "my baby," as he calls it — built on a conviction that "tech is not the final destination. Tech is enabling us solve some problem." He platforms people who've used tech to pivot somewhere surprising: a friend who became a chef (Chef Keeks), a classmate who became a travel experience designer, pharmacists turned product managers. "It's my little light that I'm trying to shine in the tech space."
 
 You can find it on YouTube, Spotify, and Apple Podcasts.
 
@@ -102,10 +102,10 @@ You can find it on YouTube, Spotify, and Apple Podcasts.
 
 I asked Raymond to leave us with something, and he gave us plenty — but the heart of it was this: "be patient with yourself."
 
-"Celebrate the small wins," he urged. "Take inventory of how far you've come." Get a mentor, or *become* one, because mentoring reveals your own gaps. Don't fear new environments. And — in a moment that felt important coming from a man in tech, to other men in tech — "if you need to cry sometimes, don't be afraid to cry. It's very normal."
+"Celebrate the small wins," he urged. "Take inventory of how far you've come." Get a mentor, or *become* one, because mentoring reveals your own gaps. Don't fear new environments. And — in a moment that felt important coming from a man in tech, to other people in tech — "if you need to cry sometimes, don't be afraid to cry. It's very normal."
 
 His personal mantra, the one stitched through every chapter of this story: "stay resilient and to go for gold."
 
 For someone who didn't see himself in tech, who struggled through university, who broke his back in a French library and still calls himself an ordinary developer — Raymond has built something quietly remarkable, and shared it with disarming honesty. The world is better for the light he's trying to shine.
 
-You can connect with Raymond on LinkedIn, and tune into the TechSaf Podcast wherever you listen. The full conversation is in the video above.
+You can connect with Raymond on LinkedIn, and tune into *The Tech Surf Podcast* wherever you listen. The full conversation is in the video above.
