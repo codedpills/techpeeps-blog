@@ -2,6 +2,7 @@
 // index.astro (PRD §11) — reverse-chronological list of published posts.
 import { getCollection } from "astro:content";
 import { postFilter, isPreviewBuild } from "../lib/site";
+import ThemeToggle from "../components/ThemeToggle.astro";
 
 const preview = isPreviewBuild();
 const posts = (await getCollection("blog", postFilter)).sort(
@@ -64,9 +65,11 @@ const jsonLd = {
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="stylesheet" href="/styles/global.css" />
+    <script is:inline src="/scripts/theme.js"></script>
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
+    <ThemeToggle />
     <main class="home">
       <header class="home-header">
         <h1>Tech Peeps Diaspora</h1>
