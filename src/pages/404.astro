@@ -1,5 +1,6 @@
 ---
 // Custom 404 page.
+import ThemeToggle from "../components/ThemeToggle.astro";
 ---
 
 <!doctype html>
@@ -11,8 +12,10 @@
     <meta name="robots" content="noindex" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles/global.css" />
+    <script is:inline src="/scripts/theme.js"></script>
   </head>
   <body>
+    <ThemeToggle />
     <main class="home" style="text-align:center;">
       <header class="home-header">
         <h1>404</h1>
