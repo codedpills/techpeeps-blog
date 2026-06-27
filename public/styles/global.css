@@ -26,6 +26,7 @@
   --accent-ink: #9a3817; /* accent tuned for link contrast on paper */
   --shadow: 0 1px 2px rgba(40, 33, 22, 0.05), 0 12px 32px rgba(40, 33, 22, 0.08);
   --clip-bg: #e9e3d5;
+  --clip-scrim: rgba(28, 22, 14, 0.20);
 
   --measure: 39rem;
   --radius: 12px;
@@ -44,6 +45,7 @@
     --accent-ink: #e6a577;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 36px rgba(0, 0, 0, 0.45);
     --clip-bg: #241f17;
+    --clip-scrim: rgba(0, 0, 0, 0.34);
   }
 }
 
