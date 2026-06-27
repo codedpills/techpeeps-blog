@@ -145,11 +145,15 @@ render as `<video autoplay loop muted playsinline>` with a poster fallback, so
 they read like GIFs but stay small and sharp.
 
 **Design:** a "paper screen" editorial look — a warm reading-paper light theme
-and a dim warm dark theme, switched automatically by the reader's system
-preference (`prefers-color-scheme`, no JavaScript). Type is a book-serif stack
-(Iowan Old Style / Palatino / Georgia) for reading with a system sans for small
-UI labels; profile openings get a drop cap. All colors are CSS custom properties
-in `public/styles/global.css`, so retheming is a one-file change.
+and a dim warm dark theme. By default it follows the reader's system preference
+(`prefers-color-scheme`); a floating toggle (top-right) lets them override and
+the choice persists in `localStorage`. The toggle script is served from
+`/public/scripts/theme.js` and loaded render-blocking so the saved theme applies
+before first paint (no flash) — kept external to satisfy the strict CSP
+(`script-src 'self'`, no inline scripts). Type is a book-serif stack (Iowan Old
+Style / Palatino / Georgia) for reading with a system sans for small UI labels;
+profile openings get a drop cap. All colors are CSS custom properties in
+`public/styles/global.css`, so retheming is a one-file change.
 
 ```bash
 make site-dev      # local dev server
