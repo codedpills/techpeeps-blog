@@ -1,0 +1,18 @@
+# Cloudflare Pages security headers (also valid on Netlify).
+# Applied to every route. CSP is strict because the site is fully static and
+# self-hosts its media (clips) — the only external reference is an <a> link to
+# YouTube, which needs no CSP allowance.
+#
+# NOTE: if you later EMBED a YouTube <iframe>, add:
+#   frame-src https://www.youtube.com https://www.youtube-nocookie.com
+/*
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), browsing-topics=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+# Long-cache the immutable hashed assets and committed clips.
+/clips/*
+  Cache-Control: public, max-age=31536000, immutable

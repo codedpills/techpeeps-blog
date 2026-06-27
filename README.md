@@ -120,6 +120,23 @@ this checklist:
 **Merging the PR = publishing. Reverting = unpublishing.** Full history is kept.
 `generate.py` never writes to `main` and never marks a post `published`.
 
+### Automated checks (the machine-verifiable half of the checklist)
+
+`pipeline/verify_post.py` turns several checklist items into a hard gate:
+
+- every multi-word quoted span must appear **verbatim** in the transcript
+  (fails on a fabricated quote; warns if filler was removed inside quotes);
+- frontmatter contract (title, description ≤155, 4–6 tags, heroClip, guest/bio);
+- `videoUrl` matches `videoId` and contains no `PLACEHOLDER`;
+- hero clip files exist, the MP4 is **silent** (checked with `ffprobe`) and small;
+- `mapping_confidence: low` is surfaced as a warning.
+
+It runs in three places: `make verify`, on every PR via CI, and inside
+`generate.py` **before** a PR is opened (a hard failure commits the draft to the
+branch for inspection but refuses to open the PR). Human-judgement items —
+whether HOST/GUEST is truly correct, whether a paraphrase invents a *fact*,
+whether the clip moment is right — remain manual.
+
 ## The site
 
 Astro static site with a `blog` content collection validated by
@@ -127,18 +144,82 @@ Astro static site with a `blog` content collection validated by
 render as `<video autoplay loop muted playsinline>` with a poster fallback, so
 they read like GIFs but stay small and sharp.
 
+**Design:** a "paper screen" editorial look — a warm reading-paper light theme
+and a dim warm dark theme, switched automatically by the reader's system
+preference (`prefers-color-scheme`, no JavaScript). Type is a book-serif stack
+(Iowan Old Style / Palatino / Georgia) for reading with a system sans for small
+UI labels; profile openings get a drop cap. All colors are CSS custom properties
+in `public/styles/global.css`, so retheming is a one-file change.
+
 ```bash
 make site-dev      # local dev server
 make site-build    # production build (fails on invalid frontmatter)
 ```
 
-Hosting: push `main` to Cloudflare Pages or Netlify (free tier) for git-push
-auto-deploy.
+### SEO & GEO
+
+Built in and generated automatically at build time:
+
+- **Sitemap** (`/sitemap-index.xml`) via `@astrojs/sitemap`, **RSS** (`/rss.xml`),
+  and a dynamic **`/robots.txt`** that points at the sitemap.
+- **Open Graph + Twitter** tags and a canonical URL on every page; the hero
+  poster is the `og:image`.
+- **JSON-LD structured data**: each profile emits `Article` + `Person` (the
+  guest) + `VideoObject` (the source interview); the home page emits `Blog`.
+  This is what drives Google rich results and lets AI/answer engines attribute
+  and cite the content.
+- **`/llms.txt`** — a curated, machine-readable index of published profiles for
+  generative-search crawlers.
+- Custom `404`, favicon, and `theme-color`.
+
+## Deploying (Cloudflare Pages)
+
+1. Push `main` to GitHub (already your remote).
+2. In Cloudflare Pages, create a project from the repo with:
+   - **Build command:** `npm run build`
+   - **Output directory:** `dist`
+3. **Set the `SITE_URL` environment variable** to your real domain (e.g.
+   `https://techpeeps.dev`). Canonical URLs, OG tags, the sitemap, RSS, and
+   `llms.txt` all derive from it — without it they fall back to a placeholder.
+4. Security headers ship in `public/_headers` (CSP + HSTS + `X-Content-Type-Options`
+   + `Referrer-Policy` + `Permissions-Policy`) and are applied by Cloudflare Pages
+   automatically. If you later embed a YouTube `<iframe>`, widen the CSP `frame-src`
+   as noted in that file.
+5. Merging a post PR to `main` triggers an auto-deploy. Reverting unpublishes.
+
+CI: `.github/workflows/ci.yml` runs `npm ci && npm run build` (plus a placeholder
+guard) on every PR, so a malformed post can't merge.
+
+### Previewing a draft on the PR (for the guest)
+
+Each PR gets a Cloudflare Pages **preview deployment**. Production builds (the
+`main` branch) never include drafts, but a **preview build renders the draft
+post** so you can share it with the guest before publishing:
+
+- Cloudflare sets `CF_PAGES_BRANCH` per build; `src/lib/site.ts` treats any
+  non-production branch as a preview and includes `draft: true` posts only then.
+- The draft renders with a "Draft preview" banner and `noindex`, and the whole
+  preview deployment returns `robots.txt → Disallow: /`, so nothing leaks to
+  search or to production.
+- The guest visits `<preview-url>/blog/<slug>/`, reads it, and leaves edits on
+  the PR. Merging to `main` publishes the real (banner-free, indexable) page.
+
+Enable this in Cloudflare: Pages project → Settings → Builds & deployments →
+ensure **preview deployments** are on (default) and the GitHub integration posts
+the preview URL on each PR. If your production branch isn't `main`, set a
+`PRODUCTION_BRANCH` environment variable to match.
+
+> **Heads-up for the two PRs already open:** they were branched before this
+> change, so their branches don't contain the preview logic yet. Merge the
+> latest `main` into each branch (`git checkout <branch> && git merge main`) and
+> push — the refreshed preview will then show the draft. Posts generated from now
+> on branch off `main` and get it automatically.
 
 ## Notes
 
-- An example post (`src/content/blog/example-profile.md`) and its placeholder
-  clip assets ship with the repo so the site builds out of the box. **Delete
-  them before going live.**
 - All source footage is the channel owner's own content; clips and quotes link
   back to the source video.
+- **Maintenance:** the site is pinned to Astro 4.x. `npm audit` reports advisories
+  in Astro's SSR / dev-server / middleware code paths — this site uses none of
+  them (it's fully static, no adapter/middleware), so production exposure is low,
+  but plan a staged upgrade to the current Astro major when convenient.

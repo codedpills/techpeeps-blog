@@ -31,11 +31,12 @@ const { mp4, webm, poster, alt } = Astro.props;
 <style>
   .hero-clip {
     margin: 0;
-    border-radius: 12px;
+    border-radius: var(--radius, 12px);
     overflow: hidden;
-    background: #0e0e10;
+    background: var(--clip-bg, #e9e3d5);
+    border: 1px solid var(--rule, #e3ddce);
     aspect-ratio: 16 / 9;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
+    box-shadow: var(--shadow, 0 12px 32px rgba(40, 33, 22, 0.1));
   }
   .hero-clip video,
   .hero-clip img {

@@ -3,19 +3,19 @@
   "videos": {
     "wFP7X5yOItQ": {
       "title": "How to balance it all - Career lessons from a multitalented data consultant #techpeepsDiaspora",
-      "status": "transcribed",
-      "guest": null,
-      "slug": null,
+      "status": "drafted",
+      "guest": "Raymond Ewin Amklutse",
+      "slug": "go-for-gold-raymonds-winding-road-from-pilot-dreams-to-data-consulting",
       "pr_url": null,
       "added_at": "2026-06-26T10:44:07+00:00",
-      "updated_at": "2026-06-26T10:47:10+00:00"
+      "updated_at": "2026-06-26T12:10:40+00:00"
     },
     "bE-mpnLZNh4": {
       "title": "How I built my freelance business as a product designer",
       "status": "transcribed",
       "guest": null,
       "slug": null,
-      "pr_url": null,
+      "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/2",
       "added_at": "2026-06-26T10:44:07+00:00",
       "updated_at": "2026-06-26T10:50:59+00:00"
     },
@@ -39,12 +39,12 @@
     },
     "kfmN0FKgsto": {
       "title": "A Day in the Life of an Engineering Manager at Cliffhanger Games",
-      "status": "transcribed",
-      "guest": null,
-      "slug": null,
-      "pr_url": null,
+      "status": "drafted",
+      "guest": "Chioma Asor",
+      "slug": "building-many-of-herself-chioma-asor-on-engineering-management-space-gaming-and",
+      "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/1",
       "added_at": "2026-06-26T10:44:07+00:00",
-      "updated_at": "2026-06-26T10:48:42+00:00"
+      "updated_at": "2026-06-26T12:38:25+00:00"
     }
   }
 }
