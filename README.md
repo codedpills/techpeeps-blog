@@ -91,7 +91,28 @@ make clip ID=<video_id> START=01:23 END=01:28 SLUG=<slug>   # re-cut the hero cl
 ```
 
 Status ladder: `pending → transcribed → drafted → published`. Each step is
-idempotent; pass `--force` to a script to redo work.
+idempotent. To redo work, pass flags as **make variables** (not as `--flags`,
+which `make` would try to parse itself):
+
+```bash
+make transcribe ID=<id> FORCE=1     # re-transcribe
+make generate   ID=<id> FORCE=1     # regenerate the draft
+make generate   ID=<id> NOPR=1      # local branch only, no PR
+```
+
+### A/B comparing models
+
+To choose between models for the writing, run both on the same transcript without
+touching git or opening a PR:
+
+```bash
+make compare ID=<id>                                   # defaults: opus vs sonnet
+make compare ID=<id> MODELS=claude-opus-4-8,claude-sonnet-4-6
+```
+
+It writes one article per model to `work/compare/` (gitignored) to read side by
+side. Once you've decided, set `ANTHROPIC_MODEL` in `.env` and run a normal
+`make generate ID=<id> FORCE=1`.
 
 If a transcript's HOST/GUEST labels look swapped (the heuristic handles
 cold-open teaser clips and length-normalized question density, but isn't

@@ -5,7 +5,7 @@
 VENV := .venv
 PY := $(VENV)/bin/python
 
-.PHONY: help fetch transcribe generate next style-guide clip publish site-dev site-build install venv
+.PHONY: help fetch transcribe generate next style-guide clip publish compare site-dev site-build install venv
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -24,8 +24,8 @@ install: $(PY) ## Create .venv and install Python + Node deps
 fetch: ## Refresh the playlist into state.json
 	$(PY) pipeline/fetch_playlist.py
 
-transcribe: ## Transcribe the next pending video (override with ID=<video_id>)
-	$(PY) pipeline/transcribe.py $(if $(ID),$(ID),--next)
+transcribe: ## Transcribe next pending (ID=<id>, FORCE=1 to re-transcribe)
+	$(PY) pipeline/transcribe.py $(if $(ID),$(ID),--next) $(if $(FORCE),--force)
 
 remap: ## Re-run HOST/GUEST mapping on existing transcripts (no API cost; ID= optional)
 	$(PY) pipeline/transcribe.py --remap $(ID)
@@ -36,8 +36,11 @@ verify: ## Verify published posts against transcripts (quotes verbatim, frontmat
 style-guide: ## Build style-guide.md from the longest 3-4 transcripts
 	$(PY) pipeline/make_style_guide.py --auto
 
-generate: ## Draft + open PR for the next transcribed video (override with ID=)
-	$(PY) pipeline/generate.py $(if $(ID),$(ID),--next)
+generate: ## Draft + PR for next transcribed (ID=<id>, FORCE=1 redo, NOPR=1 local-only)
+	$(PY) pipeline/generate.py $(if $(ID),$(ID),--next) $(if $(FORCE),--force) $(if $(NOPR),--no-pr)
+
+compare: ## A/B two models on one transcript (ID=<id>, optional MODELS=a,b) — no git/PR
+	$(PY) pipeline/compare_models.py $(ID) $(if $(MODELS),--models $(MODELS))
 
 next: ## Transcribe + generate + open PR for the next unprocessed video
 	$(PY) pipeline/transcribe.py --next && $(PY) pipeline/generate.py --next
