@@ -208,10 +208,72 @@ def verify_file(path: Path) -> tuple[list, list]:
     return errors, warnings
 
 
+# --------------------------------------------------------------------------- #
+# Reporting (shared by generate.py's PR body and CI's PR comment)
+# --------------------------------------------------------------------------- #
+def fix_hint(msg: str) -> str:
+    """Return a one-line suggested fix for a given error/warning message."""
+    m = msg.lower()
+    if "not found" in m and "quote" in m:
+        return ("Quote only words that appear verbatim in the transcript, or "
+                "rewrite the sentence as paraphrase (no quotation marks).")
+    if "filler removed" in m:
+        return ("Restore the exact transcript wording inside the quotes, or drop "
+                "the quotation marks and present it as paraphrase.")
+    if "placeholder" in m:
+        return "Replace the PLACEHOLDER value with the real one."
+    if "video link" in m or "videourl" in m:
+        return "Set videoId to the YouTube id and videoUrl to the matching watch URL."
+    if "hero clip" in m and "audio" in m:
+        return "Re-cut the clip with audio stripped: pipeline/clip.py always uses -an."
+    if "hero clip" in m and "missing" in m:
+        return "Run pipeline/clip.py to (re)generate the clip files for this slug."
+    if "frontmatter" in m:
+        return "Fix the frontmatter field to satisfy the schema in src/content/config.ts."
+    if "transcript missing" in m:
+        return "Commit transcripts/<videoId>.json (run pipeline/transcribe.py)."
+    if "mapping confidence is low" in m:
+        return "Confirm HOST/GUEST aren't flipped; `make remap` re-runs the mapping."
+    return "Review against the transcript and the frontmatter contract."
+
+
+def build_report(results: list[tuple]) -> tuple[str, bool]:
+    """results: list of (path, errors, warnings). Returns (markdown, has_errors)."""
+    total_err = sum(len(e) for _, e, _ in results)
+    total_warn = sum(len(w) for _, _, w in results)
+    lines = ["## 🔍 Content check", ""]
+    if not results:
+        return "## 🔍 Content check\n\nNo posts to verify.\n", False
+    if total_err == 0 and total_warn == 0:
+        lines.append("✅ All quotes are verbatim and the frontmatter/clip checks pass.")
+        return "\n".join(lines) + "\n", False
+
+    lines.append(
+        f"Found **{total_err} error(s)** and **{total_warn} warning(s)**. "
+        "Errors should be fixed before publishing; warnings are advisory."
+    )
+    for path, errors, warnings in results:
+        if not errors and not warnings:
+            continue
+        lines.append(f"\n### `{Path(path).name}`")
+        if errors:
+            lines.append("\n**❌ Errors (must fix)**")
+            for e in errors:
+                lines.append(f"- {e}\n  - _Fix:_ {fix_hint(e)}")
+        if warnings:
+            lines.append("\n**⚠️ Warnings (review)**")
+            for w in warnings:
+                lines.append(f"- {w}\n  - _Fix:_ {fix_hint(w)}")
+    return "\n".join(lines) + "\n", total_err > 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Verify post(s) against the transcript.")
     ap.add_argument("paths", nargs="*", help="Post .md path(s).")
     ap.add_argument("--all", action="store_true", help="Check every post in src/content/blog.")
+    ap.add_argument("--md", metavar="FILE", help="Write a Markdown report to FILE.")
+    ap.add_argument("--no-fail", action="store_true",
+                    help="Always exit 0 (advisory mode); still reports.")
     args = ap.parse_args()
 
     if args.all:
@@ -220,26 +282,37 @@ def main() -> int:
         paths = [Path(p) for p in args.paths]
     if not paths:
         print("No posts to verify.")
+        if args.md:
+            Path(args.md).write_text("## 🔍 Content check\n\nNo posts to verify.\n")
         return 0
 
-    total_errors = 0
+    results = []
     for p in paths:
         if not p.exists():
-            print(f"✗ {p}: file not found")
-            total_errors += 1
+            results.append((p, [f"file not found: {p}"], []))
             continue
         errors, warnings = verify_file(p)
+        results.append((p, errors, warnings))
+
+    # Human-readable console output.
+    for p, errors, warnings in results:
         status = "✓ PASS" if not errors else "✗ FAIL"
-        print(f"\n{status}  {p.name}")
+        print(f"\n{status}  {Path(p).name}")
         for w in warnings:
             print(f"    ⚠️  {w}")
         for e in errors:
             print(f"    ✗  {e}")
-        total_errors += len(errors)
 
+    md, has_errors = build_report(results)
+    if args.md:
+        Path(args.md).write_text(md, encoding="utf-8")
+
+    total_errors = sum(len(e) for _, e, _ in results)
     print("\n" + ("All posts passed." if total_errors == 0
                   else f"{total_errors} error(s) found."))
-    return 1 if total_errors else 0
+    if args.no_fail:
+        return 0
+    return 1 if has_errors else 0
 
 
 if __name__ == "__main__":

@@ -240,15 +240,17 @@ def open_pr(branch: str, title: str, body: str, base: str) -> str | None:
     return proc.stdout.strip()
 
 
-def pr_body(fm: dict, confidence: str, candidates: list[dict]) -> str:
+def pr_body(fm: dict, confidence: str, candidates: list[dict],
+            report_md: str = "") -> str:
     flag = " ⚠️ **LOW CONFIDENCE — please verify/flip**" if confidence == "low" else ""
     cand_lines = "\n".join(
         f"- `{c['start']}`–`{c['end']}` — {c.get('reason', '')}" for c in candidates
     )
+    report_section = f"\n{report_md}\n" if report_md else ""
     return f"""\
 **Guest:** {fm.get('guest', 'TBD')}
 **Speaker mapping confidence:** {confidence}{flag}
-
+{report_section}
 ### Candidate hero-clip windows
 {cand_lines}
 
@@ -337,7 +339,7 @@ def main() -> int:
     base_branch = config.get("BASE_BRANCH", "main")
     starting_branch = current_branch()
     branch = f"post/{slug}"
-    verify_ok = False
+    has_errors = False
 
     try:
         ensure_branch(branch, base_branch)
@@ -376,17 +378,20 @@ def main() -> int:
         out_md.write_text(f"---\n{front}\n---\n\n{body}\n", encoding="utf-8")
         print(f"Wrote draft: {out_md}")
 
-        # Automated gate (PRD §8): verify quotes are verbatim, frontmatter is
-        # valid, the video link is real, and the clip is present + silent. On a
-        # hard failure we commit for inspection but do NOT push or open a PR.
+        # Automated checks (PRD §8): verify quotes are verbatim, frontmatter is
+        # valid, the video link is real, and the clip is present + silent. We do
+        # NOT block on failure — the PR always opens so the post can be previewed
+        # and reviewed; the findings are embedded in the PR body and CI repeats
+        # them as a comment + a (red) check on hard errors.
         v_errors, v_warnings = verify_post.verify_file(out_md)
+        report_md, has_errors = verify_post.build_report([(out_md, v_errors, v_warnings)])
         for w in v_warnings:
             print(f"  ⚠️  {w}")
-        verify_ok = not v_errors
-        if not verify_ok:
-            print("VERIFICATION FAILED — not opening a PR:", file=sys.stderr)
-            for e in v_errors:
-                print(f"  ✗ {e}", file=sys.stderr)
+        for e in v_errors:
+            print(f"  ✗  {e}", file=sys.stderr)
+        if has_errors:
+            print("Content issues found — opening the PR anyway; see the PR body / "
+                  "CI comment for details and fixes.", file=sys.stderr)
 
         # Stage ONLY this post's files (never `add -A`, which would sweep up
         # uncommitted transcripts/state into the draft commit).
@@ -401,14 +406,16 @@ def main() -> int:
         _git("commit", "-m", f"Draft: {fm.get('title', slug)}", check=False)
 
         pr_url = None
-        if verify_ok and not args.no_pr:
+        if not args.no_pr:
             push = _git("push", "-u", "origin", branch, check=False)
             if push.returncode != 0:
                 print(f"WARNING: git push failed:\n{push.stderr.strip()}",
                       file=sys.stderr)
             else:
-                body_text = pr_body(fm, transcript.get("mapping_confidence", "high"),
-                                    candidates)
+                body_text = pr_body(
+                    fm, transcript.get("mapping_confidence", "high"),
+                    candidates, report_md,
+                )
                 pr_url = open_pr(
                     branch, f"Draft: {fm.get('title', slug)}", body_text, base_branch
                 )
@@ -424,17 +431,8 @@ def main() -> int:
                 file=sys.stderr,
             )
 
-    if not verify_ok:
-        # Hard failure: record slug/guest but keep status 'transcribed' so the
-        # video is re-drafted, not treated as a finished draft. No PR was opened.
-        state.update_video(st, video_id, guest=guest, slug=slug)
-        state.save(st)
-        print(f"\nDraft committed on branch {branch} for inspection, but it FAILED "
-              "verification — no PR opened. Fix and re-run with --force.",
-              file=sys.stderr)
-        return 1
-
-    # Update state — status 'drafted' only; NEVER 'published'.
+    # Update state — status 'drafted' only; NEVER 'published'. The PR is opened
+    # regardless of content findings; review (and the CI check) is the gate.
     state.update_video(
         st, video_id,
         guest=guest, slug=slug, pr_url=pr_url, status="drafted",
@@ -446,6 +444,8 @@ def main() -> int:
         print(f"PR: {pr_url}")
     elif not args.no_pr:
         print("No PR URL captured — open the PR manually from the pushed branch.")
+    if has_errors:
+        print("Note: content checks flagged hard errors — see the PR for details.")
     return 0
 
 
