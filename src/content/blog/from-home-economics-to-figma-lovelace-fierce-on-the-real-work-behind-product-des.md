@@ -125,7 +125,7 @@ Consider it a peace offering from one side of the handoff to the other.
 
 ## One Last Thing
 
-Before signing off, Lovelace offered a piece of advice aimed at anyone standing at the beginning of a tech career, unsure where to start: reach out to people on LinkedIn. Don't be afraid of rejection. "If they reject you, what's the worst thing that can — you just move on to the next available person you think can mentor you." There are people out there willing to help, often for free. You just have to ask.
+Before signing off, Lovelace offered a piece of advice aimed at anyone standing at the beginning of a tech career, unsure where to start: reach out to people on LinkedIn. Don't be afraid of rejection. If someone turns you down, she said, "you just move on to the next available person you think can mentor you." There are people out there willing to help, often for free. You just have to ask.
 
 And for the anime fans in the room: Hunter x Hunter. She's firm on this. "I don't care what anyone says, everyone should watch Hunter x Hunter."
 
