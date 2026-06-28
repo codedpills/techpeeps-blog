@@ -1,15 +1,24 @@
 name: CI
 
-# Build-check every PR and push so a malformed post (bad frontmatter, leftover
-# placeholders) fails CI before it can be merged. Reinforces the PR approval gate.
+# Build-check + content-check every PR and push. The content check NEVER blocks
+# PR creation or the Cloudflare preview — it posts an explanatory PR comment and
+# only turns the check red on HARD errors (fabricated quote, bad frontmatter,
+# placeholder, clip-with-audio). Warnings are advisory. Whether a red check
+# blocks merge is up to branch-protection settings.
 on:
   pull_request:
   push:
     branches: ["main"]
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      REPORT_PATH: ${{ github.workspace }}/verify-report.md
     steps:
       - uses: actions/checkout@v4
 
@@ -30,8 +39,39 @@ jobs:
           npm ci
           pip install PyYAML
 
-      - name: Verify posts against transcripts (quotes verbatim, frontmatter, clip)
-        run: python pipeline/verify_post.py --all
+      - name: Run content verifier (writes report, never fails here)
+        id: verify
+        run: |
+          set +e
+          python pipeline/verify_post.py --all --md "$REPORT_PATH"
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Comment verifier report on the PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const marker = '<!-- techpeeps-content-check -->';
+            let report = '_No report produced._';
+            try { report = fs.readFileSync(process.env.REPORT_PATH, 'utf8'); } catch (e) {}
+            const body = `${marker}\n${report}\n\n_This check does not block the PR or its Cloudflare preview. Fix any ❌ errors before merging._`;
+            const { owner, repo } = context.repo;
+            const issue_number = context.payload.pull_request.number;
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number, per_page: 100 });
+            const existing = comments.find(c => c.body && c.body.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            }
 
       - name: Build site (fails on invalid frontmatter)
         run: npm run build
+
+      - name: Fail the check on hard content errors
+        if: steps.verify.outputs.code != '0'
+        run: |
+          echo "::error::Content verification found hard errors — see the PR comment for details and fixes."
+          exit 1

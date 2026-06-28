@@ -122,20 +122,31 @@ this checklist:
 
 ### Automated checks (the machine-verifiable half of the checklist)
 
-`pipeline/verify_post.py` turns several checklist items into a hard gate:
+`pipeline/verify_post.py` checks several checklist items automatically:
 
 - every multi-word quoted span must appear **verbatim** in the transcript
-  (fails on a fabricated quote; warns if filler was removed inside quotes);
+  (**error** on a fabricated quote; **warning** if filler was removed inside quotes);
 - frontmatter contract (title, description ≤155, 4–6 tags, heroClip, guest/bio);
 - `videoUrl` matches `videoId` and contains no `PLACEHOLDER`;
 - hero clip files exist, the MP4 is **silent** (checked with `ffprobe`) and small;
 - `mapping_confidence: low` is surfaced as a warning.
 
-It runs in three places: `make verify`, on every PR via CI, and inside
-`generate.py` **before** a PR is opened (a hard failure commits the draft to the
-branch for inspection but refuses to open the PR). Human-judgement items —
-whether HOST/GUEST is truly correct, whether a paraphrase invents a *fact*,
-whether the clip moment is right — remain manual.
+**These checks never block PR creation or the preview** — the philosophy is to
+surface issues for review, not hide the draft. Specifically:
+
+- `generate.py` always opens the PR and **embeds the findings (with suggested
+  fixes) in the PR description**.
+- CI (`.github/workflows/ci.yml`) re-runs the verifier on every push and posts a
+  single **sticky PR comment** with the issues + fixes, updated each time.
+- The CI check goes **red only on hard errors** (fabricated quote, invalid
+  frontmatter, leftover placeholder, clip-with-audio); warnings never fail it.
+  A red check still leaves the PR and its Cloudflare preview fully usable — it
+  only blocks *merge* if you enable branch protection requiring the `build`
+  check. `make verify` runs the same checks locally; `--no-fail` makes it
+  advisory.
+
+Human-judgement items — whether HOST/GUEST is truly correct, whether a paraphrase
+invents a *fact*, whether the clip moment is right — remain manual.
 
 ## The site
 
