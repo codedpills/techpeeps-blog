@@ -1,6 +1,6 @@
 ---
-title: 'It's Never About You, the Designer: Lovelace Filson on the Real Work Behind Product, Freelancing, and the Long Road There
-  Design'
+title: 'It's Never About You, the Designer: Lovelace Filson on the Real Work Behind Product, Freelancing, and the Long Road There'
+  
 description: Product designer Lovelace Filson on transitioning from CS to design,
   navigating freelance clients, and why communication beats pixels every time.
 pubDate: '2026-06-28'
