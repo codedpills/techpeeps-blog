@@ -4,6 +4,7 @@ title: 'From Home Economics to Figma: Lovelace Fierce on the Real Work Behind Pr
 description: Product designer Lovelace Fierce on transitioning from CS to design,
   navigating freelance clients, and why communication beats pixels every time.
 pubDate: '2026-06-28'
+interviewDate: 2024-05-28
 guest: Lovelace Fierce
 guestBio: Lovelace Fierce is a Ghanaian product designer and freelancer who transitioned
   from computer science and front-end development into UI/UX and product design, building
