@@ -25,15 +25,19 @@ GitHub PR  ── human review ──▶ merge = publish ──▶ Astro build �
 
 | Path | Purpose |
 |---|---|
-| `pipeline/` | Python pipeline (fetch, transcribe, clip, generate, style guide) |
+| `pipeline/` | Python pipeline: `fetch_playlist`, `transcribe`, `clip`, `generate`, `make_style_guide`, `verify_post`, `compare_models`, `mark_published` |
 | `pipeline/lib/` | shared helpers: `state`, `config`, `prompts`, `assemblyai`, `llm` |
 | `transcripts/<id>.json` | committed diarized transcripts |
 | `src/content/blog/` | **published posts only** (drafts live on branches) |
-| `src/components/`, `src/layouts/`, `src/pages/` | Astro site |
+| `src/components/`, `src/layouts/`, `src/pages/` | Astro site (incl. `ThemeToggle`) |
+| `src/lib/site.ts` | build-env helpers (preview-vs-production, draft inclusion) |
 | `public/clips/` | committed `<slug>.mp4` / `.webm` / `.jpg` |
+| `public/styles/`, `public/scripts/` | global CSS + the theme-toggle script |
+| `public/_headers` | Cloudflare security headers (CSP, HSTS, …) |
+| `.github/workflows/ci.yml` | build + content-check, sticky PR comment |
 | `state.json` | per-video status map |
 | `style-guide.md` | one-time reusable host editorial voice |
-| `work/` | gitignored scratch (downloads) |
+| `work/` | gitignored scratch (downloads, `compare/` outputs) |
 
 ## Setup
 
@@ -91,7 +95,48 @@ make clip ID=<video_id> START=01:23 END=01:28 SLUG=<slug>   # re-cut the hero cl
 ```
 
 Status ladder: `pending → transcribed → drafted → published`. Each step is
-idempotent; pass `--force` to a script to redo work.
+idempotent. To redo work, pass flags as **make variables** (not as `--flags`,
+which `make` would try to parse itself):
+
+```bash
+make transcribe ID=<id> FORCE=1     # re-transcribe
+make generate   ID=<id> FORCE=1     # regenerate the draft
+make generate   ID=<id> NOPR=1      # local branch only, no PR
+```
+
+### A/B comparing models
+
+To choose between models for the writing, run both on the same transcript without
+touching git or opening a PR:
+
+```bash
+make compare ID=<id>                                   # defaults: opus vs sonnet
+make compare ID=<id> MODELS=claude-opus-4-8,claude-sonnet-4-6
+```
+
+It writes one article per model to `work/compare/` (gitignored) to read side by
+side. Once you've decided, set `ANTHROPIC_MODEL` in `.env` and run a normal
+`make generate ID=<id> FORCE=1`.
+
+### Dates: published vs. interview
+
+Each post shows two dates in its sub-header — **when the article was published**
+on the site (`pubDate`, set to generation day) and **when the interview aired on
+YouTube** (`interviewDate`). The latter is captured automatically at transcribe
+time (yt-dlp `upload_date`, stored as `video_published_at` in the transcript) and
+injected into the frontmatter by `generate.py`; it also drives the JSON-LD
+`VideoObject.uploadDate`. New drafts get it for free.
+
+To backfill posts that were drafted before this existed:
+
+```bash
+make refresh-meta          # fetch publish dates into all transcripts + state
+make patch-dates           # inject interviewDate onto each open drafted PR branch
+# then push the patched branches to update their PRs
+```
+
+`refresh-meta`/`patch-dates` accept `ID=<video_id>` to target one. A missing
+`interviewDate` is a **warning** (not a blocker) in the verifier.
 
 If a transcript's HOST/GUEST labels look swapped (the heuristic handles
 cold-open teaser clips and length-normalized question density, but isn't
@@ -122,20 +167,31 @@ this checklist:
 
 ### Automated checks (the machine-verifiable half of the checklist)
 
-`pipeline/verify_post.py` turns several checklist items into a hard gate:
+`pipeline/verify_post.py` checks several checklist items automatically:
 
 - every multi-word quoted span must appear **verbatim** in the transcript
-  (fails on a fabricated quote; warns if filler was removed inside quotes);
+  (**error** on a fabricated quote; **warning** if filler was removed inside quotes);
 - frontmatter contract (title, description ≤155, 4–6 tags, heroClip, guest/bio);
 - `videoUrl` matches `videoId` and contains no `PLACEHOLDER`;
 - hero clip files exist, the MP4 is **silent** (checked with `ffprobe`) and small;
 - `mapping_confidence: low` is surfaced as a warning.
 
-It runs in three places: `make verify`, on every PR via CI, and inside
-`generate.py` **before** a PR is opened (a hard failure commits the draft to the
-branch for inspection but refuses to open the PR). Human-judgement items —
-whether HOST/GUEST is truly correct, whether a paraphrase invents a *fact*,
-whether the clip moment is right — remain manual.
+**These checks never block PR creation or the preview** — the philosophy is to
+surface issues for review, not hide the draft. Specifically:
+
+- `generate.py` always opens the PR and **embeds the findings (with suggested
+  fixes) in the PR description**.
+- CI (`.github/workflows/ci.yml`) re-runs the verifier on every push and posts a
+  single **sticky PR comment** with the issues + fixes, updated each time.
+- The CI check goes **red only on hard errors** (fabricated quote, invalid
+  frontmatter, leftover placeholder, clip-with-audio); warnings never fail it.
+  A red check still leaves the PR and its Cloudflare preview fully usable — it
+  only blocks *merge* if you enable branch protection requiring the `build`
+  check. `make verify` runs the same checks locally; `--no-fail` makes it
+  advisory.
+
+Human-judgement items — whether HOST/GUEST is truly correct, whether a paraphrase
+invents a *fact*, whether the clip moment is right — remain manual.
 
 ## The site
 
@@ -191,8 +247,43 @@ Built in and generated automatically at build time:
    as noted in that file.
 5. Merging a post PR to `main` triggers an auto-deploy. Reverting unpublishes.
 
-CI: `.github/workflows/ci.yml` runs `npm ci && npm run build` (plus a placeholder
-guard) on every PR, so a malformed post can't merge.
+CI: `.github/workflows/ci.yml` runs the content verifier and `npm run build` on
+every PR and push, and posts the verifier's findings as a sticky PR comment (see
+[Automated checks](#automated-checks-the-machine-verifiable-half-of-the-checklist)).
+The job is named **`build`** — require it via branch protection (below) to
+actually block merges on hard errors.
+
+## Branch protection (enforce the gate)
+
+The CI check is advisory until you require it. To make `main` un-mergeable while
+the `build` check is red:
+
+1. Push `main` and open a PR once so the `build` check has run and is selectable.
+2. GitHub → repo **Settings → Branches → Add branch protection rule** (or
+   **Settings → Rules → Rulesets**), pattern `main`.
+3. Enable **Require a pull request before merging** (blocks direct pushes;
+   approvals can be `0` if you're the sole reviewer).
+4. Enable **Require status checks to pass before merging** and select **`build`**.
+   Optionally **Require branches to be up to date**.
+5. Save. A PR with a red `build` check now can't be merged, while its Cloudflare
+   preview stays usable for guest review.
+
+Scripted equivalent (run locally; needs repo admin):
+
+```bash
+gh api --method PUT repos/$GITHUB_REPO/branches/main/protection --input - <<'JSON'
+{
+  "required_status_checks": { "strict": true, "contexts": ["build"] },
+  "enforce_admins": false,
+  "required_pull_request_reviews": { "required_approving_review_count": 0 },
+  "restrictions": null
+}
+JSON
+```
+
+Because the content verifier and the Astro build are the **same** `build` job,
+requiring it gates on both fabricated-quote errors and frontmatter errors.
+Warnings never fail the job, so they never block merge.
 
 ### Previewing a draft on the PR (for the guest)
 
@@ -213,11 +304,11 @@ ensure **preview deployments** are on (default) and the GitHub integration posts
 the preview URL on each PR. If your production branch isn't `main`, set a
 `PRODUCTION_BRANCH` environment variable to match.
 
-> **Heads-up for the two PRs already open:** they were branched before this
-> change, so their branches don't contain the preview logic yet. Merge the
-> latest `main` into each branch (`git checkout <branch> && git merge main`) and
-> push — the refreshed preview will then show the draft. Posts generated from now
-> on branch off `main` and get it automatically.
+> **Note:** a PR branch only has the site/pipeline behavior that existed on
+> `main` when it was cut. If you change `main` (theme, preview logic, CI) while a
+> PR is open, merge `main` into that branch to refresh its preview:
+> `git checkout <branch> && git merge main && git push`. Newly generated posts
+> branch off the current `main`, so they pick everything up automatically.
 
 ## Notes
 
