@@ -4,6 +4,7 @@ title: 'Building Many of Herself: Chioma Asor on Engineering Management, Space, 
 description: Chioma Asor went from fixing her mom's radio in Nigeria to managing engineers
   at EA. Her secret? Time is the one thing you can't make back.
 pubDate: 2026-06-26
+interviewDate: 2024-11-15
 guest: Chioma Asor
 guestBio: Engineering Manager at Cliffhanger Games (EA), founder and president of
   STEAM Divas nonprofit, and mom of two teenagers. Chioma has led engineering teams
