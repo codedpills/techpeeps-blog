@@ -3,6 +3,7 @@ title: 'Go for Gold: Raymond''s Winding Road from Pilot Dreams to Data Consultin
 description: A trained data scientist who once wanted to fly planes on building career
   capital, surviving a brutal French master's, and being patient with yourself.
 pubDate: 2026-06-26
+interviewDate: 2024-04-05
 guest: Raymond Eyram Klutse
 guestBio: A Ghana-raised, trained data scientist working as a data consultant at BigSpark
   in the UK. Musician, polyglot, and host of The Tech Surf Podcast.
