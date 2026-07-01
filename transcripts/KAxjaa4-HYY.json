@@ -1,0 +1,227 @@
+{
+  "video_id": "KAxjaa4-HYY",
+  "title": "How Princess landed an international software engineer role fresh out of college.",
+  "duration_sec": 1892,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 127,
+      "end_ms": 1960,
+      "text": "Hi Princess, uh, how are you doing?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2901,
+      "end_ms": 4021,
+      "text": "I'm good, thank you. How are you?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 4118,
+      "end_ms": 24919,
+      "text": "Yeah, I'm doing pretty good. Um, so you work as a software engineer at a financial tech company based in, in the US, that's right? Yeah. Can you, um, tell me a little bit about what that is like for you, like on a day-to-day basis?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 26488,
+      "end_ms": 91335,
+      "text": "Um, so typically my day starts whenever I wake up. Um, that kind of depends, that kind of depends. Um, but it's a hybrid role, so some days in the office, some days out. Um, on the days that I do go to the office, which are a bit more interesting, I typically get in, we have stand-up, and then after stand-up, um, it's just like starting to work. The team I work with is a web-based team, so a lot of like web technologies, web languages, you can name whichever ones, um, you know, typically probably have worked, um, with them. Yeah. So it's work, work, work until evening. Um, sprinkled with a couple of meetings, maybe like Scrum meetings, et cetera. Um, and then sometimes like community meetings. So sometimes, um, the Black community, women, women in tech community, sometimes we have meetings for that. Um, yeah. Yeah, and then I go home and sleep and start the day again."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 92475,
+      "end_ms": 134160,
+      "text": "Uh, so you mentioned, um, sorry, um, you do daily stand-up and you also mention a bit of Scrum. Is this like, uh, you know, a company-wide way of working or does it differ based on like teams? And also like, I know there are a few, um, different opinions about like you know, what's their, um, you know, most productive way of working for product teams and software engineering and, you know, Scrum and Agile and stuff. Like, how do you feel about, at least like for your company, do you feel like personally this is something that works really well for you and your team?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 135554,
+      "end_ms": 197032,
+      "text": "Um, so I'm not too sure how other teams do it cuz I haven't really worked with teams outside of my own. Um, but it seems to be standard enough practice to have standups —timing depends because some teams work with other teams in different locations, but most teams I think do have stand-up. I think it works well for me because you kind of get a feel for what everyone else is working on. I feel like I've learned a lot about the projects and tickets that I'm working on from other people's contributions during stand-up. And so, for example, if I'm working on something and I need to understand another part of the codebase or another part of application. Someone else may be working on that and during standup they'll give like a very high-level overview of what they've done. That helps me to do what I need to do, or if I pick up a different ticket or if there's a bug to be fixed or something, it helps me to context switch a lot easier than if everybody is just siloed and working on their own."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 197691,
+      "end_ms": 217448,
+      "text": "Yeah. Okay, so, um, you also mentioned that, you know, your team basically works on most of the web-based, um, like, do you have the flexibility to, you know, work across the stack, or, um, do you work more on maybe the frontend versus the backend?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 219468,
+      "end_ms": 303602,
+      "text": "Um, I think my manager is very big on learn everything, get your hands on everything. Right. And so I think I remember when I entered, I was afraid to touch anything and I just, I prefer front end because I find it much more intuitive, um, to me. Right. And so I remember telling my manager that I just wanted to work on frontend tickets for now. And I remember he told me after a while that I should start looking at like backend tickets as well. And eventually when I got a bit more comfortable with that, they were like, okay, let's start looking into infrastructure. Right. So it's kind of like really pushing you outside of your comfort zone, which I'm really grateful for, um, because now I may not be perfect at everything, but I do have a fairly basic understanding of most of what we're doing, um, and to an extent I can explain it to somebody else. Most of it— not most of it, some of it may be wrong, but I can give a very high-level overview of what we do. Um, so yeah, you can choose to work on what you prefer if that's what you really want to do. But I found that having context across the board makes you a better engineer in what you want to specialize in because you understand better what's feeding into what you're working on or what you're working on will feed into."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 304388,
+      "end_ms": 352782,
+      "text": "Hmm. Uh, I'm also curious like what your thoughts are on, you know, the frontend versus backend debate. Heard a lot of, you You know, guys, you know, most people say, you know, frontend, it's like really easy and it's understandable. Maybe back in the days it wasn't, you know, that complicated compared to now, but now it seems, you know, at least in my opinion, it's sometimes it even feels more, you know, challenging and more technical. Um, especially like when, you know, you have to deal with scale and stuff like that. Um, do you also share a similar opinion, or do you think, yeah, like backend is, you know, more complex and it's more challenging, or they are equally challenging?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 353311,
+      "end_ms": 466809,
+      "text": "I'm gonna be diplomatic about this and say that they're equally challenging, um, simply because I feel like some people have a preference for one, right? But each one requires its own kind of certain skill sets, right? Um, so for example, for frontend, you don't just write code, you also need to Even if you do have a design, right, that you're following, you have a Figma design, you still need to have an eye for, for example, mobile responsiveness, right? How is this going to look in different, um, form factors? Um, especially now that we have things like Vision Pro and folding smartphones and all these things, like, what does your website look in all of these different contexts, right? So you need to be able to factor all of that design work inside of it, right? So now it goes beyond just writing code. It's It's about being creative, it's about like implementing different, you know, like state management and all these things, especially in like React, for example, right? So I think frontend as a concept has changed and grown so much more beyond what it was when like maybe 20 years ago people were starting out, right? So I don't think it's as easy as people make it out to be, but at the same time, the difficulty of one does not take away from the difficulty of another, or the ease of one does not take take away from the ease of the other. So backend in itself is also not easy at all. Like, you're looking at different API calls, you need to understand infrastructure as well, you need to be able to manage and talk to different systems, right? So at the end of the day, I think they all have their difficulties, and each person may have a different preference for each one, but it doesn't make the other one any less difficult. I just prefer frontend though. I find it so— it's much easier for me. I find it much easier. Easier, but it doesn't mean that it's in itself as a concept it is easier."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 467359,
+      "end_ms": 524378,
+      "text": "Yeah, and sometimes a bit like really annoying. I think it was similar for me, like I enjoy, um, writing frontend because for me I think what really made me go more into frontend was the fact that I could, you know, directly see what I'm building and, you know, also seeing whenever users interact with any piece of software, right? It's their frontend and they praise their frontend. So you kind of have some validation from there as opposed to the backend. So, um, you have no background in software engineering, um, or like say formal background in software engineering, um, and somehow you want— you wind up in a software engineering role, um, and this is what you are doing for your career now. How, how did that happen? Like, how did you get into this?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 525533,
+      "end_ms": 699510,
+      "text": "Um, so I think it would be a bit of, not necessarily exaggeration, but I feel like, um, it's not that I don't have any background at all, it's that I didn't do computer science as a major, right? And so, um, I studied something called Management Information Systems, which I like to think of as a combination of computer science and business, right? And, um, MIS as a subject wasn't as focused on the technicalities of what it means to build programs, at least from my perspective, right? So you have a basic understanding of Python, of web languages and all these things, but you don't, like, you don't, for example, know a lot about operating systems and, you know, like the very deep deep inside matters of what it means to build software and to make things work, right? And so, uh, I remember like doing a couple of internships. So, um, what essentially happened was that COVID happened, um, the pandemic happened, and, um, there's a whole backstory. There's like a long story of how I entered university, um, did my first year, um, in university, wanted to switch majors to computer science because I entered as a business major but I didn't feel like I was smart enough. And it's kind of like a recurring pattern that I saw in my life of not feeling like I was smart enough to do certain things. I didn't feel like I was smart enough to do computer science, so I decided to do MIS instead because I felt like it was a good middle ground. So even if I can't do the computer science, at least I can run back to where I'm comfortable, right? Not to say that business is easier, again, because I just find it easier, but doesn't make it any easier than computer science, but it was where I was more comfortable. And so I switched to MIS, found myself enjoying the computer science classes more and more, but again, it was very surface level from what I can tell, right? It didn't really, really dive as much in depth as I might have liked, right? And so I find myself self-studying a lot more, learning a lot more by myself during the pandemic. I joined a company as a marketing intern, and, um, the CEO happens to catch me building programs during company time, which is not good, right? And instead of lambasting— and I'll always be grateful for him because he kind of helped me to build that confidence in myself that really skyrocketed my career to where it is today, by the grace of God, right? And so, um, I remember him telling me that they needed a system, they didn't have anybody to build it, would I like to try? And I said, sure, right? Because I didn't have a choice. He has caught me, so I cannot say anything otherwise. And so I remember, um, for that 10 weeks, um, I kind of followed through and got something for them. And apparently they still use it today."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 699510,
+      "end_ms": 703630,
+      "text": "They've built on it. But that's really cool. That's really impressive."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 703630,
+      "end_ms": 804067,
+      "text": "That's really cool. Um, it was an Excel though, so it's not like programming programming, but it was, it was kind of logical thinking and programmatically like building something, right? So I come back that year, I come back after that internship and I switch majors from— I think I had just switched majors from business to MIS, right? So I come back in my third year feeling more comfortable, feeling more confident, and so I start picking up a few more computer science courses and I get an internship at Goldman Sachs, which is a financial firm based everywhere. They have offices everywhere, right? I do that internship my fears and getting inside my head start to kind of worry me a bit. So I am so afraid to touch everything that— to touch anything that I'm always asking for help with everything, even the things I know. I remember asking my manager, arguing with my manager over what a for loop is. It was a very crazy time. So obviously after that internship, I don't get a return offer, unfortunately, right? But now looking back, actually, I'm really grateful that I didn't. And I'm grateful for the honesty of my manager. I remember having a conversation with him and he told me that, um, I have potential, but there's still a lot more work that needs to be done, right? So I remember feeling very disappointed, um, but also very determined and kind of very carefree because like right now they have rejected me, I have nothing to lose, right? And so, um, I remember coming back, I switched my final year major. I was gonna write the— I was gonna write a thesis because I was told that's the easiest way to get an A. That's what they told me."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 804404,
+      "end_ms": 808426,
+      "text": "Again, this was at, uh, Ashesi, that's correct?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 808474,
+      "end_ms": 837753,
+      "text": "Ashesi, yes. Um, I was told that the easiest way to get an A was to write a thesis. After seeing the thesis student actually writing their thesis, I realized that's not true. Um, but that's what they told me. So, um, I came back, I was going to write a thesis, and then I decided at the last minute to switch to an applied project because that would give me the opportunity to actually build something out, right? And so, um, I built something called a computer-assisted career guidance system, um, using React and AI."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 839406,
+      "end_ms": 843775,
+      "text": "AI being a huge, a huge chain of if-else statements."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 843840,
+      "end_ms": 929899,
+      "text": "That was basically it, right? Um, and even though the code like if you look at it now it looks quite janky, it really did help me to understand more about thinking programmatically, thinking logically, right, and getting my mind into that space of, oh wow, you can actually do it, right. I remember one incident I won't forget was that my third year I took Web Technologies, right, and that was my first time working with like HTML, CSS, all these things. Well, not my first time, but my first time properly working on it with a team, right, and designing something. And I remember I built the UI for our site from scratch, from my head and everything. I was so proud of it. We presented and the lecturer was like, ah, what kind of UI is this? This is so nasty. Right. Not, not necessarily in those words, but you could kind of, he was like, let's, let's move from the UI. Let's do better. Yeah. Yeah. Right. And, um, I remember after that, um, during my final year presentation, the same lecturer was like, oh wow, this UI is so beautiful. Wow. I really like the colors and everything. I was like, Yes, you will like it. Yeah. And kind of like things like that really just showed me how much I had improved. Um, right. And so I graduated, but before then I had also started applying for jobs. I was very fortunate to, and I will always thank God for the life of, um, I don't know if you know Ivy Bali. Um, yeah. Yeah. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 930012,
+      "end_ms": 933633,
+      "text": "So she's the developer in Vogue, right? Developer in Vogue, right?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 933810,
+      "end_ms": 1107314,
+      "text": "Um, she was one day, she one day she was doing a giveaway on her timeline. And she gave away, um, a subscription, a 1-year subscription, I think, to LeetCode Premium to somebody. And I remember, um, I was in— I was on Twitter in my best friend's DMs, and I was telling her, wow, like, I really want that. I really wish I could, you know, I could also have that. And my best friend was like, Princess, why don't you just go and ask? Like, the worst she can say is no, you know. So I also went to ask, and Ivy gave me the subscription. I was like, what? Okay. And so, um, that year I started leagoding hard. I went in hard every day. I'm writing code, I'm programming. My flat— my roommate at the time will tell you that I'm sleeping at 4 AM because I have to finish my applied projects, I have to do my assignments, and I also have to study. I have to prepare for interviews. And, um, so I was just interviewing everywhere. I sent my CV everywhere. I remember there was a company I interviewed for, got to like— I made it past like their stages and everything. I sent them an email They were like, oh, so what university do you go to so we can start discussing? And they were like— I was like, I go to a Ghanaian university. And they said, we thought you were an international student. And I said, yes, international as in I'm not in your country. And they're like, oh, sorry, we cannot provide visa sponsorship for you. So after all my effort interviewing, that all just went down the drain. It was a very discouraging time. I got like a lot of rejections. So, so, so, so, so many rejections. Right? And at a point in time, it was kind of like— gosh, I've been talking for a while. It was kind of like, um, I felt very hopeless, right? But again, I had nothing to lose. I'm very shameless, anybody will tell you. I had nothing to lose. I just kept on pushing, kept on applying. And it just so happens my CV ended up at the company that I'm at right now, and they sent me an email. And I thought it was a scam because the font was weird, but I was like, I'm a student, I have 20 CDs in my account. If you want to scam me, it's not me that you're going to get it. Let's go ahead, right? So I had my first call with them. I saw that, oh, okay, this is not— okay, there's no scam. Okay. Um, so I had my first interview, that went well. I had my second interview, that also went well. Um, third interview was a system design interview, and, um, I had so many friends, um, who helped me to prep for that interview. And I feel like community is such an important part of, um becoming a better software engineer, not just for applications, but kind of like having a community of friends who can encourage you, who can help you. Um, because it was my best friend who pushed me to apply to like Ivy's— yeah, good scholarship thing. It was my friends in uni who helped me to prep for the, um, system design interview. It was my friend who told me that I could do it. It was my friends who were with me when I wanted to give up, right? A community is such an important thing. To have, and I'm really grateful for the people that God has put in my life as of right now, because, you know. So yeah, I applied, by the grace of God I made it, and now I'm here."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1107539,
+      "end_ms": 1158719,
+      "text": "So yeah, that's pretty much it. Uh, yeah, yeah. So, um, if I, you know, understand correctly, um, you also like helped, you know, a couple of people. You had this thing where you were helping people try to get international offers and prep for interviews and stuff. And all during that time, you were also struggling to get international offers by yourself. That must have been very challenging, but also putting that kind of sacrifice, even though you weren't getting those offers, you were helping other people to try to get those. Do you want to talk a little bit about that? And was this still whilst in school or after, like Ashesi?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1160020,
+      "end_ms": 1322887,
+      "text": "Um, so this was back in school. Um, in 2021, I remember, uh, this was during pandemic time. I started, I helped someone with an application to, um, I think a summer program in Madrid, Spain. Right. And he got in and he was like, Princess, that was really good. You know, you should start a business, you know, those kinds of things. And I was like, lol. I'm not a business person, I don't want to do that. And he was like, just try, try it, me, I'll pay you, right? So he was the one who actually paid, he offered to pay me, um, for my services. And, um, thank you so much to him because he kind of got the ball rolling on that. And so, um, after that I started a little, I started working like a little bit, but all I did was come up with a name, right? And I reached out to, I didn't even reach out to a friend, someone reached out to me, or I reached out to someone, something happened, right? Um, but we started talking and she was like, oh, you have this, I also can help out with this, right? So we started talking and we created a business together. We called it Uplink Masterclass, where every month we take on a group of students. And our, our goal was not necessarily to write your CV for you or to do the application for you. Our goal was very much to help you so that you could do the application by yourself. Right? And so it was kind of like, because both of us had turned or like interviewed with a lot of like larger international companies, so we had a feel for what that felt, what, what that looked like. Um, and so we, we started working together, we held classes. Um, a lot of our, um, students like did go on to work with all of these like really big companies. Really big names and other smaller companies as well. I remember a couple of months ago I got an email from one of our students from a while back telling me that he's so grateful for everything because we've stopped doing that now, but like to still hear that back is very, very encouraging because again we weren't doing it for necessarily for the money because let's be very honest, we were charging like, I think the first time we were charging like ₦20-30, it wasn't really anything anything too much, so to speak. We were very conscious of the fact that we wanted people to be able to afford it. Um, right, so I think we even had payment plans and all, like, so that— so you do the class and then when you get the job you pay us or something like that. It was very much about like, um, how do we get people into these kind of positions. And yeah, so I think we were able to make like a really good impact. Would I want to start it up again? Maybe eventually. Um, but I have quite a lot going on in my life right now, so I'm not sure I have the time, but we'll see."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1323577,
+      "end_ms": 1402131,
+      "text": "Yeah. Yeah. Um, it's also like interesting, like what I found, like you mentioned so many times how during, you know, the process of applying for jobs and even in your internships and, you know, like your first job, how like sometimes you got really scared, um, and confused and, you know, had this you know, should I say lack of confidence in yourself sometimes. And yeah, for me, like, not many people, you know, show that vulnerability and accept, you know, that, that they are struggling. I think on the outside, you know, now maybe like people would think, you know, she's so, um, she's got everything figured out, you know. She's— and, um, it's good to see, like, even for people that you know, reached stages that other people aspire to be, sometimes you still feel these, um, occasional lack of confidence. That's, um, really impressive. So, well, like you spoke a lot about, you know, your work and everything has been about work so far. I'm also like curious to learn, like, do you like half-time, or do you, um, do anything outside of work that you enjoy?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1403776,
+      "end_ms": 1417566,
+      "text": "Um, so outside of work, um, I don't actually really do too much. Um, see, I need to get a life. Um, what do I do? I sometimes visit the library. Um, I play guitar."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1418019,
+      "end_ms": 1419655,
+      "text": "I— oh, you do play guitar?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1419719,
+      "end_ms": 1474473,
+      "text": "Yeah, I play guitar a little bit, a little bit, just small. Um, I play guitar, I bake, um, I watch a lot— I watch movies a lot. I haven't had time as much nowadays. Um, I travel, I sightsee in the area that I'm in because I don't have— I don't, I don't go too far, you know. But, um, yeah, what else do I do? I go— there's church, I'm in the choir, so that takes a lot of my time. As well. Yeah, that's— there's not really too much else that I do. Um, I'm pretty sure that like as I continue to think, more things will come up. But, um, yeah, I like to take walks as well. Um, so sometimes after church I can just like change into like joggers and sweatpants— joggers and sneakers— and just like go on like a 2-hour walk just for Fun."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1475147,
+      "end_ms": 1486042,
+      "text": "Do you also like occasionally try to make some Ghanaian food? And I'm sure that's something like you don't get often, like especially from outside."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1487215,
+      "end_ms": 1512979,
+      "text": "So I, I, I used to cook a lot of Ghanaian food. Of late, I'm quite lazy when it comes to that. I do know this really good Ghanaian restaurant that is a couple of minutes minutes slash nearly an hour away from my house that when I'm feeling very homesick, I just go there and eat. Yes, I eat and I enjoy it."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1514119,
+      "end_ms": 1559977,
+      "text": "So, um, what's your— will I say like words that like you would say to, you know, people, especially like ladies that, you know, Um, cause, um, earlier you mentioned, for instance, like when the reason why you made a decision to study MIS was because you, you thought you didn't think you were smart enough to study computer science. Um, and I'm sure like there are other people that feel the same way, perhaps because they think it's intimidating or it's, you know, probably very difficult. Um, so for people like that, um, do you have anything to tell them?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1561692,
+      "end_ms": 1748010,
+      "text": "Um, I think what I would say— well, I'm, I'm a Christian, right? So my faith very much colors my worldview. It defines my worldview, in fact. So what I would say is that, um, I once heard mentor tell me this, and it's kind of— it's trying to shape my perspective. I'm still getting there. But she said that, um, you approach things from the viewpoint that you are excellent. So you do certain things, right? So for example, I'm— so you don't come to work early or on time to be excellent. Because you are excellent, you come to work on time. Because you are excellent, you put in extra effort. Because you are excellent, you get work done on time. Right. Um, I think especially for those of us from African countries and African backgrounds, we tend to kind of look down on ourselves. From what I can see, not everybody is like that because I can't generalize. I have realized that there's this internal, um, kind of like subservience that a lot of us tend to have. You can see in the way we— in the way we write, in the way we speak, in the way we think as well, and that also kind of colors, um, what we do and what we think we can achieve. Um, I think it's important that if you're, if you're looking to hit the sky, you need to have the sky in view. It's important to shape, shape your view, or to kind of like color your own perspective by what you want to see. Right, so in school I knew that I wanted— my goal was not even to jackpot, it was to go for free. I heard someone say that one semester he had, um, he traveled the world for free, right, sponsored by a company. And I said, hmm, I want to do that. So that was my goal, like the entire internship, that was my goal. I wanted to travel for free. That was my goal, right? Not the best goal, but I achieved it. So, um, yeah, um, have a goal in mind. Set your goal. The Bible says in Hosea, I think Hosea 3:2, that write the vision, make it plain, that he who sees it will run by it, right? Write down what you want to see. What do you want to see? Do you want to be like the next prime minister? Do you want to be the best software engineer? You want to work at Microsoft, Google? You want to work at big tech. What is it that you want to see? Write it down, right? And then when you've written it down, break it down further. So okay, if I want to go to Microsoft in 5 years, what is it that makes a Microsoft engineer? Okay, Liko, doing that. Um, is it working on these kind of projects? Doing that. Is it these kind of languages? Doing that, right? Write down your vision, make it plain, run with it, right? And don't let fear or intimidation talk you out of doing what you want to do, right? You are just as smart, you are just as intelligent, you are just as capable as the next person in the room. Don't let yourself talk you out of being all that you can possibly be."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1748621,
+      "end_ms": 1816301,
+      "text": "All the best. I, I feel already really empowered after listening to this, and I hope like people that watch this also like have feel like that and have that sense of confidence, you know, to just go for it. I mean, what's the worst thing that could happen? It's gonna take a lot of work for sure, like as we've seen with also many other people that we talk to. But it's also— and that's also the reason why I, you know, started this, to show people that possible. Like, there are people like us that have done it. And from hearing from, like, hearing from your story and other people, you know, we can already see that this is possible. So yeah, thanks a lot for sharing, um, your journey with us. And myself, I've learned a few things. Um, and yeah, to our viewers, thanks also for tuning in today. And don't forget to to like, comment, and subscribe. Until next time, cheers! Cheers! Bye!"
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}

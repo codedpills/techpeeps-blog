@@ -5,7 +5,7 @@
 VENV := .venv
 PY := $(VENV)/bin/python
 
-.PHONY: help fetch transcribe generate next style-guide clip publish compare site-dev site-build install venv
+.PHONY: help fetch transcribe generate next style-guide clip publish compare remap refresh-meta patch-dates verify site-dev site-build install venv
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -29,6 +29,12 @@ transcribe: ## Transcribe next pending (ID=<id>, FORCE=1 to re-transcribe)
 
 remap: ## Re-run HOST/GUEST mapping on existing transcripts (no API cost; ID= optional)
 	$(PY) pipeline/transcribe.py --remap $(ID)
+
+refresh-meta: ## Fetch video publish dates into transcripts + state (no re-transcribe; ID= optional)
+	$(PY) pipeline/transcribe.py --refresh-meta $(ID)
+
+patch-dates: ## Backfill interviewDate onto existing drafted PR branches (run refresh-meta first)
+	$(PY) pipeline/patch_meta.py $(if $(ID),$(ID),--all-drafted)
 
 verify: ## Verify published posts against transcripts (quotes verbatim, frontmatter, clip)
 	$(PY) pipeline/verify_post.py --all
