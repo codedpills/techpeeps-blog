@@ -1,12 +1,12 @@
 ---
-title: 'From Home Economics to Figma: Lovelace Fierce on the Real Work Behind Product
-  Design'
-description: Product designer Lovelace Fierce on transitioning from CS to design,
+title: "It's Never About You, the Designer:The Real Work Behind Product, Freelancing, and the Long Road There"
+  
+description: Product designer Lovelace Filson on transitioning from CS to design,
   navigating freelance clients, and why communication beats pixels every time.
 pubDate: '2026-06-28'
 interviewDate: 2024-05-28
-guest: Lovelace Fierce
-guestBio: Lovelace Fierce is a Ghanaian product designer and freelancer who transitioned
+guest: Lovelace Filson
+guestBio: Lovelace Filson is a Ghanaian product designer and freelancer who transitioned
   from computer science and front-end development into UI/UX and product design, building
   a client roster across the US.
 videoId: bE-mpnLZNh4
@@ -26,9 +26,9 @@ heroClip:
 draft: true
 ---
 
-# From Home Economics to Figma: Lovelace Fierce on the Real Work Behind Product Design
+# It's Never About You, the Designer: The Real Work Behind Product, Freelancing, and the Long Road There
 
-"I remember being depressed, broke, and everything," Lovelace Fierce says, without a trace of self-pity. "It was not like it was smooth." She pauses, then adds something that reframes the whole confession: "But as long as I don't give up, I will succeed. It doesn't matter how long it takes."
+"I remember being depressed, broke, and everything," Lovelace says, without a trace of self-pity. "It was not like it was smooth." She pauses, then adds something that reframes the whole confession: "But as long as I don't give up, I will succeed. It doesn't matter how long it takes."
 
 That quiet certainty — earned, not assumed — is probably the most useful thing Lovelace could say to anyone eyeing a career in product design and wondering whether they have what it takes. She is proof that the path rarely looks the way you expect, and that the detours are often the point.
 
@@ -45,18 +45,19 @@ The UI versus UX split is its own conversation. In large companies — Google, A
 ---
 
 ## The Road from Takoradi to Figma
+Because Lovelace and I go back a long way, I almost forgot to do the thing I always do — pause and let her paint the picture of how she got here. So we rewound.
 
-Lovelace grew up in Takoradi, Ghana. As a kid, she cycled through the usual aspirations — doctor, lawyer — without landing on anything that felt truly hers. When she finished junior high and moved to senior high school, the institution assigned her home economics. "I was like, you know, I'm gonna do general arts, what am I gonna do with home economics?" It felt like a wrong turn. She had no idea it was the first of many that would eventually lead somewhere surprising.
+She grew up in Takoradi, Ghana. As a kid, she cycled through the usual aspirations — doctor, lawyer — without landing on anything that felt truly hers. When she finished junior high and moved to senior high school, the institution assigned her home economics. "I was like, you know, I'm gonna do general arts, what am I gonna do with home economics?" It felt like a wrong turn. She had no idea it was the first of many that would eventually lead somewhere surprising.
 
 After SHS, she still had no clear direction. Then her parents stepped in — in the very African-parent way of stepping in. They consulted people they trusted, and those people recommended IT. "I know African parents kind of tend to push their kids in certain professions," Lovelace says, laughing. "But I'm glad it's not those like conventional professions like law." She enrolled at Ghana Telecom University (now GCTU), started a diploma in IT, and something clicked. The subject matter actually interested her. The people around her were good. A path was forming.
 
-She went on to complete her degree at Coventry University's GTUC Accra campus. It was around that time that Coacheng — widely regarded as one of Ghana's leading coding schools — came to her campus. The visit cracked open a window. She had taught herself some HTML and CSS, but hadn't gone deep. Hearing what was possible made her want to go deeper. She joined Code Train, Coacheng's developer training program, intending to become a software developer — specifically, a mobile app developer.
+She went on to complete her degree at Coventry University's GTUC Accra campus. It was around that time that Codetrain (now Codetrain Africa), widely regarded as one of Ghana's leading coding schools — came to her campus. The visit cracked open a window. She had taught herself some HTML and CSS, but hadn't gone deep. Hearing what was possible made her want to go deeper. She joined Codetrain's developer training program, intending to become a software developer — specifically, a mobile app developer.
 
 That plan didn't survive contact with Figma.
 
 "I remember the first time I was introduced to Figma," she says. "I didn't know how to use it or anything. I didn't know anything about it, but like when I started using it, I realized that something that I actually did enjoy more than the coding." The realization was almost accidental. She hadn't known product design was a whole career. She just knew she liked it more than what she'd been doing. She went to her mentor, Awal, and told him she wanted to pivot. He was a software developer himself, but he didn't push back. He told her to go for it. He found her courses. He believed in the direction before she fully did.
 
-Code Train also brought Kevin into the picture — someone who helped Lovelace understand the mechanics of freelancing, a world neither of them had much precedent for in their immediate circle. "I remember him hopping on calls with me and kind of like telling me what I need to do, stuff I need to put in place to be a successful freelancer." That scaffolding mattered enormously. Not because it made everything easy, but because it gave her structure during the stretches when nothing felt easy at all.
+Codetrain also brought Kevin into the picture — someone who helped Lovelace understand the mechanics of freelancing, a world neither of them had much precedent for in their immediate circle. "I remember him hopping on calls with me and kind of like telling me what I need to do, stuff I need to put in place to be a successful freelancer." That scaffolding mattered enormously. Not because it made everything easy, but because it gave her structure during the stretches when nothing felt easy at all.
 
 ---
 
@@ -64,7 +65,7 @@ Code Train also brought Kevin into the picture — someone who helped Lovelace u
 
 It's tempting to read Lovelace's journey as a solo hustle story — self-taught designer figures it out through grit and YouTube tutorials. The reality is more communal than that, and she's deliberate about naming it.
 
-"I would always say like, I'm grateful to Code Train and I'm grateful for Code Train bringing me to all the people that I know from Code Train." The community — Awal, Kevin, fellow learners — functioned as a kind of distributed support system. When the learning got hard, when the depression crept in, when the money wasn't there, there were people who had been on the same road and were willing to talk about it honestly.
+"I would always say like, I'm grateful to Codetrain and I'm grateful for Codetrain bringing me to all the people that I know from Codetrain." The community — Awal, Kevin and fellow learners functioned as a kind of distributed support system. When the learning got hard, when the depression crept in, when the money wasn't there, there were people who had been on the same road and were willing to talk about it honestly.
 
 This matters especially for self-taught learners, who often miss out on the peer cohort that a formal program provides. Without that community, the moment things get hard — and they will get hard — there's no one to normalize the difficulty or help you see the next step. "Most people give up," Lovelace says simply, "because it really helps when you have someone who believes in what you are doing and they are willing to kind of like help you actually get there."
 
@@ -132,4 +133,4 @@ And for the anime fans in the room: Hunter x Hunter. She's firm on this. "I don'
 
 ---
 
-Lovelace Fierce is a product designer and freelancer based in Ghana. You can find her and connect with her on LinkedIn — search **Lovelace Fierce**, or find the link in the description of the original video. If her story resonates — the winding path, the community that made the difference, the hard-won lessons about communication and craft — the full conversation is worth watching.
+Lovelace Filson is a product designer and freelancer based in Ghana. You can find her and connect with her on LinkedIn — search **Lovelace Filson**, or find the link in the description of the original video. If her story resonates — the winding path, the community that made the difference, the hard-won lessons about communication and craft, the full conversation is worth watching.
