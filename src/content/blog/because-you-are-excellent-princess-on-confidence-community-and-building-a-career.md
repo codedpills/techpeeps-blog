@@ -4,6 +4,7 @@ title: 'Because You Are Excellent: Princess on Confidence, Community, and Buildi
 description: A software engineer at a US fintech on imposter fear, learning the whole
   stack, and the mindset that carried her from MIS to her dream role.
 pubDate: '2026-06-30'
+interviewDate: 2024-07-05
 guest: Princess
 guestBio: A software engineer at a US-based financial technology company. An Ashesi
   University graduate in Management Information Systems who co-founded Uplink Masterclass,
