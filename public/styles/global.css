@@ -26,14 +26,16 @@
   --accent-ink: #9a3817; /* accent tuned for link contrast on paper */
   --shadow: 0 1px 2px rgba(40, 33, 22, 0.05), 0 12px 32px rgba(40, 33, 22, 0.08);
   --clip-bg: #e9e3d5;
-  --clip-scrim: rgba(28, 22, 14, 0.20);
+  --clip-scrim: rgba(24, 18, 11, 0.42);
 
   --measure: 39rem;
   --radius: 12px;
 }
 
+/* Dark tokens — shared by "system prefers dark (and reader hasn't forced light)"
+   and "reader explicitly chose dark". Kept identical in both selectors. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #15130e;
     --bg-tint: #1b180f;
     --surface: #1e1b14;
@@ -45,8 +47,28 @@
     --accent-ink: #e6a577;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 36px rgba(0, 0, 0, 0.45);
     --clip-bg: #241f17;
-    --clip-scrim: rgba(0, 0, 0, 0.34);
+    --clip-scrim: rgba(0, 0, 0, 0.55);
   }
+}
+:root[data-theme="dark"] {
+  --bg: #15130e;
+  --bg-tint: #1b180f;
+  --surface: #1e1b14;
+  --ink: #ece4d4;
+  --ink-soft: #d4ccba;
+  --muted: #a79d8a;
+  --rule: #322d22;
+  --accent: #e2915f;
+  --accent-ink: #e6a577;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 36px rgba(0, 0, 0, 0.45);
+  --clip-bg: #241f17;
+  --clip-scrim: rgba(0, 0, 0, 0.55);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
 }
 
 * {
@@ -68,6 +90,66 @@ body {
   line-height: 1.7;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Theme toggle ---------- */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 50;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--ink-soft);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.theme-toggle:active {
+  transform: scale(0.94);
+}
+.theme-toggle svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+/* Show the icon for the action the reader can take (mirrors the token logic). */
+.theme-toggle .icon-sun {
+  display: none;
+}
+.theme-toggle .icon-moon {
+  display: block;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon {
+    display: none;
+  }
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun {
+    display: block;
+  }
+}
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+:root[data-theme="light"] .theme-toggle .icon-moon {
+  display: block;
+}
+:root[data-theme="light"] .theme-toggle .icon-sun {
+  display: none;
 }
 
 a {
