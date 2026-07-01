@@ -370,6 +370,12 @@ def main() -> int:
         fm["videoUrl"] = f"https://www.youtube.com/watch?v={video_id}"
         # Default pubDate to today rather than a model-hallucinated date.
         fm["pubDate"] = _date.today().isoformat()
+        # The interview's YouTube publish date (captured at transcribe time).
+        vpub = transcript.get("video_published_at")
+        if vpub:
+            fm["interviewDate"] = vpub
+        else:
+            fm.pop("interviewDate", None)
 
         # Write the draft on the branch.
         BLOG_DIR.mkdir(parents=True, exist_ok=True)
