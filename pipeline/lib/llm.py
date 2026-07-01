@@ -9,16 +9,23 @@ from __future__ import annotations
 from . import config
 
 
-def complete(prompt: str, *, max_tokens: int = 8000, temperature: float = 0.7) -> str:
+def complete(
+    prompt: str,
+    *,
+    model: str | None = None,
+    max_tokens: int = 8000,
+    temperature: float = 0.7,
+) -> str:
     """Run a single-turn completion and return the text content.
 
+    `model` overrides ANTHROPIC_MODEL when given (used by the A/B compare tool).
     Raises RuntimeError on API failure so callers can fail without opening a PR.
     """
     api_key = config.require(
         "ANTHROPIC_API_KEY",
         hint="Create a key at https://console.anthropic.com/settings/keys",
     )
-    model = config.anthropic_model()
+    model = model or config.anthropic_model()
 
     try:
         import anthropic
