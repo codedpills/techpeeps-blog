@@ -96,6 +96,12 @@ def check_frontmatter(fm: dict, errors: list, warnings: list) -> None:
     if not isinstance(hero, dict) or not all(k in hero for k in ("mp4", "webm", "poster", "alt")):
         errors.append("frontmatter: heroClip must have mp4/webm/poster/alt")
 
+    if not fm.get("interviewDate"):
+        warnings.append(
+            "frontmatter: interviewDate (video publish date) missing — run "
+            "`make refresh-meta` then regenerate, or `make patch-dates`."
+        )
+
 
 def check_video_link(fm: dict, errors: list) -> None:
     vid = str(fm.get("videoId", ""))

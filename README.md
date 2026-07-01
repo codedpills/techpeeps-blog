@@ -118,6 +118,26 @@ It writes one article per model to `work/compare/` (gitignored) to read side by
 side. Once you've decided, set `ANTHROPIC_MODEL` in `.env` and run a normal
 `make generate ID=<id> FORCE=1`.
 
+### Dates: published vs. interview
+
+Each post shows two dates in its sub-header — **when the article was published**
+on the site (`pubDate`, set to generation day) and **when the interview aired on
+YouTube** (`interviewDate`). The latter is captured automatically at transcribe
+time (yt-dlp `upload_date`, stored as `video_published_at` in the transcript) and
+injected into the frontmatter by `generate.py`; it also drives the JSON-LD
+`VideoObject.uploadDate`. New drafts get it for free.
+
+To backfill posts that were drafted before this existed:
+
+```bash
+make refresh-meta          # fetch publish dates into all transcripts + state
+make patch-dates           # inject interviewDate onto each open drafted PR branch
+# then push the patched branches to update their PRs
+```
+
+`refresh-meta`/`patch-dates` accept `ID=<video_id>` to target one. A missing
+`interviewDate` is a **warning** (not a blocker) in the verifier.
+
 If a transcript's HOST/GUEST labels look swapped (the heuristic handles
 cold-open teaser clips and length-normalized question density, but isn't
 infallible), re-run the mapping **without** re-transcribing — no API cost:
