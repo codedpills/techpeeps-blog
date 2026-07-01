@@ -6,7 +6,8 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string().min(1),
     description: z.string().min(1).max(155), // meta description
-    pubDate: z.coerce.date(),
+    pubDate: z.coerce.date(), // when the article was published on the site
+    interviewDate: z.coerce.date().optional(), // YouTube publish date of the interview
     guest: z.string().min(1), // guest full name
     guestBio: z.string().min(1), // one line
     videoId: z.string().min(1), // YouTube id (for linking back)
