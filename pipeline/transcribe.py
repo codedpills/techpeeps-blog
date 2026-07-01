@@ -62,6 +62,25 @@ def watch_url(video_id: str) -> str:
     return f"https://www.youtube.com/watch?v={video_id}"
 
 
+def fetch_video_published(video_id: str) -> str | None:
+    """Return the video's YouTube publish date as ISO 'YYYY-MM-DD' (best effort).
+
+    Uses a metadata-only yt-dlp call (no download). Returns None if unavailable.
+    """
+    try:
+        out = subprocess.run(
+            [*config.ytdlp_cmd(), "--skip-download", "--no-warnings",
+             "--print", "%(upload_date)s", watch_url(video_id)],
+            check=True, capture_output=True, text=True,
+        ).stdout.strip().splitlines()
+    except Exception:
+        return None
+    raw = out[0].strip() if out else ""
+    if len(raw) == 8 and raw.isdigit():  # YYYYMMDD
+        return f"{raw[0:4]}-{raw[4:6]}-{raw[6:8]}"
+    return None
+
+
 def download_audio(video_id: str) -> Path:
     """Download audio as mp3 into work/<id>.mp3. Raises on failure."""
     WORK_DIR.mkdir(exist_ok=True)
@@ -180,6 +199,7 @@ def build_transcript_json(
     video_id: str,
     title: str,
     tr: assemblyai.Transcription,
+    video_published_at: str | None = None,
 ) -> dict:
     mapping, confidence = map_speakers(tr.utterances)
     segments = [
@@ -195,6 +215,9 @@ def build_transcript_json(
     return {
         "video_id": video_id,
         "title": title,
+        # YouTube publish date of the source interview (ISO YYYY-MM-DD). This is
+        # the "when the conversation happened" date surfaced on the post.
+        "video_published_at": video_published_at,
         "duration_sec": tr.audio_duration_sec,
         "speakers_detected": tr.speakers_detected,
         "segments": segments,
@@ -239,7 +262,37 @@ def main() -> int:
         help="Re-run HOST/GUEST mapping on existing transcript(s); no API cost. "
         "With no video_id, remaps every transcript in transcripts/.",
     )
+    parser.add_argument(
+        "--refresh-meta", action="store_true",
+        help="Fetch the video's YouTube publish date into existing transcript(s) "
+        "+ state; no re-transcribe. With no video_id, refreshes all transcripts.",
+    )
     args = parser.parse_args()
+
+    if args.refresh_meta:
+        st = state.load()
+        if args.video_id:
+            paths = [TRANSCRIPTS_DIR / f"{args.video_id}.json"]
+        else:
+            paths = sorted(TRANSCRIPTS_DIR.glob("*.json"))
+        if not paths or (args.video_id and not paths[0].exists()):
+            print("ERROR: no transcript(s) found to refresh.", file=sys.stderr)
+            return 1
+        for p in paths:
+            if not p.exists():
+                print(f"  skip (missing): {p}")
+                continue
+            data = json.loads(p.read_text(encoding="utf-8"))
+            vid = data.get("video_id", p.stem)
+            vp = fetch_video_published(vid)
+            data["video_published_at"] = vp
+            p.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n",
+                         encoding="utf-8")
+            if vid in st.get("videos", {}):
+                state.update_video(st, vid, video_published=vp)
+            print(f"  {p.stem}: video_published_at = {vp or 'UNKNOWN'}")
+        state.save(st)
+        return 0
 
     if args.remap:
         if args.video_id:
@@ -301,10 +354,15 @@ def main() -> int:
         print("Status left at 'pending'. No transcript written.", file=sys.stderr)
         return 1
 
-    data = build_transcript_json(video_id, video.get("title", ""), tr)
+    video_published_at = fetch_video_published(video_id)
+    data = build_transcript_json(
+        video_id, video.get("title", ""), tr, video_published_at
+    )
     with out_path.open("w", encoding="utf-8") as fh:
         json.dump(data, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
+    # Mirror onto state for convenience (transcript remains the source of truth).
+    state.update_video(st, video_id, video_published=video_published_at)
 
     if args.force:
         # A forced re-transcribe changes content; reset downstream status so the

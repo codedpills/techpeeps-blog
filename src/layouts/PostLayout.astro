@@ -18,6 +18,7 @@ const {
   title,
   description,
   pubDate,
+  interviewDate,
   guest,
   guestBio,
   videoId,
@@ -29,11 +30,13 @@ const {
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImage = new URL(heroClip.poster, Astro.site).toString();
 const isoDate = pubDate.toISOString();
-const dateStr = pubDate.toLocaleDateString("en-US", {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-});
+const fmtDate = (d: Date) =>
+  d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+const dateStr = fmtDate(pubDate);
+// The interview's YouTube publish date — the "when the conversation happened"
+// date. ISO form feeds VideoObject.uploadDate; the display form goes in the meta.
+const interviewIso = interviewDate ? interviewDate.toISOString() : undefined;
+const interviewStr = interviewDate ? fmtDate(interviewDate) : undefined;
 
 // JSON-LD: Article describing a profile of the guest (Person), based on the
 // source interview (VideoObject). Drives SEO rich results and gives AI/answer
@@ -58,7 +61,7 @@ const jsonLd = {
     name: title,
     description,
     thumbnailUrl: [ogImage],
-    uploadDate: isoDate,
+    uploadDate: interviewIso ?? isoDate,
     contentUrl: videoUrl,
     embedUrl: `https://www.youtube.com/embed/${videoId}`,
   },
@@ -125,7 +128,14 @@ const jsonLd = {
           A profile of <strong>{guest}</strong> · {guestBio}
         </p>
         <p class="meta">
-          {dateStr} ·
+          Published <time datetime={isoDate}>{dateStr}</time>
+          {interviewStr && (
+            <>
+              {" · "}Conversation from
+              <time datetime={interviewIso}>{interviewStr}</time>
+            </>
+          )}
+          {" · "}
           <a href={videoUrl} rel="noopener" target="_blank">Watch the interview ↗</a>
         </p>
       </header>
