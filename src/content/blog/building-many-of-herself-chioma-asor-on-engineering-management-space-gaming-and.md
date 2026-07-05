@@ -1,13 +1,13 @@
 ---
-title: 'Building Many of Herself: Chioma Asor on Engineering Management, Space, Gaming,
-  and STEAM Divas'
-description: Chioma Asor went from fixing her mom's radio in Nigeria to managing engineers
+title: 'Building Many of Herself: Chioma Aso on Engineering Management, Space, Gaming,
+  and STEAMDivas'
+description: Chioma Aso went from fixing her mom's radio in Nigeria to managing engineers
   at EA. Her secret? Time is the one thing you can't make back.
 pubDate: 2026-06-26
 interviewDate: 2024-11-15
-guest: Chioma Asor
-guestBio: Engineering Manager at Cliffhanger Games (EA), founder and president of
-  STEAM Divas nonprofit, and mom of two teenagers. Chioma has led engineering teams
+guest: Chioma Aso
+guestBio: Former Engineering Manager at Cliffhanger Games (EA), published author, founder and president of
+  STEAMDivas nonprofit, and mom of two teenagers. Chioma has led engineering teams
   across aerospace, manufacturing, and gaming.
 videoId: kfmN0FKgsto
 videoUrl: https://www.youtube.com/watch?v=kfmN0FKgsto
@@ -22,15 +22,15 @@ heroClip:
   mp4: /clips/building-many-of-herself-chioma-asor-on-engineering-management-space-gaming-and.mp4
   webm: /clips/building-many-of-herself-chioma-asor-on-engineering-management-space-gaming-and.webm
   poster: /clips/building-many-of-herself-chioma-asor-on-engineering-management-space-gaming-and.jpg
-  alt: Chioma Asor speaking about time being the most valuable thing she has
+  alt: Chioma Aso speaking about time being the most valuable thing she has
 draft: true
 ---
 
-# Building Many of Herself: Chioma Asor on Engineering Management, Space, Gaming, and STEAM Divas
+# Building Many of Herself: Chioma Aso on Engineering Management, Space, Gaming, and STEAMDivas
 
 > *"I can lose money and I will make it back. I can't make time back."*
 
-That line lands quietly, but it carries the full weight of how Chioma Asor operates. She is an engineering manager at Cliffhanger Games (part of Electronic Arts), the founder and president of a nonprofit called STEAM Divas, and a mom of two teenagers. On paper, that reads like too much for one person. In conversation, it turns out she has a very deliberate reason why it works: she treats a packed calendar not as a badge of honour, but as a warning sign.
+That line lands quietly, but it carries the full weight of how Chioma Aso operates. She was an engineering manager at Cliffhanger Games (part of Electronic Arts), the founder and president of a nonprofit called STEAMDivas, and a mom of two teenagers. On paper, that reads like too much for one person. In conversation, it turns out she has a very deliberate reason why it works: she treats a packed calendar not as a badge of honour, but as a warning sign.
 
 Chioma is the kind of profile that doesn't show up on tech podcasts very often. She is not a software engineer, not a startup founder in the conventional sense, but someone who has quietly moved through electrical engineering, aerospace, contract manufacturing, and now AAA game development, accumulating a rare kind of range along the way. For readers who have ever wondered what an engineering manager actually *does* all day, or who are quietly asking themselves whether management is a path they want to walk, her story is a useful, and genuinely energising, place to start.
 
@@ -76,7 +76,7 @@ Most people treat a full calendar as evidence of importance. Chioma treats it as
 
 She applies the same diagnostic lens to her engineers. "If I feel like you're getting overwhelmed, you've become too busy, I need to start digging into why you too busy. Why do you feel the need to be in every meeting? Why don't you trust your team?" The question underneath the calendar, she suggests, is almost always about confidence or control.
 
-This is where her nonprofit work and her day job quietly reinforce each other. Running STEAM Divas means motivating volunteers who aren't getting paid, which means finding ways to make the work meaningful beyond a salary. The same muscle she uses to motivate engineers at EA, she uses to keep a nonprofit running on goodwill and purpose.
+This is where her nonprofit work and her day job quietly reinforce each other. Running STEAMDivas means motivating volunteers who aren't getting paid, which means finding ways to make the work meaningful beyond a salary. The same muscle she uses to motivate engineers at EA, she uses to keep a nonprofit running on goodwill and purpose.
 
 ---
 
@@ -90,19 +90,19 @@ The breadth of what electrical engineering covers is part of why it doesn't alwa
 
 ---
 
-## STEAM Divas: Tricking Girls Into Loving STEM
+## STEAMDivas: Tricking Girls Into Loving STEM
 
-That question (how do you remove the roadblocks?) is also the animating question behind STEAM Divas, the nonprofit Chioma founded.
+That question (how do you remove the roadblocks?) is also the animating question behind STEAMDivas, the nonprofit Chioma founded.
 
 The origin is personal. She has spent her career being the only woman in the room, and she got tired of it. "I got tired of seeing that. I was like, maybe I can do something about that by putting things in front of young girls so that they too, they can realize that they can do this."
 
-What makes STEAM Divas different from similar organisations, she explains, is the target audience. Most STEM outreach programs attract girls who are already curious about science and engineering. STEAM Divas deliberately goes after the girls who have already decided it isn't for them. "We are looking for girls who think like STEM is not for me. This is not our thing. And I'll be like, all right, let's see how we can trick you into liking STEM by finding something you like and then put STEM into it."
+What makes STEAMDivas different from similar organisations, she explains, is the target audience. Most STEM outreach programs attract girls who are already curious about science and engineering. STEAMDivas deliberately goes after the girls who have already decided it isn't for them. "We are looking for girls who think like STEM is not for me. This is not our thing. And I'll be like, all right, let's see how we can trick you into liking STEM by finding something you like and then put STEM into it."
 
 The "A" in STEAM is the key. By weaving arts into the curriculum, the organisation finds entry points that feel familiar and exciting before the engineering concepts arrive. A recent workshop called SciTech Trees had participants styling hair, and then using servo motors and Arduino to make the hair rotate. The STEM is real; the gateway is something the girls already care about.
 
-The confidence-building is intentional and central. "Once they get that experience building hands-on stuff, it builds their confidence, which is the number one thing you need anyway in STEM." The organisation is deliberately kept small enough to maintain quality, running roughly three in-person workshops alongside virtual events that anyone worldwide can attend. The long-term vision is to grow a volunteer network that can run STEAM Divas curriculum in multiple locations simultaneously, all connected online.
+The confidence-building is intentional and central. "Once they get that experience building hands-on stuff, it builds their confidence, which is the number one thing you need anyway in STEM." The organisation is deliberately kept small enough to maintain quality, running roughly three in-person workshops alongside virtual events that anyone worldwide can attend. The long-term vision is to grow a volunteer network that can run STEAMDivas curriculum in multiple locations simultaneously, all connected online.
 
-STEAM Divas is open to girls and women worldwide, as well as non-binary individuals, and parents of any child can register to access resources. The website is **[TODO: confirm the STEAM Divas URL; it was not stated in the interview]**.
+STEAMDivas is open to girls and women worldwide, as well as non-binary individuals, and parents of any child can register to access resources. The website is **[https://steamdivas.org/**.
 
 ---
 
@@ -110,10 +110,10 @@ STEAM Divas is open to girls and women worldwide, as well as non-binary individu
 
 Chioma's story resists easy summarising, which is probably the point. She is someone who has moved through enough industries and roles that her career looks, from the outside, like restlessness, but from the inside, it reads as a consistent pursuit of the same thing: environments where she can build, fix, and grow people alongside systems.
 
-The management insight about stepping back from the technical work is worth returning to for anyone considering that transition. The time philosophy, treating a full calendar as a symptom rather than a status symbol, is worth printing out and sticking somewhere visible. And the STEAM Divas model of meeting girls where they are, rather than where you wish they were, is a quietly radical approach to a problem the industry has been failing to solve for decades.
+The management insight about stepping back from the technical work is worth returning to for anyone considering that transition. The time philosophy, treating a full calendar as a symptom rather than a status symbol, is worth printing out and sticking somewhere visible. And the STEAMDivas model of meeting girls where they are, rather than where you wish they were, is a quietly radical approach to a problem the industry has been failing to solve for decades.
 
 The world, as it turns out, is lucky to have someone like her thinking about all of it at once.
 
 ---
 
-*You can connect with Chioma Asor on LinkedIn, and learn more about STEAM Divas **[TODO: confirm URL]**. The full conversation is available on the Tech Peeps Diaspora YouTube channel, well worth watching in its entirety.*
+*You can connect with Chioma Aso on [LinkedIn](https://www.linkedin.com/in/chiomasteamdiva/), and learn more about [STEAMDivas](https://steamdivas.org/). The full conversation is available on the Tech Peeps Diaspora YouTube channel, well worth watching in its entirety.*
