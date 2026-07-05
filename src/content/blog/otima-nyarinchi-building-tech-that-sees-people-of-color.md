@@ -1,11 +1,11 @@
 ---
-title: 'Otima Nyarinchi: Building Tech That Sees People of Color'
+title: 'Otema Yirenkyi: Building Tech That Sees People of Color'
 description: A data scientist, community builder, and music producer on diverse AI,
   women in tech, and why you can't swerve the maths forever.
 pubDate: '2026-06-30'
-guest: Otima Nyarinchi
-guestBio: Data scientist and co-founder of Because She Can, currently studying image
-  analysis and machine learning in Sweden. Also a writer and music producer.
+guest: Otema Yirenkyi
+guestBio: Data scientist and co-founder of Because She Can, studied image
+  analysis and machine learning for her Masters in Sweden. Also a writer and music producer.
 videoId: ajnMoBttDAI
 videoUrl: https://www.youtube.com/watch?v=ajnMoBttDAI
 tags:
@@ -25,7 +25,7 @@ draft: true
 
 Picture this: you need a stock photo of someone who looks like you, and you scroll through hundreds before you find a face that's even close — and it's still not quite right.
 
-That small, frustrating moment is where a lot of Otima Nyarinchi's work begins. "I had to search through like tens and hundreds of pictures before I finally got somebody that looked like me," she told me, "and that was very frustrating." The image she eventually settled on was light-skinned. Close enough, but not her. And for a data scientist who studies how machines learn to see, that gap is the whole problem.
+That small, frustrating moment is where a lot of Otema Yirenkyi's work begins. "I had to search through like tens and hundreds of pictures before I finally got somebody that looked like me," she told me, "and that was very frustrating." The image she eventually settled on was light-skinned. Close enough, but not her. And for a data scientist who studies how machines learn to see, that gap is the whole problem.
 
 I'd come into this conversation expecting to talk about AI, data, and — because I'd heard whispers of "mad DJ skills" — music. I got all three. But what stuck with me most was how Otima keeps circling back to one question: who gets seen by the technology we build, and who gets left out?
 
