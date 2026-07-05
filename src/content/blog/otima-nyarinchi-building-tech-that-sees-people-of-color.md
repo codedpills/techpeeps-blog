@@ -63,7 +63,7 @@ I floated a second factor: that it's also about who's in the room building the t
 
 That same logic, that the people closest to the problem should be in the room, is the engine behind Because She Can, the women-in-tech community Otima co-founded.
 
-How important is it to her? "100% important," she said. The seed was a shared frustration. She and her co-founder Kweyekwu went to Achimota together, then did the Azubi data-science program together, and they kept talking about "how it felt like being a woman in this space." They'd already seen the disparity in the classroom; they could see more of it coming in the workforce. So rather than waiting until they were established to help, they built a community to "create a safe space for girls to be honest with each other."
+How important is it to her? "100% important," she said. The seed was a shared frustration. She and her co-founder Kwayakie Blebo went to Achimota together, then did the Azubi data-science program together, and they kept talking about "how it felt like being a woman in this space." They'd already seen the disparity in the classroom; they could see more of it coming in the workforce. So rather than waiting until they were established to help, they built a community to "create a safe space for girls to be honest with each other."
 
 Three years in (they launched in 2021), it's grown real teeth. Yearly mentorship programs pair women with industry professionals (both men and women, partly "because it's even hard to get women who would be mentors"). And the December for Women Who Code project raises laptops, credits, and airtime for women who are economically disadvantaged, because sometimes the barrier is as basic as getting online. By the end of the three-month mentorship, each participant has built a project to "stand on to help them to build their confidence." The mission, as she put it, is to "narrow the digital divide," and it's "a long way away, but we are getting there."
 
@@ -71,7 +71,7 @@ It's lonely enough being a Black or African person in global tech. For women, mu
 
 ## A roadmap, and a maths reckoning
 
-For anyone eyeing this field, Otima offered a practical on-ramp. Start with a programming language, Python, since it's "becoming the most popular, or it is the most popular" for data work. Then learn to use it for data manipulation. Lean on free YouTube and online resources, certification courses (she did Microsoft's), Coursera, Udemy, or in-person bootcamps like Code Train, Blossom Academy, or Serenqua. The school route works too, especially at master's level. You don't necessarily need a degree to start.
+For anyone eyeing this field, Otema offered a practical on-ramp. Start with a programming language, Python, since it's "becoming the most popular, or it is the most popular" for data work. Then learn to use it for data manipulation. Lean on free YouTube and online resources, certification courses (she did Microsoft's), Coursera, Udemy, or in-person bootcamps like Code Train, Blossom Academy, or Serenqua. The school route works too, especially at master's level. You don't necessarily need a degree to start.
 
 But here's the line she wanted to set straight. There's a popular pitch that you don't need programming or math to do data science. Her verdict was blunt: "you need it, you need it bad." Data science is "very heavily built on math," and the fundamentals (mathematics, statistics, programming) are what separate okay from excellent. You can drag-and-drop your way along for a while, but when you need to explain why a model is misbehaving, "you know the math behind it."
 
@@ -79,12 +79,12 @@ So I had to ask, on behalf of everyone who's spent a career swerving the maths: 
 
 ## The music she's been making all along
 
-Before we got to the fun part, Otima slipped in one more serious thread: she also works as a research assistant advancing women's representation in tech and AI research across European and African universities. "In case anybody wants to advance in research, they should reach out to me." Consider that on the record.
+Before we got to the fun part, Otema slipped in one more serious thread: she also works as a research assistant advancing women's representation in tech and AI research across European and African universities. "In case anybody wants to advance in research, they should reach out to me." Consider that on the record.
 
 And then, finally, the music. The running joke this episode was a DJ collab with Uncle Waffles ("Very soon, very soon"), but the truer story is this: at every family party in Ghana, Otima was the one behind the playlist. "I have to be. I need to make sure everybody is feeling good." She only started learning to DJ in Sweden. What she's actually done for years is produce. "I'm a music producer," she said, and she's just uploaded her first song to Spotify.
 
-A data scientist who builds systems to see people of color, builds communities so women aren't alone in the room, and builds beats on the side. The throughline isn't subtle: Otima Nyarinchi makes things that include people who usually get left out.
+A data scientist who builds systems to see people of color, builds communities so women aren't alone in the room, and builds beats on the side. The throughline isn't subtle: Otema Yirenkyi makes things that include people who usually get left out.
 
 ---
 
-You can find Otima on LinkedIn, follow the work at Because She Can, and check out her debut track on Spotify. The full conversation is in the video above, well worth your time, maths-swervers especially.
+You can find Otema on [LinkedIn](https://www.linkedin.com/otemayirenkyi), follow the work at [Because She Can](https://becauseshecan.tech/about), and check out her debut track on [Spotify](https://open.spotify.com/artist/2VOabw2L7CooysHM4tcI17?si=ASR6Ip1GRpitLAiKPE6ctg). The full conversation is in the video above, well worth your time, maths-swervers especially.
