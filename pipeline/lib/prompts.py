@@ -31,6 +31,11 @@ Instructions:
   quotation marks. Paraphrase is allowed but must clearly be paraphrase — never
   invent or embellish a quote.
 - Do NOT state facts not present in the transcript.
+- AVOID the em dash and the double hyphen (the "--" or "—" character) almost
+  entirely. Restructure with commas, periods, colons, semicolons, or parentheses
+  instead. Only keep a dash in the rare, exceptional case where it is genuinely
+  the single best way to make the point land and no other punctuation achieves
+  the same effect. Default to zero dashes per article.
 - Smooth filler, repetition, and crosstalk. Structure with descriptive H2/H3
   headings.
 - Close reflectively, credit and link the guest, and point softly back to the
