@@ -339,19 +339,34 @@ email pulls readers to the site. Preview any published post's teaser with:
 make teaser SLUG=<slug>
 ```
 
-The send itself goes through the **MailerLite connector** in Claude (no API key
-in CI, and a built-in review step). After a post is merged/published:
+**Automatic send on publish.** `.github/workflows/newsletter.yml` runs when a
+**newly added** post lands on `main`. It builds the teaser and calls MailerLite's
+REST API (`pipeline/send_newsletter.py`) to create a `regular` campaign for the
+subscriber group and send it instantly. Editing an existing post does not
+re-send (only added files trigger it).
 
-1. Ask Claude to send the newsletter for that post.
-2. Claude runs the teaser, then `create_campaign` (type `regular`, the HTML
-   content, `groups: ["192268679358973628"]`, a **verified sender** — check
-   MailerLite → Settings → Domains) — left as a **draft** by default.
-3. Review it in MailerLite and send, or ask Claude to `schedule_campaign` with
-   `delivery: instant`.
+Configure these in **GitHub → repo Settings → Secrets and variables → Actions**:
 
-Fully automated on-publish sending (no review) is possible later via the REST
-campaign API from CI, but the connector-driven draft-then-send keeps a human in
-the loop and needs no extra secrets.
+| Kind | Name | Value |
+|---|---|---|
+| Secret | `MAILERLITE_API_KEY` | MailerLite → Integrations → API token |
+| Variable | `MAILERLITE_GROUP_ID` | `192268679358973628` |
+| Variable | `NEWSLETTER_FROM` | a **verified** sender, e.g. `zak@blog.techpeepsdiaspora.com` |
+| Variable | `NEWSLETTER_FROM_NAME` | `Tech Peeps Diaspora` |
+| Variable | `SITE_URL` | `https://blog.techpeepsdiaspora.com` |
+
+Because a send is **irreversible**, the PR review is the real gate: by the time a
+post merges, the article (and therefore the deterministic teaser) has been
+reviewed. To send manually instead — or to test — use the connector in Claude, or
+run locally:
+
+```bash
+make newsletter SLUG=<slug>          # creates a DRAFT campaign to review
+make newsletter SLUG=<slug> SEND=1   # creates AND sends
+```
+
+The MailerLite **connector** in Claude remains available for ad-hoc sends and for
+inspecting campaigns; the Action is the unattended path.
 
 ## Notes
 

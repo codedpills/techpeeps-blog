@@ -5,7 +5,7 @@
 VENV := .venv
 PY := $(VENV)/bin/python
 
-.PHONY: help fetch transcribe generate next style-guide clip publish compare teaser remap refresh-meta patch-dates verify site-dev site-build install venv
+.PHONY: help fetch transcribe generate next style-guide clip publish compare teaser newsletter remap refresh-meta patch-dates verify site-dev site-build install venv
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -50,6 +50,9 @@ compare: ## A/B two models on one transcript (ID=<id>, optional MODELS=a,b) — 
 
 teaser: ## Preview the newsletter teaser for a published post: make teaser SLUG=<slug>
 	$(PY) pipeline/teaser.py src/content/blog/$(SLUG).md --site $${SITE_URL:-https://techpeeps.example.com}
+
+newsletter: ## Create a MailerLite campaign for a post (SLUG=<slug>; add SEND=1 to send now)
+	$(PY) pipeline/send_newsletter.py src/content/blog/$(SLUG).md $(if $(SEND),--send)
 
 next: ## Transcribe + generate + open PR for the next unprocessed video
 	$(PY) pipeline/transcribe.py --next && $(PY) pipeline/generate.py --next
