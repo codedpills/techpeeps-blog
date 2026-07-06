@@ -71,7 +71,7 @@ It's lonely enough being a Black or African person in global tech. For women, mu
 
 ## A roadmap, and a maths reckoning
 
-For anyone eyeing this field, Otema offered a practical on-ramp. Start with a programming language, Python, since it's "becoming the most popular, or it is the most popular" for data work. Then learn to use it for data manipulation. Lean on free YouTube and online resources, certification courses (she did Microsoft's), Coursera, Udemy, or in-person bootcamps like Code Train, Blossom Academy, or Serenqua. The school route works too, especially at master's level. You don't necessarily need a degree to start.
+For anyone eyeing this field, Otema offered a practical on-ramp. Start with a programming language, Python, since it's "becoming the most popular, or it is the most popular" for data work. Then learn to use it for data manipulation. Lean on free YouTube and online resources, certification courses (she did Microsoft's), Coursera, Udemy, or in-person bootcamps like Codetrain, Blossom Academy, or Soronko Academy. The school route works too, especially at master's level. You don't necessarily need a degree to start.
 
 But here's the line she wanted to set straight. There's a popular pitch that you don't need programming or math to do data science. Her verdict was blunt: "you need it, you need it bad." Data science is "very heavily built on math," and the fundamentals (mathematics, statistics, programming) are what separate okay from excellent. You can drag-and-drop your way along for a while, but when you need to explain why a model is misbehaving, "you know the math behind it."
 
