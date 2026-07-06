@@ -19,7 +19,7 @@ heroClip:
   mp4: /clips/otima-nyarinchi-building-tech-that-sees-people-of-color.mp4
   webm: /clips/otima-nyarinchi-building-tech-that-sees-people-of-color.webm
   poster: /clips/otima-nyarinchi-building-tech-that-sees-people-of-color.jpg
-  alt: Otima Nyarinchi speaking during her Tech Peeps Diaspora interview
+  alt: Otema Yirenkyi speaking during her Tech Peeps Diaspora interview
 draft: true
 ---
 
@@ -27,7 +27,7 @@ Picture this: you need a stock photo of someone who looks like you, and you scro
 
 That small, frustrating moment is where a lot of Otema Yirenkyi's work begins. "I had to search through like tens and hundreds of pictures before I finally got somebody that looked like me," she told me, "and that was very frustrating." The image she eventually settled on was light-skinned. Close enough, but not her. And for a data scientist who studies how machines learn to see, that gap is the whole problem.
 
-I'd come into this conversation expecting to talk about AI, data, and (because I'd heard whispers of "mad DJ skills") music. I got all three. But what stuck with me most was how Otima keeps circling back to one question: who gets seen by the technology we build, and who gets left out?
+I'd come into this conversation expecting to talk about AI, data, and (because I'd heard whispers of "mad DJ skills") music. I got all three. But what stuck with me most was how Otema keeps circling back to one question: who gets seen by the technology we build, and who gets left out?
 
 ## From Achimota to Sweden, and the shock of "submit whenever"
 
@@ -43,7 +43,7 @@ Ghanaian education, she said, runs on "a lot of chew and pour": memorize the tex
 
 ## What "data" actually means, day to day
 
-Readers who hear "data scientist" and picture one undifferentiated blob of work: Otima drew the map for us. Data, she explained, is "very broad, but it's also very intertwined," and it runs as a pipeline: data engineering, then data analyst, then data science.
+Readers who hear "data scientist" and picture one undifferentiated blob of work: Otema drew the map for us. Data, she explained, is "very broad, but it's also very intertwined," and it runs as a pipeline: data engineering, then data analyst, then data science.
 
 Engineering is the plumbing: sourcing data from warehouses like Amazon or Google Cloud, then cleaning it, "because all the data that comes in might not be in a good format for you to be able to work with." The analyst takes that clean data and ties it to the business. At a logistics company she worked customer churn and retention ("Is it the same customers in month 1 that are paying month 2?") and built dashboards for the business side. The data scientist then looks at six months of behavior and projects forward: "this is what we expect them to do in the next 6 months."
 
@@ -53,17 +53,17 @@ It's the kind of explanation that makes the leap into AI feel almost inevitable.
 
 Which is exactly where it gets serious.
 
-Otima's master's centers on computer vision and facial recognition, and her motivation is personal: "I'm passionate about people of color," she said, and she finds a lot of today's technology "is not so inclusive sometimes." The stakes aren't abstract. She described facial-recognition systems that, lacking robustness, "will pick the closest person" and flag them as a suspect: "it's like wrongful arrest because of AI." One badly written program, and "that's like one case study which can alter somebody's life."
+Otema's master's centers on computer vision and facial recognition, and her motivation is personal: "I'm passionate about people of color," she said, and she finds a lot of today's technology "is not so inclusive sometimes." The stakes aren't abstract. She described facial-recognition systems that, lacking robustness, "will pick the closest person" and flag them as a suspect: "it's like wrongful arrest because of AI." One badly written program, and "that's like one case study which can alter somebody's life."
 
-There's a live debate about *why* this happens: not enough training data, or math that isn't done well enough to tell faces apart? Otima leans toward the data. Her stock-photo ordeal is her own small evidence: with more representation of darker-skinned people, the generators would simply have more to work with.
+There's a live debate about *why* this happens: not enough training data, or math that isn't done well enough to tell faces apart? Otema leans toward the data. Her stock-photo ordeal is her own small evidence: with more representation of darker-skinned people, the generators would simply have more to work with.
 
 I floated a second factor: that it's also about who's in the room building the thing. She agreed, and put it more generously than I would have: she'd "never blame somebody who does not look like me to think for me, because it's not going to come naturally." People solve their own problems first. "So if you have more people on the team, then they can also bring in their personal experiences," she said, and you get a more robust system that serves everybody.
 
 ## Because She Can: solving women's problems with women in the room
 
-That same logic, that the people closest to the problem should be in the room, is the engine behind Because She Can, the women-in-tech community Otima co-founded.
+That same logic, that the people closest to the problem should be in the room, is the engine behind Because She Can, the women-in-tech community Otema co-founded.
 
-How important is it to her? "100% important," she said. The seed was a shared frustration. She and her co-founder Kwayakie Blebo went to Achimota together, then did the Azubi data-science program together, and they kept talking about "how it felt like being a woman in this space." They'd already seen the disparity in the classroom; they could see more of it coming in the workforce. So rather than waiting until they were established to help, they built a community to "create a safe space for girls to be honest with each other."
+How important is it to her? "100% important," she said. The seed was a shared frustration. She and her co-founder Kweyakie Blebo went to Achimota School together, then did the Azubi data-science program together, and they kept talking about "how it felt like being a woman in this space." They'd already seen the disparity in the classroom; they could see more of it coming in the workforce. So rather than waiting until they were established to help, they built a community to "create a safe space for girls to be honest with each other."
 
 Three years in (they launched in 2021), it's grown real teeth. Yearly mentorship programs pair women with industry professionals (both men and women, partly "because it's even hard to get women who would be mentors"). And the December for Women Who Code project raises laptops, credits, and airtime for women who are economically disadvantaged, because sometimes the barrier is as basic as getting online. By the end of the three-month mentorship, each participant has built a project to "stand on to help them to build their confidence." The mission, as she put it, is to "narrow the digital divide," and it's "a long way away, but we are getting there."
 
@@ -81,7 +81,7 @@ So I had to ask, on behalf of everyone who's spent a career swerving the maths: 
 
 Before we got to the fun part, Otema slipped in one more serious thread: she also works as a research assistant advancing women's representation in tech and AI research across European and African universities. "In case anybody wants to advance in research, they should reach out to me." Consider that on the record.
 
-And then, finally, the music. The running joke this episode was a DJ collab with Uncle Waffles ("Very soon, very soon"), but the truer story is this: at every family party in Ghana, Otima was the one behind the playlist. "I have to be. I need to make sure everybody is feeling good." She only started learning to DJ in Sweden. What she's actually done for years is produce. "I'm a music producer," she said, and she's just uploaded her first song to Spotify.
+And then, finally, the music. The running joke this episode was a DJ collab with Uncle Waffles ("Very soon, very soon"), but the truer story is this: at every family party in Ghana, Otema was the one behind the playlist. "I have to be. I need to make sure everybody is feeling good." She only started learning to DJ in Sweden. What she's actually done for years is produce. "I'm a music producer," she said, and she's just uploaded her first song to Spotify.
 
 A data scientist who builds systems to see people of color, builds communities so women aren't alone in the room, and builds beats on the side. The throughline isn't subtle: Otema Yirenkyi makes things that include people who usually get left out.
 
