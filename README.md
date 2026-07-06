@@ -323,18 +323,35 @@ Set these as **Cloudflare Pages environment variables** (Settings → Environmen
 variables, marked as secrets — never commit them):
 
 - `MAILERLITE_API_KEY` — token from MailerLite → Integrations → API
-- `MAILERLITE_GROUP_ID` — (optional) group to add new subscribers to
+- `MAILERLITE_GROUP_ID` — the "Tech Peeps Diaspora — Blog subscribers" group:
+  **`192268679358973628`** (account `codedpills@gmail.com`)
 
 Note: MailerLite reviews new accounts before enabling sending/API, and the free
 plan caps the list (≈250 subscribers) — fine to start; upgrade when it grows.
 
-**Sending on publish (the teaser):** `pipeline/teaser.py <post.md>` builds the
-email body — the article's opening through the first `##` heading, closed with
-"…" and a "Read the full profile →" link, so the email entices readers to the
-site. Preview it with `python pipeline/teaser.py <post.md> --site <url>`. The
-step that pushes this to MailerLite as a campaign is not wired yet (pending the
-campaign endpoint's exact fields); once added it will create a campaign via the
-API on publish for you to review and send.
+### Sending the teaser on publish
+
+`pipeline/teaser.py` builds the email body: the article's opening through the
+first `##` heading, closed with "…" and a "Read the full profile →" link, so the
+email pulls readers to the site. Preview any published post's teaser with:
+
+```bash
+make teaser SLUG=<slug>
+```
+
+The send itself goes through the **MailerLite connector** in Claude (no API key
+in CI, and a built-in review step). After a post is merged/published:
+
+1. Ask Claude to send the newsletter for that post.
+2. Claude runs the teaser, then `create_campaign` (type `regular`, the HTML
+   content, `groups: ["192268679358973628"]`, a **verified sender** — check
+   MailerLite → Settings → Domains) — left as a **draft** by default.
+3. Review it in MailerLite and send, or ask Claude to `schedule_campaign` with
+   `delivery: instant`.
+
+Fully automated on-publish sending (no review) is possible later via the REST
+campaign API from CI, but the connector-driven draft-then-send keeps a human in
+the loop and needs no extra secrets.
 
 ## Notes
 
