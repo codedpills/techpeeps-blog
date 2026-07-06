@@ -1,0 +1,29 @@
+---
+// Newsletter signup. Posts to the same-origin /api/subscribe Cloudflare Function
+// (see functions/api/subscribe.js), so no third-party script and no CSP change.
+// Behavior lives in /public/scripts/subscribe.js.
+---
+
+<section class="newsletter" aria-labelledby="newsletter-heading">
+  <h2 id="newsletter-heading">Join the community</h2>
+  <p class="newsletter-blurb">
+    New profiles from across the diaspora, straight to your inbox. No spam,
+    unsubscribe anytime.
+  </p>
+  <form id="newsletter-form" class="newsletter-form" method="post" action="/api/subscribe" novalidate>
+    <label class="sr-only" for="newsletter-email">Email address</label>
+    <input
+      id="newsletter-email"
+      name="email"
+      type="email"
+      inputmode="email"
+      autocomplete="email"
+      required
+      placeholder="you@example.com"
+    />
+    <!-- Honeypot: hidden from people, tempting to bots. -->
+    <input class="hp" type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <button type="submit">Subscribe</button>
+  </form>
+  <p id="newsletter-status" class="newsletter-status" role="status" aria-live="polite"></p>
+</section>

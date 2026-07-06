@@ -310,6 +310,32 @@ the preview URL on each PR. If your production branch isn't `main`, set a
 > `git checkout <branch> && git merge main && git push`. Newly generated posts
 > branch off the current `main`, so they pick everything up automatically.
 
+## Newsletter (MailerLite)
+
+Readers subscribe from the home page. The signup form posts to a same-origin
+**Cloudflare Pages Function** (`functions/api/subscribe.js`), which forwards the
+email to MailerLite's API server-side — so the browser never calls MailerLite and
+the CSP needs no changes. Behavior lives in `public/scripts/subscribe.js`
+(progressive enhancement: the form still works without JS). A honeypot field
+filters bots; MailerLite handles double opt-in, unsubscribe, and compliance.
+
+Set these as **Cloudflare Pages environment variables** (Settings → Environment
+variables, marked as secrets — never commit them):
+
+- `MAILERLITE_API_KEY` — token from MailerLite → Integrations → API
+- `MAILERLITE_GROUP_ID` — (optional) group to add new subscribers to
+
+Note: MailerLite reviews new accounts before enabling sending/API, and the free
+plan caps the list (≈250 subscribers) — fine to start; upgrade when it grows.
+
+**Sending on publish (the teaser):** `pipeline/teaser.py <post.md>` builds the
+email body — the article's opening through the first `##` heading, closed with
+"…" and a "Read the full profile →" link, so the email entices readers to the
+site. Preview it with `python pipeline/teaser.py <post.md> --site <url>`. The
+step that pushes this to MailerLite as a campaign is not wired yet (pending the
+campaign endpoint's exact fields); once added it will create a campaign via the
+API on publish for you to review and send.
+
 ## Notes
 
 - All source footage is the channel owner's own content; clips and quotes link
