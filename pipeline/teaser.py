@@ -54,10 +54,21 @@ def body_before_first_h2(body: str) -> str:
     return "\n".join(out).strip()
 
 
+# Email-safe inline styles (email clients ignore external CSS, so everything is
+# inline). Colors mirror the site's "paper" theme; fonts use web-safe stacks.
+YOUTUBE_URL = "https://www.youtube.com/@techpeepsdiaspora"
+S_P = "margin:0 0 16px;"
+S_QUOTE = (
+    "border-left:3px solid #b3431f;margin:0 0 20px;padding:4px 0 4px 16px;"
+    "font-style:italic;color:#423d34;font-size:19px;line-height:1.5;"
+)
+S_LINK = "color:#b3431f;"
+
+
 def md_inline_to_html(text: str) -> str:
-    """Minimal, safe Markdown -> HTML for teaser paragraphs: escapes HTML, then
-    renders **bold**, *italic*, [links](url), and blockquotes; splits paragraphs.
-    Kept deliberately small (no external renderer) since teasers are simple prose.
+    """Minimal, safe Markdown -> HTML for teaser paragraphs, with inline styles
+    so it renders correctly in email clients (no external CSS). Handles
+    **bold**, *italic*, [links](url), and blockquotes; splits paragraphs.
     """
     blocks = re.split(r"\n\s*\n", text.strip())
     html_blocks: list[str] = []
@@ -71,32 +82,50 @@ def md_inline_to_html(text: str) -> str:
         esc = html_lib.escape(block)
         esc = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", esc)
         esc = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", esc)
-        esc = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)", r'<a href="\2">\1</a>', esc)
+        esc = re.sub(
+            r"\[([^\]]+)\]\((https?://[^)]+)\)",
+            rf'<a href="\2" style="{S_LINK}">\1</a>',
+            esc,
+        )
         esc = esc.replace("\n", "<br>")
-        html_blocks.append(f"<blockquote>{esc}</blockquote>" if is_quote else f"<p>{esc}</p>")
+        if is_quote:
+            html_blocks.append(f'<blockquote style="{S_QUOTE}">{esc}</blockquote>')
+        else:
+            html_blocks.append(f'<p style="{S_P}">{esc}</p>')
     return "\n".join(html_blocks)
 
 
 def build_teaser(path: Path, site: str) -> dict:
     fm, body = split_frontmatter(path.read_text(encoding="utf-8"))
     slug = path.stem
-    url = f"{site.rstrip('/')}/blog/{slug}/"
-    opening = body_before_first_h2(body)
-    opening_html = md_inline_to_html(opening)
-    title = fm.get("title", slug)
+    site = site.rstrip("/")
+    url = f"{site}/blog/{slug}/"
+    opening_html = md_inline_to_html(body_before_first_h2(body))
+    title = str(fm.get("title", slug))
     guest = fm.get("guest", "")
 
-    read_more = (
-        f'<p><a href="{url}"><strong>Read the full profile &rarr;</strong></a></p>'
-    )
-    html = (
-        f"<h1>{html_lib.escape(str(title))}</h1>\n"
+    body_html = (
+        f'<div style="max-width:600px;margin:0 auto;padding:24px 20px;'
+        f"font-family:Georgia,'Times New Roman',serif;color:#23201a;"
+        f'font-size:17px;line-height:1.65;">\n'
+        f'<h1 style="font-size:26px;line-height:1.22;font-weight:700;'
+        f'color:#16140f;margin:0 0 18px;">{html_lib.escape(title)}</h1>\n'
         f"{opening_html}\n"
-        f'<p style="color:#6d665a">&hellip;</p>\n'
-        f"{read_more}"
+        f'<p style="color:#8a8378;margin:0 0 8px;">&hellip;</p>\n'
+        f'<p style="margin:22px 0 0;"><a href="{url}" '
+        f'style="color:#b3431f;font-weight:700;text-decoration:none;">'
+        f"Read the full profile &rarr;</a></p>\n"
+        f'<hr style="border:none;border-top:1px solid #e3ddce;margin:28px 0 16px;">\n'
+        f'<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;'
+        f'color:#6d665a;margin:0;">A profile from '
+        f'<a href="{site}" style="{S_LINK}">Tech Peeps Diaspora</a>, tech stories '
+        f'from across the diaspora. '
+        f'<a href="{YOUTUBE_URL}" style="{S_LINK}">Watch the interviews on '
+        f"YouTube &rarr;</a></p>\n"
+        f"</div>"
     )
-    subject = f"New profile: {guest}" if guest else f"New: {title}"
-    return {"subject": subject, "html": html, "url": url, "title": title, "guest": guest}
+    # Subject is the article title, per editorial preference.
+    return {"subject": title, "html": body_html, "url": url, "title": title, "guest": guest}
 
 
 def main() -> int:
