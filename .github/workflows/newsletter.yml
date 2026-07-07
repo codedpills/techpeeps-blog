@@ -1,0 +1,56 @@
+name: Newsletter on publish
+
+# When a post is merged to main (a new file under src/content/blog), build its
+# teaser and send it to the MailerLite subscriber group automatically.
+# Only NEWLY ADDED posts trigger a send — editing an existing post does not.
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "src/content/blog/**.md"
+
+# Prevent overlapping runs from double-sending.
+concurrency:
+  group: newsletter-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # need history to diff before..after
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install PyYAML requests
+
+      - name: Find newly added posts
+        id: added
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "First push or no base ref — skipping to avoid mass send."
+            echo "files=" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          FILES=$(git diff --diff-filter=A --name-only "$BEFORE" "${{ github.sha }}" -- 'src/content/blog/*.md' | tr '\n' ' ')
+          echo "Newly added: $FILES"
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+
+      - name: Send newsletters for new posts
+        if: steps.added.outputs.files != ''
+        env:
+          MAILERLITE_API_KEY: ${{ secrets.MAILERLITE_API_KEY }}
+          MAILERLITE_GROUP_ID: ${{ vars.MAILERLITE_GROUP_ID }}
+          NEWSLETTER_FROM: ${{ vars.NEWSLETTER_FROM }}
+          NEWSLETTER_FROM_NAME: ${{ vars.NEWSLETTER_FROM_NAME }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          for f in ${{ steps.added.outputs.files }}; do
+            echo "== $f =="
+            python pipeline/send_newsletter.py "$f" --send
+          done
