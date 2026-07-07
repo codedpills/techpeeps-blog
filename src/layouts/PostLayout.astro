@@ -4,6 +4,7 @@
 // Includes meta description + Open Graph tags (poster as og:image).
 import HeroClip from "../components/HeroClip.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
+import Newsletter from "../components/Newsletter.astro";
 import { isPreviewBuild } from "../lib/site";
 import "../styles/global.css"; // bundled + fingerprinted by Astro (cache-busts)
 import type { CollectionEntry } from "astro:content";
@@ -157,6 +158,9 @@ const jsonLd = {
         </p>
         <p><a href="/">← All profiles</a></p>
       </footer>
+
+      <Newsletter />
     </main>
+    <script is:inline src="/scripts/subscribe.js"></script>
   </body>
 </html>
