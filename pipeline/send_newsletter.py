@@ -93,7 +93,7 @@ def main() -> int:
     from_name = os.environ.get("NEWSLETTER_FROM_NAME", "Tech Peeps Diaspora")
     site = args.site or "https://techpeeps.example.com"
 
-    t = teaser.build_teaser(post, site)
+    t = teaser.build_teaser(post, site, from_email)
 
     session = requests.Session()
     session.headers.update({

@@ -95,7 +95,7 @@ def md_inline_to_html(text: str) -> str:
     return "\n".join(html_blocks)
 
 
-def build_teaser(path: Path, site: str) -> dict:
+def build_teaser(path: Path, site: str, from_email: str = "") -> dict:
     fm, body = split_frontmatter(path.read_text(encoding="utf-8"))
     slug = path.stem
     site = site.rstrip("/")
@@ -103,6 +103,15 @@ def build_teaser(path: Path, site: str) -> dict:
     opening_html = md_inline_to_html(body_before_first_h2(body))
     title = str(fm.get("title", slug))
     guest = fm.get("guest", "")
+
+    # Gentle "add me to contacts" nudge — the most reliable way to keep future
+    # sends out of Gmail's Promotions tab (per-recipient training).
+    contact = html_lib.escape(from_email) if from_email else "this address"
+    ps = (
+        f'<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;'
+        f'color:#8a8378;margin:10px 0 0;">P.S. So the next profile reaches you, '
+        f"add {contact} to your contacts and move this email to your Primary tab.</p>\n"
+    )
 
     body_html = (
         f'<div style="max-width:600px;margin:0 auto;padding:24px 20px;'
@@ -122,6 +131,7 @@ def build_teaser(path: Path, site: str) -> dict:
         f'from across the diaspora. '
         f'<a href="{YOUTUBE_URL}" style="{S_LINK}">Watch the interviews on '
         f"YouTube &rarr;</a></p>\n"
+        f"{ps}"
         f"</div>"
     )
     # Subject is the article title, per editorial preference.
@@ -132,6 +142,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Build a newsletter teaser from a post.")
     ap.add_argument("post")
     ap.add_argument("--site", default=os.environ.get("SITE_URL", "https://techpeeps.example.com"))
+    ap.add_argument("--from", dest="from_email", default=os.environ.get("NEWSLETTER_FROM", ""))
     ap.add_argument("--json", action="store_true", help="Emit JSON (subject+html+url).")
     args = ap.parse_args()
 
@@ -139,7 +150,7 @@ def main() -> int:
     if not p.exists():
         print(f"ERROR: not found: {p}", file=sys.stderr)
         return 1
-    t = build_teaser(p, args.site)
+    t = build_teaser(p, args.site, args.from_email)
     if args.json:
         print(json.dumps(t, ensure_ascii=False, indent=2))
     else:
