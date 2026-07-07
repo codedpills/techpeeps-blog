@@ -339,6 +339,12 @@ email pulls readers to the site. Preview any published post's teaser with:
 make teaser SLUG=<slug>
 ```
 
+**Manual trigger.** The workflow also has a `workflow_dispatch` trigger: from the
+repo's **Actions → Newsletter on publish → Run workflow**, enter a post `slug`
+(the filename in `src/content/blog` without `.md`). Leave **"Send now?" off** to
+create a MailerLite **draft** to review; tick it to send immediately. Handy for
+sending a post whose auto-run didn't fire (e.g. merged before secrets were set).
+
 **Automatic send on publish.** `.github/workflows/newsletter.yml` runs when a
 **newly added** post lands on `main`. It builds the teaser and calls MailerLite's
 REST API (`pipeline/send_newsletter.py`) to create a `regular` campaign for the
