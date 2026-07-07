@@ -67,7 +67,11 @@ jobs:
               await github.rest.issues.createComment({ owner, repo, issue_number, body });
             }
 
-      - name: Build site (fails on invalid frontmatter)
+      - name: Build site (fails on invalid frontmatter / bad SITE_URL)
+        # Build with the SAME SITE_URL as production so a bad value (or invalid
+        # frontmatter) fails the PR check here instead of at deploy time.
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
         run: npm run build
 
       - name: Fail the check on hard content errors
