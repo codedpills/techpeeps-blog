@@ -64,11 +64,13 @@ jobs:
       - name: Send / draft newsletters
         if: steps.resolve.outputs.files != ''
         env:
+          # Non-key values belong in Variables, but accept Secrets too so a
+          # wrong-tab entry doesn't silently break the run. API key stays secret.
           MAILERLITE_API_KEY: ${{ secrets.MAILERLITE_API_KEY }}
-          MAILERLITE_GROUP_ID: ${{ vars.MAILERLITE_GROUP_ID }}
-          NEWSLETTER_FROM: ${{ vars.NEWSLETTER_FROM }}
-          NEWSLETTER_FROM_NAME: ${{ vars.NEWSLETTER_FROM_NAME }}
-          SITE_URL: ${{ vars.SITE_URL }}
+          MAILERLITE_GROUP_ID: ${{ vars.MAILERLITE_GROUP_ID || secrets.MAILERLITE_GROUP_ID }}
+          NEWSLETTER_FROM: ${{ vars.NEWSLETTER_FROM || secrets.NEWSLETTER_FROM }}
+          NEWSLETTER_FROM_NAME: ${{ vars.NEWSLETTER_FROM_NAME || secrets.NEWSLETTER_FROM_NAME }}
+          SITE_URL: ${{ vars.SITE_URL || secrets.SITE_URL }}
         run: |
           SENDFLAG=""
           if [ "${{ steps.resolve.outputs.send }}" = "true" ]; then SENDFLAG="--send"; fi

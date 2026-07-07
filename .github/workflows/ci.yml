@@ -71,7 +71,7 @@ jobs:
         # Build with the SAME SITE_URL as production so a bad value (or invalid
         # frontmatter) fails the PR check here instead of at deploy time.
         env:
-          SITE_URL: ${{ vars.SITE_URL }}
+          SITE_URL: ${{ vars.SITE_URL || secrets.SITE_URL }}
         run: npm run build
 
       - name: Fail the check on hard content errors
