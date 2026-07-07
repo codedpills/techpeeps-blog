@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 // curated map of the site's canonical content. Generated dynamically so it
 // always reflects the published posts.
 export const GET: APIRoute = async ({ site }) => {
-  const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+  const posts = (await getCollection("blog")).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
   );
   const origin = site?.toString().replace(/\/$/, "") ?? "";

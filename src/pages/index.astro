@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import { postFilter, isPreviewBuild } from "../lib/site";
 import ThemeToggle from "../components/ThemeToggle.astro";
 import Newsletter from "../components/Newsletter.astro";
+import "../styles/global.css"; // bundled + fingerprinted by Astro (cache-busts)
 
 const preview = isPreviewBuild();
 const posts = (await getCollection("blog", postFilter)).sort(
@@ -65,7 +66,6 @@ const jsonLd = {
     {ogImage && <meta property="og:image" content={ogImage} />}
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="stylesheet" href="/styles/global.css" />
     <script is:inline src="/scripts/theme.js"></script>
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
