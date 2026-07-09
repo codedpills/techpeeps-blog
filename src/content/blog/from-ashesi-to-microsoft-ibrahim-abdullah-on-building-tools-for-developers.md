@@ -27,7 +27,7 @@ interviewDate: '2022-08-29'
 
 # Ibrahim Abdullah Wondered If Microsoft Had Hired Him by Mistake. Then He Found His Footing.
 
-There is a moment early in Ibrahim Abdullah's first weeks at Microsoft that most engineers will recognize, even if they would never say it out loud. He had just moved to Vancouver, joined a team writing in C#, Perl, C++, and languages he barely recognized, and he found himself calling up a colleague to ask, in effect, whether a mistake had been made. "Wait, how, how, why did you people hire me here?" he remembers thinking. "I started to question whether I was a diversity high or not, because all the things that you guys are doing, it seems like I know nothing about it."
+There is a moment early in Ibrahim Abdullah's first weeks at Microsoft that most engineers will recognize, even if they would never say it out loud. He had just moved to Vancouver, joined a team writing in C#, Perl, C++, and languages he barely recognized, and he found himself calling up a colleague to ask, in effect, whether a mistake had been made. "Wait, how, how, why did you people hire me here?" he remembers thinking. He wondered, half seriously, whether he had been a diversity hire, because, in his words, "all the things that you guys are doing, it seems like I know nothing about it."
 
 Three years later, he laughs about it. But that gap, between how it felt and how it turned out, is the through-line of his whole story. It is a story worth slowing down for.
 
@@ -65,7 +65,7 @@ And he is generous about who helped. His now-wife ran mock interviews with him, 
 
 ## Imposter syndrome, and the engineer with gray hair
 
-I told Ibrahim about my own habit of bracing for the moment a new team "finds out I'm a fraud," and he did not flinch. His first months in Vancouver were, in his word, "overwhelming." New country, new weather, no family nearby, a codebase full of languages he had never touched, and colleagues who seemed to be operating on another level. He remembers being so exhausted after work that a friend came to visit and could not wake him.
+I told Ibrahim about my own habit of bracing for the moment a new team might "find out I'm a fraud," and he did not flinch. His first months in Vancouver were, in his word, "overwhelming." New country, new weather, no family nearby, a codebase full of languages he had never touched, and colleagues who seemed to be operating on another level. He remembers being so exhausted after work that a friend came to visit and could not wake him.
 
 What he did next is the most quietly instructive part of the whole conversation. He named it. In week one or two he went to his manager and asked, directly, for a mentor to help him understand the landscape. That mentor (now his engineering manager) met with him monthly for a year, patiently explaining how the engineering systems worked. From there came his first project, and a small, unforgettable ritual: checking in his first pull request and just staring at it. "I have a code in Microsoft code base and people are using it into production."
 
