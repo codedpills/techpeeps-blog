@@ -1,5 +1,5 @@
 ---
-title: 'From Ashesi to Microsoft: Ibrahim Abdullah on Building Tools for Developers'
+title: "Ibrahim Abdullah Wondered If Microsoft Had Hired Him by Mistake. Then He Found His Footing."
 description: A Ghanaian software engineer on discovering himself in computer science,
   surviving imposter syndrome, and why you should master one language first.
 pubDate: '2026-07-09'
@@ -25,7 +25,7 @@ draft: true
 interviewDate: '2022-08-29'
 ---
 
-# From Ashesi to Microsoft: Ibrahim Abdullah on Building Tools for Developers
+# Ibrahim Abdullah Wondered If Microsoft Had Hired Him by Mistake. Then He Found His Footing.
 
 There is a moment early in Ibrahim Abdullah's first weeks at Microsoft that most engineers will recognize, even if they would never say it out loud. He had just moved to Vancouver, joined a team writing in C#, Perl, C++, and languages he barely recognized, and he found himself calling up a colleague to ask, in effect, whether a mistake had been made. "Wait, how, how, why did you people hire me here?" he remembers thinking. "I started to question whether I was a diversity high or not, because all the things that you guys are doing, it seems like I know nothing about it."
 
