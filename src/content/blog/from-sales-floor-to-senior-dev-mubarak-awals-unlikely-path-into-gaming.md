@@ -1,5 +1,5 @@
 ---
-title: 'From Sales Floor to Senior Dev: Mubarak Awal''s Unlikely Path Into Gaming'
+title: "Mubarak Awal Taught Himself to Code on YouTube. Now He Builds for a Canadian Games Studio, From Ghana."
 description: How a self-taught developer with no CS degree went from YouTube tutorials
   to leading a live-ops team at a Canadian gaming company, remotely from Ghana.
 pubDate: '2026-07-09'
@@ -24,7 +24,7 @@ draft: true
 interviewDate: '2022-09-29'
 ---
 
-# From Sales Floor to Senior Dev: Mubarak Awal's Unlikely Path Into Gaming
+# Mubarak Awal Taught Himself to Code on YouTube. Now He Builds for a Canadian Games Studio, From Ghana.
 
 "I came from a sales background and I went straight into software development, so I didn't have any computer science background." That is the line Mubarak Awal delivers almost as an aside, the way you might mention you took the long way to work. But sit with it for a second. No CS degree. No developer friends. Just eight months of YouTube videos and a stubborn conviction that this was the thing he wanted to do. Today he is a senior software developer at what he describes as "the leading live ops games developer in Canada right now," and he does it all remotely, from Ghana.
 
