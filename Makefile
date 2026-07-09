@@ -21,8 +21,8 @@ install: $(PY) ## Create .venv and install Python + Node deps
 	$(PY) -m pip install -r requirements.txt
 	npm install
 
-fetch: ## Refresh the playlist into state.json
-	$(PY) pipeline/fetch_playlist.py
+fetch: ## Refresh all playlists (add a new one with PLAYLIST=<url>)
+	$(PY) pipeline/fetch_playlist.py $(if $(PLAYLIST),--playlist $(PLAYLIST))
 
 transcribe: ## Transcribe next pending (ID=<id>, FORCE=1 to re-transcribe)
 	$(PY) pipeline/transcribe.py $(if $(ID),$(ID),--next) $(if $(FORCE),--force)

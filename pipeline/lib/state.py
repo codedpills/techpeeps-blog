@@ -27,14 +27,32 @@ def _now() -> str:
 
 
 def load() -> dict:
-    """Load state.json, returning a default skeleton if it does not exist."""
+    """Load state.json, returning a default skeleton if it does not exist.
+
+    Supports multiple playlists via a `playlists` list. Migrates the legacy
+    single `playlist_url` field into that list for backward compatibility.
+    """
     if not STATE_PATH.exists():
-        return {"playlist_url": os.environ.get("YT_PLAYLIST_URL", ""), "videos": {}}
+        seed = os.environ.get("YT_PLAYLIST_URL", "").strip()
+        return {"playlists": [seed] if seed else [], "videos": {}}
     with STATE_PATH.open("r", encoding="utf-8") as fh:
         data = json.load(fh)
-    data.setdefault("playlist_url", "")
     data.setdefault("videos", {})
+    data.setdefault("playlists", [])
+    # Migrate legacy singular field into the list (kept, not deleted).
+    legacy = data.get("playlist_url", "").strip() if isinstance(data.get("playlist_url"), str) else ""
+    if legacy and legacy not in data["playlists"]:
+        data["playlists"].append(legacy)
     return data
+
+
+def add_playlist(state: dict, url: str) -> bool:
+    """Register a playlist URL. Returns True if newly added."""
+    playlists = state.setdefault("playlists", [])
+    if url in playlists:
+        return False
+    playlists.append(url)
+    return True
 
 
 def save(state: dict) -> None:
@@ -54,9 +72,10 @@ def status_rank(status: str) -> int:
         return -1
 
 
-def add_video(state: dict, video_id: str, title: str) -> bool:
+def add_video(state: dict, video_id: str, title: str, playlist: str = "") -> bool:
     """Add a new video as 'pending'. Returns True if newly added.
 
+    `playlist` records which playlist the video came from (first seen wins).
     Never downgrades or overwrites an existing entry.
     """
     videos = state.setdefault("videos", {})
@@ -65,6 +84,9 @@ def add_video(state: dict, video_id: str, title: str) -> bool:
         if title and videos[video_id].get("title") != title:
             videos[video_id]["title"] = title
             videos[video_id]["updated_at"] = _now()
+        # Backfill playlist if it was missing (e.g. added before this field).
+        if playlist and not videos[video_id].get("playlist"):
+            videos[video_id]["playlist"] = playlist
         return False
     videos[video_id] = {
         "title": title,
@@ -72,6 +94,7 @@ def add_video(state: dict, video_id: str, title: str) -> bool:
         "guest": None,
         "slug": None,
         "pr_url": None,
+        "playlist": playlist or None,
         "added_at": _now(),
         "updated_at": _now(),
     }

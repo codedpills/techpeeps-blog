@@ -78,7 +78,8 @@ Re-run only if the voice drifts.
 ## Per-video runbook
 
 ```bash
-make fetch                 # refresh playlist into state.json
+make fetch                              # refresh ALL registered playlists
+make fetch PLAYLIST=<youtube-url>       # register a new playlist, then refresh all
 make next                  # transcribe + generate + open PR for the next video
 # --- review the PR (see checklist below): confirm speakers, verify quotes,
 #     set the hero clip, edit prose ---
@@ -93,6 +94,17 @@ make transcribe ID=<video_id>
 make generate   ID=<video_id>
 make clip ID=<video_id> START=01:23 END=01:28 SLUG=<slug>   # re-cut the hero clip
 ```
+
+### Multiple playlists
+
+`state.json` tracks a **list** of playlists (`playlists: [...]`) and tags each
+video with the playlist it came from (`videos.<id>.playlist`). Add one with
+`make fetch PLAYLIST=<url>`; a bare `make fetch` re-enumerates every registered
+playlist. Video IDs are globally unique, so playlists never collide, and the rest
+of the pipeline (transcribe → generate → publish) is unchanged regardless of
+which playlist a video belongs to. The legacy single `playlist_url` field is
+auto-migrated into the list on first load. (The per-video `playlist` tag also
+sets you up to group posts by series on the site later, if you want.)
 
 Status ladder: `pending → transcribed → drafted → published`. Each step is
 idempotent. To redo work, pass flags as **make variables** (not as `--flags`,
