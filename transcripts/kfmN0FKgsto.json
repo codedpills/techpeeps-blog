@@ -202,5 +202,6 @@
     }
   ],
   "mapping_confidence": "high",
-  "candidate_clip_windows": []
+  "candidate_clip_windows": [],
+  "video_published_at": "2024-11-15"
 }
