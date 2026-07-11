@@ -1,6 +1,7 @@
 ---
 // Custom 404 page.
 import ThemeToggle from "../components/ThemeToggle.astro";
+import "../styles/global.css"; // bundled + fingerprinted by Astro (cache-busts)
 ---
 
 <!doctype html>
@@ -11,7 +12,6 @@ import ThemeToggle from "../components/ThemeToggle.astro";
     <title>Page not found — Tech Peeps Diaspora</title>
     <meta name="robots" content="noindex" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles/global.css" />
     <script is:inline src="/scripts/theme.js"></script>
   </head>
   <body>

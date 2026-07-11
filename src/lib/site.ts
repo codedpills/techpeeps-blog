@@ -24,7 +24,12 @@ export function includeDrafts(): boolean {
   return isPreviewBuild();
 }
 
-// Content-collection filter: keep published posts always, drafts only on preview.
-export function postFilter({ data }: { data: { draft?: boolean } }): boolean {
-  return includeDrafts() || !data.draft;
+// Content-collection filter. Visibility is decided by WHICH branch is building,
+// not by the `draft` frontmatter flag: a post lives under src/content/blog only
+// on its PR branch (preview) or on main (published), so every committed post
+// should render. Merge to main = published. The preview-vs-production split only
+// drives noindex + the preview banner (see isPreviewBuild). The `draft` flag is
+// retained in the schema for compatibility but no longer gates visibility.
+export function postFilter(_entry: { data: { draft?: boolean } }): boolean {
+  return true;
 }
