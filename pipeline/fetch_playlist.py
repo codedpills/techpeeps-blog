@@ -57,41 +57,54 @@ def enumerate_playlist(url: str) -> list[tuple[str, str]]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Refresh state.json from a playlist.")
-    parser.add_argument("--playlist", help="Playlist URL (overrides state/env).")
+    parser = argparse.ArgumentParser(
+        description="Refresh state.json from all registered playlists."
+    )
+    parser.add_argument(
+        "--playlist",
+        help="Register a new playlist URL, then refresh all. Omit to refresh "
+        "the playlists already in state.json.",
+    )
     args = parser.parse_args()
 
     st = state.load()
-    url = (
-        args.playlist
-        or st.get("playlist_url")
-        or config.get("YT_PLAYLIST_URL")
-    )
-    if not url:
+
+    # Register a newly provided playlist (from --playlist or, first run, env).
+    if args.playlist:
+        if state.add_playlist(st, args.playlist):
+            print(f"Registered new playlist: {args.playlist}")
+    elif not st.get("playlists"):
+        seed = config.get("YT_PLAYLIST_URL")
+        if seed:
+            state.add_playlist(st, seed)
+
+    playlists = st.get("playlists", [])
+    if not playlists:
         print(
-            "ERROR: no playlist URL. Pass --playlist, set YT_PLAYLIST_URL in .env, "
-            "or populate playlist_url in state.json.",
+            "ERROR: no playlists registered. Pass --playlist <url>, set "
+            "YT_PLAYLIST_URL in .env, or add one to state.json's 'playlists'.",
             file=sys.stderr,
         )
         return 1
 
-    st["playlist_url"] = url
-    rows = enumerate_playlist(url)
-    if not rows:
-        print("WARNING: playlist enumeration returned no videos.", file=sys.stderr)
-
-    new, known = 0, 0
-    for vid, title in rows:
-        if state.add_video(st, vid, title):
-            new += 1
-        else:
-            known += 1
+    grand_new = grand_known = 0
+    for url in playlists:
+        rows = enumerate_playlist(url)
+        if not rows:
+            print(f"WARNING: no videos from {url}", file=sys.stderr)
+        new = known = 0
+        for vid, title in rows:
+            if state.add_video(st, vid, title, playlist=url):
+                new += 1
+            else:
+                known += 1
+        grand_new += new
+        grand_known += known
+        print(f"Playlist: {url}\n  {new} new, {known} already tracked")
 
     state.save(st)
-    print(f"Playlist: {url}")
-    print(f"  {new} new video(s) added as 'pending'")
-    print(f"  {known} already tracked")
-    print(f"  {len(st['videos'])} total in state.json")
+    print(f"\n{len(playlists)} playlist(s) · {grand_new} new · "
+          f"{grand_known} known · {len(st['videos'])} total videos in state.json")
     return 0
 
 

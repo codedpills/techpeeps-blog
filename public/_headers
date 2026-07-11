@@ -13,6 +13,15 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=(), browsing-topics=()
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 
-# Long-cache the immutable hashed assets and committed clips.
+# Long-cache immutable, content-hashed build assets (CSS/JS under /_astro/).
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Long-cache the committed clips.
 /clips/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Scripts keep a stable filename (theme.js must load render-blocking, so it is
+# not hashed). Revalidate so a redeploy is picked up instead of served stale.
+/scripts/*
+  Cache-Control: no-cache

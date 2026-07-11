@@ -176,6 +176,99 @@ a:hover {
   font-weight: 700;
 }
 
+/* ---------- Screen-reader-only utility ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Newsletter signup ---------- */
+.newsletter {
+  max-width: var(--measure);
+  margin: 4rem auto 0;
+  padding: 2rem 1.75rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.newsletter h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.4rem;
+}
+.newsletter-blurb {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  margin: 0 0 1.25rem;
+}
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.newsletter-form input[type="email"] {
+  flex: 1 1 16rem;
+  font-family: var(--sans);
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+}
+.newsletter-form input[type="email"]:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.newsletter-form button {
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.6rem 1.3rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+.newsletter-form button:hover {
+  opacity: 0.9;
+}
+.newsletter-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.newsletter .hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.newsletter-status {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  min-height: 1.2em;
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+}
+.newsletter-status.is-success {
+  color: var(--accent);
+}
+.newsletter-status.is-error {
+  color: #b3261e;
+}
+
 /* ---------- Draft preview banner ---------- */
 .draft-banner {
   font-family: var(--sans);

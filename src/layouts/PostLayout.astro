@@ -4,16 +4,20 @@
 // Includes meta description + Open Graph tags (poster as og:image).
 import HeroClip from "../components/HeroClip.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
+import Newsletter from "../components/Newsletter.astro";
 import { isPreviewBuild } from "../lib/site";
+import "../styles/global.css"; // bundled + fingerprinted by Astro (cache-busts)
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
   post: CollectionEntry<"blog">;
 }
 const { post } = Astro.props;
-const isDraft = post.data.draft === true;
-// Keep preview deployments and any draft out of search engines.
-const noindex = isDraft || isPreviewBuild();
+// Preview deployments (PR branches) are kept out of search and get a banner.
+// Posts on main are published: indexable, no banner — regardless of the
+// (now-cosmetic) draft frontmatter flag.
+const preview = isPreviewBuild();
+const noindex = preview;
 const {
   title,
   description,
@@ -101,13 +105,12 @@ const jsonLd = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
-    <link rel="stylesheet" href="/styles/global.css" />
     <script is:inline src="/scripts/theme.js"></script>
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
     <ThemeToggle />
-    {isDraft && (
+    {preview && (
       <div class="draft-banner" role="status">
         <strong>Draft preview</strong> — this profile is not yet published. Shared
         for review on the pull request; please suggest any edits there.
@@ -155,6 +158,12 @@ const jsonLd = {
         </p>
         <p><a href="/">← All profiles</a></p>
       </footer>
+
+      <Newsletter
+        heading="Enjoyed this profile?"
+        blurb="Get the next one delivered directly to your inbox. No spam, unsubscribe anytime."
+      />
     </main>
+    <script is:inline src="/scripts/subscribe.js"></script>
   </body>
 </html>

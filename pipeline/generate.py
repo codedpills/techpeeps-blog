@@ -400,8 +400,12 @@ def main() -> int:
                   "CI comment for details and fixes.", file=sys.stderr)
 
         # Stage ONLY this post's files (never `add -A`, which would sweep up
-        # uncommitted transcripts/state into the draft commit).
+        # unrelated uncommitted state into the draft commit). The transcript is
+        # committed too so CI / verify_post can check quotes on the PR branch.
         _git("add", str(out_md))
+        tjson = TRANSCRIPTS_DIR / f"{video_id}.json"
+        if tjson.exists():
+            _git("add", str(tjson))
         clip_files = [
             REPO_ROOT / "public" / "clips" / f"{slug}.{ext}"
             for ext in ("mp4", "webm", "jpg")
