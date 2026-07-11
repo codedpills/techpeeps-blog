@@ -59,7 +59,7 @@ MIS felt like a safe middle ground, somewhere she could "run back to where I'm c
 
 The turning point came as an unlikely accident. Working as a marketing intern, she got caught by the CEO "building programs during company time, which is not good." Instead of a reprimand, she got an opportunity: the company needed a system, and would she like to try? She said sure, partly, she jokes, "because I didn't have a choice. He has caught me." Ten weeks later she'd built something (an Excel-based tool, she's quick to clarify) that, "apparently they still use it today." More importantly, that CEO "helped me to build that confidence in myself."
 
-## Goldman, a For Loop, and a Rejection She's Grateful For
+## Goldman Sachs, a For Loop, and a Rejection She's Grateful For
 
 Confidence, it turns out, isn't a switch you flip once. Back at school (Ashesi), she picked up more CS courses and landed an internship at Goldman Sachs. And then the old fear came roaring back. "I am so afraid to touch anything that I'm always asking for help with everything, even the things I know." Hence the now-legendary moment: "arguing with my manager over what a for loop is."
 
@@ -73,9 +73,9 @@ My favorite detail in this whole stretch is about a lecturer. In third year, she
 
 The job hunt was brutal. She LeetCoded "hard," slept at 4 AM, sent her CV everywhere, and collected "so, so, so, so, so many rejections." One company strung her through multiple stages before discovering she was at a Ghanaian university and couldn't provide visa sponsorship: "all just went down the drain."
 
-But two moments of community changed the math. First, the developer-in-Vogue Ivy Bali ran a giveaway for a year of LeetCode Premium. Princess wanted it badly and was wishing out loud in her best friend's DMs, when her friend said the thing that became a pattern in Princess's life: "why don't you just go and ask? Like, the worst she can say is no." She asked. She got it.
+But two moments of community changed the math. First, the developer-in-Vogue Ivy Barly ran a giveaway for a year of LeetCode Premium. Princess wanted it badly and was wishing out loud in her best friend's DMs, when her friend said the thing that became a pattern in Princess's life: "why don't you just go and ask? Like, the worst she can say is no." She asked. She got it.
 
-Second, when her current company emailed her, she nearly dismissed it as a scam ("the font was weird") before reasoning, with that same shameless courage, "I'm a student, I have 20 CDs in my account. If you want to scam me, it's not me that you're going to get it." Three interviews later, including a system design round she prepped for with help from friends, she made it.
+Second, when her current company emailed her, she nearly dismissed it as a scam ("the font was weird") before reasoning, with that same shameless courage, "I'm a student, I have 20 Cedis in my account. If you want to scam me, it's not me that you're going to get it." Three interviews later, including a system design round she prepped for with help from friends, she made it.
 
 She's emphatic about why community mattered: it was her best friend who pushed her to ask Ivy, her uni friends who prepped her, "my friends who were with me when I wanted to give up." As she puts it, "community is such an important part of becoming a better software engineer."
 
@@ -99,6 +99,6 @@ She names something she's observed in many of us from African backgrounds: "an i
 
 Drawing on her faith, she points to Hosea: "write the vision, make it plain, that he who sees it will run by it." Decide what you want, whether Microsoft, Google, or the best engineer in the room, write it down, then break it into the steps that get you there. And above all: "Don't let yourself talk you out of being all that you can possibly be."
 
-I'll be honest: I came away from this one genuinely empowered, and I suspect a lot of people watching will too. Princess's story isn't a clean highlight reel; it's fear and rejection and 4 AM nights, threaded through with people who refused to let her quit, and a stubborn willingness to just *ask*. That's exactly the kind of "it's possible" proof this show exists to surface.
+I'll be honest: I came away from this one genuinely empowered, and I suspect a lot of people reading will too. Princess's story isn't a clean highlight reel; it's fear and rejection and 4 AM nights, threaded through with people who refused to let her quit, and a stubborn willingness to just *ask*. That's exactly the kind of "it's possible" proof this show exists to surface.
 
-Huge thanks to Princess for sharing her journey so openly. You can hear the full conversation, including the for-loop saga and the lecturer redemption arc, in the video above.
+Huge thanks to Princess for sharing her journey so openly. You can see the full conversation, including the for-loop saga and the lecturer redemption arc, in the video above.
