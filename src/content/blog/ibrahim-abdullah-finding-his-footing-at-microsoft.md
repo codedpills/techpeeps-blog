@@ -17,9 +17,9 @@ tags:
 - Ghana
 - diaspora
 heroClip:
-  mp4: /clips/from-ashesi-to-microsoft-ibrahim-abdullah-on-building-tools-for-developers.mp4
-  webm: /clips/from-ashesi-to-microsoft-ibrahim-abdullah-on-building-tools-for-developers.webm
-  poster: /clips/from-ashesi-to-microsoft-ibrahim-abdullah-on-building-tools-for-developers.jpg
+  mp4: /clips/ibrahim-abdullah-finding-his-footing-at-microsoft.mp4
+  webm: /clips/ibrahim-abdullah-finding-his-footing-at-microsoft.webm
+  poster: /clips/ibrahim-abdullah-finding-his-footing-at-microsoft.jpg
   alt: Ibrahim Abdullah speaking about his journey to Microsoft
 draft: true
 interviewDate: '2022-08-29'
