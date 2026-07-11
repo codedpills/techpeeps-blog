@@ -8,16 +8,18 @@
       "slug": "go-for-gold-raymonds-winding-road-from-pilot-dreams-to-data-consulting",
       "pr_url": null,
       "added_at": "2026-06-26T10:44:07+00:00",
-      "updated_at": "2026-06-26T12:10:40+00:00"
+      "updated_at": "2026-06-26T12:10:40+00:00",
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A40QsoHNx2NONNwZdh1gbFY5"
     },
     "bE-mpnLZNh4": {
       "title": "How I built my freelance business as a product designer",
-      "status": "transcribed",
-      "guest": "Lovelace Fierce",
-      "slug": "from-home-economics-to-figma-lovelace-fierce-on-the-real-work-behind-product-des",
+      "status": "drafted",
+      "guest": "Lovelace Filson",
+      "slug": "lovelace-good-design-isnt-about-the-designer",
       "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/2",
       "added_at": "2026-06-26T10:44:07+00:00",
-      "updated_at": "2026-06-28T14:54:32+00:00"
+      "updated_at": "2026-06-28T14:54:32+00:00",
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A40QsoHNx2NONNwZdh1gbFY5"
     },
     "KAxjaa4-HYY": {
       "title": "How Princess landed an international software engineer role fresh out of college.",
@@ -26,16 +28,18 @@
       "slug": "because-you-are-excellent-princess-on-confidence-community-and-building-a-career",
       "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/5",
       "added_at": "2026-06-26T10:44:07+00:00",
-      "updated_at": "2026-06-30T10:36:31+00:00"
+      "updated_at": "2026-06-30T10:36:31+00:00",
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A40QsoHNx2NONNwZdh1gbFY5"
     },
     "ajnMoBttDAI": {
       "title": "How to build a future-proof career while making impact",
-      "status": "drafted",
+      "status": "published",
       "guest": "Otema Yirenkyi",
       "slug": "otema-yirenkyi-building-tech-that-sees-people-of-color",
       "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/4",
       "added_at": "2026-06-26T10:44:07+00:00",
-      "updated_at": "2026-06-26T10:49:44+00:00"
+      "updated_at": "2026-06-26T10:49:44+00:00",
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A40QsoHNx2NONNwZdh1gbFY5"
     },
     "kfmN0FKgsto": {
       "title": "A Day in the Life of an Engineering Manager at Cliffhanger Games",
@@ -44,7 +48,74 @@
       "slug": "building-many-of-herself-chioma-asor-on-engineering-management-space-gaming-and",
       "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/1",
       "added_at": "2026-06-26T10:44:07+00:00",
-      "updated_at": "2026-06-26T12:38:25+00:00"
+      "updated_at": "2026-06-26T12:38:25+00:00",
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A40QsoHNx2NONNwZdh1gbFY5"
+    },
+    "svOfJ-OPkEs": {
+      "title": "No college degree to Snr. Software Developer at a global tech company #techpeepsdiaspora",
+      "status": "drafted",
+      "guest": "Mubarak Awal",
+      "slug": "mubarak-awal-taught-himself-to-code-on-youtube",
+      "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/7",
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
+      "added_at": "2026-07-09T19:26:39+00:00",
+      "updated_at": "2026-07-09T19:31:05+00:00",
+      "video_published": "2022-09-29"
+    },
+    "iPFVpA7s6Zs": {
+      "title": "How a college grad from Ghana joined Microsoft as a Software Engineer #techpeepsDiaspora",
+      "status": "drafted",
+      "guest": "Ibrahim Abdullah",
+      "slug": "ibrahim-abdullah-finding-his-footing-at-microsoft",
+      "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/8",
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
+      "added_at": "2026-07-09T19:26:39+00:00",
+      "updated_at": "2026-07-09T20:17:25+00:00",
+      "video_published": "2022-08-29"
+    },
+    "TokBUkAQCkg": {
+      "title": "African tech entrepreneur shares story and career advice for young professionals #techpeepsdiaspora",
+      "status": "pending",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
+      "added_at": "2026-07-09T19:26:39+00:00",
+      "updated_at": "2026-07-09T19:26:39+00:00"
+    },
+    "LVNVUsWAEiQ": {
+      "title": "From Ghana to full-time Software Engineer in Germany #techpeepsdiaspora",
+      "status": "pending",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
+      "added_at": "2026-07-09T19:26:39+00:00",
+      "updated_at": "2026-07-09T19:26:39+00:00"
+    },
+    "zDtyjmzubXc": {
+      "title": "From Nigeria to full time software developer at a global tech company (Part 1) #techpeepsDiaspora",
+      "status": "pending",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
+      "added_at": "2026-07-09T19:26:39+00:00",
+      "updated_at": "2026-07-09T19:26:39+00:00"
+    },
+    "ZSqKkZL3K_U": {
+      "title": "From Nigeria to full time software developer at a global tech company (Part 2) #techpeepsDiaspora",
+      "status": "pending",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
+      "added_at": "2026-07-09T19:26:39+00:00",
+      "updated_at": "2026-07-09T19:26:39+00:00"
     }
-  }
+  },
+  "playlists": [
+    "https://www.youtube.com/playlist?list=PLkTC9ELc7A40QsoHNx2NONNwZdh1gbFY5",
+    "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8"
+  ]
 }

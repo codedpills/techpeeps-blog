@@ -1,0 +1,263 @@
+{
+  "video_id": "svOfJ-OPkEs",
+  "title": "No college degree to Snr. Software Developer at a global tech company #techpeepsdiaspora",
+  "video_published_at": "2022-09-29",
+  "duration_sec": 2259,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 256,
+      "end_ms": 13876,
+      "text": "Hi guys, and welcome to another episode of TechPeeps Diaspora. Today we have on the show a senior software developer at, um, a gaming company, and I'm really excited for this one. Um, let's welcome to the show, um, Mubarak Awal."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 14068,
+      "end_ms": 31608,
+      "text": "Hey, um, yeah, I'm Mubarak Awal. I'm a senior software developer with a gaming company in Canada, and I work remotely. This company is actually the leading live ops games developer in Canada right now, so I work with them remotely as a senior software developer. Yeah, so, and I'm working from Ghana actually."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 33190,
+      "end_ms": 41642,
+      "text": "Yeah, so what does it feel, um, to work at a— first, like, in the gaming industry and also, like, working remotely from Ghana? How does that feel?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 42992,
+      "end_ms": 139242,
+      "text": "Uh, yeah, so working in the gaming industry isn't, um, the same as playing the games actually, because you are, you are behind the scenes, you are making sure the game is actually working, you know. So Um, and because it's, it's a game and there are a lot of people playing almost every time, um, you are always, um, like fixing live issues. For instance, the team I work on, I actually lead the team that handles, um, the game, basically the games being live. So I'm leading that team and yeah, you always have to be like alert, working on live issues that are, that are happening, also making sure the game is always active, you know. Whenever you connect to a server and you connect to a game and they tell you the server is down, it's usually our fault. So we have to make sure it's always running. Yeah. So yeah. Um, and it's fun actually. It's really fun because you get to see how, how users enjoy the games that you work, you build, the features you add to the games, the improvements you make. And yeah, it's actually fun working, working, working in a gaming company, um, and working from Ghana. You know, it's a Canadian company, so the time zone, I think we are 4 hours ahead of them. So I usually start working around like 11, thereabout, and then close late in the evening. Um, so it gives, it gives me a lot of flexibility to do so many things in the morning, you know, all personal stuff that I want to do. I get to do all those things in the morning, and then yeah, I jump, I jump onto work, um, in the afternoon. Um, so yeah, you have like that flexibility also to work from anywhere you want in Ghana. Um, actually not just in Ghana, anywhere you want to work from in the world, so far as you You are available when it's time for work and, you know, you do what, what needs to be done."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 140398,
+      "end_ms": 205830,
+      "text": "Yeah. Nice. That sounds really interesting. So usually on the show, um, you know, what I like to do is, um, for my, um, guests to, you know, dive into their stories, you know, walk us through their backgrounds and all of that. Um, I, I mean, like for, for you, like it would feel like asking myself those questions that I already know. Um, but I'll definitely, you know, for the sake of our audience, maybe dive more into your story and the background, but I want to switch it up a bit. I, you know, took, um, set of questions from people like who are like also software engineers, like upcoming software engineers. Like, um, these are questions that these people are interested to learn from your experience, right? So, um, yeah, I got like loads of questions here and I think mostly, um, maybe we can start with this one. Um, you know, how did you, you know, get your foot in the door? Like, as an upcoming software developer, were there like any particular projects that you, you did, or were there any particular things that you did that helped you first get your foot into the door as a professional software developer in a company?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 205830,
+      "end_ms": 313250,
+      "text": "Okay, so I came, I came from a sales background and I went straight into software development, so I didn't have any computer science background. Um, yeah, so when I decided I wanted to do coding Um, it was, I think it was about 6 years ago. Um, and, um, I knew this is something I wanted to do, right? And that's at that point, you know, the circle I had, I didn't know any developer. Like I, and there were so many soft skills that I didn't know as at then, you know, I was very young now growing up. So, but I knew this, this is something I wanted to do. So I spent about 8 months, you know, watching videos. Like actually didn't even know Udemy existed then. So it was just YouTube, like, you know, watching videos, like so many YouTube videos, um, like reading a lot of articles, trying to find what to do, you know, people were suggesting you to learn, like, learn this programming language, learn this programming language, you know. So that was all I was doing. I remember I learned, um, Python. Um, I also wanted to start Ruby on Rails. I never got past the setup phase, you know, there was these errors I couldn't even fix. So I just, I just stuck to Python. And then, yes, and about 8 months down the line, I realized that, okay, I've actually learned a bit of Python, but I was like knowing ABCD and not knowing what to do with it. And so that was when I actually met my first mentor, um, Richie, the CEO of Code Train. And yeah, that's when things actually, um, started moving fast for me because he actually made me understand that I had to choose a career path. You have to become a web developer, a mobile developer, you know, that kind of stuff, which I didn't know. And that, that's like, that's, that's one of the, the most important, um, phase in my, in my growth as a software engineer, getting a mentor, right? That, and within like a few months after getting that mentorship, actually built like my first, um, full mobile application with the backend and everything working, you know, everything wired up. And yeah, that's how, um, I, I started my, my software, um, developer career."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 313250,
+      "end_ms": 322060,
+      "text": "Um, it's like really fascinating because, um, you, first of all, you don't have a computer science degree, right? You don't have any college degree."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 322090,
+      "end_ms": 323030,
+      "text": "Yeah, I don't have any degree."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 323030,
+      "end_ms": 365016,
+      "text": "That's the first thing. Um, and you also came from like a traditional background— no, a non-traditional background, right? You studied, um, business Um, in school and then, you know, decided, okay, you know, coding was— I don't know what you heard or what made you, you know, start coding in the first place, but you decided that this is something that you wanted to do. Yeah. Um, after you got a mentor, you, you know, started building stuff. Like, were there any, um, particular, like, projects that you built? You mentioned, like, you started developing, like, mobile applications, and I, I, like, I can imagine, like, starting then it would have been really challenging, right? But Were there any specific, you know, projects that you built that, you know, made you feel like, okay, I catch, you know what I mean?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 365770,
+      "end_ms": 547030,
+      "text": "Yeah, yeah, yeah, yeah. I get it. So yeah, um, so sorry. Um, there are, there are a few projects that I worked on that, um, I know actually improved my coding skills and made me understand, um, like most of the concepts I was learning really, really good. You know, I was focusing more on backend. And mobile. I actually feel like I'm not a frontend guy, so just backend. And I was using mobile to learn a little bit of frontend. So with the backend, um, one project that I worked on, which sounds boring but actually taught me a lot about backend development and most of the concepts that you need to know about databases and all that, was building an e-commerce website, right? Um, it's also similar to a blog, building a blog, right? Now in In a blog, when you take a blog, we have posts, we have comments, we have tags, we have categories. Being able to build just these sections alone exposes you to the whole CRUD process relationship, like many-to-many, one-to-many, or like, and this relationship and this CRUD process and all that is like the foundation, the fundamentals you need for almost every single backend application you work on. So once you're able to work on a full blog application, with like tags and comments where, and even you can take it a step further and even add like an admin dashboard to manage like admins and then also have like the blog side. Like just that project alone is going to teach you like so much about backend development in particular and expose you to like most of the challenges that you're going to encounter when building Like when building backend applications. And also I actually suggest you to try it on your own first because that's actually the first time I tried architecting a backend application. I actually remember very well, I had a book and I was just trying to figure out how to like, you know, like how to map the databases. I didn't know how it would work. It didn't make sense, you know, because I knew, okay, how to have like this mapping to this, this mapping to this, but it just, it just wasn't making sense to me. Yeah. And after some time I finally figured it out and I was able to work on Um, the project. So yeah, it's a very simple project, but it teaches you a lot about the, the, like, gives you all the basics you need to, um, um, to, to grow faster as a backend developer. Yeah, so yeah, that's like, that's it for me in terms of backend. In terms of mobile, I think it's, it should basically be an app with like authentication connecting to an API. So any simple app, it can also be a blog app, you know, with like login, sign up, and also, um, connecting to an API to get the blog feed and all that. Once once you're able to consume APIs in your mobile applications, um, it becomes that— it becomes like something that you take with you almost like, um, to every single job you, you go to, every project you work on, because almost every project right now is connecting to an API out there, getting some data, sending some data, you know. So yeah, that's actually something that you would need to— like, you need to get very early on in your career to, you know, to, to, to give you like a very strong foundation. Yeah, so those are the projects for me."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 547140,
+      "end_ms": 563940,
+      "text": "You know, I think it's, it's similar for myself. These things, you know, cut across first about like first building something with the skills that you learn, right? So I think most people miss that. Um, you learn different programming languages, you learn stuff, but you don't actually build things with the, with the things that you learn, right?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 563940,
+      "end_ms": 564840,
+      "text": "So exactly. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 564840,
+      "end_ms": 634890,
+      "text": "You know, being able to build something with the skills that you learn, um, exposes you to different challenges that you would otherwise not encounter when watching these YouTube videos and practicing, right? So I think for me, um, that's also like Um, something that's, you know, when starters do, um, it exposes them to challenges and that prepares them like for, for their, their real job. Now talking about the real job, um, you know, you, um, you know, became a teaching fellow at Codetrain where you also, um, train people to, to be software engineers. So obviously like you've seen several people also start their careers and, you know, get their foot into the door as software engineers, and some of them have even grown to be, you know, mid-level engineers and senior software engineers. Like, um, in your experience, what would you say is the difference between these levels, right? So someone gets a job as a, you know, junior dev, um, like, what are the changes? What are the differences between, like, someone being a junior dev and, you know, advancing to a mid-level dev and then to a senior dev? Like, are there any specific things that that, um, signify these things?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 634890,
+      "end_ms": 831913,
+      "text": "Okay. Yeah. So, um, so in the industry there are like some, a few, um, like basic standards that people use to identify, um, junior, mid, and then senior dev, which is basically the years of experience. So if someone doesn't know you, hasn't met you before, they'll just use your years of experience to guess whether you're a senior, junior, or mid-level developer. I know there are those job posts out there asking for like 10 years experience for a junior developer. I know, like, that's not what I'm talking about, right? Um, so in the industry, senior developers are like 6 years plus, and some, some, um, start from 5 years plus, and mid are from 3 years plus, and then junior is 1 to 2 years. That's if someone hasn't met you before. But it doesn't mean that you can't be a senior developer after like 3 years or 4 years of learning to code, and it doesn't mean you can't be a mid after like 2 years of learning to code, right? So, um, so that's like industry standards. But when it comes to, um, skill set and what is expected of you, um, in a job as a junior developer, mid, and senior. So let's take the junior developer. Um, when you join a company as a junior developer, you— that the company makes, makes provision for mentoring you, right? They know that, okay, you are going to need a lot of mentoring but not a lot of handholding, because no company wants to hire someone that they are going to handhold throughout. Um, but they know they would have to mentor you a lot, um, you know, and you are going to ask a lot of questions, you are going to need plenty things clarified, and they expect you to be able to complete the tasks that you are given. You know, without handholding you a lot, right? But in the aspect that you're going to have a lot of questions, you know, because you're a junior developer, you have to grow. So that is expected. Now, once you get to an intermediate level developer, the company expects that you start becoming self-manageable, right? You should be able to manage yourself. You should be able to handle tasks that are given to you without needing a lot of help. Right? And without needing people to like, um, show you where to find stuff, you know? So, um, yeah, that's what I expect of you at, at, at an intermediate level, right? You should be able to take tasks, work on them without bothering a lot of people. And once you get to a senior level, now it goes beyond just you and the tasks you're working on. Now you should also be able to help other people in the company. So it's expected of you that, okay, in as much as you're working on these tasks, working on the difficult, most of the difficult tasks in the company, it's also expected of you to also help the junior and intermediate developers to also level up and get to, you know, your level as a senior developer. So you'll be like working a lot with intermediate and junior developers, helping them a lot, you know. Um, most of them will be coming to you with technical decisions, you'd have to make them and all that. You'll be taking ownership to a lot, right? Um, at a senior level, um, with all this being said, when you join a company, um, first, they don't expect you to start exhibiting these, um, traits as a going to the— talking about the mid and the senior level, you are given a time to onboard. So a time where you can ask all the dumb questions to figure out where things are, you know, because it's a new company, a new system, you don't know anything about it. So yeah, a time where you can be a junior developer basically to catch up with the company, know all their stuff. And then yeah, once you finish onboarding, then that's when you start, um, um, being self-manageable and taking ownership and all that. Yeah. So yeah, that's like the, the the distinction between these, these 3 roles."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 832970,
+      "end_ms": 872295,
+      "text": "Um, yeah, so that's really interesting. Like, trying to link that to your own experience, I, I, I know that when you were first, um, hired into your current company, um, you were brought on as, um, a mid-level developer, and just within a few months you were promoted to senior, um, level. Like, and it's like really fascinating, like, when you hear about— because it takes people years, right? And for you, it just took like a few months. Were there any— and I'm sure like there were other people that were hired just about the same time that you were hired, right? Um, who also like mid-level but were not promoted. Were there any like specific things or actionable things that you did differently that got you like quickly promoted from a mid-level developer to like a senior developer?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 873627,
+      "end_ms": 1032990,
+      "text": "Uh, yeah, it's— so I think, um, I think one thing I did a lot was like I communicated a lot with my Um, Scrum Master, basically the project manager, and also, um, with my manager. Well, but mostly with the Scrum Manager. So with every single thing I worked on, I made sure, um, like he knew where I was, what I was working on, where I was going next. Um, and whenever there was a task that I knew was going to delay me, I made sure like he knew this was going to delay me. Um, and also I asked for help a lot because it was, it's, it's like it was a new game, right? A new system that I hadn't even worked on before. Like a Java framework I hadn't used before. Um, like it's a whole new setup that I hadn't even encountered before. So I needed a lot of time to onboard, to make sure I understood like everything, to even set up, um, you know, learn how to use their VPNs and all those stuff. So there was a lot of learning there. And one other thing that I did was I bothered the, um, other intermediate and senior devs there a lot, right? Um, whenever I was working on something, I made sure I searched for someone who had worked on it before and then hit the person up. If I was working in a file and I didn't understand anything, I'll just check the commit history, see who was the most recent person who made a commit in this file, hit the person up, you know. So I actually bothered people a lot, right? And that's how come I got all the help I needed. I even, there were times where, so like I hit up some of the junior devs there. So there's one junior dev there, he does Unity. So, and, and I actually haven't used Unity, you know, until I joined BVG. So yeah, I actually hit him up when it comes to Unity stuff because I know that he has done Unity. So I just hit him up. So there's this Unity stuff I'm looking at, blah, blah. I just send him the file, he just check it out and then he lets me know what he thinks. Do you get it? So yeah, that's, that's what I was doing mostly, like hitting people, people that have experience in the thing I was looking at. And it, it helped me like work, work on so many like tasks and coming from like my previous, um, role, you know, being, uh, understanding most of the things and how things worked for years, um, transitioning to a new company where I didn't understand anything, um, about the system, I felt like I wasn't going really fast. So I think there was a time where I even messaged my project manager and I told him that, yeah, I know I'm not going, um, as fast as expected, but you know, I'm going to catch up. And he was like, no, what are you saying? You know, yeah, you're actually doing good, you know, so yeah, don't worry about it. And I was like, okay. Yeah. So yeah, I actually put in a lot of work to make sure I understood the game, the systems, like, um, how things were working. Um, yeah. And, and I think that's, that's, um, another thing that also helped me, um, level up very fast and, um, I got and get promoted in like within those few months. Yeah. Awesome."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1032990,
+      "end_ms": 1063206,
+      "text": "So, um, like comparing being a mid-level developer and a senior developer, obviously like, uh, most of the tasks you are doing, you are still doing pretty much like similar tasks. Um, but maybe with a few added responsibilities. Like, are there like any additional things apart from like the coding, right? That's, um, you know, being a senior developer like you do, what are like the added responsibilities and how does that check out for you in terms of work-life balance? Does it really affect like your, you know, your work-life balance in any way?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1064563,
+      "end_ms": 1223370,
+      "text": "Okay. Yeah. So, um, so as, uh, when I was like at intermediate level, It was like, you know, we have these things that we have to work on. I just take the task, I work on it, and I make the pull request, get some reviews, and then, you know, it goes through QA. So that was it. I actually wasn't involved in most of the planning, but once I got promoted to a senior level, now I became a stakeholder in so many different projects, and I actually started leading the game ops team, like a team handling the game being active every time. So Yeah, there was a lot of responsibility, like managing a team across the world. Um, also being a stakeholder in so many, um, projects, which means that you'd have to, um, like you have to join so many meetings. You know, when, whenever we are discussing this, you have to jump on the meeting because you're the stakeholder, you are the tech guy, you know, you have to understand the thing, help them scope it out. And also one thing our team does is we build, um, internal tools for the company. So things that we use internally. So sometimes there are tool suggestions and stuff that needs to come up. And since I'm kind of leading that team, I have to jump onto every meeting with, um, that needs like developers to help assess things. So yeah, I got a lot of responsibility when I became a senior developer. Oh, and also, yeah, you get to work on some of the difficult challenges that the companies face. Yeah, it's interesting, sometimes frustrating, but also interesting because with every difficult challenge you encounter, you get to learn more, you know, understand so many different things. Yeah, so moving from intermediate to senior is basically an increase in responsibility, but it doesn't change your work-life balance in the sense that, um, everything is planned. Like, you also have to be able to manage your time well, right? Um, you know that, okay, today I have like, let's say, um, 2 hours of meeting, you know, the whole day, and I have like 6 hours left to work. So you just have to manage your time well to make sure, um, you know, you are like, you are, you are doing the tasks that needs to be done and also leading the team they are supposed to lead. Oh, and also you also help your colleagues a lot, like, which I was already doing that when I was intermediate, but as senior you have to also continue. You know, it's expected of you to do that as senior since I'm already leading the team. I have to also be helping them a lot. Like, um, one, one good thing for me is that my team is mostly self-manageable, so I don't really do, um, a lot of work, um, in regards— I don't do a lot of hand-holding, right? Because almost everyone in my team knows how to manage themselves, you know, they know how to work on tasks and whenever they get stuck, they know how to ask for help and all that. And we help, you know, everyone, um, collaboratively. So yeah, that's how it is for me transitioning from intermediate to, um, senior, um, level."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1223370,
+      "end_ms": 1254148,
+      "text": "Um, so, um, I guess like the, the next thing, and which I think is also like very important for most people, is like the interviews, right? So we are talking about all these jobs, like getting jobs in these huge companies, like Canadian companies, German companies, you know, like these global companies. Um, what's the, you know, generally like what's the interviews like for these kind of like companies? Like what's like, as someone like starting, like how would I prepare for these interviews? What do I even know what to prepare for?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1255029,
+      "end_ms": 1454660,
+      "text": "Yeah, so, um, with the interviews, it's, it's actually different, um, for every company. Um, and I'm actually group it into 2. So we have like the FAANG level company, Facebook, Amazon, Apple, Netflix, Google, those guys. And we have like those companies, their level of interview. We have like the startups, the companies that are starting fresh, like young, very young companies. We have like, we have how the interview processes are. And the companies in between, you know, how their interview processes are. So, um, as a junior developer, um, the interview for junior is different from mid, which is different from senior. But one thing that cuts across all is that you'd have to do some technical interview and coding interview, basically data structures and algorithms. And also you'd have to do behavioral, you know, where the company gets to know you, how you work, you know, like personal, personal stuff. Um, so those 2 are conked in, um, in these, um, in, in all like tech interviews. Um, but depending on the company, you can have multiple behavioral interviews, you have multiple Um, technical interviews. Now when you get to the mid and, um, senior level, there are added interviews. For junior, we can expect just behavioral and then technical, and then you're okay. Sometimes they can give you a take-home project to work on, um, also for mid and senior. But for mid and senior, there's an extra interview that you might have to do, which is a system design interview. So that is mostly about, um, how you architecture systems, how you build systems, not even the coding part. Before you get into the coding, how do you know which, um, hosting service to use? How do you know how many servers you are going to have? How do you know which database to use? You know, basically those, um, decisions you have to make to make sure the system you are building is going to be able to sustain the users that you're expecting to have on the system. So yeah, that is system design part, which, um, yeah, which is mostly for intermediate and senior. Senior compulsory, you are going to have system design. Intermediate, yeah, sometimes you get, sometimes you don't. Yeah, you don't get. Um, yeah, so that's the structure for, um, for the interviews, right? Now the difficulty of the interviews depend on which section of company you are going for. They are going for the new startups, the FAANG-level company, or the companies in between. Now FAANG-level companies, their interviews are like, they're crazy, honestly. I can tell you, yeah, like you really have to prepare a lot, like solve so many, um, LeetCode questions, like make sure you understand the kind of questions they ask. Um, you even have to know about like their behavioral style. They have things that they expect, like it's crazy. So if you want to target a FAANG-level company, there's operation you have to do for that. If you want to go for like the startups and the companies in between, you can, um, you can, you can do like, um, you can actually target FAANG-level preparation for even startups, and you know that, okay, for sure when you go, you're going to pass whatever question they give you, right? Um, yeah, so interviewing in tech is a skill on its own. So if you are in a company or if you are starting out, you know how to code, you know how to build applications and all that. Now interview is a whole different like a whole different career path on its own that you'd have to embark on. You actually have to learn how to interview separately from how you work. So what— so yeah, whatever, um, stage you are at, if you decide that you want to move to, um, a high-paying company, you actually have to prepare for interviews for real. Like dedicate time, solve data structures questions, do behavioral preparations. If you are senior, do system design preparations. And yeah, before you start, you start interviewing."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1454970,
+      "end_ms": 1509830,
+      "text": "Yeah, I think one thing that you mentioned, um, which I thought was really interesting was the fact that, yeah, you said, um, interviewing is a whole different skill on its own. And I think most people don't realize that, right? So, um, people think that, okay, when you know how to code and, you know, you are building things and you have a great like CV or portfolio, that's it. Like if I decide to, um, look for a job today and I get an interview, I'm going to nail it because I know the stuff, right? But I think they don't realize that interviewing in itself is something that you need to learn, right? There are some specific things that recruiters are looking for or hiring managers are looking for, right? Um, and that brings me to this question. So what do you think— I mean, I'm sure you've been at, like, before you got this job, like, you've had interviews with several companies, and maybe each company would expect something different. But in general, what do you think, like, hiring managers or, like, recruiters, um, you know, are looking for in in candidates?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1509830,
+      "end_ms": 1808470,
+      "text": "Uh, yeah, so, um, so like, like I said, and also you said, interviewing is a skill on its own. So there are certain things that you need to get— you need to know before you start interviewing. Now, first and foremost, you need to know the interview process, right? Um, and like I mentioned, you have to prepare for behavioral, um, data structures, which is a technical interview, and also system design if you're intermediate or senior. Um, so, so let's take an ideal interview process, right? So let's say you apply to a company in Germany. So first stage, you get to— you get— you have a call with the, um, hiring manager. Um, they basically want to confirm if you know how to speak English. They just ask a few questions just to confirm if you can speak English because they are taking people from all around the world, right? And yeah, so that's like the first step. And then once you pass that stage, then you move on to the next stage, which, um, can either be technical or behavioral, but usually technical. So you are given a coding test that you have to do. Sometimes 2 questions, you have like an hour to solve, sometimes 1 hour 30 minutes to solve those 2 questions. And based on how you do on those 2 questions, you move, you can move to the next stage, which is the behavioral itself. So that is usually like an hour interview, um, depending on the company. Some companies can even do 2 hours behavioral, and you can meet just one person, or you can meet like 3 people in one call, all asking you questions about like how you work, where you came from, the experience you've had, you know. Basically getting to know you to make sure what you have on your CV is right. And if you are— if you're able to pass that stage, the, the next stage, um, is basically the offer stage, you know, where you meet the founders and stuff and then they give you an offer. So that is like for the normal startup. If you're a senior developer, after, um, after the technical, the DS, the next one would be a system design interview. So you'd have to prepare for the system design where you know, you can be asked to design Netflix, design Google, design Google Drive, you know, design something. And then you— it will be like 45, 1-hour interview where you get to talk to, you know, someone and then you design that system. Yeah, so, um, ideally like these are the steps that you'd go through in, um, in like this, the low, the, the early startups and, you know, mid-level companies. Now if you're targeting FAANG like Facebook, Amazon, those guys You can do about 4 technical interviews or 3 technical interviews because they want to make sure, yeah, you really know what, um, like what you are saying you know. So you can do like one coding test, another one like with other people on a call, and probably like system design. Like, you know, it's crazy. Yeah. So yeah, so like that is, that is like how the interview process is like. So if you know this, then you know what to prepare for, right? You know that, okay, I really know how to solve— I really, I should know how to solve data structures questions. You know, I should prepare a lot to know what to expect, like, you know, understand like my data structures, understand my algorithms, learn patterns that I use in solving data structures and algorithms. There are like courses out there that have these patterns, like, um, um, this, um, Blogging the Coding Interview has like 20 coding patterns that, um, once you go through like a course like this, you have— you understand all those patterns. But before you go through a course like this, you have to take like a data structure and algorithm course itself, walking you through all the basic data structures and all the algorithms. And then yeah, solve a lot of questions, you know. Um, and once you have this covered, you can do behavioral. So you can research more on behavioral questions to expect, how to answer these questions, and you can even do mock interviews with a site like pramp.com. You can have like mock interviews with other, um, other, um, other people that are also preparing for interview, right? Yeah, so you prepare for behavioral, and then sorry, if you are senior, you know that, okay, you have to prepare for system design, which you can also do on Pramp. And you can read more on how to solve system design questions. You can watch YouTube videos and do more Pramp, you know, having, um, interview, mock interviews with other people who are also preparing for system design, you know, so that you know how it's done. Now, once you've prepared, then you know that, okay, now I, I know all these things. Now I'm confident enough that, you know, when I go into a company, like, I'm going to get a job, you know. Yeah, but just so you know, Um, you might not— so I don't want to discourage you, but, um, like, it's, it's sometimes you don't always feel like you are confident enough to take an interview, you know, because you feel like, okay, I meet this question, I'm able to solve this, I'm not able to solve— but as far as able to solve a few questions, like, what's the worst thing that can come out of you taking an interview, right? They reject you. That's the worst thing that can happen, you know. They can't find you, they can't come to your house, right? So yeah, you can, you can just like give it a try once you've, um, you know that you've prepared, um, enough and then you can solve some of the questions that you see. So that's how a typical coding interview is like. That's why we are— that's why I was saying that, you know, code, um, learning how to interview, passing coding interviews, like a whole career path on its own, you know. Yeah. And remember, whenever you want to change company to go for a bigger company, you have to go through all this process again, right? Yeah. So it's something that even some developers do it actively, you know. Even if they are working, they keep on practicing coding interviews. Just so that whenever they are ready to change careers, they wouldn't have to spend a lot of time preparing."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1809780,
+      "end_ms": 1842150,
+      "text": "Yeah, um, like all this seems like, um, you know, a lot of work. And to be honest, like, I'm sure like there are a lot of people that, you know, maybe have tried this like several times, and at some point they're like, Charlie, yeah, this thing, it looks like it's not happening, right? Like, um, people sometimes— people put in applications for so many jobs and they don't even get like you know, they don't hear anything back, or like they get interviews and they do several interviews and, you know, they don't get any chance. Like, and at some point maybe you feel like, oh, maybe I'm not just cut out for it, right? I'm sure you've gone through like similar experiences."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1843150,
+      "end_ms": 1844350,
+      "text": "Like, yeah, what did you do?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1844450,
+      "end_ms": 1850050,
+      "text": "Like, what did you do to, you know, you know, jump over these hurdles? Like, when these things happen?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1850430,
+      "end_ms": 1962000,
+      "text": "Yeah, so, um, like one thing I always have at the back of my mind is that it has been done before. Like, I'm not the first person doing it. Someone has done it, you know, and there is some content out there somewhere, a YouTube video out there, an article out there showing you how it was done, right? So whenever I'm doing something, I'm not getting the results, um, that I need. Um, if I, if I don't have a mentor to guide me, I just go online, you know, look for articles and videos on people that have done it. For instance, um, my first CV that I had was like, it was terrible, right? Um, and from watching a few videos on um, software developer CVs, I realized that mine was like very terrible. So I took a whole course on building a CV, um, for, you know, developers and also writing cover letters, creating, um, a very good LinkedIn, um, profile, all that, right? Because I knew that, okay, I need to get these things done, you know, because, oh yeah, you also need a very good LinkedIn presence because recruiters are going to check your LinkedIn mostly. Like whenever you send them anything, first thing they do is to go and check your LinkedIn. Yeah, they are going to see like if what you have on your CV is really what you have on your LinkedIn, right? Yeah. So you also have to have like a very good like LinkedIn presence, everything up to date, you know, and all that. Yeah. So, um, yeah, so I, I took a course on, on all these things and then that's when I built like, um, my, my CV, the CV that helped me land this, um, this role. Yeah. So whenever you are doing something and you're not getting the results, you should always know that it has been done before. Like You know, you're not the first person trying it. Um, someone has done it out there. You can find an article, um, um, or a video. We can even ask, um, you can even ask me if you know me, you can ask me, you can ask anyone that has done it. And yeah, they'll, they'll, they'll definitely like help you, um, you know, overcome whatever challenge you're facing. Usually it's just like a few things that you have to do, like something you have to remove, something you have to add, and then, um, you are, you are good to go, you know."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1962770,
+      "end_ms": 1993872,
+      "text": "So, um, like, let's say you go through all this, and I'm sure like someone have at the back of their mind, right? So if I'm going through all this stress, like, is it really worth it? Like, how much? Oh, I, I do know how much, you know, I'm making, and obviously it's worth it because I'm in a job, right? But I mean, for people that are not really sure, right, like, averagely, like, uh, how much are like software developers making, you know, like on the average? Like, let's say let's take a junior dev or a mid-dev or a senior dev, like, you know, just to put some inspiration out there."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1994032,
+      "end_ms": 2076860,
+      "text": "Yeah, yeah. So, um, it depends on where the company is located. Like, that's one of the main factors that decides how much, you know, you earn. Um, so let's say a company in, um, let's pick a US company, right? And if you are working with a US company remotely, um, you can be earning let's be a junior developer, right? You can be earning anywhere around— well, I'm just going to dumb down the numbers a bit, no, just not to raise your, your, your hopes high. So maybe around like $40,000, $50,000 a year, like as a junior developer. Um, and if you are at a mid-level, you can be earning somewhere around like maybe up to like $80,000, like $90,000, um, a year working remotely, right, from Ghana. Now if you are there, it's a whole different game, you know, you get paid more. But since you are remote from Ghana around like $80,000 a year. If you are senior, well, you hit— you go up to around like $100,000 a year. They're working with a US company, so it depends on which country, um, the company is located. Yeah, but, but yeah, like, I can assure you that it's worth it, like, you know. So I have this friend, uh, and he's in Brazil working with like a top tech company, and you know, he, he told me that, yeah, from the way he's— and if he comes to Ghana, he's going to live like a king. Yeah, so he's going to live like a king in Ghana. Yeah. So yeah, like I can assure you it's, it's worth it."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2076880,
+      "end_ms": 2097730,
+      "text": "Yeah, I remember like one time you told me, you know, when you got like your new job and you went home and you had to break the news to your folks, right? And you had to give them an idea of how much you are earning, but even that you had to like only mention like one-fourth or one-fifth of what you are earning, right? And even that you could not believe. They're like, like, who would pay you that amount for just sitting behind the computer?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2098140,
+      "end_ms": 2124710,
+      "text": "Yeah, like I, I kid you not. Like, yeah, when I told them, well, I knew that I, I, I didn't want to worry them a lot by giving them the full amount, so I just gave them like one-fourth of the amount. And yeah, yeah, even like from time to time my dad calls me to ask me what job I'm doing. Like, you know, yeah, ask me like, so what's the name of the job again? You know, and I have to tell him. He's like, okay. Yeah, I feel like he's having conversation with other people telling them about the job and things."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2124860,
+      "end_ms": 2138080,
+      "text": "Yeah, and it's really so hard to like explain to, you know, our folks Like, what we— I'm like, I can tell you now, like, my mom still doesn't like know what's, you know, like, he just tells people, oh, maybe I know, like, why your computer computer?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2138080,
+      "end_ms": 2229062,
+      "text": "Yeah, yeah, no, if you give them the, the full amounts, like, you know how they are going to handle it, you know. So you just have to manage them. Yeah, anyways, like, it's, it's honestly, like, honestly, it's worth it. Like, yeah, when I went— when I started working, I remember like when, when I had my first salary, Zach, you were around and I went to get a phone and all that. And you know, I actually didn't want to get a phone, then you told me that next month anyone is coming though. And I was like, yeah, true. Yeah, and I got the phone. Yeah, yeah, it's worth it. Yeah, you know, if you know, if you know like what you are, you are getting. So let's say you are a mid-level developer applying for a company in, um, in Germany because you are not in Germany and you are in Ghana. Let's say you can target around like, let's say €50,000. Um, if you know that, okay, with all this effort I'm doing, I can get around €50,000 every year. Um, which is like way a lot of money. Um, if you split it into 12 or monthly, um, if, if you know that this is what I'm earning and like, if, if you do the calculations, we're going to realize that no, this is really worth it, you know. Um, taking the fact that all you have to do is to like sit, sit down for, you know, um, long hours, learn data structures, prepare for interview. Learn all the things you have to learn. Um, you've actually learned a whole career by becoming a developer, right? Um, you've gone through that process before, so yeah, you wouldn't hurt to put in a little bit of effort to prepare for, um, something that can help you showcase your skills to, um, high-paying employers, right?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2229725,
+      "end_ms": 2248060,
+      "text": "Yeah, Charlie, this, this has been like a really, um, you know, interesting and also fun conversation. Um, unfortunately, like, uh, there isn't much time. This is already running into like— but I didn't want to stop the conversation, and maybe it would be good to have like another session sometime. Um, but thanks a lot for, for your time and, um, you know, agreeing to do this."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2248802,
+      "end_ms": 2251849,
+      "text": "Yeah, thanks for having me too. Yeah, and I'd like to be on the show another time."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2252670,
+      "end_ms": 2253320,
+      "text": "Yeah, obviously."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2253405,
+      "end_ms": 2253833,
+      "text": "All right."
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}
