@@ -25,12 +25,24 @@ Diarized transcript (HOST / GUEST labels, with timestamps):
 Instructions:
 - Write a narrative feature, NOT a raw Q&A dump. Open with a hook drawn from the
   most striking thing the guest said.
+- TITLE: craft a distinctive, curiosity-sparking title built from the single most
+  specific or surprising thing in THIS story: a tension, a turning point, a vivid
+  detail, or a striking line the guest actually said. It should be impossible to
+  swap onto another guest's profile. Do NOT use a generic or templated title, and
+  in particular do NOT default to the "From X to Y: Name on Z" formula. Vary the
+  shape (a short declarative statement or two often works well). Keep it honest to
+  the transcript — intriguing, never clickbait or overstated.
 - Use the host's voice for framing, transitions, and reflection; let the guest
   carry the substance.
 - Quote the guest ONLY with words that appear verbatim in the transcript, in
   quotation marks. Paraphrase is allowed but must clearly be paraphrase — never
   invent or embellish a quote.
 - Do NOT state facts not present in the transcript.
+- AVOID the em dash and the double hyphen (the "--" or "—" character) almost
+  entirely. Restructure with commas, periods, colons, semicolons, or parentheses
+  instead. Only keep a dash in the rare, exceptional case where it is genuinely
+  the single best way to make the point land and no other punctuation achieves
+  the same effect. Default to zero dashes per article.
 - Smooth filler, repetition, and crosstalk. Structure with descriptive H2/H3
   headings.
 - Close reflectively, credit and link the guest, and point softly back to the

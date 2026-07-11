@@ -78,7 +78,8 @@ Re-run only if the voice drifts.
 ## Per-video runbook
 
 ```bash
-make fetch                 # refresh playlist into state.json
+make fetch                              # refresh ALL registered playlists
+make fetch PLAYLIST=<youtube-url>       # register a new playlist, then refresh all
 make next                  # transcribe + generate + open PR for the next video
 # --- review the PR (see checklist below): confirm speakers, verify quotes,
 #     set the hero clip, edit prose ---
@@ -93,6 +94,17 @@ make transcribe ID=<video_id>
 make generate   ID=<video_id>
 make clip ID=<video_id> START=01:23 END=01:28 SLUG=<slug>   # re-cut the hero clip
 ```
+
+### Multiple playlists
+
+`state.json` tracks a **list** of playlists (`playlists: [...]`) and tags each
+video with the playlist it came from (`videos.<id>.playlist`). Add one with
+`make fetch PLAYLIST=<url>`; a bare `make fetch` re-enumerates every registered
+playlist. Video IDs are globally unique, so playlists never collide, and the rest
+of the pipeline (transcribe → generate → publish) is unchanged regardless of
+which playlist a video belongs to. The legacy single `playlist_url` field is
+auto-migrated into the list on first load. (The per-video `playlist` tag also
+sets you up to group posts by series on the site later, if you want.)
 
 Status ladder: `pending → transcribed → drafted → published`. Each step is
 idempotent. To redo work, pass flags as **make variables** (not as `--flags`,
@@ -309,6 +321,70 @@ the preview URL on each PR. If your production branch isn't `main`, set a
 > PR is open, merge `main` into that branch to refresh its preview:
 > `git checkout <branch> && git merge main && git push`. Newly generated posts
 > branch off the current `main`, so they pick everything up automatically.
+
+## Newsletter (MailerLite)
+
+Readers subscribe from the home page. The signup form posts to a same-origin
+**Cloudflare Pages Function** (`functions/api/subscribe.js`), which forwards the
+email to MailerLite's API server-side — so the browser never calls MailerLite and
+the CSP needs no changes. Behavior lives in `public/scripts/subscribe.js`
+(progressive enhancement: the form still works without JS). A honeypot field
+filters bots; MailerLite handles double opt-in, unsubscribe, and compliance.
+
+Set these as **Cloudflare Pages environment variables** (Settings → Environment
+variables, marked as secrets — never commit them):
+
+- `MAILERLITE_API_KEY` — token from MailerLite → Integrations → API
+- `MAILERLITE_GROUP_ID` — the "Tech Peeps Diaspora — Blog subscribers" group:
+  **`192268679358973628`** (account `codedpills@gmail.com`)
+
+Note: MailerLite reviews new accounts before enabling sending/API, and the free
+plan caps the list (≈250 subscribers) — fine to start; upgrade when it grows.
+
+### Sending the teaser on publish
+
+`pipeline/teaser.py` builds the email body: the article's opening through the
+first `##` heading, closed with "…" and a "Read the full profile →" link, so the
+email pulls readers to the site. Preview any published post's teaser with:
+
+```bash
+make teaser SLUG=<slug>
+```
+
+**Manual trigger.** The workflow also has a `workflow_dispatch` trigger: from the
+repo's **Actions → Newsletter on publish → Run workflow**, enter a post `slug`
+(the filename in `src/content/blog` without `.md`). Leave **"Send now?" off** to
+create a MailerLite **draft** to review; tick it to send immediately. Handy for
+sending a post whose auto-run didn't fire (e.g. merged before secrets were set).
+
+**Automatic send on publish.** `.github/workflows/newsletter.yml` runs when a
+**newly added** post lands on `main`. It builds the teaser and calls MailerLite's
+REST API (`pipeline/send_newsletter.py`) to create a `regular` campaign for the
+subscriber group and send it instantly. Editing an existing post does not
+re-send (only added files trigger it).
+
+Configure these in **GitHub → repo Settings → Secrets and variables → Actions**:
+
+| Kind | Name | Value |
+|---|---|---|
+| Secret | `MAILERLITE_API_KEY` | MailerLite → Integrations → API token |
+| Variable | `MAILERLITE_GROUP_ID` | `192268679358973628` |
+| Variable | `NEWSLETTER_FROM` | a **verified** sender, e.g. `zak@blog.techpeepsdiaspora.com` |
+| Variable | `NEWSLETTER_FROM_NAME` | `Tech Peeps Diaspora` |
+| Variable | `SITE_URL` | `https://blog.techpeepsdiaspora.com` |
+
+Because a send is **irreversible**, the PR review is the real gate: by the time a
+post merges, the article (and therefore the deterministic teaser) has been
+reviewed. To send manually instead — or to test — use the connector in Claude, or
+run locally:
+
+```bash
+make newsletter SLUG=<slug>          # creates a DRAFT campaign to review
+make newsletter SLUG=<slug> SEND=1   # creates AND sends
+```
+
+The MailerLite **connector** in Claude remains available for ad-hoc sends and for
+inspecting campaigns; the Action is the unattended path.
 
 ## Notes
 

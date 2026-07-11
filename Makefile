@@ -5,7 +5,7 @@
 VENV := .venv
 PY := $(VENV)/bin/python
 
-.PHONY: help fetch transcribe generate next style-guide clip publish compare remap refresh-meta patch-dates verify site-dev site-build install venv
+.PHONY: help fetch transcribe generate next style-guide clip publish compare teaser newsletter remap refresh-meta patch-dates verify site-dev site-build install venv
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -21,8 +21,8 @@ install: $(PY) ## Create .venv and install Python + Node deps
 	$(PY) -m pip install -r requirements.txt
 	npm install
 
-fetch: ## Refresh the playlist into state.json
-	$(PY) pipeline/fetch_playlist.py
+fetch: ## Refresh all playlists (add a new one with PLAYLIST=<url>)
+	$(PY) pipeline/fetch_playlist.py $(if $(PLAYLIST),--playlist $(PLAYLIST))
 
 transcribe: ## Transcribe next pending (ID=<id>, FORCE=1 to re-transcribe)
 	$(PY) pipeline/transcribe.py $(if $(ID),$(ID),--next) $(if $(FORCE),--force)
@@ -47,6 +47,12 @@ generate: ## Draft + PR for next transcribed (ID=<id>, FORCE=1 redo, NOPR=1 loca
 
 compare: ## A/B two models on one transcript (ID=<id>, optional MODELS=a,b) — no git/PR
 	$(PY) pipeline/compare_models.py $(ID) $(if $(MODELS),--models $(MODELS))
+
+teaser: ## Preview the newsletter teaser for a published post: make teaser SLUG=<slug>
+	$(PY) pipeline/teaser.py src/content/blog/$(SLUG).md --site $${SITE_URL:-https://techpeeps.example.com}
+
+newsletter: ## Create a MailerLite campaign for a post (SLUG=<slug>; add SEND=1 to send now)
+	$(PY) pipeline/send_newsletter.py src/content/blog/$(SLUG).md $(if $(SEND),--send)
 
 next: ## Transcribe + generate + open PR for the next unprocessed video
 	$(PY) pipeline/transcribe.py --next && $(PY) pipeline/generate.py --next
