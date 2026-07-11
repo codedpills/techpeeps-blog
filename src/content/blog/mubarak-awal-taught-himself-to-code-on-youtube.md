@@ -16,9 +16,9 @@ tags:
 - interviews
 - self-taught
 heroClip:
-  mp4: /clips/from-sales-floor-to-senior-dev-mubarak-awals-unlikely-path-into-gaming.mp4
-  webm: /clips/from-sales-floor-to-senior-dev-mubarak-awals-unlikely-path-into-gaming.webm
-  poster: /clips/from-sales-floor-to-senior-dev-mubarak-awals-unlikely-path-into-gaming.jpg
+  mp4: /clips/mubarak-awal-taught-himself-to-code-on-youtube.mp4
+  webm: /clips/mubarak-awal-taught-himself-to-code-on-youtube.webm
+  poster: /clips/mubarak-awal-taught-himself-to-code-on-youtube.jpg
   alt: Mubarak Awal speaking during his Tech Peeps Diaspora interview
 draft: true
 interviewDate: '2022-09-29'
