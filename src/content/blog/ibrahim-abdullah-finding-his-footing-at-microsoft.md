@@ -1,8 +1,8 @@
 ---
-title: "Ibrahim Abdullah Wondered If Microsoft Had Hired Him by Mistake. Then He Found His Footing."
+title: "He Wondered If Microsoft Had Hired Him by Mistake. Then He Found His Footing."
 description: A Ghanaian software engineer on discovering himself in computer science,
   surviving imposter syndrome, and why you should master one language first.
-pubDate: '2026-07-09'
+pubDate: '2026-07-22'
 guest: Ibrahim Abdullah
 guestBio: Software engineer at Microsoft on the Office engineering team, building
   developer tooling and test frameworks. Ashesi University graduate from Ghana, based
@@ -25,7 +25,7 @@ draft: true
 interviewDate: '2022-08-29'
 ---
 
-# Ibrahim Abdullah Wondered If Microsoft Had Hired Him by Mistake. Then He Found His Footing.
+# He Wondered If Microsoft Had Hired Him by Mistake. Then He Found His Footing.
 
 There is a moment early in Ibrahim Abdullah's first weeks at Microsoft that most engineers will recognize, even if they would never say it out loud. He had just moved to Vancouver, joined a team writing in C#, Perl, C++, and languages he barely recognized, and he found himself calling up a colleague to ask, in effect, whether a mistake had been made. "Wait, how, how, why did you people hire me here?" he remembers thinking. He wondered, half seriously, whether he had been a diversity hire, because, in his words, "all the things that you guys are doing, it seems like I know nothing about it."
 
@@ -59,7 +59,7 @@ When Microsoft finally came along, Ibrahim describes it plainly: "it just fit. I
 
 The backstage was years of deliberate preparation. Hackathons, including Google HashCode, where he first scored no points, then a few the next year, and slowly learned "some of the things that I have to do or I have to learn if I want to get into companies like this." There was also a genuinely heartbreaking near-miss: in 2017, he and friends won a Microsoft hackathon in Ghana, part of the Africa to Redmond program, "and we didn't hear from them again."
 
-Rather than let that close the door, he treated it as a signal that another cohort might come, and he prepared accordingly. He was intentional about doing his national service at Ashesi partly for the free internet, and he became known for it. "I will come to school and I will stay there a very long time, deep in the night, like around 12 midnight," he recalls, sometimes leaving at 5 a.m. He was working through *Cracking the Coding Interview* and drilling LeetCode with a friend on midnight calls. He even chose which courses to teach as a teaching assistant (software engineering, data structures and algorithms, system design) to keep himself sharp.
+Rather than let that close the door, he treated it as a signal that another cohort might come, and he prepared accordingly. He was intentional about doing his national service at Ashesi partly for the free internet, and he became known for it. "I will come to school and I will stay there a very long time, deep in the night, like around 12 midnight," he recalls, sometimes leaving at 5 a.m. He was working through *Grokking the Coding Interview* and drilling LeetCode with a friend on midnight calls. He even chose which courses to teach as a teaching assistant (software engineering, data structures and algorithms, system design) to keep himself sharp.
 
 And he is generous about who helped. His now-wife ran mock interviews with him, playing, as he puts it, a "top tech executive sort of thing." It is the kind of detail that reframes the word "fit" entirely. Ibrahim did not stumble into Microsoft. He spent years quietly getting ready for it.
 
