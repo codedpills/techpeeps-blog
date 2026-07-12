@@ -21,6 +21,10 @@ jobs:
       REPORT_PATH: ${{ github.workspace }}/verify-report.md
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history so a PR can be diffed against its base commit (we only
+          # content-check the posts THIS PR changed, not every post in the repo).
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -41,9 +45,26 @@ jobs:
 
       - name: Run content verifier (writes report, never fails here)
         id: verify
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           set +e
-          python pipeline/verify_post.py --all --md "$REPORT_PATH"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            # Only the blog posts this PR adds/changes — never previously merged
+            # ones. "$BASE_SHA...HEAD" resolves to the PR's own diff.
+            mapfile -t CHANGED < <(git diff --name-only --diff-filter=d \
+              "$BASE_SHA"...HEAD -- 'src/content/blog/*.md')
+            if [ "${#CHANGED[@]}" -eq 0 ]; then
+              echo "No blog posts changed in this PR — nothing to content-check."
+              python pipeline/verify_post.py --md "$REPORT_PATH"
+            else
+              printf 'Checking changed post(s):\n'; printf '  %s\n' "${CHANGED[@]}"
+              python pipeline/verify_post.py "${CHANGED[@]}" --md "$REPORT_PATH"
+            fi
+          else
+            # push to main: verify everything, so a bad merge to main is caught.
+            python pipeline/verify_post.py --all --md "$REPORT_PATH"
+          fi
           echo "code=$?" >> "$GITHUB_OUTPUT"
           exit 0
 
