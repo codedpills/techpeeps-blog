@@ -1,0 +1,116 @@
+{
+  "video_id": "zDtyjmzubXc",
+  "title": "From Nigeria to full time software developer at a global tech company (Part 1) #techpeepsDiaspora",
+  "video_published_at": "2022-10-31",
+  "duration_sec": 1225,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 176,
+      "end_ms": 17036,
+      "text": "Hi guys, and welcome to another episode of TechPeeps Diaspora. Today I have on the show the first Nigerian, and I'm really looking forward to this one. Um, let me just quickly pass the ball over to Joshua. Joshua, could you please, um, quickly introduce yourself and, you know, what you do?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 17598,
+      "end_ms": 102888,
+      "text": "Okay. Hello everyone. Uh, my name is Joshua Uyie. I am a software engineer based in Nigeria. I'm basically a full-stack developer, which means I work on both front end and back end. And I actually, based on my experience so far, I've had the opportunity to work with multiple stacks. So it's been quite interesting. It's been about 8 years since I first wrote a line of code. And I think one of the first programming languages I used was Visual Basic, which I no longer use. But it was interesting to like get started with that building desktop GUI applications where I just like played around with a few things. I remember when I just tried like a login system and it somehow worked and I was just excited that I was able to make a new window appear. So it's been great. And over the years I've been moving. After school, I think the first thing I did was teach programming actually, not like full-scale software development. And it was also quite interesting to be able to introduce these concepts to other people who were willing to learn. And over time, I've also moved deeper into developing software, first with freelance and building applications for people. And then I transitioned into working in the corporate body and building applications for organizations."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 104381,
+      "end_ms": 127663,
+      "text": "I really, I remember, you know, my school days as well. Like I did some Visual Basic. Um, oh, that was, you know, kind of interesting to see, being able to put together some UI and then hook up some— yeah, that was fun. So, um, how's the experience so far been for you, like working at, um, a gaming company in Canada?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 129052,
+      "end_ms": 231056,
+      "text": "Oh, it's, it's actually been interesting, first of all. But I mean, at first it was, it was a new experience. It was Uh, honestly challenging, uh, at first because you're getting to learn a lot of things at the beginning. One, you're, you're trying to understand how the system at that particular company works. Secondly, you're trying to understand the culture of the new experience. Thirdly, you're trying to fit in your own personal career development. So it comes with a number of, um, challenges, but I I think just being open to learn and being open to gain new knowledge is one of the things that's really helped because you think you know a lot because I mean, I've done quite some stuff, right? And I was pretty confident about what I could do. And then you see that, okay, you've just done a part. There's still a lot more to learn. It's just, I mean, at that point it's easy to be discouraged really, because you think that you've done a lot, but being able to open up yourself to learn and to gain new knowledge from other people who are, who have done some things or learn new processes is actually the game changer. And I think it's an important mindset for developers to have, just have this mindset that you can always learn new things. You can always go. So regardless of on the level you've gone to, right? There's always something that you probably don't know or never even heard of. So that, that, that helped me. But, uh, with that, I was able to like adjust and was able to do a lot of good work, uh, with them."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 231811,
+      "end_ms": 257219,
+      "text": "You spoke about, you know, uh, having different cultures and, you know, different mindsets. Um, and obviously, like you said, foreign company, how does that compare in your experience? Um, you've worked before then, you, I'm sure you worked in some Nigerian companies or like, you know, companies within the Nigerian ecosystem. How does that compare? How is that different from, you know, working, um, in these foreign companies?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 258598,
+      "end_ms": 356984,
+      "text": "Okay. Uh, so here in Nigeria, I, before my current company, I worked with, uh, Interswitch Group, which is, uh, here in Nigeria. And honestly, it's a great company as well and they have good culture. Uh, so in terms of flexibility, Um, to some extent, especially with the team I worked with. Yeah, I could see some similarities, but, uh, when it gets to like the whole, uh, culture of how people interact with people and how you can, um, communicate to people who are your leads and all that, it's a bit different. They are, they're more open. They're more open to stuff. And in fact, they would even encourage you to be more open. With stuff because they actually want to know where you're missing it. Because most times, especially here, we try to be more open about the good stuff that we are doing, but be secretive about the ones that are not going so well. So if I create a bug, you don't know the impact that that will have. So you try to like stay quiet about it and try to just fix it on your own. But there's this openness. Still, there are parts that I still can't navigate yet because you're still trying to just be sure that what you're about to do fits into what everyone else expects. So there's still parts that I haven't navigated well, but in general, it's nice. There are differences, but I wouldn't say the Nigerian experience is bad as well. It was It was still cool. It's just different environments. That's it."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 358443,
+      "end_ms": 401530,
+      "text": "I remember like back in the days, you know, in Ghana, um, we used to have, um, for me, like I always saw Nigerians as like the tech geeks within like the African, you know, ecosystem. Whenever you wanted to search for something techie, right? Like, um, how do you hack a computer or something? It's most likely we're going to find an article written by a Nigerian. So All these things were fascinating. Like, how do you guys have these minds? Like, what prompted this interest in tech, right? I think Nigerians were one of the first Africans to be like really, really, really, um, techie. Like, how is, yeah, generally how is the tech ecosystem in Nigeria like?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 402470,
+      "end_ms": 518591,
+      "text": "Okay. Uh, honestly, I'll say we have a, a pretty solid tech ecosystem in Nigeria. There are lots of, um, groups and subgroups that you can be a part of. There are a lot of developer groups and, uh, Talk about ALC from Mandela and GDG from Google and a couple of others. And a lot of people are actually seeking to learn, either it's for the fact that they see better opportunities in tech for more lucrative jobs that bring better income, or the fact that some people just like solving problems. Honestly, there are people who just do this tech thing because they just like seeing code run. Uh, but the fact that one thing that it's really nice with Nigeria tech ecosystem is people are willing to share knowledge. Um, there are a lot of Nigerians online. Like you said, if you would search, you would see a Nigerian explaining some things because people are willing to share knowledge. They're willing to help other people who are, who are trying to learn and just to help them to be more, to have better understanding of these things. And I think it's part of this is us holding onto like some of the struggles that people have because you, when you are in a place where you're just a tendency that your general skill might not give you a solid job, you tend to look for things that will give you a better chance in the job market. I've seen people who read things that were unrelated to science getting into tech and becoming software developers. Okay. There are people who still did core science and were able to still maintain a job in software development. Uh, it's, it's interesting to see really. And I, I'm glad that we do have this, um, system that helps everyone, encourages everyone to learn as much as they want to."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 520034,
+      "end_ms": 540177,
+      "text": "Um, you have like a traditional computer science background, right? So, um, you have a bachelor's in computer science, you have a master's in computer science. Um, like, did you always, you know, want to be like a computer scientist? Is this something that you always wanted to do? Like, growing up, how did you like get into this?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 541221,
+      "end_ms": 692843,
+      "text": "All right. Certainly not. I didn't even know there was something called being a software engineer or anything like that. Okay. So, uh, let's go like years back. So I think when I was younger, A lot of people were like, he's going to be a doctor or something like that. So it was like doctor was set out for me. And so people even nicknamed me Dr. Joshua when I was like still a child or anything. And so in my mind, I was like, I was going to read medicine and stuff. So, but I think towards like my end of my secondary education, I noticed that I did understand like how some of all this electronics work, like televisions, computers, I could operate them. I remember a time a certain time we got the new television and it was late, so we couldn't get people to set them up. And I was able to help set it up at home. And so I was just like, you know what, probably I'm more tech inclined and all that. So I was like, let me do software engineering. Okay, so I wanted to— no, sorry, not software engineering, computer engineering. Right. So at least I was going to be an engineer. So it still counted for something. And then due to some limitations and all, I could not make it into the school that I wanted, and I didn't get the course that I wanted. So I was either going to wait or move for an alternative. And the alternative I had was computer science in a different university. And so I was like, well, it's not engineering, but anyways, it's still computer. So I took that anyway, although I did have the opportunity to go back to computer engineering, but I remained in computer science. And well, that was how I got into computer science. And then we did some programming courses. And of course, you know how it goes in school. They don't really teach you much. It's just about learn this, this exists, let it work, write it in the exam. So, but I kind of like pick an interest in it, especially from the Visual Basic, which was like the first one I did. And so since I saw I could understand code. I could understand how it worked by just— in fact, sometimes I don't even need to study. I just looking at it intuitively, I could say, okay, this is how it is supposed to work. So I picked that interest and started learning. Went still, went to a computer institute as well just to develop my knowledge, but did a lot of personal study, reading, watching videos and all. And yeah, I was able to get a job with that and I'm here. Right now."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 694112,
+      "end_ms": 730460,
+      "text": "Um, so one thing that caught my attention earlier, you know, you said that you could, you know, so far you've, you've been working in with different programming languages, like build stuff with different programming languages. And, um, you know, obviously that's not something easy to do. Um, how, like, how was that, um, you know, easy for you to be able to just switch different programming languages when like the need arises, when you need to solve particular problems, and you are just able to switch to a different programming language and start writing code."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 731198,
+      "end_ms": 877051,
+      "text": "Uh, so yeah, like you said, it's certainly not easy, uh, but I think one thing that is core to software development is understanding the fundamentals. And I see this every day, people are trying to skip the fundamentals. Uh, there's a time someone reached me, like reached out to me, was like, um, there's someone trying to learn React, can I help? And it's like, does this person know JavaScript? Like, no, but there's a job that person was trying to get and all that, and you need React. So you skip that phase. And if you do skip that phase, when you are, um, brought to a new situation, let's say now you're like, okay, we need to do something with PHP or with Java, you don't have those fundamentals that you can transfer to a different technology. What you just have is, uh, you just built a tower on that particular place that you are. So being able to study and understand like the fundamentals of programming itself, okay, that you can take to any programming language regardless. Uh, I do tell people that I can code in any programming language you give to me, okay, provided it's just like a simple program algorithm. I just need to understand the syntax, how to run the program, and, and I'm good. Uh, I might not be able to build great applications with it, right? But because of that fundamental knowledge, so I've been able to have that fundamental knowledge and to being able to be flexible because, um, software engineering is a relatively new field, relatively, and it's very volatile. It changes a lot. There are things that we, we used like 2 years ago, right now they are not really that much in demand. And even the ones that are still in demand, they have changed the way they operate. Uh, for instance, React introduced React Hooks. Now you have to learn React Hooks. Okay. We didn't ask for it, but they just had to add it. But you have to be flexible to like taking new things. So if you're put in a situation, for instance, you get in the job and they say, this is the technology that we're using. What are you going to do? Would you resign? Okay. Um, so if you have that fundamental knowledge and you have the ability to be flexible, uh, it's easy for you to take on new challenges in terms of new stack, But obviously it's not easy because it's like, um, moving away from what you know, from what's familiar to you, but it's possible and it's doable."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 878350,
+      "end_ms": 901978,
+      "text": "Listening to this, it, it sounds kind of easy, right? Like, sounds like you've learned the fundamentals, all of that. But, um, you know, I'm wondering for someone that's starting out, like, yeah, how does this person, you know, learn? Is there like any particular way or tricks if you may, um, that this person needs to follow to really grab like these fundamentals and to really build like a solid foundation?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 903458,
+      "end_ms": 1185286,
+      "text": "Okay. Um, so certainly there are, there are tricks, uh, so to say, but there are still like things that you just have to do. You can't, uh, use tricks, uh, out of them. And I will start from the ones that are like the, the the core as what you need to do. One is studying. You can't do without reading and studying to be a software engineer. It's practically impossible. And you mustn't start with something that is all big, like somebody who has been coding for 2 years is currently studying. You don't need to start from that. You can start from basic building blocks. For instance, you may not know, you may want to know what a computer is. You may want to know how computers operate. Okay, you may want to understand the difference between input and output devices. Okay, those are information, and most of this information are readily available to you for free. And that's the beautiful thing about software development. Most of the resources you would need are available to you for free. Uh, it will— it just requires you searching, okay, to get those information. Thankfully, there's more internet availability and accessibility. So for people to find, it was kind of like way different from that years ago where most of the things you had to do were offline. But that's in the first place. And of course, if you, if you have the privilege to be with somebody who has the experience already and who can point out to you what you need to study, then do take it, okay? You just have to, you just have to know that it's not something— you don't just become a software developer overnight, okay? Even people who are posting like, hey, we learned this thing easily, nah, it's— it took a— it took an amount of study, took an amount of sacrifice and learning before you can actually even grasp the knowledge. I remember I was writing code with Java and it was at a different time, I actually finally understood what object-oriented programming actually— how it actually worked, but I was using it already. So sometimes this takes time, okay? Uh, so when you learn the basic, then you need to understand, um, the concepts, okay? So the basics there, you need to understand what those concepts are. For instance, I mentioned object-oriented programming. You need to understand what are the concepts behind object-oriented programming. The abstraction, the encapsulation. Why do we even need that in the first place? Okay, how does functional programming work? Now you don't need to go into the details of implementation and all that, you just need to understand why we use these things. Now when you do that, you can now— it will help you to better understand programming syntaxes. And with your programming syntax, you can learn programming with any programming language really, but but, uh, you're not learning to be tied to that programming language. You just want to understand the general idea of how programming works, how to write input statements, how to, um, make calculations, how to give output to your users, all those baby steps, right? And they are at the foundation, and this will strengthen what you would know later on. So if you try to study, you know, the big things first creating APIs and all that, you would, you would either get frustrated or you build something that, uh, uh, you might not understand later on. Okay. But when you build the fundamentals and the basics first by diligently studying, then, uh, you'll be able to intuitively know how to build the bigger things right now. Apart from this, you definitely can't do it alone. Now, some people do learn in a group, and if you are such a person who learns in group, there are like tutorial institutes or training institutes for technology. You could be part of that. There are developer communities where people learn code together. You can be part of that because when you see someone who is learning with you, okay, it will help you to also build your skill as well. So all the stress wouldn't just be on you, but it would Um, it will, it'll be shared across other people. And video tutorials are amazing because it helps you to see what another developer has done and they can share their own ideas and you can gain things from that. So these are some of the things you can do to help you be, um, at least start the journey of being a software developer."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1187110,
+      "end_ms": 1219146,
+      "text": "Hey guys, so this concludes the first part of this episode. Um, so in part 2 of this episode, Joshua and I are going to talk more about and how he was able to get opportunities and how you can also get some of these opportunities after, of course, you've learned the fundamentals and you can now build apps and all of that. So definitely keep an eye for that. I'm gonna put a link to, um, the part 2 in the description of this video. And also don't forget to like, comment, and subscribe. See you next time."
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}

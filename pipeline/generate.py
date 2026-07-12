@@ -282,33 +282,64 @@ def main() -> int:
 
     st = state.load()
 
+    # video_id may be a comma-separated list to combine multi-part videos into
+    # ONE story (e.g. "id1,id2"). The first id is the primary (used for the
+    # video link and hero clip); all are recorded in `sources`.
     if args.next:
-        video_id = state.next_with_status(st, "transcribed")
-        if not video_id:
+        primary = state.next_with_status(st, "transcribed")
+        if not primary:
             print("No videos with status 'transcribed'. Nothing to do.")
             return 0
+        video_ids = [primary]
     elif args.video_id:
-        video_id = args.video_id
+        video_ids = [v.strip() for v in args.video_id.split(",") if v.strip()]
     else:
-        print("ERROR: provide a <video_id> or --next.", file=sys.stderr)
+        print("ERROR: provide a <video_id> (or 'id1,id2' to combine) or --next.",
+              file=sys.stderr)
         return 1
 
-    try:
-        video = state.get(st, video_id)
-    except KeyError as exc:
-        print(f"ERROR: {exc}", file=sys.stderr)
-        return 1
+    video_id = video_ids[0]  # primary
+    for vid in video_ids:
+        try:
+            state.get(st, vid)
+        except KeyError as exc:
+            print(f"ERROR: {exc}", file=sys.stderr)
+            return 1
+    video = state.get(st, video_id)
 
     if video["status"] == "drafted" and not args.force:
         print(f"{video_id} already drafted (PR: {video.get('pr_url')}). Use --force.")
         return 0
 
-    tpath = TRANSCRIPTS_DIR / f"{video_id}.json"
-    if not tpath.exists():
-        print(f"ERROR: transcript missing: {tpath}. Run transcribe.py first.",
-              file=sys.stderr)
+    transcripts: dict[str, dict] = {}
+    missing = []
+    for vid in video_ids:
+        p = TRANSCRIPTS_DIR / f"{vid}.json"
+        if not p.exists():
+            missing.append(vid)
+            continue
+        transcripts[vid] = json.loads(p.read_text(encoding="utf-8"))
+    if missing:
+        print(f"ERROR: transcript(s) missing: {', '.join(missing)}. "
+              "Run transcribe.py for each part first.", file=sys.stderr)
         return 1
-    transcript = json.loads(tpath.read_text(encoding="utf-8"))
+    transcript = transcripts[video_id]  # primary
+
+    # Build the transcript text passed to the prompt. For a multi-part story,
+    # concatenate the parts with headers and tell the model to treat them as one
+    # continuous conversation.
+    if len(video_ids) == 1:
+        transcript_text = format_transcript(transcript)
+    else:
+        blocks = [
+            f"===== PART {i} (video {vid}) =====\n{format_transcript(transcripts[vid])}"
+            for i, vid in enumerate(video_ids, 1)
+        ]
+        transcript_text = (
+            f"(This interview was published in {len(video_ids)} parts. Treat them "
+            "as ONE continuous conversation and write a single unified feature; do "
+            "not mention 'part 1' or 'part 2'.)\n\n" + "\n\n".join(blocks)
+        )
 
     style_guide = (
         STYLE_GUIDE_PATH.read_text(encoding="utf-8")
@@ -322,10 +353,10 @@ def main() -> int:
         guest_name=video.get("guest") or "",
         guest_bio=None,
         style_guide=style_guide,
-        transcript=format_transcript(transcript),
+        transcript=transcript_text,
     )
 
-    print(f"Generating feature profile for {video_id}…")
+    print(f"Generating feature profile for {', '.join(video_ids)}…")
     try:
         fm, body, candidates = generate_article(prompt)
     except RuntimeError as exc:
@@ -370,12 +401,20 @@ def main() -> int:
         fm["videoUrl"] = f"https://www.youtube.com/watch?v={video_id}"
         # Default pubDate to today rather than a model-hallucinated date.
         fm["pubDate"] = _date.today().isoformat()
-        # The interview's YouTube publish date (captured at transcribe time).
-        vpub = transcript.get("video_published_at")
-        if vpub:
-            fm["interviewDate"] = vpub
+        # Interview publish date = the EARLIEST part's YouTube date (the story
+        # spans all parts). Record every source id for a multi-part story.
+        vpubs = sorted(
+            t.get("video_published_at") for t in transcripts.values()
+            if t.get("video_published_at")
+        )
+        if vpubs:
+            fm["interviewDate"] = vpubs[0]
         else:
             fm.pop("interviewDate", None)
+        if len(video_ids) > 1:
+            fm["sources"] = video_ids
+        else:
+            fm.pop("sources", None)
 
         # Write the draft on the branch.
         BLOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -403,9 +442,10 @@ def main() -> int:
         # unrelated uncommitted state into the draft commit). The transcript is
         # committed too so CI / verify_post can check quotes on the PR branch.
         _git("add", str(out_md))
-        tjson = TRANSCRIPTS_DIR / f"{video_id}.json"
-        if tjson.exists():
-            _git("add", str(tjson))
+        for vid in video_ids:
+            tjson = TRANSCRIPTS_DIR / f"{vid}.json"
+            if tjson.exists():
+                _git("add", str(tjson))
         clip_files = [
             REPO_ROOT / "public" / "clips" / f"{slug}.{ext}"
             for ext in ("mp4", "webm", "jpg")
@@ -422,9 +462,17 @@ def main() -> int:
                 print(f"WARNING: git push failed:\n{push.stderr.strip()}",
                       file=sys.stderr)
             else:
+                # "low" if ANY part's speaker mapping was ambiguous.
+                confidence = (
+                    "low"
+                    if any(
+                        t.get("mapping_confidence") == "low"
+                        for t in transcripts.values()
+                    )
+                    else "high"
+                )
                 body_text = pr_body(
-                    fm, transcript.get("mapping_confidence", "high"),
-                    candidates, report_md,
+                    fm, confidence, candidates, report_md,
                 )
                 pr_url = open_pr(
                     branch, f"Draft: {fm.get('title', slug)}", body_text, base_branch
@@ -443,10 +491,13 @@ def main() -> int:
 
     # Update state — status 'drafted' only; NEVER 'published'. The PR is opened
     # regardless of content findings; review (and the CI check) is the gate.
-    state.update_video(
-        st, video_id,
-        guest=guest, slug=slug, pr_url=pr_url, status="drafted",
-    )
+    # For a multi-part story, mark EVERY part drafted against the one slug/PR so
+    # a part never gets re-drafted into its own post later.
+    for vid in video_ids:
+        state.update_video(
+            st, vid,
+            guest=guest, slug=slug, pr_url=pr_url, status="drafted",
+        )
     state.save(st)
 
     print(f"Status -> drafted. Branch: {branch}")
