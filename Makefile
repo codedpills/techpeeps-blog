@@ -42,7 +42,7 @@ verify: ## Verify published posts against transcripts (quotes verbatim, frontmat
 style-guide: ## Build style-guide.md from the longest 3-4 transcripts
 	$(PY) pipeline/make_style_guide.py --auto
 
-generate: ## Draft + PR for next transcribed (ID=<id>, FORCE=1 redo, NOPR=1 local-only)
+generate: ## Draft + PR for next transcribed (ID=<id>, ID="id1,id2" combines multi-part into one post, FORCE=1 redo, NOPR=1 local-only)
 	$(PY) pipeline/generate.py $(if $(ID),$(ID),--next) $(if $(FORCE),--force) $(if $(NOPR),--no-pr)
 
 compare: ## A/B two models on one transcript (ID=<id>, optional MODELS=a,b) — no git/PR

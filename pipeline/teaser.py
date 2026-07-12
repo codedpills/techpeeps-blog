@@ -117,6 +117,10 @@ def build_teaser(path: Path, site: str, from_email: str = "") -> dict:
         f'<div style="max-width:600px;margin:0 auto;padding:24px 20px;'
         f"font-family:Georgia,'Times New Roman',serif;color:#23201a;"
         f'font-size:17px;line-height:1.65;">\n'
+        # Warm salutation opening the email as a short personal note.
+        f'<p style="margin:0 0 4px;">Hi there,</p>\n'
+        f"<p style=\"margin:0 0 24px;\">I'd like to share the newest story on "
+        f'Tech Peeps Diaspora with you.</p>\n'
         f'<h1 style="font-size:26px;line-height:1.22;font-weight:700;'
         f'color:#16140f;margin:0 0 18px;">{html_lib.escape(title)}</h1>\n'
         f"{opening_html}\n"
