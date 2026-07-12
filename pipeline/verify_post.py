@@ -200,16 +200,34 @@ def verify_file(path: Path) -> tuple[list, list]:
     check_video_link(fm, errors)
     check_hero_clip(fm, public_dir, errors, warnings)
 
+    # Quotes are verified against every source transcript. For a single post
+    # that's just videoId; for a multi-part story `sources` lists all parts, so
+    # quotes drawn from any part validate.
     vid = str(fm.get("videoId", ""))
-    tpath = transcripts_dir / f"{vid}.json"
-    if "PLACEHOLDER" in vid or not vid:
+    ids: list[str] = []
+    for i in [vid, *(fm.get("sources") or [])]:
+        if i and i not in ids:
+            ids.append(i)
+    if "PLACEHOLDER" in vid or not ids:
         errors.append("cannot verify quotes: videoId unset/placeholder")
-    elif not tpath.exists():
-        errors.append(f"cannot verify quotes: transcript missing ({tpath.name})")
     else:
-        transcript = json.loads(tpath.read_text(encoding="utf-8"))
-        check_quotes(body, transcript, errors, warnings)
-        check_mapping(transcript, warnings)
+        loaded, missing = [], []
+        for i in ids:
+            p = transcripts_dir / f"{i}.json"
+            if p.exists():
+                loaded.append(json.loads(p.read_text(encoding="utf-8")))
+            else:
+                missing.append(i)
+        if not loaded:
+            errors.append(f"cannot verify quotes: transcript(s) missing ({', '.join(missing)})")
+        else:
+            if missing:
+                errors.append(f"cannot verify quotes: transcript missing for source(s) "
+                              f"({', '.join(missing)})")
+            merged = {"segments": [s for t in loaded for s in t.get("segments", [])]}
+            check_quotes(body, merged, errors, warnings)
+            for t in loaded:
+                check_mapping(t, warnings)
 
     return errors, warnings
 

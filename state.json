@@ -75,33 +75,36 @@
     },
     "TokBUkAQCkg": {
       "title": "African tech entrepreneur shares story and career advice for young professionals #techpeepsdiaspora",
-      "status": "pending",
-      "guest": null,
-      "slug": null,
-      "pr_url": null,
+      "status": "drafted",
+      "guest": "Richard Brant",
+      "slug": "the-weakest-reliable-person-beats-the-most-talented-one",
+      "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/9",
       "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
       "added_at": "2026-07-09T19:26:39+00:00",
-      "updated_at": "2026-07-09T19:26:39+00:00"
+      "updated_at": "2026-07-12T11:25:37+00:00",
+      "video_published": "2022-08-08"
     },
     "LVNVUsWAEiQ": {
       "title": "From Ghana to full-time Software Engineer in Germany #techpeepsdiaspora",
-      "status": "pending",
-      "guest": null,
-      "slug": null,
-      "pr_url": null,
+      "status": "drafted",
+      "guest": "Oliver Buama",
+      "slug": "one-month-two-offers-and-a-nigerian-guy-on-twitter",
+      "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/10",
       "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
       "added_at": "2026-07-09T19:26:39+00:00",
-      "updated_at": "2026-07-09T19:26:39+00:00"
+      "updated_at": "2026-07-12T11:39:57+00:00",
+      "video_published": "2022-07-25"
     },
     "zDtyjmzubXc": {
       "title": "From Nigeria to full time software developer at a global tech company (Part 1) #techpeepsDiaspora",
-      "status": "pending",
+      "status": "transcribed",
       "guest": null,
       "slug": null,
       "pr_url": null,
       "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
       "added_at": "2026-07-09T19:26:39+00:00",
-      "updated_at": "2026-07-09T19:26:39+00:00"
+      "updated_at": "2026-07-12T11:37:31+00:00",
+      "video_published": "2022-10-31"
     },
     "ZSqKkZL3K_U": {
       "title": "From Nigeria to full time software developer at a global tech company (Part 2) #techpeepsDiaspora",

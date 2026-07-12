@@ -116,6 +116,26 @@ make generate   ID=<id> FORCE=1     # regenerate the draft
 make generate   ID=<id> NOPR=1      # local branch only, no PR
 ```
 
+### Multi-part interviews (one story split across videos)
+
+When a single conversation was uploaded as two (or more) YouTube videos — e.g.
+"… (Part 1)" and "… (Part 2)" — combine them into **one** profile instead of
+letting each part become its own post. Transcribe every part first, then pass the
+ids as a comma-separated list, primary (the one you want to link back to) first:
+
+```bash
+make transcribe ID=<part1_id>
+make transcribe ID=<part2_id>
+make generate   ID="<part1_id>,<part2_id>"
+```
+
+`generate` merges the transcripts into one prompt (the model is told to treat
+them as a single continuous conversation), cuts the hero clip from the primary
+video, and writes the primary id to `videoId` plus **all** part ids to a
+`sources:` frontmatter list. Quote verification then checks quotes against the
+**union** of every part's transcript, and each part is marked `drafted` against
+the one slug/PR so a part can't be re-drafted into a duplicate post later.
+
 ### A/B comparing models
 
 To choose between models for the writing, run both on the same transcript without
