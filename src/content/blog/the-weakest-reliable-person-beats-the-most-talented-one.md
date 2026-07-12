@@ -1,10 +1,10 @@
 ---
 title: The Weakest Reliable Person Beats the Most Talented One
-description: Richard Brant on building Code Train, why reliability wins over talent,
+description: Richard Brandt on building Codetrain, why reliability wins over talent,
   and how he trained 500+ African developers to compete globally.
 pubDate: '2026-07-12'
-guest: Richard Brant
-guestBio: Founder and CEO of Code Train, a Ghana-based coding bootcamp that has trained
+guest: Richard Brandt
+guestBio: Founder and CEO of Codetrain Africa, a Ghana-based coding bootcamp that has trained
   over 500 software developers and helps them launch tech careers across Africa and
   beyond.
 videoId: TokBUkAQCkg
@@ -25,19 +25,19 @@ draft: true
 interviewDate: '2022-08-08'
 ---
 
-When I asked Richard Brant what separates the developers who make it from the ones who don't, I braced myself for the usual answer. Talent. Raw problem-solving ability. Maybe grit. Instead he said one word, almost before I finished the question: "Reliability." And then, in case I thought he was hedging, he doubled down with a line that has stuck with me since: "the weakest person that is reliable is, is better than the most talented person that is not reliable."
+When I asked Richard Brandt what separates the developers who make it from the ones who don't, I braced myself for the usual answer. Talent. Raw problem-solving ability. Maybe grit. Instead he said one word, almost before I finished the question: "Reliability." And then, in case I thought he was hedging, he doubled down with a line that has stuck with me since: "the weakest person that is reliable is, is better than the most talented person that is not reliable."
 
 I did not expect that answer. But the more he explained it, the more it reframed everything else he had told me.
 
 ## Rewinding to how he got here
 
-Richard is the founder and CEO of Code Train, and if you have spent any time in the Ghanaian tech scene, you have probably felt the ripple of what he built. I should know, because I came through the program myself. But before Code Train existed, there was a math undergrad, a detour into tech, and a plane ticket to South America.
+Richard is the founder and CEO of Codetrain Africa, and if you have spent any time in the Ghanaian tech scene, you have probably felt the ripple of what he built. I should know, because I came through the program myself. But before Codetrain existed, there was a math undergrad, a detour into tech, and a plane ticket to South America.
 
 He studied mathematics first, then went into tech at the Meltwater Entrepreneurial School of Technology, where for two years he learned "how to build, um, how to code, how to build apps," how to "pitch to investors," and how to start a startup. From there he landed a spot at a large accelerator in Santiago de Chile, an eight-month program that stretched his experience further.
 
-But it was in Chile that the idea for Code Train quietly assembled itself. Everywhere he looked, people wanted to build something extraordinary, and they all needed the same thing. As he put it, "anytime people wanted to hire developers, they on— they always" reached for a software developer, and there simply were not enough of them. Meanwhile, back home, there was no shortage of smart people. That gap became his life's work.
+But it was in Chile that the idea for Codetrain quietly assembled itself. Everywhere he looked, people wanted to build something extraordinary, and they all needed the same thing. As he put it, "anytime people wanted to hire developers, they always" reached for a software developer, and there simply were not enough of them. Meanwhile, back home, there was no shortage of smart people. That gap became his life's work.
 
-## What Code Train actually does
+## What Codetrain actually does
 
 The mission is simple to state and hard to pull off: "to, um, train professional software developers, uh, and then find ways that they can start a career." The program runs as a one-year bootcamp followed by a three-month career service phase, where students learn how to interview, get introduced to companies, and land jobs or internships.
 
@@ -45,7 +45,7 @@ The design choice Richard keeps coming back to is atmosphere. He wants students 
 
 The numbers he shared are the kind that make you sit up. Eighty-nine percent of students found jobs within the first nine months of graduating. Eighty percent within six months. And 31 percent found jobs "even before" they graduated. Over 500 developers trained so far, with a virtual program that now reaches a student in France and another in Qatar.
 
-What clearly excites him most, though, is not the stats. It is the idea that this could be "a new way of, um, education here." Most programs, he noted, are designed by "older people" for the youth, who then "really do not relate to it well." Code Train, by contrast, is "designed by young people and, um, run by young people," with students acting as co-creators who keep giving feedback until it fits.
+What clearly excites him most, though, is not the stats. It is the idea that this could be "a new way of, um, education here." Most programs, he noted, are designed by "older people" for the youth, who then "really do not relate to it well." Codetrain, by contrast, is "designed by young people and, um, run by young people," with students acting as co-creators who keep giving feedback until it fits.
 
 ## Why the opportunities go unclaimed
 
@@ -73,14 +73,14 @@ His logic is almost brutally practical. "You can't be perfect," he said, "but wh
 
 ## The moment that opened the gateway
 
-Running something like Code Train cannot be easy, so I asked about the moments that keep him going. His happiest, he said without hesitation, was "when our first, um, like, um, student got a job." That feeling is still "the best feeling even up to now."
+Running something like Codetrain cannot be easy, so I asked about the moments that keep him going. His happiest, he said without hesitation, was "when our first, um, like, um, student got a job." That feeling is still "the best feeling even up to now."
 
 The reason it meant so much is quietly moving. If one person could be trained and land an opportunity, then the model could be multiplied by a hundred, a thousand, two or three thousand. "So that actually opened the gateway to, um, everything else that, that happened."
 
 ## Where to start
 
-For anyone reading this who wants in, Richard's practical advice is to find "a very good supportive community," because the journey "can be very lonely," and to join "a, a structured program." Code Train admits three times a year, September, January, and around May or June, running a one-year bootcamp across frontend, backend, and mobile, with UX and UI now being added. Applications go through codetrain.africa, and there are "some part scholarships and financial aid" available.
+For anyone reading this who wants in, Richard's practical advice is to find "a very good supportive community," because the journey "can be very lonely," and to join "a, a structured program." Codetrain admits three times a year, September, January, and around May or June, running a one-year bootcamp across frontend, backend, and mobile, with UX and UI now being added. Applications go through codetrain.africa, and there are "some part scholarships and financial aid" available.
 
 After the year, students pass a technical interview to enter the three-month MAGIC program, which culminates in a Demo Day where they present the apps they have built to an audience of local and international employers. That, he said, is "the fun part."
 
-Talking to Richard, I kept noticing how little he talked about code and how much he talked about people: their confidence, their information, their reliability, their potential. The world is genuinely lucky to have someone spending his days trying to unlock all of it. You can find Richard and Code Train at codetrain.africa, and the full conversation is worth watching for the parts I could not fit here.
+Talking to Richard, I kept noticing how little he talked about code and how much he talked about people: their confidence, their information, their reliability, their potential. The world is genuinely lucky to have someone spending his days trying to unlock all of it. You can find Richard and Codetrain at codetrain.africa, and the full conversation is worth watching for the parts I could not fit here.
