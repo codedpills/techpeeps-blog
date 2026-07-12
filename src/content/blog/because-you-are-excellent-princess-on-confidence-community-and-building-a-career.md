@@ -3,7 +3,7 @@ title: 'Because You Are Excellent: Princess on Confidence, Community, and Buildi
   a Career in Tech'
 description: A software engineer at Bloomberg on imposter fear, learning the whole
   stack, and the mindset that carried her from MIS to her dream role.
-pubDate: '2026-06-30'
+pubDate: '2026-07-12'
 interviewDate: 2024-07-05
 guest: Princess Asante
 guestBio: A software engineer at Bloomberg. An Ashesi
