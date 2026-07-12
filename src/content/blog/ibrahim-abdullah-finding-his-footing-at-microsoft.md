@@ -2,7 +2,7 @@
 title: "He Wondered If Microsoft Had Hired Him by Mistake. Then He Found His Footing."
 description: A Ghanaian software engineer on discovering himself in computer science,
   surviving imposter syndrome, and why you should master one language first.
-pubDate: '2026-07-22'
+pubDate: '2026-07-20'
 guest: Ibrahim Abdullah
 guestBio: Software engineer at Microsoft on the Office engineering team, building
   developer tooling and test frameworks. Ashesi University graduate from Ghana, based
