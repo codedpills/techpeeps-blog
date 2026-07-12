@@ -1,12 +1,12 @@
 ---
 title: 'Because You Are Excellent: Princess on Confidence, Community, and Building
   a Career in Tech'
-description: A software engineer at a US fintech on imposter fear, learning the whole
+description: A software engineer at Bloomberg on imposter fear, learning the whole
   stack, and the mindset that carried her from MIS to her dream role.
 pubDate: '2026-06-30'
 interviewDate: 2024-07-05
 guest: Princess Asante
-guestBio: A software engineer at a US-based financial technology company. An Ashesi
+guestBio: A software engineer at Bloomberg. An Ashesi
   University graduate in Management Information Systems who co-founded Uplink Masterclass,
   helping students land international opportunities.
 videoId: KAxjaa4-HYY
@@ -27,7 +27,7 @@ draft: true
 
 There's a line Princess drops near the end of our conversation that reframes everything that came before it. A mentor once told her, she says, that you don't do good work in order to *become* excellent; you do it because you already are. "Because you are excellent, you come to work on time. Because you are excellent, you put in extra effort. Because you are excellent, you get work done on time."
 
-It lands like a small thesis statement for her whole journey. Because the version of Princess sitting across from me now, a software engineer at a US-based financial tech company, comfortable across the stack, generous about lifting others up, is the same person who once spent an internship "arguing with my manager over what a for loop is."
+It lands like a small thesis statement for her whole journey. Because the version of Princess sitting across from me now, a software engineer at Bloomberg, comfortable across the stack, generous about lifting others up, is the same person who once spent an internship "arguing with my manager over what a for loop is."
 
 How you get from one to the other is the story worth telling.
 
