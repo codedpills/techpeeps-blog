@@ -26,11 +26,11 @@ interviewDate: '2022-07-25'
 
 # One Month, Two Offers, and a Nigerian Guy on Twitter
 
-Oliver Buama had a plan, and it did not involve landing a job in Berlin. He was going to do the sensible thing: apply for a tuition-free master's degree in Germany, get his lecturers to write recommendation letters, chase down his transcript, compile a shortlist of schools. He had done the homework. He knew the odds of getting hired from Ghana before setting foot in Europe were slim. As he put it, "I know it's hard to get a job before you come, right? It's, it's, it's difficult."
+Oliver Buama had a plan, and it did not involve landing a job in Berlin. He was going to do the sensible thing: apply for a tuition-free master's degree in Germany, get his lecturers to write recommendation letters, chase down his transcript, compile a shortlist of schools. He had done the homework. He knew the odds of getting hired from Ghana before setting foot in Europe were slim. As he put it, "I know it's hard to get a job before you come, right? It's difficult."
 
 Then a stranger on Twitter changed the plan entirely.
 
-For the first episode of Tech Peeps Diaspora, I sat down with Oliver, who these days is a software engineer at Serene in Berlin. He is also, full disclosure, a friend of mine here in the city. A friend who, I feel obligated to report, ditched me last weekend to go to the Afrobeats festival by himself. Wizkid, Davido, Tiwa Savage, Sarkodie, Stonebwoy. "It was, it was massive," he said, entirely unrepentant. I am promising myself a payback.
+For the first episode of Tech Peeps Diaspora, I sat down with Oliver, who these days is a software engineer at Serene in Berlin. He is also, full disclosure, a friend of mine here in the city. A friend who, I feel obligated to report, ditched me last weekend to go to the Afrobeats festival by himself. Wizkid, Davido, Tiwa Savage, Sarkodie, Stonebwoy. "It was massive," he said, entirely unrepentant. I am promising myself a payback.
 
 But the festival is a story for another day. What I really wanted to trace was how a Kumasi kid who got pulled into computers by video games ended up fielding two European job offers inside four weeks.
 
@@ -38,7 +38,7 @@ But the festival is a story for another day. What I really wanted to trace was h
 
 Back home, Oliver was working at mPharma, which by his own account was a good place to be. "Life was good there, and my colleagues were great, the team was great," he said. But he had always wanted to travel, to move outside the country and explore. Germany caught his eye for practical reasons: tuition-free schooling, strong universities, and as he found out, the largest economy in Europe with plenty of software engineering roles, especially in Berlin.
 
-The master's degree was the safe bet. And then, mid-plan, he got talking to a Nigerian Android developer already working in Germany. Oliver laid out his situation: good job in Ghana, itch to travel, assumption that school was the realistic path in. The developer pushed back. Given Oliver's experience and skills, he thought Oliver should just apply for roles directly, because "nowadays it's, it's, it's easier to, um, get a role, um, from Africa if like you have the, um, the right skills and right experience."
+The master's degree was the safe bet. And then, mid-plan, he got talking to a Nigerian Android developer already working in Germany. Oliver laid out his situation: good job in Ghana, itch to travel, assumption that school was the realistic path in. The developer pushed back. Given Oliver's experience and skills, he thought Oliver should just apply for roles directly, because "nowadays it's easier to, um, get a role from Africa if like you have the right skills and right experience."
 
 So Oliver gave it a try. Within a month he had two offers, one in Berlin and one in Munich. Munich still had two interviews to go. Berlin moved faster. He did his research on the city, liked that it was multicultural and that plenty of people speak English, and made his call. He wrapped up the Munich process and said yes to Berlin.
 
@@ -78,9 +78,9 @@ The word "programming" first reached him at Labone High School in Accra, where a
 
 The nudge toward computer science came from a school mate already a year into university, studying the subject. That friend's plan was to major in networking, on the belief that software engineering jobs simply did not exist in Ghana and companies bought their software from abroad. Oliver did his own research anyway. In the end the reasoning was almost charmingly simple: computer science had the word "science" and computer engineering had the word "engineering," and both had "computer" in them, and he loved computers. Layer on the YouTube legends of Mark Zuckerberg building Facebook and Bill Gates building Microsoft, and the choice made itself. He applied to the University of Energy and Natural Resources in Sunyani, got in, and that is where, as he put it, "my passion for programming really began."
 
-## Code Train, and Then Teaching It Forward
+## Codetrain, and Then Teaching It Forward
 
-Somewhere around level 200, a bootcamp came to campus. Back then it was called Sleek Job, later Code Train, and it happens to be the program I was involved with. Richard and others introduced it as a way to gain the practical skills the industry actually wants. Oliver was already teaching himself to code and could feel the gap between university theory and real-world practice. "It's mostly theory," he said. "So I needed like that practical, um, training." He signed up.
+Somewhere around level 200, a bootcamp came to campus. Back then it was called Sleek Job, later Codetrain, and it happens to be the program I was involved with. Richard and others introduced it as a way to gain the practical skills the industry actually wants. Oliver was already teaching himself to code and could feel the gap between university theory and real-world practice. "It's mostly theory," he said. "So I needed like that practical, um, training." He signed up.
 
 What he did next is the part I love. He did not just consume the training, he passed it on. With his friend Sparrow, a strong Android developer and, by Oliver's account, a genuinely good teacher, he co-founded Android Train, a program tuned specifically to their university. Their insight was that they knew the students' schedules, their challenges, exactly what they were and were not learning. So they built something to meet that. "It was really good actually. We were able to, um, train, um, a lot of students," he said.
 
@@ -90,7 +90,7 @@ The path from there reads like a steady accumulation: an early internship in Kum
 
 The thing that struck me, and I said as much to Oliver, is that none of this was a single lucky jump. It behaves more like compound interest. Every project, every connection, every LeetCode session stacked on the last until the leap abroad simply was not that hard anymore.
 
-Ask him how he bridged the gap between teaching himself to code and being genuinely employable, and it comes down to being proactive rather than passive. He did not just read books or watch tutorials. "I built small projects, I'll put them on GitHub." He signed up for coaching, did the assigned projects, took the feedback. And crucially, he talked to people. "I started making connections, right? So, um, I, I, I, I was on LinkedIn. I made a lot of connections on LinkedIn. I started, you know, DMing people, asking them what's going on in the industry." By graduation he understood the Ghanaian tech ecosystem well enough to know how to position himself.
+Ask him how he bridged the gap between teaching himself to code and being genuinely employable, and it comes down to being proactive rather than passive. He did not just read books or watch tutorials. "I built small projects, I'll put them on GitHub." He signed up for coaching, did the assigned projects, took the feedback. And crucially, he talked to people. "I started making connections, right? So, um, I was on LinkedIn. I made a lot of connections on LinkedIn. I started, you know, DMing people, asking them what's going on in the industry." By graduation he understood the Ghanaian tech ecosystem well enough to know how to position himself.
 
 Which, when you think about it, is the same move that later changed everything: reaching out to a stranger online and asking an honest question.
 
