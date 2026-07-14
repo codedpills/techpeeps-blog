@@ -1,5 +1,5 @@
 ---
-title: '"You Will Never Be Ready": Joshua on the Developer Who Tried to Cancel
+title: '"You Will Never Be Ready": Joshua Uyi on the Developer Who Tried to Cancel
   His Own Interview'
 description: Nigerian full-stack dev Joshua Uyi on fundamentals over hype, owning
   your work on a CV, and why self-rejection is the real career killer.
