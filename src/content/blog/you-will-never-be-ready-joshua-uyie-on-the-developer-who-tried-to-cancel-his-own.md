@@ -108,4 +108,4 @@ The third wall is the job search itself, and his honesty here felt important. "P
 
 What I appreciated most about Joshua is how little he mythologizes any of this. The fundamentals are unglamorous. The soft skills are quiet. The CV is honest. And the biggest obstacle, again and again, is the one in our own heads, the voice that tells us to cancel the interview before it starts.
 
-The world of tech is better for people who share as generously as Joshua does. Thank you, Joshua, for the time and the candor. You can connect with him on LinkedIn, and the full conversation is well worth watching back for the parts we could not fit here.
+The world of tech is better for people who share as generously as Joshua does. Thank you, Joshua, for the time and the candor. You can connect with him on [LinkedIn](https://www.linkedin.com/in/joshua-uyi/), and the full conversation is well worth watching back for the parts we could not fit here.
