@@ -1,12 +1,12 @@
 ---
-title: '"You Will Never Be Ready": Joshua Uyie on the Developer Who Tried to Cancel
+title: '"You Will Never Be Ready": Joshua on the Developer Who Tried to Cancel
   His Own Interview'
-description: Nigerian full-stack dev Joshua Uyie on fundamentals over hype, owning
+description: Nigerian full-stack dev Joshua Uyi on fundamentals over hype, owning
   your work on a CV, and why self-rejection is the real career killer.
 pubDate: '2026-07-12'
-guest: Joshua Uyie
-guestBio: Joshua Uyie is a Nigeria-based full-stack software engineer at Big Viking
-  Games in Canada, with a bachelor's and master's in computer science and eight years
+guest: Joshua Uyi
+guestBio: Joshua Uyi is a Nigeria-based senior full-stack software engineer (previously at Big Viking
+  Games in Canada), with a bachelor's and master's in computer science and over eight years
   writing code.
 videoId: zDtyjmzubXc
 videoUrl: https://www.youtube.com/watch?v=zDtyjmzubXc
@@ -28,7 +28,7 @@ sources:
 - ZSqKkZL3K_U
 ---
 
-There is a story Joshua Uyie tells that made me wince the moment I heard it. He was helping interview a candidate for an engineering role. The candidate joined the call, fought through some technical hiccups, and then, before anything else could happen, asked to cancel the interview. His reasoning? He had seen the role was a "more senior position and he doesn't think that he can uh, take that role."
+There is a story Joshua Uyi tells that made me wince the moment I heard it. He was helping interview a candidate for an engineering role. The candidate joined the call, fought through some technical hiccups, and then, before anything else could happen, asked to cancel the interview. His reasoning? He had seen the role was a "more senior position and he doesn't think that he can uh, take that role."
 
 Joshua's reaction was blunt: "I was shocked, very shocked." As he put it, "your, your CV was there, they clearly saw your CV, and you were still invited for the interview." Someone had already looked at this person's résumé and decided he was worth a conversation. And he talked himself out of the room before the room had a chance to say no.
 
@@ -46,7 +46,7 @@ His real spark came from Visual Basic, the same language a lot of us cut our tee
 
 ## Why he can code in "any programming language you give to me"
 
-Joshua now works as a full-stack developer at Big Viking Games in Canada, and he has moved between multiple languages over the years. When I asked how anyone switches stacks that fluidly, expecting some secret trick, his answer was almost stubbornly unglamorous.
+At the time of the conversation, Joshua now worked as a full-stack developer at Big Viking Games in Canada, and he had moved between multiple languages over the years. When I asked how anyone switches stacks that fluidly, expecting some secret trick, his answer was almost stubbornly unglamorous.
 
 "One thing that is core to software development is understanding the fundamentals," he said. He sees people trying to skip them constantly. His example landed hard: someone once asked him to help a friend learn React, and Joshua's first question was whether the person even knew JavaScript. "Like, no, but there's a job that person was trying to get."
 
@@ -62,7 +62,7 @@ But he made the on-ramp gentle. Start with the basics, he said, even something a
 
 From basics, move to concepts, understanding *why* something like object-oriented programming exists before drowning in implementation. He admitted that even he was already writing Java before it clicked: "I actually finally understood what object-oriented programming actually, how it actually worked, but I was using it already."
 
-And you cannot do it alone. He pointed to Nigeria's developer communities as a genuine advantage, "ALC from Mandela and GDG from Google and a couple of others," where "all the stress wouldn't just be on you." I told him that from Ghana I always saw Nigerians as the tech geeks of the African ecosystem, the people whose articles you would find whenever you searched something obscure. Joshua traced that generosity back to something real: "people are willing to share knowledge," partly out of a shared awareness of struggle, of looking for "things that will give you a better chance in the job market."
+And you cannot do it alone. He pointed to Nigeria's developer communities as a genuine advantage, "ALC from Andela and GDG from Google and a couple of others," where "all the stress wouldn't just be on you." I told him that from Ghana I always saw Nigerians as the tech geeks of the African ecosystem, the people whose articles you would find whenever you searched something obscure. Joshua traced that generosity back to something real: "people are willing to share knowledge," partly out of a shared awareness of struggle, of looking for "things that will give you a better chance in the job market."
 
 ## Two cultures, one bug you don't want to hide
 
