@@ -1,10 +1,10 @@
 ---
 title: One Month, Two Offers, and a Nigerian Guy on Twitter
-description: Oliver Buama planned to chase a tuition-free master's in Germany. A stranger's
+description: Oliver Boamah planned to chase a tuition-free master's in Germany. A stranger's
   advice on Twitter got him a Berlin software job in a month instead.
 pubDate: '2026-07-12'
-guest: Oliver Buama
-guestBio: Software engineer at Serene, a Berlin-based tech startup building analytics
+guest: Oliver Boamah
+guestBio: Senior Software engineer at Seerene, a Berlin-based tech startup building analytics
   software for development teams. A Kumasi native and computer science graduate of
   the University of Energy and Natural Resources, Sunyani.
 videoId: LVNVUsWAEiQ
@@ -26,7 +26,7 @@ interviewDate: '2022-07-25'
 
 # One Month, Two Offers, and a Nigerian Guy on Twitter
 
-Oliver Buama had a plan, and it did not involve landing a job in Berlin. He was going to do the sensible thing: apply for a tuition-free master's degree in Germany, get his lecturers to write recommendation letters, chase down his transcript, compile a shortlist of schools. He had done the homework. He knew the odds of getting hired from Ghana before setting foot in Europe were slim. As he put it, "I know it's hard to get a job before you come, right? It's difficult."
+Oliver had a plan, and it did not involve landing a job in Berlin. He was going to do the sensible thing: apply for a tuition-free master's degree in Germany, get his lecturers to write recommendation letters, chase down his transcript, compile a shortlist of schools. He had done the homework. He knew the odds of getting hired from Ghana before setting foot in Europe were slim. As he put it, "I know it's hard to get a job before you come, right? It's difficult."
 
 Then a stranger on Twitter changed the plan entirely.
 
@@ -50,17 +50,17 @@ A month sounds impossibly fast until you hear how deliberate the preparation was
 
 For the search itself, he leaned on LinkedIn Jobs, filtering hard for his stack: Python, Django, Flask, Postgres, SQL. He applied every single day. About two weeks in, the interview invitations started arriving.
 
-The interviews themselves were a different beast from what he knew at mPharma. There, the flow was a short intro chat, then a take-home backend project with clear functional requirements, then a panel, then a final round. At Serene, things unfolded in surprising ways.
+The interviews themselves were a different beast from what he knew at mPharma. There, the flow was a short intro chat, then a take-home backend project with clear functional requirements, then a panel, then a final round. At Sereene, things unfolded in surprising ways.
 
 ### The Algorithm Question He Did Not See Coming
 
-The first Serene interview opened with ten minutes of getting to know each other, Oliver, the head of engineering, and an engineering manager. Then the tone shifted. "They were like, okay, we have a problem for you to solve. And then there is an algorithm and data structures question. Like just popped."
+The first Sereene interview opened with ten minutes of getting to know each other, Oliver, the head of engineering, and an engineering manager. Then the tone shifted. "They were like, okay, we have a problem for you to solve. And then there is an algorithm and data structures question. Like just popped."
 
 He was not expecting it. But he had done the unglamorous groundwork. He knew that to relocate into these roles, "you have to practice your LeetCode, you have to practice your data structures and algorithms." He had bought the AlgoExpert course and drilled through it. So when the question landed, he had, in his words, "got some practice under my belt."
 
 ### A Code Review Built to Trip You Up
 
-The second interview was the one that genuinely delighted him, and it is the part of our conversation I keep thinking about. Instead of building something from scratch, Serene handed him a finished codebase and asked him to review it. The catch: they had salted it with deliberate problems.
+The second interview was the one that genuinely delighted him, and it is the part of our conversation I keep thinking about. Instead of building something from scratch, Sereene handed him a finished codebase and asked him to review it. The catch: they had salted it with deliberate problems.
 
 "They intentionally left a lot of, um, important stuff in there for you to catch," Oliver explained. There were opportunities for SQL injection, redundant code, code intentionally left unoptimized. And the sneakiest bit? "The code worked. The code worked, but there was no validation." Feed it an edge case and it would fall over.
 
@@ -98,7 +98,7 @@ Which, when you think about it, is the same move that later changed everything: 
 
 We ran out of time long before I ran out of questions, so I have already asked Oliver to come back for a second round. There is a lot inside his journey that people back home, especially those eyeing similar moves, could learn from.
 
-If you want to reach him, he is happy to hear from you on LinkedIn. His one request is a fair one: "try and be as specific as possible on what you want me to help you with."
+If you want to reach him, he is happy to hear from you on [LinkedIn](https://www.linkedin.com/in/oliverboamah/). His one request is a fair one: "try and be as specific as possible on what you want me to help you with."
 
 Oliver, thank you for being the very first guest on Tech Peeps Diaspora, for the origin story, and for the reminder that the boldest career moves often start with a single well-aimed message. Next time, though, you are taking me to the festival.
 
