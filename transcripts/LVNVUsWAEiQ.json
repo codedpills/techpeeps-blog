@@ -1,0 +1,375 @@
+{
+  "video_id": "LVNVUsWAEiQ",
+  "title": "From Ghana to full-time Software Engineer in Germany #techpeepsdiaspora",
+  "video_published_at": "2022-07-25",
+  "duration_sec": 2471,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 497,
+      "end_ms": 29733,
+      "text": "Um, hello guys. Welcome to the first episode of TechPeeps Diaspora. Um, I'm really excited, um, to finally start this project. And today I have on the show, um, Oliver Buama, who is a software engineer at Serene. Um, welcome to the show, Oliver. Um, really nice to have you on the show and being my first guest on the show. Um, and thanks a lot for agreeing to, to do this."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 30088,
+      "end_ms": 33816,
+      "text": "Yeah, um, it's, it's, it's really a pleasure to be here, Zach."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 35291,
+      "end_ms": 52587,
+      "text": "I'm, uh, yeah, talking to you. Um, yeah, thanks a lot. So yeah, but there's one thing I'm really, you know, not happy about. The fact that you, you know, last weekend, um, we are in Berlin and you went to chill with us."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 53057,
+      "end_ms": 66923,
+      "text": "Oh man. Uh, I mean, I maybe I should have told you about it earlier, um, but yeah, it was, it was really cool."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 68365,
+      "end_ms": 75048,
+      "text": "Yeah, so, so like, how was it? Like, it was the Afrobeats, um, festival in Berlin, I guess?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 75096,
+      "end_ms": 98944,
+      "text": "Yeah, yeah, it was, it was really cool. Um, I mean, like, all the major Afrobeats stars in, um, in Africa, they came, right? Like we had, we had Wizkid, Starboy, right? We have the Baddest Davido, we had Tiwa Savage, we had even from Ghana we had Sarkodie and Stonebwoy, right?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 99090,
+      "end_ms": 99562,
+      "text": "Oh, Sarkodie was there?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 99611,
+      "end_ms": 102139,
+      "text": "Yeah, Sarkodie was there. So it was, it was massive."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 104647,
+      "end_ms": 107537,
+      "text": "Oh, I missed, um, no Better Boy then?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 107876,
+      "end_ms": 109894,
+      "text": "Um, unfortunately not."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 111347,
+      "end_ms": 150174,
+      "text": "Yeah, then I didn't miss much because like, boy, was he on the point. I don't think I misplayed. Yeah, anyways, um, yeah, so thanks a lot. Um, I'm gonna catch up on the, the, you know, the chilling stuff. I mean, we are in Berlin, so Oliver and I like are in Berlin and sometimes we hang out together. And just last weekend he decided to borrow me and just go and hang out by himself. But yeah, I'll, I'll have my payback. So, um, Oliver, um, you moved to Berlin, um, if I'm right, like 3 months ago or like 4 months?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 150319,
+      "end_ms": 157587,
+      "text": "Yeah, roughly, um, I think 4 months ago. Um, came here 1st March. So, okay."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 157732,
+      "end_ms": 163050,
+      "text": "And, uh, how is like your stay in Berlin so far? Like, do you, do you like Berlin?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 163325,
+      "end_ms": 185119,
+      "text": "Um, are there At the early stages, um, I was quite uncomfortable, you know, because I had just moved into a new environment. Um, the weather was, was pretty cold. It was like 2 degrees. Um, but then, um, you know, with time I got adapted to the system. Um, and yeah, so far I'm loving it here."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 186033,
+      "end_ms": 206999,
+      "text": "Like, when I also moved here, I moved there in December, um, which was like during the winter, right? It was like really, really cold. Um, and like apart from the cold, I think one thing that really made it like hard to settle in was like missing the Ghanaian food. Like, did you have like a similar experience?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 207224,
+      "end_ms": 243459,
+      "text": "Oh yeah, like I mean like I'm a Kumasi boy, right? Like I've stayed most of my, um, life in Kumasi, right? So, um, I like fufu. I like the whole— you understand, I like gobe. So when I came here, and then personally I don't cook that much, right? Like, so when I came here and then I wasn't getting gobe and fufu and tizie to eat, especially the first 2 weeks I'm in, it was— I just didn't like the feeling at all. But then we adjusted to the system."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 245889,
+      "end_ms": 264693,
+      "text": "Yeah, like, I wonder how like that's gonna be because like in my first month it was like I was really missing home food and fortunately for me I found this, um, Ghanaian restaurant in Berlin and yeah, like when they brought the waakye, like it was like the happiest day in my life."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 264742,
+      "end_ms": 267616,
+      "text": "Like, you know, really, I actually went there to, um, Didi Pa."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 268537,
+      "end_ms": 331494,
+      "text": "Yeah, yeah, yeah, that's, that's the place. Like, they have Like really good food, um, to check out. So, um, yeah, the adjustments from Ghana to Berlin, like you moved from Ghana to like a new country, like a new city, um, you joined a new company, um, but still like the same role, right? Still a software engineer. Um, and yeah, like what has the adjustment been in terms of you know, apart from the food, like professionally? Um, and maybe first of all, you'd like want to tell me like a little bit about, um, Serene, your company, um, what they do, and like, I mean, what is it about them that's, um, you know, made you want to work for them? Um, and like, what's your typical day like? So if I want to have a glimpse of, you know, a day in the life of Um, Oliver, or what does that look like?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 331735,
+      "end_ms": 443589,
+      "text": "Okay, great. So first off, um, Sirin is, um, a tech startup, uh, uh, based in, uh, Berlin. We also have, um, offices in Potsdam. Potsdam is like, um, um, um, um, a city nearby Berlin, right? Not too far from Berlin. Um, Sirin, what we do basically is we develop analytics software. That's been used by other software development teams, um, across Europe. So, um, this analytics software that we build, right, when, um, a software development team adapts it, right, they integrate it into their system, it's able to help them know, um, uh, the areas of improvement within their team, and then it's able to help them, um, identify, you know, where there are glitches so that they can improve their whole efficiency, uh, within their, um, their development team. Um, so yeah, it's great. Um, and then what I like especially about Streamlit is the fact that, um, when I was— you know, I'm a, I'm a backend guy. Uh, my stack was Python, Django, Um, so when I was, when I was looking for a company here, um, in Germany, I also wanted, um, a company that's, that's already, um, that already uses the stack that I'm used to, right? Um, and at the same time, I wanted like a role that is challenging enough, right? So that, that was what interested me about Um, nice, nice."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 443734,
+      "end_ms": 453144,
+      "text": "So like on a regular day, um, what does Oliver's day look like as a software engineer? Like let's say take a typical Monday for instance."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 453678,
+      "end_ms": 561298,
+      "text": "Okay, so I mean I wake up, um, sometimes around 7, sometimes around 8, um So the first thing I do, um, you know, I'll just, you know, like go, go to the washroom, you know, brush and stuff like that. Then, um, I'll go to the, um, the kitchen. Normally I have, um, drinks that I'll put. So like maybe I'll take some orange juice or some apple juice. Um, I'll try and fry some egg and get some bread with it. Just have like small breakfast. And, um, I, I like to plan my day ahead, right? So I just have these notes up, um, on my laptop that I, I kind of schedule my day that, okay, this is what I'm going to work on for today and stuff like that, right? So, um, at Serene, uh, we don't have a lot of meetings at all. So on Mondays, uh, we do have a short 30-minute stand-up meeting. And then, um, on Thursdays we do have, um, stand-up meeting, just 30 minutes, right? So, um, and then that's even around 11, but before 11, I mean, I start working around, um, 9. Yeah, so I start working around 9. Um, around 1 PM too, I try and have like a lunch break. Um, most of the times, like, I don't have lunch per se, but, you know, just take a break for working, just chill, go on social media, see what's happening there, um, about 40 minutes or so to 1 hour. Then I come back and then I continue working to like 4 or 5, then I come again."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 561571,
+      "end_ms": 591190,
+      "text": "Oh cool. How, how like large is your team? Because like you mentioned that, um, your stand-up meeting— so you don't have stand-up meetings every day, you have it like on Monday and Thursday? And that takes like 30 minutes. And I was wondering, cuz for my team, like it takes like barely 15 minutes, but we do it every day. So I like, I kind of understand if you guys have it like once or twice a week, then 30 minutes is like, okay. But how big is your team?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 592179,
+      "end_ms": 647578,
+      "text": "Like, yeah, how many? I mean, like even at 30 minutes, honestly, it hasn't reached the 30 minutes. Most, most of the times it's just like maybe like, maybe like 15 minutes, then we are done. So the team is not so big. Um, and what we do is like we've, we, we've even divided ourselves into smaller teams, right? So already, Serene, we are around 35 to 40 people in total. So like it's, it's a really small team relatively. And then, um, even inside, uh, this, uh, you know, whole group, we have smaller teams. Um, and then for my team, right, we are around, um, 8. So I mean, it's, it's, it's, it's just, um, it's, it's not so much big of a team. So when we have these kind of meetings, we're able to move faster."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 650006,
+      "end_ms": 682897,
+      "text": "Okay. Um, so like one thing, um, you know, like I think one thing that I really want to know, um, is, you know, yeah, like Oliver from Ghana, um, how did you decide to make the switch from working in Ghana, um, to like moving over to Berlin? And yeah, like what influenced that decision, you know, like just moving from Ghana and packing all your stuff to a new country where you knew nobody and you Like I'm gonna work in?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 683480,
+      "end_ms": 945293,
+      "text": "Um, so back in Ghana, before I left, I was working at Mpharma. Um, Mpharma is a pretty good company, by the way. I, in my opinion, I think is one of the best, um, tech companies to work at in Ghana. Um, so I mean, life was good there, and my colleagues were great, the team was great and stuff like that, but Personally, I wanted to travel, right? Like, I've always wanted to, um, you know, move outside the country, um, explore, right? So, um, after some time at MPharma, I initially— the idea was to look for, um, master's degree programs, right, here in Germany, and then, um maybe like Canada, UK, stuff like that, right? So I was looking at their programs, you know, looking at their tuition fees and stuff like that. Then I, I found out that for Germany it's actually tuition-free, and then the schools are really good. So, and then, um, per my research, I got to find out that, um, I mean, Germany is actually the— it has the largest, um, economy in Europe, and there are a lot of software engineering positions, um, in Germany, especially Berlin. And there's a whole lot of stuff going on in Berlin alone, um, that was massive. Um, so per my research, I found out that like, if I want to travel, right, and then considering my, um, my career, like if I want to go to anywhere in Europe, it's either I, I go to Berlin or like I go to, you know, London, right? That's like for Europe. But, um, so yeah, I'm— I, I decided to like, you know, apply for master's degree, um, here in Germany because the tuition fees were, you know, no tuition fees. So I actually went to my university, got recommendation letters for my lecturers, got my transcript You know, all this kind of stuff. I did research about the schools. I compiled the schools I wanted to apply to and everything, right? So then I was on Twitter and then there was this guy, um, this Nigerian guy, and he was actually an Android developer here in, um, Germany. And I was talking with him like, oh, I'm working in, um, Ghana, uh, and for me, like, it's work is pretty good, stuff is pretty good, but like, I've always wanted to travel, so I want to— like, I know it's hard to get a job before you come, right? It's, it's, it's, it's difficult. So I mean, if I do apply for a school, maybe it's not— it won't be so hard. So anyway, he actually told me now, it's considering my experience and my skills, he thinks that, um, I should try applying for roles because like nowadays it's, it's, it's easier to, um, get a role, um, from Africa if like you have the, um, the right skills and right experience. So yeah, I gave it a try and then within one month, right, like I, I mean like I, I got, um I go— I got 2 places actually, like one here in Berlin, one the other in Munich. But the one in Munich, I think we had like 2 interviews to go, and then the one in Berlin, they were much faster, right? Um, and then once they gave me the offer, um, I did a lot more research about Berlin, like the fact that, um, a lot of people speak English here. Though, like, German is like the, um, the native language, the official language, right? And then, um, you know, Berlin is very multicultural and stuff like that. So I was like, okay, okay, let's just go with Berlin. And then I ended the, um, other interviews with the one from Munich. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 945373,
+      "end_ms": 991907,
+      "text": "So yeah, um, it's like, uh, you know, 1 month like was really fast. At least I think like you, um, had to be like really good to be able to get offers, um, from Ghana like within 1 month. Like, what, what was that process like? Um, first, like looking for a job, were there any specific channels you used to apply for these jobs? How did you find these jobs? And most like, I think one thing that a lot of people would be curious about is like, how is these like the interviews with these companies like? Were they similar to interviews you had with companies in Ghana? You mentioned, for instance, like Enpharma. How different was this process?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 992292,
+      "end_ms": 1043269,
+      "text": "Um, so, um, I think what helped me was I kind of stood on the shoulders of giants, right? So I did a lot of research. Um, I watched a lot of YouTube videos where they kind of explain how to you know, um, do like a German standard CV, right? Like a German standard, um, cover letter, right? You know, all those, um, small important things. So I kind of like crafted my CV to be how, you know, German employers would want your CV to look like. Um, um, um, um, I did the same for my cover letter. Um, and then, um, I actually used LinkedIn Jobs for the applications, right?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1044472,
+      "end_ms": 1044777,
+      "text": "Okay."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1045499,
+      "end_ms": 1091834,
+      "text": "Um, I, I actually sent in a lot of applications, so I'll just hop on to LinkedIn Jobs. I, and then, um, I use LinkedIn a lot, right? So I just did like the filter, um, you know, Germany, um, um, Python, Django, Flask, you know, like those kind of stack Postgres, um, SQL, you know, this kind of stuff. And then I got recommendations, how are the kind of companies that were hiring, and then, um, I just started applying. So I applied a lot every day, and I think about, um, I think 2 weeks in, then I like, I started getting some, some, um, interview, um office here."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1093074,
+      "end_ms": 1096215,
+      "text": "Um, and the interviews, like, how was the interviews though?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1096295,
+      "end_ms": 1407460,
+      "text": "Like, um, I mean, the interview was quite different, um, at least as compared to, um, mPharma, right? Um, with mPharma, um, the— so with mPharma, the first process was like, um, get— getting to know each other, right? So they'll basically ask you about, you know, your background, your experiences, who you are, introduce yourself, you know, stuff like that, right? So it's a short 30-minute, um, intro interview. And then the main one, that is the next stage, would be the, um, um, the coding project. So a take-home project, actually give like a a backend project, like go and implement a REST API. They'll give you all the functional requirements and stuff like that. Yeah. Um, and then after that you get like a panel interview and then there'll be a last interview. Yeah. But with Serene, um, the first one, right, it was— I think we spent the— I didn't know what, what to expect. Um, we, we spent the first 10 minutes just getting to know ourselves. It was myself and then the head of engineering and then one engineering manager. They were like, oh, they saw my CV, um, they think my experience looks great, so they just, um, you know, wanted to get to know me, stuff like that. So that was just the first 10 minutes. And then they were like, okay, we have a problem for you to solve. And then there is an algorithm and data structures question. Like just popped. So I wasn't expecting it at all. Um, but the good thing was that of course I knew, um, nowadays like if you want to get, you know, these kind of roles, especially, you know, to relocate, you have to, you have to practice your LeetCode, you have to practice your data structures and algorithms. Um, you have to solve questions on LeetCode and AlgoExpert and stuff like that. So I actually bought AlgoExpert, the course, right? And I was going through their questions and, you know, how to, you know, solve those kind of, um, complex algorithm questions, right? So, um, when during the interview, like, I had got some practice under my belt, so I was, um I would say it went well, right? Um, and then yeah, um, yes. And then I was called for a second interview, I think like 3 or 4 days later, right? It was pretty short. They were like, okay, we want to move you to the second stage. And for the second stage, it was very interesting. It was actually a code review project. You know, with my previous company, mPharma, it was like they give the functional requirements and then you build this, you take this project home, you build it, you submit it. But this one, they give you the project itself, the code itself. They'll be like, okay, review, review the code, right? And then it was very interesting because they intentionally left a lot of, um, important stuff in there for you to catch, right? So they, they actually wanted to know, you know, how, how experienced you are, like, you know, how, how, um, good you know your fundamentals, right? And then how how, um, I would say like experienced you are overall in terms of, you know, building production-level, um, applications. Because during a code review, you could find out that there were opportunities for SQL injection, you know, there were like, um, um, there was like redundant code, you get. There was like code that was Intentionally not optimized, you get. But the, the funny thing was that the code worked. The code worked, but there was no validation, right? So if you try, you, if you try the code with some edge case, right, it will fail. They intentionally built it that way just to gauge how, you know, you're able to fish out those things. And I actually enjoyed it. Um, um, They— yeah, so I think they gave me like 2 or 3 days to submit it. Yeah, and then I, I was able to submit it within, um, the requested time frame. Yeah, so yeah, that was it. So it was just 2 interviews, just 2 interviews, and then, um, I got the role."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1408108,
+      "end_ms": 1464974,
+      "text": "Really interesting with the Like the code review thing. I think I had a similar experience with, um, one of the companies I interviewed with, um, Automattic, um, the guys that created WordPress. And they had like a similar, um, you know, structure where they onboard you on this project and you have to figure out, like, you have to review a code and you have to figure out if there were any security vulnerabilities or those stuff. And I thought that was like an interesting way of like hiring people. Um, so you spoke about like your, like working at mPharma, um, which is like, I, I, I know mPharma and I know some of the guys. They're like a really good company, like really good guys and stuff. Like, did you always know that you wanted to be like a software engineer, like growing up? Like, were you one of those people that were like geeks and, you know, when they came out of the womb, they're like, I want to be a software engineer?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1465070,
+      "end_ms": 1516166,
+      "text": "Um, so the funny thing is that. I, I, growing up, I didn't know I wanted to become a software engineer because, I mean, I, I was staying at Kumasi, and when you stay at Kumasi, you don't hear even the word software engineer. You don't know what it is. You don't even hear the word programming, you get. So that time, when we're kids, we got attracted to computers because of games, right? Like Road Rash. You know, V-Cup, Zuma, you know, this kind of games, right? Um, and that just like, we just go into contests because of games. So fast forward, um, it was actually when I moved to SHS. Um, I went to Labone High School, by the way, uh, in Accra. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1519378,
+      "end_ms": 1526617,
+      "text": "You didn't know that my sister went to Labone? Uh, yeah, and even my little sister like is currently at Labone."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1526698,
+      "end_ms": 1857272,
+      "text": "Oh yeah, I'm an early boy. Yeah, yeah. So yeah, so it was actually Labone that I heard about programming. Um, and then there was a robotics club, um, in Labone, you know, they were doing some kind of programming, but I never joined that robotics club. But that was when I like I started hearing things like Python, but I didn't even understand what it meant. It just— I just heard it, you get. I didn't really know even what a programming language really does. I just said that, oh, these robotics guys, oh, they do Python and stuff like that. That was all. Um, so it was after school, and then I was so into computers, right? And I, I was using computers like edit, um, videos, you know, um, you know, create Microsoft Word, PowerPoint presentations, Excel, you know, those basic stuff. So nothing really, nothing really fancy. Um, so when I completed SHS, then, um, you know, now you have to, you have to choose a program, right? You have to find something to do in the university. And, um, the funny thing was that, I mean, growing up they always wanted me to be a doctor, right? My mother wanted me to be a doctor. My father wanted me to be a doctor because, um, if even when I was a kid, when you asked me what do you want to be when you grow up, I would say I wanted to be a doctor because that was what everyone was saying. And then if you are intelligent, small Right, as, as a kid, they'll be like, oh, you'll be a doctor? And be like, oh yeah, I'll be a doctor. Um, so it was crazy. But during SHS and after SHS, I knew that of course I'm not going to do medicine. Even if I wanted to do medicine, I didn't have the grades for it because, you know, in Ghana you require like 7 ATs to do. Um, yeah, so I didn't even have the grades for that. Um, Yeah, but looking back, I'm glad I didn't have the grades for it. Yeah, um, so there was this guy who was my mate back in Labone. He had got into— he bought awaiting forms, right, and go to university the same year we completed high school. And then I was to go the following year, right? So I got into touch with him and he, he was studying computer science. I'm like, oh cool. Um, and I asked him like, what is that about? And he was like, oh, um, there are many, um, um, like there are many branches. Like we have like software engineering, we have like networking, we have, um, AI. But according to him, in Ghana, of course, software engineering you will likely not get a job. So he wants to major in networking so that after school he'll get to work at maybe like MTN, Airtel, you know. So that was, that was kind of like the dream because according to him there were no software engineering jobs, and then most of the companies they buy all their software right from outside. Um, So I mean, like, what's, um, when I talked to him, right, and I also did my research, right, like I looked at some of the other engineering courses, some of the other science courses. I mean, like, the— some of them were really, um, interesting, but what made me stick to computer science and also like, um, I also like preferred computer engineering was the fact that, I mean, like, even the name computer science, there was a science with computer in it, right? And, you know, I loved computers, right? So, and then computer engineering too, there was an engineering with computer inside. So it wasn't deep at all. I mean, like, it just had computer in it. Um, so after doing a lot of research, then I found out that the computer engineering, they had a lot of electrical engineering modules in it. Right? They had a lot of hardware-related stuff in it, right? And then computer science had a lot of software, right? So, um, at the end of the day, I— after the research, I think the computer science caught my fancy. Um, I liked what I read. Those were the times that you look up on YouTube and then you see videos of Mark Zuckerberg and they are sharing his story, how he made Facebook. You know, he was this teenager. You know, like Bill Gates built Microsoft, he's a billionaire. Like, you know, so, um, we all wanted to, you know, I wanted to be like these guys, right? So yeah, so I settled on computer science. I applied and I got in. Yeah, and yeah, so computer science when I chose computer science, um, and then I got into the university, that was where like, um, my passion for programming really began. I went there, right? In the University of Energy and Natural Resources in Sunyani."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1858715,
+      "end_ms": 1872537,
+      "text": "And like, if I remember correctly, I, I think just about the time that you were in school, I don't remember what year, but, um, you joined Code Train, which was like, um, like my bootcamp where I was in the school."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1872810,
+      "end_ms": 1942759,
+      "text": "Yeah, I did. It was, it was a very interesting chapter of my life because, um, I think when I was in like level 200 or so, yeah, probably level 200 or 300. Um, so Code Train, um, that time it was called Sleek Job, right? It came, um, they came to our campus. Um, Richard came, um, with some others. Um, And they introduced SleekJob. They introduced SleekJob as, you know, this coding, uh, bootcamp that you can join, and then they would help you gain like practical skills, right, that you need in the industry. And almost at that time, I was learning coding on my own, you get. And then most, you know, in university, right, though the lecturers, they try as much as possible to let us do some practical work, but it's, it's not enough. It's, it's really like, um, it's mostly theory. So I needed like that practical, um, um, training. So Code Train sounded, um, at that time sleep job, it sounded good. I signed up and yeah, I got into it."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1943080,
+      "end_ms": 1968730,
+      "text": "I, I don't remember if we had like any much interaction like whilst you were there because, uh, I, I remember at that time like you were doing Android and Power was taking like the Android classes. And like one thing I found interesting was like after that I saw that you started this, um, you know, project which was called Android Train. And I think we're doing something similar. Yeah. Training other people to build."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1969230,
+      "end_ms": 1969830,
+      "text": "Yes."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1969830,
+      "end_ms": 1977730,
+      "text": "Like how did you like come up with that idea and how, how did that go? I, I'm guessing like you were kind of inspired by how Android Train was. Yeah."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1977730,
+      "end_ms": 2067694,
+      "text": "Um, yes. So it was a mixture of several things. Um, of course, like, I drew inspiration from what Code Train was doing at the time. Um, but then I had this friend, uh, Sparrow. Um, he was also into Android development, right? And then he's actually a good teacher. Like, he, he's really good at making people understand things, right? So, um, we were in class and then we just both came up with the idea that, um, I mean, I had done Code Train. I was like, I was, I was good with, you know, like developing Android apps. Um, he was also good. Um, but then what we saw, Aine, is that like most of the students, they weren't good, you know, building, you know, practical stuff, right? So we came up with this idea, like, just like Code Train, right? Like, why don't we build something that is like university-focused, right? Like, UNIL-focused. Because I mean, we are students of UNIL, we know how— we know what they are learning, we know how that, um, their, um, what their schedules are, right? So we know what their challenges are. So let's, let's craft, um, a program that would really like help them to gain the necessary, um, practical skills. Um, yeah, and then we started Android Train. Um, Yeah, and then it was really good actually. We were able to, um, train, um, a lot of students actually. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2068031,
+      "end_ms": 2078404,
+      "text": "And after UNER, you— if I remember clearly, like, you joined like MPEDIGRI. Was that like your first, um, um, so my—"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2078853,
+      "end_ms": 2122704,
+      "text": "I actually did national services at MPEDIGRI. Yeah, my first job, um, was actually in— I don't know if it qualifies as a job, but when I was in like level 200, right, I did an internship at a software company in Kumasi, um, just get like 2-3 months of, um, experience. And then right after school, right, I joined a startup, the most incubated startup, um, as East Legon, right? Yeah. But then I was at, um, when the national service started, then I moved to Mpedigri. So I did like my whole year of national service at Mpedigri."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2123169,
+      "end_ms": 2125867,
+      "text": "Then, um, from Mpedigri, that's when—"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2125915,
+      "end_ms": 2129977,
+      "text": "no, from Mpedigri I actually moved to Blendify before Mpharma."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2130716,
+      "end_ms": 2186488,
+      "text": "Yeah, it seems like a roller coaster, right? So the university kid that was like didn't even know wanted to be a software engineer, but because of like computers and playing games, you know, enrolled into a computer science program and started like learning coding on your own. How was like, how was it? Like, I know most people, at least like when I talk to a lot of like upcoming software developers, like, um, most people find it challenging like with their self-taught approach, like learning to like program on their own. And there's a difference between like learning to program on your own and actually being, becoming like employable. Like what helped you bridge that gap, um, between like learning on your own and actually getting yourself to a position where you could actually be employed?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2186536,
+      "end_ms": 2334426,
+      "text": "So I, it all started when I was in school, right? Um, at the university. Um, I think it's, it's actually a good thing that I was studying computer science, right? So that's a plus. Um, I'm not saying if you want to get into software engineering you have to go and get the computer science degree, but it helped me, right? Because then again, the courses that I was doing, some of them were related to, you know, what you do as a software engineer, right? I was learning stuff like data structures and algorithms, system analysis and design, databases, you know, operating systems, um, you know, all those like computer science courses. And it, it, it, it helps you become a better software engineer, um, in my opinion. Um, but then I think what really, um, um, helped me be better and know what's going on in the industry and like how to adapt to the industry was the fact that I I actually built things, right? Like it wasn't major things at all. Mm-hmm. It was just small, small projects, right? So I wasn't just reading, um, books and that was it. Or like just watching tutorials and that's it. I was like, I was, I was proactive. Um, I built small projects, I'll put them on GitHub. Um, of course I signed up for coaching too. Coaching, they gave me some projects to implement. I'll do it, I'll submit it, I'll get feedback. Um, and at the same time, I was talking to people in the industry. I started making connections, right? So, um, I, I, I, I was on LinkedIn. I made a lot of connections on LinkedIn. I started, you know, DMing people, asking them what's going on in the industry. I started researching a lot about the tech industry in Ghana, um, like what's the— who the tech companies are, um, um, the kind of technologies that they use, the kind of products that they are building, you know, stuff like that, right? Just to help me prepare. Um, yeah, so I think by the time that I got out of university, I had a pretty good idea about what the tech ecosystem was in Ghana, right? And then like, you know, how to best position myself. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2334717,
+      "end_ms": 2427343,
+      "text": "You know, we don't have any more time, but yeah, I feel like there's still like a lot, um, you know, a lot of questions and a lot of stuff. Like I'm still curious to learn about from your journey. Um, yeah, I'd like to have you like on the show again if it's possible, like another time just to pick it up. Because, uh, yeah, there's still a lot in terms of like, um, you know, it seems more or less like a compound interest, like things that everything, all your experience was, was like building up from somewhere up to a point on until like you got to the position where you felt ready to apply for like opportunities outside of Ghana. And you know, when it got to that time, it wasn't so difficult. And I think like there's a lot within those processes that people, you know, like in Africa back home, like could learn from, like especially people also who, who want to like get into similar positions and opportunities. And I, I'd like to like have you again on the show to maybe go deeper into those things, but thanks a lot for, um, like doing this and Um, I, I hope that like a lot of people can learn from your experience. I'm sure like there'd be people who would be curious, okay, Oliver, like, can I DM you? Can I message you somewhere? Like, um, yeah, I would be happy to talk to you, like maybe get some mentorship and stuff. Like, are you open to some things like that? And, um, how do like people like connect with you?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2427391,
+      "end_ms": 2451546,
+      "text": "Yeah, sure. Um, so, um, yeah, thank you very much for having me. Um, if you want to get into contact with me, um, You can just search for you on LinkedIn. Just send me a message on LinkedIn and we can take it from there. Um, but you know, try and be as specific as possible on what you want me to help you with. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2453704,
+      "end_ms": 2465400,
+      "text": "No, nobody's gonna ask you, um, if you are going to invite them to the next festival for sure. All right, Oliver, thanks a lot for coming on and yeah, hopefully we catch up."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2465590,
+      "end_ms": 2469462,
+      "text": "Um, again, thank you so much for having me."
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}
