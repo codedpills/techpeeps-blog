@@ -2,7 +2,7 @@
 title: One Month, Two Offers, and a Nigerian Guy on Twitter
 description: Oliver Boamah planned to chase a tuition-free master's in Germany. A stranger's
   advice on Twitter got him a Berlin software job in a month instead.
-pubDate: '2026-07-12'
+pubDate: '2026-07-27'
 guest: Oliver Boamah
 guestBio: Senior Software engineer at Seerene, a Berlin-based tech startup building analytics
   software for development teams. A Kumasi native and computer science graduate of
