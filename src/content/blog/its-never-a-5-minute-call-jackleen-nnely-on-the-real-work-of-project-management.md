@@ -17,10 +17,10 @@ tags:
 - immigrants in tech
 - mentorship
 heroClip:
-  mp4: /clips/its-never-a-5-minute-call-jacqueline-nelly-on-the-real-work-of-project-managemen.mp4
-  webm: /clips/its-never-a-5-minute-call-jacqueline-nelly-on-the-real-work-of-project-managemen.webm
-  poster: /clips/its-never-a-5-minute-call-jacqueline-nelly-on-the-real-work-of-project-managemen.jpg
-  alt: Jacqueline Nelly speaking about the day-to-day life of a project manager
+  mp4: /clips/its-never-a-5-minute-call-jackleen-nnely-on-the-real-work-of-project-management.mp4
+  webm: /clips/its-never-a-5-minute-call-jackleen-nnely-on-the-real-work-of-project-management.webm
+  poster: /clips/its-never-a-5-minute-call-jackleen-nnely-on-the-real-work-of-project-management.jpg
+  alt: Jackleen Nnely speaking about the day-to-day life of a project manager
 draft: true
 interviewDate: '2023-07-20'
 ---
