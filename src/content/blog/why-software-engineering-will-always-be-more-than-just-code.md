@@ -1,5 +1,5 @@
 ---
-title: The Weekend I Learned React
+title: Why Software Engineering Will Always Be More Than Just Code
 description: Liman Adamu on four continents, learning frameworks over a weekend, and
   why software engineering will always be more than just code.
 pubDate: '2026-07-18'
@@ -15,9 +15,9 @@ tags:
 - AI
 - interviews
 heroClip:
-  mp4: /clips/the-weekend-i-learned-react.mp4
-  webm: /clips/the-weekend-i-learned-react.webm
-  poster: /clips/the-weekend-i-learned-react.jpg
+  mp4: /clips/why-software-engineering-will-always-be-more-than-just-code.mp4
+  webm: /clips/why-software-engineering-will-always-be-more-than-just-code.webm
+  poster: /clips/why-software-engineering-will-always-be-more-than-just-code.jpg
   alt: Liman Adamu speaking about learning new frameworks over a weekend to pass code
     challenges
 draft: true
