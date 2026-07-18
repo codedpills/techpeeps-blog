@@ -4,7 +4,7 @@ description: Liman Adamu on four continents, learning frameworks over a weekend,
   why software engineering will always be more than just code.
 pubDate: '2026-07-18'
 guest: Liman Adamu Labaran
-guestBio: Ghanaian senior software developer at HelloFresh in Toronto, with backend
+guestBio: Ghanaian senior software development engineer at Workday in Toronto, (also ex HelloFresh), with backend
   and data engineering experience across Ghana, Malaysia, Germany, and Canada.
 videoId: qaBB6v3u1ew
 videoUrl: https://www.youtube.com/watch?v=qaBB6v3u1ew
@@ -24,17 +24,17 @@ draft: true
 interviewDate: '2023-06-05'
 ---
 
-There is a line in this conversation that stopped me cold. Talking about the years he spent applying for jobs abroad from Ghana, Liman describes his approach to learning whatever a role demanded: "So like React, React, I learned React over a weekend."
+There is a line in this conversation that deserves a highlight. Talking about the years he spent applying for jobs abroad from Ghana, Liman describes his approach to learning whatever a role demanded: "So like React, I learned React over a weekend."
 
 Not over a semester. Not through a bootcamp. A weekend. Because there was a code challenge that needed it, and the job was on the other side.
 
-That kind of urgency runs through the whole story of Liman Adamu Labaran, a Ghanaian senior software developer now at HelloFresh in Toronto, who has worked across four continents and, by his own count, poured about half of his engineering experience into three years in Berlin. Readers who have ever wondered what it actually takes to move from a local Accra startup to a head office in Europe will find a lot here. So will anyone quietly worried that AI is about to make their whole career redundant.
+That kind of urgency runs through the whole story of Liman Adamu Labaran, a Ghanaian senior software developer, that at the time of this conversation, worked at at HelloFresh in Toronto. He has worked across four continents and, by his own count, poured about half of his engineering experience into three years in Berlin. Readers who have ever wondered what it actually takes to move from a local Accra startup to a head office in Europe will find a lot here. So will anyone quietly worried that AI is about to make their whole career redundant.
 
 ## Four continents, same weather (until it wasn't)
 
 Liman spent close to six years working in Ghana before he left. The first jump surprised me, because it wasn't to the usual diaspora destination. It was Kuala Lumpur.
 
-"In Ghana, everything was relaxed," he said, "it was professional, but you know, there's a lot of things that we don't do." Malaysia offered a gentler on-ramp for a very practical reason: the climate. "The move was easier because same weather, the same kind of stuck I was dealing with in Ghana." His friends were heading to Germany, but he wasn't ready for the cold. So Asia first, for a year, revamping an old e-commerce project into something Python-based with React and Vue.js. That, he notes, was his real introduction to React.
+"In Ghana, everything was relaxed," he said, "it was professional, but you know, there's a lot of things that we don't do." Malaysia offered a gentler on-ramp for a very practical reason: the climate. "The move was easier because same weather, the same kind of stack I was dealing with in Ghana." His friends were heading to Germany, but he wasn't ready for the cold. So Asia first, for a year, revamping an old e-commerce project into something Python-based with React and Vue.js. That, he notes, was his real introduction to React.
 
 Then Germany, where he stayed three years and where, he estimates, "I think 50% of my experiences in software engineering happened." He started at a mobility startup called Door2Door, then moved to HelloFresh in the Berlin head office. From there, Canada.
 
@@ -110,4 +110,4 @@ What I take from Liman's story is not the four continents, impressive as they ar
 
 For a guy who leaned on old exam victories to steady his nerves in unfamiliar rooms, he has built quite a collection of new ones.
 
-You can connect with Liman on LinkedIn as Adamu Liman Labaran. He struck me as exactly the kind of person who will actually reply and actually help, and there are plenty of folks coming up behind him who could use that. The full conversation is in the linked video.
+You can connect with Liman on [LinkedIn](https://www.linkedin.com/in/llabaran/). He struck me as exactly the kind of person who will actually reply and actually help, and there are plenty of folks coming up behind him who could use that. The full conversation is in the linked video.
