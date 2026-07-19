@@ -28,7 +28,7 @@ There is a line in this conversation that deserves a highlight. Talking about th
 
 Not over a semester. Not through a bootcamp. A weekend. Because there was a code challenge that needed it, and the job was on the other side.
 
-That kind of urgency runs through the whole story of Liman Adamu Labaran, a Ghanaian senior software developer, that at the time of this conversation, worked at at HelloFresh in Toronto. He has worked across four continents and, by his own count, poured about half of his engineering experience into three years in Berlin. Readers who have ever wondered what it actually takes to move from a local Accra startup to a head office in Europe will find a lot here. So will anyone quietly worried that AI is about to make their whole career redundant.
+That kind of urgency runs through the whole story of Liman Adamu Labaran, a Ghanaian senior software developer, that at the time of this conversation, worked at HelloFresh in Toronto. He has worked across four continents and, by his own count, poured about half of his engineering experience into three years in Berlin. Readers who have ever wondered what it actually takes to move from a local Accra startup to a head office in Europe will find a lot here. So will anyone quietly worried that AI is about to make their whole career redundant.
 
 ## Four continents, same weather (until it wasn't)
 
@@ -44,9 +44,9 @@ He and I never actually met in person, for the record. We connected the way a lo
 
 I was curious about the promotion, because his title shifted from senior backend engineer in Berlin to senior software developer in Canada, and I wondered whether the work itself transformed. His answer was refreshingly grounded.
 
-"I'm still a backend engineer," he said. The title changed because it's "just a Canadian role." What changed was the surface area. In Berlin he was in a squad called ComTech, handling communication technologies, SMS, email, push notifications, and shepherding customer data across HelloFresh's many services, plus data engineering on the side with Airflow and Spark. In Toronto he owns just two services: translation and tax.
+"I'm still a backend engineer," he said. The title changed because it's "just a Canadian role." What changed was the surface area. In Berlin he was in a squad called CommsTech, handling communication technologies, SMS, email, push notifications, and shepherding customer data across HelloFresh's many services, plus data engineering on the side with Airflow and Spark. In Toronto he owns just two services: translation and tax.
 
-Do not mistake "two services" for small stakes. The translation service handles every market across brands in 18 countries. The tax service, meanwhile, collects taxes across the US and Canada. As Liman put it, it "brings a lot of revenue," and the whole point is that HelloFresh does not pay those taxes out but "collect the taxes from the orders that are happening." He summed up the shift neatly: "a smaller context but a bigger impact."
+Do not mistake "two services" for small stakes. The translation service handles every market across brands in 18 countries. The tax service, meanwhile, collects taxes across the US and Canada. As Liman put it, it "brings a lot of revenue," and the whole point is that HelloFresh does not pay those taxes out of pocket but "collect the taxes from the orders that are happening." He summed up the shift neatly: "a smaller context but a bigger impact."
 
 The move also meant fewer meetings, fewer on-calls, and less tech hiring, largely because of the time zone gap with Berlin. It struck me how much of a senior role, in his telling, is defined by these logistical realities rather than by a grand change in the day-to-day.
 
@@ -78,11 +78,11 @@ His grades came in above the cutoff for chemistry, and his friends talked him in
 
 The first year nearly put him off. C++ was "so abstract," full of algorithms you memorized rather than understood. His description of exam strategy is one of the funniest and most honest things in the whole conversation: "You just chew it, you don't need to understand it, you just pour it." If they asked for a merge sort you hadn't memorized, you poured whatever you had.
 
-The turn came in second year, during an internship at Sabonet Technologies, a lecturer's software company in Kumasi that "everyone wanted to go there like for internship." Core Java, JavaBeans, entity persistence, "a whole lot of classes to just connect to a database. It was crazy." But that was the moment, he said, that he and his colleagues "realized that, yeah, we could do some something out of what we learned."
+The turn came in second year, during an internship at Saboney Technologies, a lecturer's software company in Kumasi that "everyone wanted to go there for internship." Core Java, JavaBeans, entity persistence, "a whole lot of classes to just connect to a database. It was crazy." But that was the moment, he said, that he and his colleagues "realized that, yeah, we could do something out of what we learned."
 
 ## From Accra startups to 100 applications a week
 
-After national service and a stint as a teaching assistant, Liman moved to Accra and stacked up experience across a striking range of Ghanaian companies: a mobile startup, a transaction processing company, an NGO in Grameen Foundation, then SMSGH, then Cellulant leading support for Ecobank's mobile banking, then Kaeling Solutions where he rose to a technical director role.
+After national service and a stint as a teaching assistant, Liman moved to Accra and stacked up experience across a striking range of Ghanaian companies: a mobile startup, a transaction processing company, an NGO in Grameen Foundation, SMSGH, then Cellulant - leading support for Ecobank's mobile banking, then Callens Solutions where he rose to a technical director role.
 
 And then, in his own words, "I got tired of Ghana." Not bitterly, but restlessly. "There's a lot of things that I wanted to learn and I wanted to contribute to. I didn't have that opportunity in Ghana."
 
