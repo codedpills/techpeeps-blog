@@ -2,7 +2,7 @@
 title: Why Software Engineering Will Always Be More Than Just Code
 description: Liman Adamu on four continents, learning frameworks over a weekend, and
   why software engineering will always be more than just code.
-pubDate: '2026-07-18'
+pubDate: '2026-07-20'
 guest: Liman Adamu Labaran
 guestBio: Ghanaian senior software development engineer at Workday in Toronto, (also ex HelloFresh), with backend
   and data engineering experience across Ghana, Malaysia, Germany, and Canada.
