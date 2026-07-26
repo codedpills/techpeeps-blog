@@ -1,5 +1,5 @@
 ---
-title: Richard Brandt: The Weakest Reliable Person Beats the Most Talented One
+title: "Richard Brandt: The Weakest Reliable Person Beats the Most Talented One"
 description: Richard Brandt on building Codetrain, why reliability wins over talent,
   and how he trained 500+ African developers to compete globally.
 pubDate: '2026-07-12'
