@@ -33,7 +33,7 @@ I'd come into this conversation expecting to talk about AI, data, and (because I
 
 Let me rewind, because I want to paint a picture of how she got here.
 
-Otima grew up in Ghana, and by her own telling she was never boxed in. "I have always been encouraged to explore different... career paths," she said. Architect, author, technologist: she wanted to be all of them at various points. (She's still chasing the writer bit, for the record.) But ICT got its hooks in early. By the time she reached university she knew it had to be "something with engineering or technology," and a robotics summer at Ashesi's Innovation Experience sealed it. She chose computer engineering deliberately: "instead of doing computer science, I'll do computer engineering and get like the best of both worlds."
+Otema grew up in Ghana, and by her own telling she was never boxed in. "I have always been encouraged to explore different... career paths," she said. Architect, author, technologist: she wanted to be all of them at various points. (She's still chasing the writer bit, for the record.) But ICT got its hooks in early. By the time she reached university she knew it had to be "something with engineering or technology," and a robotics summer at Ashesi's Innovation Experience sealed it. She chose computer engineering deliberately: "instead of doing computer science, I'll do computer engineering and get like the best of both worlds."
 
 Now she's in Sweden, studying image analysis and machine learning, and navigating a culture that runs on different defaults. The weather, of course. The shift from communal Ghana to a "bit more individualistic" Sweden. But the one that genuinely threw her was school.
 

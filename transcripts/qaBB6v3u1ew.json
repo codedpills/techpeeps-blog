@@ -1,0 +1,305 @@
+{
+  "video_id": "qaBB6v3u1ew",
+  "title": "Global Coding Odyssey - a Snr. Software Developer's journey across continents #techpeepsDiaspora",
+  "video_published_at": "2023-06-05",
+  "duration_sec": 2348,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1539,
+      "end_ms": 20397,
+      "text": "Um, hi everyone. Um, welcome once again to, uh, another episode of TechPeeps Diaspora. Today I'm on the show with, uh, a senior software developer and I'm really happy and looking forward to this one. Um, so I'll just hand over quickly to Liman. Um, Liman, could you please quickly introduce yourself?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 20781,
+      "end_ms": 49139,
+      "text": "Sure. Thank you for having me. Uh, my name is Liman. Um, I'm a Ghanaian. So, um, I've been working in Ghana for close to 6 years before I moved out of Ghana. And yeah, I moved, um, to 4 different continents. Now I'm in Toronto, Toronto in Canada, and I'm working with HelloFresh as a senior software developer."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 50504,
+      "end_ms": 86420,
+      "text": "Nice, awesome. So you've already traveled to like 4 different continents and yes. How is the, you know, I'm sure we'll get more into that, but right now I'm just curious, like, how the transition, you know, from Ghana and working in different continents, how is the vibe like? Because for me in Germany, the moment I moved here, I saw that, like, their approach was quite different. You know, Germans are more direct, um, and I also worked, um, with some, you know, remotely with some US companies, and they were more relaxed, right? Right? So I'm curious, like, how does that, um, do for you?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 86997,
+      "end_ms": 244109,
+      "text": "It's quite a good experience, um, moving around. Um, in Ghana, everything was relaxed, um, it was professional, but you know, there's a lot of things that we don't do. Then I moved to Asia, happens to be Malaysia, in Kuala Lumpur, and it was a different experience. Same weather, of course, but different experience. So it a role of a senior full-stack developer and we're revamping an old project, an e-commerce project into a more Python-based one with a bit of React and Vue.js. That was my introduction to React as well. I did some Vue.js in Ghana, but not too much. So the move was easier because same weather, the same kind of stuck I was dealing with in Ghana. So it was quite interesting, but new people, you know. So it was, uh, but it's an Islamic place, then that's the beauty of it. That's today, a lot of the things I enjoyed most was the halal food and a lot of places to visit and all that. So, and I was traveling with family, so We're moving out, we're moving from one place to another. And in Malaysia, then I did only one year, then I moved to Germany. Germany, you have, as you mentioned, people were more direct. And you know, there's a lot of learnings that I also did in Germany. I stayed in Germany for 3 years, and it was also quite big experience, and that's where I think most of— I think 50% of my experiences in software engineering happened. I started with a company, a mobility startup called Door2Door, and then I moved to HelloFresh, um, and Berlin office, which happens to be the head office. Then from there, I, I moved to Canada. That's North American side. Yeah, so I think it was quite a journey and there's a lot of learnings, um, there's a lot of challenges in there. As you know, in Germany, the German language and, you know, so I think, yeah, I think it's quite interesting."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 244863,
+      "end_ms": 268597,
+      "text": "Yeah, that's, uh, quite the trip. I think, uh, we never actually got to meet in person, but that's like how we, we connected, you know. So we have this, uh, WhatsApp group where you have all the, you know, African developers in one WhatsApp group, and I think that's, that's when we first connected. Um, so we are currently at, uh, HelloFresh, right?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 269191,
+      "end_ms": 313354,
+      "text": "Yes, so with HelloFresh. So from Germany, I was also with HelloFresh, and And I decided with the family, we decided to move to Canada to a more English-speaking— I think last year was the plan happened last year when I got a promotion to a senior role. And, um, some something that came with the promotion was, um, um, kind of in the review we had a higher score, so the score prompted me to, to give it a try on the international mobility program that HelloFresh was offering. And that was what I, I took, took advantage of and decided to move to the Canadian office."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 314764,
+      "end_ms": 332226,
+      "text": "Yeah, the language, uh, is a bit of an issue. Um, so, um, like, I was going through your LinkedIn earlier and, uh, yeah, I, I couldn't help but think myself, this guy has like a really impressive like profile. Like when I grow up, I wanna be like this guy."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 332788,
+      "end_ms": 333366,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 333511,
+      "end_ms": 362446,
+      "text": "But, um, so, uh, could you tell, tell like a little bit about, you know, like what exactly you do? I, I saw that like your roles changed a bit. Um, you know, previously you were a backend developer and, uh, you know, like you, like you said, you got promoted to a senior role, and now you're like a senior software developer. Like, what exactly, you know, do you do at HelloFresh? And, you know, like, what was the role transition like? Did anything change?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 364046,
+      "end_ms": 678953,
+      "text": "So I'm still a backend engineer, but, and when I was in Berlin office, most of the things I was, I was doing, the main language was Python, and I was doing backend engineering and data engineering. Together. So because most of, um, I was in the squad called ComTech, which appears to be the communication technologies that we handle in terms of SMS, email, and push notifications, um, and getting customer data also moving around our the streams of the various services that HelloFresh provides. And we champion all those movements of the customer data. And so in Berlin office, mostly was backend engineering for the microservices, several microservices actually in my team alone. We deal with several microservices just for customer communications. And, um, and, and a bit of the, um, the data engineering on the side of Airflow and Spark and stuff like that. And so when I moved to the Canada office, I joined a different squad, and the squad here, my main role is just 2 services, and the services are, um, translation service and the tax service. So The translation service is dealing with all translations in HelloFresh markets. So we have like several brands in 18 countries and we manage all that translations. And these brands also in one country, we could have like 4 brands, like in Canada alone, we have HelloFresh brand itself, and we have Chef's Plate brand, and we have Factor. In US, it's also the same with additional brand called Good Chop. So there's a new brand also coming, um, Prepare Stable, for— and so what HelloFresh does mainly is for meal kit subscriptions. So, um, when you subscribe every week, you, you get, um, kind of a full recipe with the ingredients that you cook yourself. And so even if you don't know how to cook, um, you get all the steps and the recipe on how to, how to go about it. So, um, in, in my current team as a senior software developer, the role has not really changed. It's just the, the title, which in, in, in Berlin it was senior backend engineer. But now it's senior software developer and it's just a Canadian role. But yeah, it's the same thing, but different services that I work on, same backend. And just that, a smaller context but a bigger impact because like one of the services I mentioned that we deal with is the tax service. Tax service collects taxes across US and Canada alone. And this is a whole lot of impact on the business. That's where it brings a lot of revenue. And so that HelloFresh itself do not need to pay out those taxes, but collect the taxes from the orders that are happening. And I think that's the only change. It's just a change of activities that I work. Initially also in Berlin, I was doing more of tech hiring, but in Canada, more of tech hiring in terms of I do, um, code challenge reviews. I do— it comes with a senior role. So the senior role, this, uh, the responsibilities are that you engage in tech hiring, um, you do code challenge reviews, you do, um, technical interviews. You also do live interviews. You also do the system design interviews for candidates that are coming in. But here I do less of that, and that's a change. I do less of that. Most of the one because of the time zone changes in Canada office, we don't hire so much than the Berlin office. So, um, some of— sometimes I get some invites for to interview candidates, but the time zone does not fit in, you know, for, for me to interview the Berlin candidates. So I do less of that. And also in Berlin, I was doing more on-calls. So there was— because we had a lot of services, so there was the rotation. I could join in a lot of on-calls. But here we have very less services, so the, the on-calls are limited for, for me. But yeah. I think those are the only differences."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 679611,
+      "end_ms": 682628,
+      "text": "I assume you also have like a lot of meetings, right?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 684023,
+      "end_ms": 701736,
+      "text": "Um, here not a lot of meetings, um, because most of the, the services that we work with are around, um, like, like a tax service around the US and the Canada. So I only have meetings with the US teams, but the Berlin teams are not so much."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 703548,
+      "end_ms": 744768,
+      "text": "So, uh, actually one, uh, you know, revelation. When I first arrived in Berlin, I think it was in winter, right? And, uh, you know, like cooking was a problem. So one thing that really helped me was, you know, I, I saw a friend recommended HelloFresh to me and I, I signed up on the site and I got this really, uh, nice recipes, uh, and then yeah, so they delivered a couple of boxes to, to my apartment and I tried them out and Yeah, like it was super smooth. Like the process was super smooth. And I also like, like the whole approach where you had all the ingredients along with the, the recipe. And yeah, it was a really fun experience. So, uh, yeah, thanks for contributing to that."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 746200,
+      "end_ms": 746313,
+      "text": "Sure."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 747542,
+      "end_ms": 759621,
+      "text": "So, um, yeah, and you know, like technically what would you say, um, so far, like What has been very challenging, like, in, in your current role?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 761478,
+      "end_ms": 908442,
+      "text": "I think in my current role, um, so I'll start from the role in, in Berlin as well. So, um, joining HelloFresh has been a big experience, like, process, because there's a lot of things I didn't know. Data engineering. So when I joined HelloFresh, I didn't know data engineering. Airflow, PySpark, EMR clusters and all that, they were new to me. And also Kubernetes, I was learning Kubernetes but not on production. And HelloFresh does it big. So because we have several microservices running through, deployed in 18+ countries, so it's a whole lot of requests coming through. So everything is in the Kubernetes cluster. So it's something that I learned on that level, data engineer as well. And so the challenge was transferring. I had a lot of experience even in Ghana and in Malaysia, and also when I came in Germany, but the experience in HelloFresh was a total different thing because things were running so fast and we have to, you have to ship code as fast as possible to tackle certain customer issues that come up every day. So I think the experience was challenging in terms of learning process. The learning process was kind of tough, but yeah, we got it through and coming and coming to Canada is a different language. So there's a different programming language I do here, Golang, which I had only introductory Golang. So here I, I'm doing Golang. Most of the services are in Golang. And so Golang and also some Node, a little bit of Node. So it was now another process of learning a new programming language, and it's a challenge when you are coming in as a senior person with a different language, you know, like you don't have a skill set up in that language and you have to learn as quick as possible to be able to catch up with a lot of things."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 908911,
+      "end_ms": 915355,
+      "text": "Yeah. And I also like, uh, not on, you know, mock projects but also on like live production."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 917371,
+      "end_ms": 923136,
+      "text": "Yes, yes. Any mistake that you do would cost a lot of millions lost in revenue. Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 923502,
+      "end_ms": 963410,
+      "text": "Yeah, I can imagine. Um, so, um, you know, like, uh, it's basically been like a long journey up to, up to this point, you know. Like, um, was there a time where you felt, you know, like, okay, this is too much for me, or this is too difficult, and, you know, like, you know, I can't— there's no room for me to grow, you know, I can't, like, I'm not good enough, like that kind of feeling, you know. I, I tend to have that, uh, from time to time. I think always, you know, when you go to a different environment, sometimes you can't help but wonder, okay, am I really supposed to be here, you know?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 963410,
+      "end_ms": 964110,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 964110,
+      "end_ms": 966770,
+      "text": "Did you have experiences like that?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 966770,
+      "end_ms": 1089430,
+      "text": "Yeah, I think several. I think I had, um, with all my experience in moving around, there's, there's, um, there's that I, I had that feeling, uh, even when, when I moved to Malaysia, it was tough to kind of build everything from scratch from a system that, that was already making revenue for the company. Building from scratch, and you meet different kind of people there. There were people from Poland, my CTO was also from Poland. And some of the understanding was not so good. There was no straightforward way of doing stuff, so you always have to figure things out on how best you could engineer stuff to make things work, right? And that was very kind of tough, and you feel Am I supposed to be in here, you know? So yeah, it was some tough toughness, but yeah, I think, um, you just have to muzzle up and try to talk to people and try to— what I usually do, I rely on my past experiences, my past successes. So if I, if I think of those success times that I had in the past, we can still do it. We, we struggled in what we actually joke sometimes. We joking with my colleagues that, yeah, once we're able to pass through KNUST or Tech, to be able to finish, um, you know, um, write an assembly language exams and we're able to pass it, so we can do everything. So that was one of the key thing that we keep in our mind to when, when that, those times comes and we, we persevere through."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1090156,
+      "end_ms": 1109293,
+      "text": "Yeah, so, uh, like now that you mentioned tech, um, I, I saw that like you studied computer science, like in tech. Uh, yeah, I think I, I know a few other people like who, who also did that. Like, did you always know that you wanted to be like a computer engineer? Engineer or like a software developer?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1109811,
+      "end_ms": 1171881,
+      "text": "No, no, no. I think, um, it was a computer science degree for me was a— was, uh, my— I would say not the choice I wanted to put on my application, um, for university. Um, so when I finished SS, I wanted to do chemistry. I wanted to later on lecture in the— to be a lecturer. Chemistry, but the grades that I got was, was better than the cutoff for chemistry. So my friends convinced me that I should put computer science first and chemistry second. And, uh, and when I, when I did, it happened that I got computer science. So I decided to just give it a try, and that's it. I just, I just gave it just one of the tries I just wanted to, to do, and Um, it happens that it's— I, I think I, I like it now because, yeah, it has taken me places."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1172395,
+      "end_ms": 1202525,
+      "text": "Yeah, yeah. So, uh, it's, uh, it's like, was there any, you know, because like you said, your first choice was chemistry, but then you had to do computer science, which is something that you hadn't really considered, right? Um, was there any point in like the studies or anything where you felt like, okay, now I'm actually liking this thing. Um, was there anything specific that made you feel like, okay, I could actually make a career out of this? And, you know, and now like that brought you here."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1203086,
+      "end_ms": 1350984,
+      "text": "Yes, I think on the second— in the second year, that's where I realized. But the first year was actually also tough because we started off with C++. C++ was really tough because it's so abstract and we we have to memorize the algorithms like med sort and the others. We have to memorize it and like chew and pour. You just chew it, you don't need to understand it, you just pour it. When they ask for, um, a med sort like, um, algorithm in the exams, you just pour it. If they ask for a different thing that you've not chewed, you, you pour what, what, what you know, you know. So if there's a different algorithm that you know, you've not, you've not memorized, you just, you just put in what you have, like a mad short one that you have in your mind. So it was like that. It was first year was tough to learn C++ and all that abstract ones. But second year, when after I think the first semester, we had to intern with, uh, with one of my lecturers, um, company called Sabonnet Technologies. Sabonnet Technologies was a term because those that completed or were in KNUST 10 years ago could know about Sabonnet Technologies, one of my lecturers' software companies in Kumasi that everyone wanted to go there like for internship. So that was where most of my development started. That's where I realized some of our seniors were also working there by that time, and they gave us a lot of, um, a lot of learnings, a lot of experience that they also have. And it was core Java. Core Java was, was hard. It was, it was JavaBeans, entity Persistence stuff, classes, a whole lot of classes to just connect to a database. It was crazy. But yeah, I think it was a starting point for most of me and my colleagues. Um, from that point, I think we, we realized that, yeah, we could do some something out of what, what we, we learned."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1351243,
+      "end_ms": 1391412,
+      "text": "Yeah, that's, uh, interesting, you know, like uni in Ghana, in most cases, a similar experience for me, like very abstract things. And, you know, most of the things you learn in the lecture room, you can't really apply them, right? So mostly you have to do some, you know, coding on your own, or like in your case, like do some internship where now everything starts making sense and you can actually like build stuff. Um, so yeah, after KNUST, I, I know that you worked at Haptel. But like, yes, how, how did you start after KNUST? Like, did you immediately get a job after, like, after school? And what happened?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1392012,
+      "end_ms": 1571047,
+      "text": "So I think after school I did, uh, um, TA. I was a teaching assistant for a year, and at the same time I was working with the, the company I mentioned, Sabonet Technologies. So after the year, after the internship Sorry, after the national service, then I moved to Accra. Then in Accra, I got my first job as a mobile engineer with a startup. It was a mess startup, Seya Mobile. So I did some, some time with them. Um, then I'm— it was a long journey for me, so I moved to a transaction processing company. Called Connect. It was also a name back then. There was a— it was a big name back then, Connect Technologies. I did some time with Connect, then I moved to an NGO which is a Grameen Foundation. I did some, some work with Grameen Foundation, mostly project-based. And, um, and after that I moved to Haptel. That's where I did that. About that time it was SMSGH. Yeah, so I did some time with SMSGH. Then I wanted to try some support engineering stuff. I, I, I kind of explore a lot, so I, I moved to a company called Cellulant. It's a Kenyan company. They were doing some work with Ecobank, so I moved in to lead certain support services for their mobile banking. At that time, Ecobank was trying to come out with the mobile banking. So I did some work with that. Then afterwards, I joined a company called, um, what's the name, Kaling Solutions. Yeah, Kaling Solutions. And I rose from there as a senior software developer there. Then I rose to a lead engineer. Mostly they call it technical director. I did some directing. It was also a startup. Um, we do several like, um, stuff, um, projects there. Then from there, I, I got tired of Ghana. I, I got tired of being like, um, Ghana. There's a lot of things that I, I wanted to learn and I wanted to contribute to. Um, I, I didn't have that opportunity in Ghana. So I decided to look around, and, um, the one country that caught my attention was Malaysia because of the same weather. I didn't want to— my friends were moving to Germany at that time, and that was 4 years ago, and I didn't want to directly move to Germany because of the cold. So I decided to do Malaysia, and after Malaysia, and after some time Malaysia, I realized that, yeah, let me, let me just give Germany a try again. I, I moved to Germany."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1572210,
+      "end_ms": 1604399,
+      "text": "That's interesting. So like, uh, you know, like you accumulated a lot of experience in Ghana, like working through the Ghanaian startups, and then you had to make the— I don't know if to call it like the climb to like Malaysian company and now to like German companies. Like, was it really a climb or was it like some sort of smooth transition for you because of your background? Like, also in terms of like the interview experience and all of that, like, was it a smooth transition or was it like very challenging?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1605459,
+      "end_ms": 1762106,
+      "text": "I think for everyone it will be challenging working in Ghana, like the local companies in Ghana, and moving to abroad or working remotely like some colleagues do now. It's quite challenging for the fact that there are several processes, software processes that we don't do in Ghana, like testing, like, sorry, like, um, CI/CD, like, you know, monitoring, like observability, a whole lot, Kubernetes, Kafka. There's a whole lot of stuff that we don't do in our daily work as software developer in Ghana. And if you work remotely or you work with, um, companies abroad, that's where you realize those things that you need to, to, to, to learn. So I think it still was, it was a challenge, um, going through the interviews because I started, when I started interview, that's where I learned Docker. I started to learn Docker to be able to, because most of the code challenge they give you, they expect you to do it in a containerized environment. So you have to do Docker. Then I learned Docker. I learned some unit testing, end-to-end testing, integration testing, then all the testings to come in, contract testing. I needed to learn all those as quick as possible. And even when I was in Ghana, I was not doing professional Python. So, um, I learned some Python, but it was not on a professional level. I was just doing most of Java and PHP and some JavaScript. But when I started interviews, I have to learn what the market demands. So I have to learn Python as quick as possible to be able to do the interviews and do my code challenges in this specific stack. That the company is requesting. So mostly what I do is I go to the role, I look at the role, what the requirements are, I learn them over the weekend. So like React, React, I learned React over a weekend. So, um, when there was a code challenge that involves React, I learned it over the weekend to do it. There was a code challenge also in Python that was— I needed to do it in Django. There was another one in Flask. I have to learn them within a week and within a weekend to just adjust to what— yeah, exactly."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1762284,
+      "end_ms": 1810316,
+      "text": "So that's crazy. And now, like, uh, as someone that has been on both ends of the table, right, like you went through most of these interviews and now you've also like interviewed a couple of folks, um, like what usually are the challenges for most, like people interviewing, um, and you know, like what's being on the other end, what do like interviewers like really look, um, for in, um, like candidates, um, not just technical-wise but also like on a, like the behavioral level, right, like on a personal level. So what are some of the things that, you know, interviewers they can afford to identify candidates that's like qualified candidates."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1810524,
+      "end_ms": 1883946,
+      "text": "Yeah, I think, I think aside technical, what normal interviewers look out for is communication, whether you can communicate whatever you are thinking and you are able to explain those technical topics in a clear, like, sense. For, for the person that is interviewing to understand, and for, um, you to be able to be straightforward as well, like not beat about the bush, just straightforward on what you think the answer is or the solution to whatever, um, technical problem is given to you. And, and another thing is confidence, like they look out for confidence. How confident you are in giving that answer to the question that is being asked is something that, that aside technical, interviewers look out for. And, um, once you are able to pull those things up, I think you, with the technical of course, you, you, you, you will be able to pass the interviews."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1885100,
+      "end_ms": 1922842,
+      "text": "Yeah. Another thing that's also like for me is, uh, like something that I'm still trying to navigate, right? Like, um, you know, when you are an engineer on a team, like you work with multiple teams or even within your teams, and sometimes you need to like get your ideas across to like other engineers, right? To pioneer, you know, some ideas. Like I struggle personally, I struggle with that. Like, uh, you know, how to navigate situations like that? How do you deal with, you know, for someone in your experience, I'm sure you've done that like several times, like how do you, um, deal with situations like that?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1924402,
+      "end_ms": 2044560,
+      "text": "Yeah, I think, um, you just have to calm down. I think so. You just have to find ways. What I do normally to enter into an interview is to be calm and reduce the anxiety there. Anxiety is going to be there because you don't know the person, you really want the job, and you don't want to mess up. Reduce the anxiety, just be calm and try to take the interviews as this is just, um, it's just one of those processes to get to somewhere. So don't, don't feel like those in the interview is, is the, the only thing that you, you need. This is the only interview you need to do. If you don't, if you don't get this, you, you, you, you won't get any kind of job. That's the thing. You just have to be, um, be thoughtful that this interview is not going to like break you or anything in case it doesn't go Um, well, and you need to have several interviews, like, so in preparation for, for just one job that you like. I'll give an example. When I was applying from Ghana, I have to do a lot of applications, a whole lot of applications. Like, I could tell you, like, 100 per week. Just keep applying, and some of them you do an interview at some point. Then you get dropped. So it, it's, it comes like that. So with that, you experience. So mostly what I do is that I go on an interview, then I'm learning from the interview for another one in case it doesn't go well. So if you put that in your mind, you feel very calm, and whatever happens, you, you, you'll be fine."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2044980,
+      "end_ms": 2099840,
+      "text": "Yeah, uh, also like, uh, lately there's, you know, there's been this whole, you know, like buzz around AI and, you know, like ChatGPT, you know, and, and this AI, they are now like, uh, spitting code, you know, being if you give it a prompt, you can, you know, some code to do some functionality, or even in some cases I've seen like AI like build their whole websites and stuff. Like, should we— I've read like so many materials around this topic, right? But just to also get your perspective about this, should we like as software developers be concerned about these, you know, new advanced forms of AI taking our jobs? And also like for people that are currently, you know, studying to become software developers, should they be concerned that, you know, by the time they're done studying, they'll there didn't be any jobs left for them to do?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2100330,
+      "end_ms": 2252094,
+      "text": "No, I— for me, I don't think so. We have these discussions with my colleagues and some other junior developers that, yeah, AI is taking the job and all that. I, I don't feel so. Software engineering is beyond coding. That's why I always say software engineering is not only about the coding. And even the codes that the, the AI generates, you need a lot of computer science fundamentals to be able to understand and make changes. They make mistakes, and these are those, those times that they, they don't come— some of them, some of the code they generate are not production-level code. So it's up to the developer to be able to scrutinize the code and adjust the code as much as possible. But not to use them, I am not against using them. You need to use them For me, I use the Copilot for GitHub and it is good. Sometimes it generates certain code and which you could iterate. And some of them also, I use them as a learning process. So some of the code they generate, I look at the next loop of the generation, the other several of them, then to be able to understand a whole lot of code like logic of how this AI are generating them. And when you modify them, you, that's where you get to that production level. And beyond the coding itself, there's deployment, there's code quality, there's testing, you know, code coverage. There's when alerting, there's monitoring, There's observability. These are things that a code generator will not do for you. And even scaling, there's some scaling, you know, there's some— and beyond that, there's also like how the data, how the solution can be data-centric, like moving data from one point or from one services to another. There's also database replication. There's a whole lot of stuff, right, beyond just coding. So it's— I don't think it will take the job. It will take the job for only the coders. So if you are just a coder, you just code, I think it will take— it will take your job. But if you are—"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2252319,
+      "end_ms": 2267964,
+      "text": "you are a software engineer, you go beyond coding, and, and that's what So you see it more as like an enhancer for like, uh, uh, docs, uh, to make it easier rather than like just taking away like the, the job itself?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2268351,
+      "end_ms": 2272814,
+      "text": "Yes, it's just a tool for, uh, for us to be more efficient, I'll say."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2274634,
+      "end_ms": 2303088,
+      "text": "Uh, that, that makes a lot of sense. Um, I don't know if we have any more time. Uh, I don't want to take too much of your time, but, uh, this has been like, uh, a very session. I've learned a lot from this interview, and I'm sure like other people have also learned a lot. Um, yeah, usually I get messages from people like, how do I connect to, you know, your guests? Um, if people want to connect to you, like, how can they connect, uh, to you?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2303874,
+      "end_ms": 2314179,
+      "text": "I think, um, through LinkedIn. Um, yeah, um, LinkedIn, my name is Adamu Liman. Labaran, full name, on LinkedIn. Yeah, okay."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2314421,
+      "end_ms": 2343819,
+      "text": "Yeah, uh, so yeah, people can, you know, reach out to you on LinkedIn, and I'm sure, like, uh, like, you are a really nice person, like, you like to help people. Um, so I'm sure there's a lot that, uh, you can help, like, folks that are also coming up, and you know that. And we, like, I really appreciate that, and I'm sure, like, And everyone also really appreciates that. Thanks a lot for, for your time. Um, and yeah, enjoy the, the rest of your week."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2343980,
+      "end_ms": 2345946,
+      "text": "Yeah, thank you for having me as well."
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}
