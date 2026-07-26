@@ -1,5 +1,5 @@
 ---
-title: The Weakest Reliable Person Beats the Most Talented One
+title: Richard Brandt: The Weakest Reliable Person Beats the Most Talented One
 description: Richard Brandt on building Codetrain, why reliability wins over talent,
   and how he trained 500+ African developers to compete globally.
 pubDate: '2026-07-12'
@@ -27,7 +27,7 @@ interviewDate: '2022-08-08'
 
 When I asked Richard Brandt what separates the developers who make it from the ones who don't, I braced myself for the usual answer. Talent. Raw problem-solving ability. Maybe grit. Instead he said one word, almost before I finished the question: "Reliability." And then, in case I thought he was hedging, he doubled down with a line that has stuck with me since: "the weakest person that is reliable is, is better than the most talented person that is not reliable."
 
-I did not expect that answer. But the more he explained it, the more it reframed everything else he had told me.
+I did not expect that answer. But the more he explained it, the more it reframed everything else he had told me during this conversation.
 
 ## Rewinding to how he got here
 
@@ -39,7 +39,7 @@ But it was in Chile that the idea for Codetrain quietly assembled itself. Everyw
 
 ## What Codetrain actually does
 
-The mission is simple to state and hard to pull off: "to, um, train professional software developers, uh, and then find ways that they can start a career." The program runs as a one-year bootcamp followed by a three-month career service phase, where students learn how to interview, get introduced to companies, and land jobs or internships.
+The mission is simple to state and hard to pull off: "to train professional software developers and then find ways that they can start a career." The program runs as a one-year bootcamp followed by a three-month career service phase, where students learn how to interview, get introduced to companies, and land jobs or internships.
 
 The design choice Richard keeps coming back to is atmosphere. He wants students to feel less like they are in a classroom and more like they are "working in a startup," so that the leap into real work feels natural rather than jarring. Woven through all of it is an insistence on a "global mindset," strong work ethic, and good values.
 
@@ -73,13 +73,13 @@ His logic is almost brutally practical. "You can't be perfect," he said, "but wh
 
 ## The moment that opened the gateway
 
-Running something like Codetrain cannot be easy, so I asked about the moments that keep him going. His happiest, he said without hesitation, was "when our first, um, like, um, student got a job." That feeling is still "the best feeling even up to now."
+Running something like Codetrain cannot be easy, so I asked about the moments that keep him going. His happiest, he said without hesitation, was "when our first student got a job." That feeling is still "the best feeling even up to now."
 
-The reason it meant so much is quietly moving. If one person could be trained and land an opportunity, then the model could be multiplied by a hundred, a thousand, two or three thousand. "So that actually opened the gateway to, um, everything else that, that happened."
+The reason it meant so much is quietly moving. If one person could be trained and land an opportunity, then the model could be multiplied by a hundred, a thousand, two or three thousand. "So that actually opened the gateway to everything else that happened."
 
 ## Where to start
 
-For anyone reading this who wants in, Richard's practical advice is to find "a very good supportive community," because the journey "can be very lonely," and to join "a, a structured program." Codetrain admits three times a year, September, January, and around May or June, running a one-year bootcamp across frontend, backend, and mobile, with UX and UI now being added. Applications go through codetrain.africa, and there are "some part scholarships and financial aid" available.
+For anyone reading this who wants in, Richard's practical advice is to find "a very good supportive community," because the journey "can be very lonely," and to join " a structured program." Codetrain admits three times a year, September, January, and around May or June, running a one-year bootcamp across frontend, backend, and mobile, with UX and UI now being added. Applications go through codetrain.africa, and there are "some part scholarships and financial aid" available.
 
 After the year, students pass a technical interview to enter the three-month MAGIC program, which culminates in a Demo Day where they present the apps they have built to an audience of local and international employers. That, he said, is "the fun part."
 
