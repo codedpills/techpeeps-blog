@@ -4,5 +4,6 @@ python-dotenv>=1.0
 yt-dlp>=2024.1.0
 assemblyai>=0.30
 anthropic>=0.40
+openai>=1.40          # only needed when LLM_PROVIDER=openai
 PyYAML>=6.0
 # ffmpeg and the `gh` CLI must be installed separately (system packages).
