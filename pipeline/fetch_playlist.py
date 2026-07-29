@@ -56,18 +56,65 @@ def enumerate_playlist(url: str) -> list[tuple[str, str]]:
     return rows
 
 
+def _watch_url(ref: str) -> str:
+    """Accept a full YouTube URL or a bare 11-char video id; return a watch URL."""
+    ref = ref.strip()
+    if ref.startswith(("http://", "https://")):
+        return ref
+    return f"https://www.youtube.com/watch?v={ref}"
+
+
+def add_standalone_videos(st: dict, refs: list[str]) -> int:
+    """Add one-off videos (not part of any playlist) to state.json.
+
+    Each ref is a watch URL or a bare video id. The video is enumerated with the
+    same flat print as a playlist (a single video URL yields one row), and stored
+    with playlist=None so it is NEVER re-scanned by `make fetch`.
+    """
+    added = 0
+    for ref in refs:
+        rows = enumerate_playlist(_watch_url(ref))
+        if not rows:
+            print(f"WARNING: no video found for {ref!r}", file=sys.stderr)
+            continue
+        for vid, title in rows:  # normally exactly one
+            if state.add_video(st, vid, title):  # playlist defaults to None
+                print(f"Added standalone video: {vid}  ({title})")
+                added += 1
+            else:
+                print(f"Already tracked: {vid}  ({title})")
+    return added
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Refresh state.json from all registered playlists."
+        description="Refresh state.json from registered playlists, or add "
+        "standalone videos that don't belong to a playlist."
     )
     parser.add_argument(
         "--playlist",
         help="Register a new playlist URL, then refresh all. Omit to refresh "
         "the playlists already in state.json.",
     )
+    parser.add_argument(
+        "--video",
+        action="append",
+        metavar="URL_OR_ID",
+        help="Add a standalone video (watch URL or bare id) with no playlist. "
+        "Repeatable, or pass a comma-separated list. Does not register a playlist.",
+    )
     args = parser.parse_args()
 
     st = state.load()
+
+    # Standalone video(s): add them and stop — no playlist refresh required.
+    if args.video:
+        refs = [r for item in args.video for r in item.split(",") if r.strip()]
+        added = add_standalone_videos(st, refs)
+        state.save(st)
+        print(f"\n{added} new standalone video(s) added · "
+              f"{len(st['videos'])} total videos in state.json")
+        return 0
 
     # Register a newly provided playlist (from --playlist or, first run, env).
     if args.playlist:

@@ -80,6 +80,7 @@ Re-run only if the voice drifts.
 ```bash
 make fetch                              # refresh ALL registered playlists
 make fetch PLAYLIST=<youtube-url>       # register a new playlist, then refresh all
+make fetch VIDEO=<watch-url|video-id>   # add a standalone video (no playlist)
 make next                  # transcribe + generate + open PR for the next video
 # --- review the PR (see checklist below): confirm speakers, verify quotes,
 #     set the hero clip, edit prose ---
@@ -105,6 +106,23 @@ of the pipeline (transcribe → generate → publish) is unchanged regardless of
 which playlist a video belongs to. The legacy single `playlist_url` field is
 auto-migrated into the list on first load. (The per-video `playlist` tag also
 sets you up to group posts by series on the site later, if you want.)
+
+### Standalone videos (not in any playlist)
+
+Videos don't have to belong to a playlist. The `playlist` field is optional
+(stored as `null`), and `transcribe`/`generate` key off the `video_id` only, so a
+one-off video flows through the pipeline identically. Add one with:
+
+```bash
+make fetch VIDEO=<watch-url>     # e.g. https://www.youtube.com/watch?v=<id>
+make fetch VIDEO=<video-id>      # a bare 11-char id also works
+make fetch VIDEO="<id1>,<id2>"   # comma-separated to add several at once
+```
+
+It records the video with `playlist: null` and, importantly, does **not** add it
+to the `playlists` list, so a later `make fetch` won't try to re-enumerate it.
+Then process it like any other video: `make transcribe ID=<id>` then
+`make generate ID=<id>` (or just `make next`).
 
 Status ladder: `pending → transcribed → drafted → published`. Each step is
 idempotent. To redo work, pass flags as **make variables** (not as `--flags`,
