@@ -116,10 +116,55 @@
       "added_at": "2026-07-09T19:26:39+00:00",
       "updated_at": "2026-07-12T12:00:44+00:00",
       "video_published": "2022-11-25"
+    },
+    "qaBB6v3u1ew": {
+      "title": "Global Coding Odyssey - a Snr. Software Developer's journey across continents #techpeepsDiaspora",
+      "status": "drafted",
+      "guest": "Liman Adamu Labaran",
+      "slug": "why-software-engineering-will-always-be-more-than-just-code",
+      "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/12",
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A41nyeWwXDFrABw2PnG1QUEU",
+      "added_at": "2026-07-18T08:59:33+00:00",
+      "updated_at": "2026-07-18T09:03:18+00:00",
+      "video_published": "2023-06-05"
+    },
+    "_ILg5D34w24": {
+      "title": "Empowering African Tech Professionals - insights from a Senior Project Manager #techpeepsDiaspora",
+      "status": "drafted",
+      "guest": "Jacqueline Nelly",
+      "slug": "its-never-a-5-minute-call-jackleen-nnely-on-the-real-work-of-project-management",
+      "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/13",
+      "playlist": "https://www.youtube.com/playlist?list=PLkTC9ELc7A41nyeWwXDFrABw2PnG1QUEU",
+      "added_at": "2026-07-18T08:59:33+00:00",
+      "updated_at": "2026-07-18T09:13:59+00:00",
+      "video_published": "2023-07-20"
+    },
+    "wBMFAUpEMFQ": {
+      "title": "Driving Business with Tech: A Conversation with a Customer Engineer",
+      "status": "drafted",
+      "guest": "Isaac",
+      "slug": "a-good-software-developer-is-only-as-good-if-they-can-sell-their-product",
+      "pr_url": "https://github.com/codedpills/techpeeps-blog/pull/14",
+      "playlist": null,
+      "added_at": "2026-07-29T16:46:25+00:00",
+      "updated_at": "2026-07-29T16:50:27+00:00",
+      "video_published": "2025-03-28"
+    },
+    "YNmJ9QYTbu8": {
+      "title": "The Hidden Tech Behind Everyday Devices: Norma's Journey into Embedded Systems",
+      "status": "transcribed",
+      "guest": null,
+      "slug": null,
+      "pr_url": null,
+      "playlist": null,
+      "added_at": "2026-07-29T16:46:27+00:00",
+      "updated_at": "2026-07-29T17:50:27+00:00",
+      "video_published": "2025-02-27"
     }
   },
   "playlists": [
     "https://www.youtube.com/playlist?list=PLkTC9ELc7A40QsoHNx2NONNwZdh1gbFY5",
-    "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8"
+    "https://www.youtube.com/playlist?list=PLkTC9ELc7A436eXz_ZuqZ9fys9uZcBMl8",
+    "https://www.youtube.com/playlist?list=PLkTC9ELc7A41nyeWwXDFrABw2PnG1QUEU"
   ]
 }

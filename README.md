@@ -154,6 +154,26 @@ video, and writes the primary id to `videoId` plus **all** part ids to a
 **union** of every part's transcript, and each part is marked `drafted` against
 the one slug/PR so a part can't be re-drafted into a duplicate post later.
 
+### Choosing an LLM provider (Anthropic or OpenAI)
+
+The article writer is provider-agnostic. Pick the default provider and model in
+`.env`:
+
+```bash
+LLM_PROVIDER=anthropic          # or "openai"
+ANTHROPIC_API_KEY=...           # required for anthropic
+ANTHROPIC_MODEL=claude-sonnet-4-6
+OPENAI_API_KEY=...              # required for openai
+OPENAI_MODEL=gpt-4o
+```
+
+`generate.py` and `make_style_guide.py` use `LLM_PROVIDER` + the matching model
+with no other changes. You can also force a provider per model by prefixing it
+`provider:model` (e.g. `openai:gpt-4o`, `anthropic:claude-opus-4-8`); a bare name
+is inferred from its prefix (`gpt*`/`o1*`/`o3*` → OpenAI, `claude*` → Anthropic).
+Install the OpenAI SDK if you use it: `pip install openai` (already in
+`requirements.txt`).
+
 ### A/B comparing models
 
 To choose between models for the writing, run both on the same transcript without
@@ -162,11 +182,12 @@ touching git or opening a PR:
 ```bash
 make compare ID=<id>                                   # defaults: opus vs sonnet
 make compare ID=<id> MODELS=claude-opus-4-8,claude-sonnet-4-6
+make compare ID=<id> MODELS=anthropic:claude-opus-4-8,openai:gpt-4o   # cross-provider
 ```
 
 It writes one article per model to `work/compare/` (gitignored) to read side by
-side. Once you've decided, set `ANTHROPIC_MODEL` in `.env` and run a normal
-`make generate ID=<id> FORCE=1`.
+side. Once you've decided, set `LLM_PROVIDER` + the matching model in `.env` and
+run a normal `make generate ID=<id> FORCE=1`.
 
 ### Dates: published vs. interview
 

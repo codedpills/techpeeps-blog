@@ -9,6 +9,8 @@ model. Nothing it writes is committed (work/ is gitignored).
 Usage:
   python pipeline/compare_models.py <video_id>
   python pipeline/compare_models.py <video_id> --models claude-opus-4-8,claude-sonnet-4-6
+  # cross-provider: prefix a model with its provider
+  python pipeline/compare_models.py <video_id> --models anthropic:claude-opus-4-8,openai:gpt-4o
 """
 
 from __future__ import annotations
@@ -33,7 +35,8 @@ DEFAULT_MODELS = ["claude-opus-4-8", "claude-sonnet-4-6"]
 def main() -> int:
     ap = argparse.ArgumentParser(description="A/B two models on one transcript.")
     ap.add_argument("video_id")
-    ap.add_argument("--models", help="Comma-separated model ids (default opus,sonnet).")
+    ap.add_argument("--models", help="Comma-separated model ids, optionally "
+                    "'provider:model' to mix providers (default opus,sonnet).")
     args = ap.parse_args()
 
     if not args.video_id:
@@ -82,7 +85,7 @@ def main() -> int:
             continue
         # Keep just the article (frontmatter + body), drop the CLIP_CANDIDATES JSON.
         article, _ = generate.split_output(out)
-        safe_model = model.replace("/", "_")
+        safe_model = model.replace("/", "_").replace(":", "_")
         path = OUT_DIR / f"{args.video_id}__{safe_model}.md"
         path.write_text(article + "\n", encoding="utf-8")
         written.append(path)
@@ -93,7 +96,8 @@ def main() -> int:
         return 1
 
     print("\nCompare the files above side by side. Nothing was committed or pushed.")
-    print("To use a model for real runs, set ANTHROPIC_MODEL in .env and run "
+    print("To use a model for real runs, set the provider + model in .env "
+          "(LLM_PROVIDER + ANTHROPIC_MODEL or OPENAI_MODEL) and run "
           "`make generate ID=<id> FORCE=1`.")
     return 0
 
