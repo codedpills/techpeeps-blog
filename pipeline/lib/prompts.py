@@ -83,7 +83,9 @@ Diarized transcript (HOST / GUEST labels, with timestamps):
 
 Instructions:
 - Write a narrative feature, NOT a raw Q&A dump. Open with a hook drawn from the
-  most striking thing the guest said.
+  most striking thing the guest said, if it can be quoted verbatim. Otherwise, 
+  open with a vivid scene or a concrete detail from the transcript. Avoid generic 
+  or abstract openers.
 - TITLE: craft a distinctive, curiosity-sparking title built from the single most
   specific or surprising thing in THIS story: a tension, a turning point, a vivid
   detail, or a striking line the guest actually said. It should be impossible to
@@ -92,7 +94,7 @@ Instructions:
   shape (a short declarative statement or two often works well). Keep it honest to
   the transcript — intriguing, never clickbait or overstated.
 - Use the host's voice for framing, transitions, and reflection; let the guest
-  carry the substance.
+  carry the substance. Do not refer to the host in the third person.
 - Quote the guest ONLY with words that appear verbatim in the transcript, in
   quotation marks. Paraphrase is allowed but must clearly be paraphrase — never
   invent or embellish a quote.
