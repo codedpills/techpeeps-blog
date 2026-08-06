@@ -1,5 +1,5 @@
 ---
-title: Isaac Attuah: A Good Software Developer Is Only as Good If They Can Sell Their Product
+title: "Isaac Attuah: A Good Software Developer Is Only as Good If They Can Sell Their Product"
 description: Isaac left KNUST after one year to study in Miami, then landed a role
   at Google Cloud that lives between the code and the sale.
 pubDate: '2026-08-03'
