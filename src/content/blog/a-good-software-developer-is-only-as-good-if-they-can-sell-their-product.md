@@ -3,7 +3,7 @@ title: A Good Software Developer Is Only as Good If They Can Sell Their Product
 description: Isaac left KNUST after one year to study in Miami, then landed a role
   at Google Cloud that lives between the code and the sale.
 pubDate: '2026-08-03'
-guest: Isaac
+guest: Isaac Attuah
 guestBio: Customer engineer at Google Cloud, originally from Accra, Ghana. Studied
   computer science at the University of Miami after a year at KNUST.
 videoId: wBMFAUpEMFQ
@@ -24,13 +24,13 @@ draft: true
 interviewDate: '2025-03-28'
 ---
 
-Most of the profiles on this show are software engineers, heads down in code. Isaac sits somewhere stranger. He is a customer engineer at Google Cloud, which means he spends his days talking, translating, and occasionally talking a CEO and a data scientist through the same product on back to back calls. When I asked him how much of the job is technical and how much is sales, he gave me the cleanest answer I have heard for why the two cannot be separated: "a good software developer is only as good if they can sell their product," and "a good salesperson is only as good if their products are good."
+Most of the profiles on this show are software engineers, heads down in code. Isaac sits somewhere unusual. He is a customer engineer at Google Cloud, which means he spends his days talking, translating, and occasionally talking a CEO and a data scientist through the same product on back to back calls. When I asked him how much of the job is technical and how much is sales, he gave me the cleanest answer I have heard for why the two cannot be separated: "a good software developer is only as good if they can sell their product," and "a good salesperson is only as good if their products are good."
 
-That tension, code on one side and persuasion on the other, runs through his whole story. So let me rewind to how he got there.
+That tension, code on one side and persuasion on the other, runs through his whole story. So let me take you back to how he got there.
 
 ## What a customer engineer actually does
 
-Readers may wonder, as I did, what the title even means. Isaac has an analogy ready. A customer engineer is "a technical liaison within a given engagement," and those engagements are usually sales conversations.
+Readers may wonder, as I did, what the title even means. Isaac had an analogy ready. A customer engineer is "a technical liaison within a given engagement," and those engagements are usually sales conversations.
 
 The cloud, he explained, is more than storage. It includes "storage, data analytics," compute, and a spread of services companies buy by the unit. Sellers sell those services, but "within those sales engagements, you always need someone technical to translate a lot of the, the technical jargon in between both parties." That translator is him.
 
@@ -68,7 +68,7 @@ The path to Google ran through tutoring for all four college years, a Google-spo
 
 ## Scaling a course from 20 students to 1,000
 
-One project stuck with me. In 2017 Isaac took part in a bootcamp called Project IceWest at the University of Ghana, learning to build phone games in a beginner language called Processing. An idea in that group, run through the Nseta Foundation, was to take the course online and grow it.
+In 2017 Isaac took part in a bootcamp called Project IceWest at the University of Ghana, learning to build phone games in a beginner language called Processing. An idea in that group, run through the Nseta Foundation, was to take the course online and grow it.
 
 The scale story is the good part. They went from "20 students in like 2017" to "about 1,000 students across Africa in 2020," with roughly 700 finishing. At that size, manual grading collapsed, so "we had to literally design scripts to grade students' assignments." Running an online course across Africa during COVID also sharpened the empathy he first built as a tutor. The initiative is still going, now pivoted toward AI enablement.
 
@@ -86,4 +86,4 @@ He suggested working in "focus bursts," dedicating a few weeks to one framework,
 
 Then be prepared, and put yourself out there. He kept his LinkedIn updated through college "even when it didn't have a lot of the clicks and the hype back then," building the personal branding muscle before it paid off. And he was firm that "you also can't do it alone," especially for anyone who is "one of the only people or the only minority involved."
 
-Isaac posts about Google Cloud initiatives and community events, both in the US and back home, and he is happy to be reached on LinkedIn, which he pointed to as the best place to connect. The full conversation is worth your time in the video above.
+Isaac posts about Google Cloud initiatives and community events, both in the US and back home, and he is happy to be reached on [LinkedIn](https://www.linkedin.com/in/isaacattuah/), which he pointed to as the best place to connect. The full conversation is worth your time in the video above.
