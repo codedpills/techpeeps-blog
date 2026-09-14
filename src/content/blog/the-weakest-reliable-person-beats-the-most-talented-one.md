@@ -2,7 +2,7 @@
 title: "Richard Brandt: The Weakest Reliable Person Beats the Most Talented One"
 description: Richard Brandt on building Codetrain, why reliability wins over talent,
   and how he trained 500+ African developers to compete globally.
-pubDate: '2026-07-12'
+pubDate: '2026-09-14'
 guest: Richard Brandt
 guestBio: Founder and CEO of Codetrain Africa, a Ghana-based coding bootcamp that has trained
   over 500 software developers and helps them launch tech careers across Africa and
