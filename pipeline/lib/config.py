@@ -45,8 +45,17 @@ def get(key: str, default: str = "") -> str:
     return os.environ.get(key, default).strip() or default
 
 
+def llm_provider() -> str:
+    """Default LLM provider: 'anthropic' (default) or 'openai'."""
+    return get("LLM_PROVIDER", "anthropic").lower()
+
+
 def anthropic_model() -> str:
     return get("ANTHROPIC_MODEL", "claude-sonnet-4-6")
+
+
+def openai_model() -> str:
+    return get("OPENAI_MODEL", "gpt-4o")
 
 
 def ytdlp_cmd() -> list[str]:

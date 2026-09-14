@@ -80,6 +80,7 @@ Re-run only if the voice drifts.
 ```bash
 make fetch                              # refresh ALL registered playlists
 make fetch PLAYLIST=<youtube-url>       # register a new playlist, then refresh all
+make fetch VIDEO=<watch-url|video-id>   # add a standalone video (no playlist)
 make next                  # transcribe + generate + open PR for the next video
 # --- review the PR (see checklist below): confirm speakers, verify quotes,
 #     set the hero clip, edit prose ---
@@ -105,6 +106,23 @@ of the pipeline (transcribe → generate → publish) is unchanged regardless of
 which playlist a video belongs to. The legacy single `playlist_url` field is
 auto-migrated into the list on first load. (The per-video `playlist` tag also
 sets you up to group posts by series on the site later, if you want.)
+
+### Standalone videos (not in any playlist)
+
+Videos don't have to belong to a playlist. The `playlist` field is optional
+(stored as `null`), and `transcribe`/`generate` key off the `video_id` only, so a
+one-off video flows through the pipeline identically. Add one with:
+
+```bash
+make fetch VIDEO=<watch-url>     # e.g. https://www.youtube.com/watch?v=<id>
+make fetch VIDEO=<video-id>      # a bare 11-char id also works
+make fetch VIDEO="<id1>,<id2>"   # comma-separated to add several at once
+```
+
+It records the video with `playlist: null` and, importantly, does **not** add it
+to the `playlists` list, so a later `make fetch` won't try to re-enumerate it.
+Then process it like any other video: `make transcribe ID=<id>` then
+`make generate ID=<id>` (or just `make next`).
 
 Status ladder: `pending → transcribed → drafted → published`. Each step is
 idempotent. To redo work, pass flags as **make variables** (not as `--flags`,
@@ -136,6 +154,26 @@ video, and writes the primary id to `videoId` plus **all** part ids to a
 **union** of every part's transcript, and each part is marked `drafted` against
 the one slug/PR so a part can't be re-drafted into a duplicate post later.
 
+### Choosing an LLM provider (Anthropic or OpenAI)
+
+The article writer is provider-agnostic. Pick the default provider and model in
+`.env`:
+
+```bash
+LLM_PROVIDER=anthropic          # or "openai"
+ANTHROPIC_API_KEY=...           # required for anthropic
+ANTHROPIC_MODEL=claude-sonnet-4-6
+OPENAI_API_KEY=...              # required for openai
+OPENAI_MODEL=gpt-4o
+```
+
+`generate.py` and `make_style_guide.py` use `LLM_PROVIDER` + the matching model
+with no other changes. You can also force a provider per model by prefixing it
+`provider:model` (e.g. `openai:gpt-4o`, `anthropic:claude-opus-4-8`); a bare name
+is inferred from its prefix (`gpt*`/`o1*`/`o3*` → OpenAI, `claude*` → Anthropic).
+Install the OpenAI SDK if you use it: `pip install openai` (already in
+`requirements.txt`).
+
 ### A/B comparing models
 
 To choose between models for the writing, run both on the same transcript without
@@ -144,11 +182,12 @@ touching git or opening a PR:
 ```bash
 make compare ID=<id>                                   # defaults: opus vs sonnet
 make compare ID=<id> MODELS=claude-opus-4-8,claude-sonnet-4-6
+make compare ID=<id> MODELS=anthropic:claude-opus-4-8,openai:gpt-4o   # cross-provider
 ```
 
 It writes one article per model to `work/compare/` (gitignored) to read side by
-side. Once you've decided, set `ANTHROPIC_MODEL` in `.env` and run a normal
-`make generate ID=<id> FORCE=1`.
+side. Once you've decided, set `LLM_PROVIDER` + the matching model in `.env` and
+run a normal `make generate ID=<id> FORCE=1`.
 
 ### Dates: published vs. interview
 

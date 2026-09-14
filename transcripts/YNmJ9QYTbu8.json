@@ -1,0 +1,375 @@
+{
+  "video_id": "YNmJ9QYTbu8",
+  "title": "The Hidden Tech Behind Everyday Devices: Norma's Journey into Embedded Systems",
+  "video_published_at": "2025-02-27",
+  "duration_sec": 2202,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 0,
+      "end_ms": 13508,
+      "text": "Hi everyone. Welcome again to another episode of TechPeeps Diaspora. Today my guest is Norma. She's an embedded systems engineer, and I'm gonna hand it over to Norma to briefly introduce herself. Hi Norma, how are you doing?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 13508,
+      "end_ms": 31018,
+      "text": "Hi, my name is Norma. Um, I'm an embedded systems engineer. I've been doing this for 2 years now. Actually, it was 2 years, 3 days ago. Embedded systems is really a thing that I'm really passionate about, so I'm excited I have this opportunity."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 31018,
+      "end_ms": 49192,
+      "text": "Nice. Uh, yeah, I have a vague idea of what embedded systems engineering is. Um, and I think maybe similar for other people. Uh, what exactly, uh, is embedded systems engineering? Um, what do you do, um, on your day-to-day job?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 49192,
+      "end_ms": 112823,
+      "text": "Embedded systems engineering is in I guess the simplest way I can put it is it's like a mashup between software engineering and then electrical engineering and sometimes mechanical engineering. On a day-to-day, you work with systems, you work with controllers, you work with software that tells hardware what to do, essentially. So embedded systems exist in most systems that are smart and most systems that are able to do multiple tasks that are still related to the same thing, like a washing machine. Yes, it tells you how long it's been going. It tells you how much water is in the washing machine and everything, but all these individual tasks come together so that you can have something washed and possibly dried as well. So it's a focus between designing how this system or this machine should be able to accomplish whatever task, and then what software that machine is going to relate to, to be able to understand what you want it to do. twice a match between."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 112823,
+      "end_ms": 155819,
+      "text": "Yeah, sounds really complicated. Like, uh, I mean, it, it sounds like, uh, it touches different, um, fields. So you need to write, uh, first design what the system is gonna look like. I'm sure like there might be some 3D modeling in there or like circuiting, circuit designs in there. And then probably you also need to write some code on how the you know, different components, uh, interact. And then is, is there some hardware also involved? Do you have to also like, you know, actually build the hardware components and test this out? It sounds interesting, but at the same time it sounds also very, very complex."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 155819,
+      "end_ms": 236568,
+      "text": "With embedded systems, it's great to have the idea or knowledge of what 3D design is. It's great to have an idea of electrical wiring stuff. It's great to have an idea of building hardware. However, how that looks to you as an embedded systems engineer depends on where you are working, depends on the company you're working with, and it also depends on your role in that company. Currently, in the company that I'm working at, we have groups of people who come up with the idea for how this machine should operate, and then we have systems engineers who work with mechanical engineers to decide, okay, is this is the 3D model, this is how we want it to physically look and how we want it to physically move. Systems engineers would also interact with electrical teams to decide, okay, well, we're going to have harnessing this way, this is how our various sensors are going to behave, and this is the feedback we need to be able to work on code. And then systems engineers would interact with the software engineers, which is where I would come in. That's my current role. So I work as an embedded systems engineer. I work mostly on the software that would interact with all of these 3 areas of the system, and then I also get the opportunity to go out and actually test it out on machines."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 236568,
+      "end_ms": 264939,
+      "text": "So, um, you mentioned like in your current company there are different roles, and I'm curious like what's, you know, the organizational structure or like team structure for you know, your role typically is, it's, do you, can you give me like a glimpse of, you know, what someone should expect or what they would expect like when they go first go into their first role as an embedded systems engineer in a company like yours?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 264939,
+      "end_ms": 322667,
+      "text": "I think you should definitely expect to do some kind of programming and you should definitely expect to encounter concepts in embedded systems like concurrency, understanding how the general system works, which you shouldn't necessarily know how it works immediately because it's not your design, but you can interact with people, you can interact with documents and read and understand how these parts should interact with each other to design your code according to what you have available. So I guess if you're looking for an opportunity to work as an embedded systems engineer, You do need some programming. Um, and it helps to know some circuitry. It also helps to know a bit of like mechanical design, not in depth, but having an idea of both of those makes it easier to work on embedded systems. Mm-hmm."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 322875,
+      "end_ms": 351105,
+      "text": "With the programming, are there like, uh, specific programming languages that you need to know? 'Cause I remember back in school, like, um, in computing or engineering class, uh, we did some kind of like Arduino programming. I imagine like you might use some form of high-level programming as well, uh, or is this gonna be like low-level programming stuff? What kind of programming languages or programming do you do in this particular role?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 351105,
+      "end_ms": 493545,
+      "text": "Programming languages that you can use in this role, it varies again depending on the company you're at. Some people use C++, some people use C. Um, I'm actually glad you brought up Arduino because That is like a small-scale representation of what it's like working as an embedded systems engineer. You write some code or you build some code and then you flash it onto the Arduino and then you get to test it out and see if it behaves the way that you want it to. It's just in embedded systems rules, it becomes a maximized form of that same situation. So while I have like a microcontroller for my Arduino, now I'm just gonna have a controller. I'm just gonna have a much bigger bigger controller. I'm just gonna have much higher voltages coming out. Depending on what kind of controller your company decides to use, that can determine what languages you guys are gonna be programming in. Some companies would like to go straight ahead and code in C++ and spend the time building it and then sending it away onto the controller and testing it out. Some people would also like to use something I'm— I guess a lot of people have become familiar with recently is MATLAB. MathWorks MATLAB Simulink. It has the ability also to compile code for you when you have made your Simulink structures, and then you would have C code that you can actually flash to a controller and then get tested, get stuff tested. I think it has support for Arduino as well, so it really depends. But if you are able to pick a standard programming language that is used in embedded, which I would say either C or C++, and then you have a good understanding of how sensors work, or how, how to read parts documents, or how to read documents that describe how a sensor works, or how a particular feature that you're adding to your machine works, it makes a lot of difference. It helps a lot. But really, if you have good communication skills, and then if you have a solid programming language and you're able to read these part documents, I think you're on your way. You're on fast track to get an opportunity in the embedded world."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 493545,
+      "end_ms": 507628,
+      "text": "Oh, sounds, um, still sounds like a bit of, you know, you, you need to have a solid background in, and I guess like you need to have some form of like, uh, engineering background."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 508402,
+      "end_ms": 508515,
+      "text": "Yes."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 508644,
+      "end_ms": 536943,
+      "text": "Um, probably electronics engineering or I don't know what majors you need to, you know, have to be able to go into to like this role? Like, is there any particular major? And I don't imagine like with, you know, this particular field you can just go to a bootcamp. I don't even know if they have bootcamps for these, but I imagine like you have to have a CS major or something. Like what majors do you need to, to, to know?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 536943,
+      "end_ms": 803547,
+      "text": "Actually, I think if I were listing them, I'd probably say, because I did electrical and electronics engineering at Ashesi, I would say that would be like number one, but that's just because I did it. Electrical electronics engineering, and then I would say mechanical engineering is helpful, so maybe mechanical engineering. And then I'd probably go from electrical electronics to computer engineering and then mechanical engineering. I think computer science is helpful But it depends on how you were taught or what you got to do in whatever college you go to, because some colleges have made it possible so that if you're doing computer science, you can also do some things in the field of electronics. You can get the feel of how to use electronics and stuff like that. But some also focus mainly on like algorithms and data structures and everything computer scientists are so interested in. Um, but definitely knowing some software and knowing some electronics is like central to the idea. So if, if you have the opportunity to learn, I would, I would say the easiest thing for me was learning embedded C. And people talk about C or C# or C++ being like super complicated and everything. I really think you can read a book and do it. Um, There are countless books out there, so you can just look at them. There's a lot of open-source coding sites that you can practice on. And then once you have a feel of just being able to program basic things in C, because again, you don't want something overly complex and making your controller's brain just not be able to process what you're doing fast enough to get the actions you want. So learn the basics of C, and then then you can look at using an Arduino. And rather than using the already existing libraries of the Arduino, you can try to create your own libraries for how components should work. So that would be like, I guess, a scaled-down version. So if you're able to learn C basics of C, and then using an Arduino going over. the existing library code first, you'd be able to tell, okay, this is actually very similar to what I just did in learning just C. After understanding how that works, it would be nice to try to recreate those in C without using the existing libraries. And after figuring that out, or at least during the process of figuring that out, you'd realize that, okay, to be able to do this, I actually need to know how this LED works, so I need to know how this buzzer works. So I need to know how these, you know, components, all the little things that come with the Arduino kits, you'd need to figure out how to search them up on the internet, find their part numbers and search them up and understand, okay, these are what these pins mean. This is how to interpret what comes through here. This is how to read this voltage, then you can move ahead to a controller that is not as popular or doesn't have preexisting libraries. So one of the controllers that I used in school was the Freedom Board. It has an ARM controller, which a lot of companies are really excited to see on your resume. If you mention that you have worked with an ARM controller, an ARM-based controller, they would be very impressed. And if you're able to explain how you used it to make whatever projects that you have created. It really helps. So in using something like that, because it doesn't have documented libraries on, okay, well, this is how to use an LED with this controller, this is how to send code and then have a buzzer do this sequence of beats and everything, you'd figure it out. And being able to figure that out by searching on the information of these components and how this controller works and what these lights mean on this board Mm-hmm. Is a very important skill to have. And if you're able to do that, you'd be able to do a lot of work in the embedded world because that's what I did and that was the only background that I had. And I did my interview and I'm able to do my work every day."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 803547,
+      "end_ms": 826783,
+      "text": "Now about, uh, interviews and like what a job search is like for, you know, embedded system roles. I'm familiar with how it is for, you know, software engineering roles and coding roles, but I don't think I've heard, you know, how interviews are conducted for like this role. What's the interview process like?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 826783,
+      "end_ms": 912174,
+      "text": "Again, it varies from company to company. I've worked in an embedded systems role in 2 different companies. In one company, um, they stuck to the regular looking at your resume. Okay, tell me about this project you worked on. Tell me about this other project you worked on. So a thing that you should be very conscious about is knowing every detail of your projects and not just being a person who says, oh, I wrote the code and then this part works. Being able to clearly articulate that, okay, this is how this part works, this is how this other part works, and to be able to get clean code, to be able to get code that actually makes sense to try and implement in the real world. I try to explore on creating my own personal libraries for how this thing is going to work. A thing that people are also concerned about is how much space you're gonna have on that controller's memory. So you want to write code that definitely covers the functionality of each component, but covers just the functionality that you need or is necessary that you have space for to be able to put all of that on the controller and have all the features that you want to be working together interact with each other. So knowing your project, but also knowing keywords that embedded systems engineers would be looking for."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 912174,
+      "end_ms": 912977,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 912977,
+      "end_ms": 1083064,
+      "text": "They would want to hear things like the controller's— the actual ID for the controller. Like, do you know what is on this board, or are you just calling it a Freedom board? Do you know how much space— you know, your flash memory? Do you know the voltage ranges that your controller gives? Do you know the frequency? And then given that information about the controller, do you think that these components that you're interacting with the controller with— or do you, do you know your hardware pinouts as well to be able to visualize that, okay, if I'm gonna need all of these pinouts, then I'm going to use this number of pinouts in a way that would make my project look less complicated, or I'll have enough pins with this board to be able to do the project that I want to do and still have it working right, but also looking good and also working like as fast as I would need it to. So you need to know the keywords to, to mention, and it would also be great for you to be able to tell them about protocols that you have encountered while you are learning or while you were making your project. Is I2C. In real systems, I work on vehicles, so in a lot of these systems, one of the main network protocols you'd want to have an idea of is CAN. CAN networks are very, very important. They're used in like every vehicle, so it's great to have an idea of how that works. And even if you haven't interacted with CAN, it's just great to know about it, be able to identify it, so that in an interview you can say, okay, I haven't interacted with it, but I know this is what it does, this is how to interact with it, this is how to use it. And based on that alone, you should be able to pick it up in an office setting. In other interviews, there's also the STAR method, them just expecting that you have good communication skills, you're able to tell them how you've handled an issue in a very decent way that they feel like, okay, our company is actually going to be able to have you on our team, actually able to work with someone like you. So you need to have a good balance between the two because one of the interviews was more skewed towards what I had done or what I have done on my resume and And so you need to know every bit of it. They don't want a situation where it's like, oh, you wrote this project, and then they ask you and you're like, oh yeah, um, for this project, and then you give a summary of it like you don't actually know what happened in the project. And they also want someone who's like a real person and can tell you, okay, I've encountered a situation like this and this is what has happened. So the STAR method and really knowing your project."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1083064,
+      "end_ms": 1083419,
+      "text": "Project."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1083953,
+      "end_ms": 1084338,
+      "text": "Okay."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1084338,
+      "end_ms": 1123092,
+      "text": "Uh, and probably like you said, it also depends on the companies. Uh, like, is there an expectation of, you know, because in like, uh, software, some software engineering roles interviews, you might be given like a test, you know, a coding test to implement something. And I'm curious if, you know, like for these roles also, you might be, it's possible that you might be given like a test to you know, make something work and show, show that off. Have you had, or at least, uh, maybe not in your personal experience, but are there cases where you could also have those?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1123092,
+      "end_ms": 1263672,
+      "text": "Before I got into this role, I did a lot of research. Like I went down the YouTube rabbit hole of what to prepare for, for an interview for embedded systems. I came across people who have, um, had interview questions. So during the interview, they would just ask you random questions about controllers, which is why I mentioned earlier that you should know the details of your controller off the bat, like your memory size, your frequency, everything. Know it off the bat. But don't memorize everything as well. Just know the, the main details about it. And these are the kinds of things that when you're in an embedded systems class or something, professors would touch on when they're introducing a new controller to you. So it's just those basic things, but then they would also probably ask you, okay, um, how many bits can an int8 item hold? Things like that they would be able to ask you in, um, interview questions where they're trying to assess whether you understand what's going on or not. And then there are also people who had interviews where they would be asked to program something in C So again, if you know C, that'd be really helpful. And then if they asked you to do it in C or C++ as well, I mean, if you have a good understanding of both, that's great. But more often than not, they would ask you to do it in your preferred language, and my preferred language is C, so I would just do that. So they can ask you to program something, they can ask you to just— they would just ask you orally to mention certain things that they expect expect people to know off the top of their heads, which would all have relation to programming. They would ask you what things like volatile mean and all sorts of questions like that. I haven't ever come across a situation where they would actually ask someone to program a controller and have something happen, so I don't know if that is going to happen, has happened to someone and I just haven't met them, or But I imagine that it would be a bit difficult to send over like controllers and everything and expect that a person would program all of that and then show it to you on camera. I, I think more of them are just software, um, coding exams that you would do. So."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1263672,
+      "end_ms": 1285972,
+      "text": "Yeah, I, I guess like apart from like the logistics issue, you know, sending stuff over, but also like it's easier for them to ask, uh, like assess someone just by, you know, them walking them through their, their projects and their, you know, portfolio. It's so easy to know when someone doesn't really know what they're saying, right?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1285972,
+      "end_ms": 1286421,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1286421,
+      "end_ms": 1310681,
+      "text": "And they have like the experience, so you can't really lie your way through that. So you mentioned, um, you know, like you had your bachelor's in Ashesi, like in, in Ghana. Is that When you decided you wanted to be an embedded systems engineer, this was something that you were always passionate about, and that is why you studied electronics engineering at Ashesi."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1310681,
+      "end_ms": 1579084,
+      "text": "Actually, I studied electrical and electronics engineering at Ashesi because I didn't get the chance to study mechanical engineering, and I wanted to study mechanical because I was trying to get out of studying medicine, so At a point when I was very, very young, I told my parents that I wanted to do medicine. And then as I was growing older, I decided I didn't want to do medicine anymore because the idea of blood was just not a thing for me. I didn't like the idea of like going further and further and actually having responsibility for people's bodies and anything of the sort. So I was just like, okay, that's not for me. But after I graduated high school and I went— I was going to college, I was debating with my dad whether or not I could do mechanical engineering. And he and a few of my uncles convinced me, you know, mechanical engineering might not be as great as you think. Or it's— they just had all sorts of things. I guess maybe they weren't confident that I'd be able to do it, so they were trying to dissuade me. So then I conceded and I said, okay, let's just try electrical. And my plan was, at Ashesi, you can switch majors after a year. Since in the first year everybody in engineering stream basically just about the same thing, it wouldn't be too hard for me to switch. And I went in there and I did electrical, and I didn't like Physics 1, which is the what a lot of mechanical engineering is based on. So I decided I was sticking with electrical, and I still hadn't decided I wanted to do embedded yet. But in that first year, we did a course with introduction to engineering, which was really cool. We got to work with an Arduino. I worked with a team and we built a weather station project. It's able to read humidity, water levels, temperature and all of that wonderful stuff. It was really cool for me to see like, oh wow, we wrote a program and then we got some feedback from an Arduino controller and like it displays information. It's like really cool. But then at the back of my head I was like, but I didn't really program it, I just used existing libraries. I just like knew how to wire up a few of these sensors and then it was able to do stuff. Then moving along in electrical engineering, I came across a programming class. I did programming and I thought it was really awesome. Then I did— the next semester we did an electronics class and I thought, wow, this is really cool too. And at that time I still didn't have any idea that such a thing as embedded systems existed. In the third year, I think, in my third year, in our final semester is when we had the opportunity to take the embedded systems class and I was just mind-blown. I was like, this is what I'm gonna do with my life. I was telling everybody, this is what I'm gonna do, this is what I'm gonna do. I started talking to professors and asking them, okay, so if I want to do this, are there any companies I can go and do internships at? Are there places I can go and, you know, like practice this thing that I'm learning? Can I do this as a career? And then the reality hit. There's actually no place, or at least at the time, there was no place that actually had like a well-defined embedded systems role. So every professor I have interacted with, thinking, you know, like, they teach this, they must have learned to implement this at a company somewhere, that's how they're able to teach us how to implement it. And everybody went outside of the country to go and learn in a university somewhere and come back and teach us. So they all were like, sorry, there isn't actually a well-defined place. I scoured LinkedIn like crazy. And I found nothing in Ghana that I could go ahead and be studying. So I decided, okay, let's just try other places. And I had family in the US that I could come and like stay with as I was searching for at least for a month or two. So I came after much convincing of my parents. I came. After I had gotten the opportunity to work at an embedded systems company, or a company that was looking for an embedded systems engineer. So after I got that, then I was able to move here and get a place to start working."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1579084,
+      "end_ms": 1609865,
+      "text": "How has it been like, um, so far? Like, like, was it harder transitioning from Ghana to like the US, and especially like in the in the job sector? Like, were there any, you know, serious, um, cultural changes? Like, I know like the work culture in Ghana and in other like places, uh, could be very like divergent. Were, were there any ones which were very notable for you?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1609865,
+      "end_ms": 1744198,
+      "text": "Um, I think yes, actually in my first job and my second job, I realized there was a difference between the way that I had worked or had internships in Ghana versus here. So I did have an opportunity to do an internship that exposed me to something close to embedded systems, but that was still at Ashesi though. Ashesi does this thing at the AIX camp and invites students to come and take part of— high school students to come and take part of things like robotics or engineering or creative arts, things like that. And so I happened to be a coach at Ashesi at the time, so I got to introduce high school students to working with an Arduino, making just a small system that does things. So I got the opportunity to do that, and that working culture is kind of— it's very interesting, it's very exciting. It gives you the opportunity to coach people and learn from them. It also gives you the opportunity to learn more about a thing that you already thought you knew. When I first moved here and I started working, it was quite different in that they kind of expect you to know a few things, but then they also expect you to shadow them for a couple of weeks to actually understand it, which I was really grateful for. Being able to shadow people is one of the best ways of integrating with a company because you learn not only how things are normally done in that field, but you also learn how they are done in relation to that company. So that was really, really exciting, really, really helpful, because then I knew, okay, if I don't know, if I need this, I could definitely talk to this person or this other person. So those were things that I, I thought were really cool, different from the culture that I had, because it— but then again, it would be different because I wasn't necessarily working as a coach when I came here. I was working as a coach in Ghana, and so they kind of expect you to already know a few things, so go ahead and do these things. Whereas over here, I was able to shadow people and then, um, learn from them to do my job. So that's just about that."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1744198,
+      "end_ms": 1751442,
+      "text": "What's the most interesting thing for you about like being an embedded systems engineer?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1751442,
+      "end_ms": 1768325,
+      "text": "Everything. I like everything about it. I like being able to write code. I like being able to assess other people's code as well. I like being able to go out and test the code and see if it actually works. Mm-hmm. I think the most exciting part is to go outside and test out the thing that you have just made."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1768325,
+      "end_ms": 1775320,
+      "text": "What's that like going outside? And you, you mentioned like in your current company you mostly work with cars. Is this okay?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1775368,
+      "end_ms": 1775545,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1775593,
+      "end_ms": 1794824,
+      "text": "This is just in movies, right? Like where there's a live, you know, there's this joke, um, the best way to test if your code works in an airplane is to be on board when the pilot is flying. And, you know, is, is that something like that where you go to the cars and their factories?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1794824,
+      "end_ms": 1811905,
+      "text": "And I work on off-road vehicles actually, so they're not necessarily cars, but they are still like vehicles. So it could be anything from a tractor to a pile driver to a combine. It could be anything."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1811905,
+      "end_ms": 1813077,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1813077,
+      "end_ms": 1879035,
+      "text": "Um, and what I like the most is after you have like a defined project and then you have written code, you can actually drive out to the machine that you are designing for, writing code for, and you can actually like drive it around, test it like physically. You don't hand over the code to somebody and be like, okay, um, I wrote this and I think it should do this, so please go ahead and test it for me. You're actually able to test it out. and diagnose problems if it doesn't work out. So this is where I, I was talking about using CAN a lot because CAN is like the way that the controllers in the vehicle talk to each other in regular cars, in trucks. So getting familiar with CAN protocols is really good because if you're able to use that and use software that's able to interpret CAN to tell you exactly what's going on, you can tell, okay, The machine can hear what I'm asking it to do, but it's not doing what I'm asking it to do because one part of the machine can hear it and the other part can't, or something of the sort. You get the chance to actually put your software on there and then move it around and see what happens."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1879035,
+      "end_ms": 1889769,
+      "text": "Sounds fun. Like, I like the driving around part, but— and, uh, what would you say has been like the most challenging, um, thing for you so far?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1890340,
+      "end_ms": 1963685,
+      "text": "I would say imposter syndrome. So when I graduated from Ashesi, I immediately thought, you know, I want to do this, maybe I should just go to school all over again. Like, I really thought I didn't know anything. I really thought I don't know everything that I have written exams and passed for. I didn't know any of the things that I've made projects for. I really just believed I have to do it all over again. before I can apply for a job and everything. And the truth is, it's not that scary if you know the stuff. If you've gone, done your preparation, you can do it. You can definitely do it. And you also can't know everything. There will definitely be things you don't know, but the fact that you're willing to learn makes it that much better for you in the field. A lot of things that I have been able to do recently is just because I didn't know and I didn't really like understand how this works, but I understood how other things work and that's what got my foot through the door. Now I need to understand how to ask people, hey, I saw you do this and I don't understand how that works, can you explain it to me? And then, and now I understand it, I can incorporate it into what I'm doing. So it's really a lot of learning."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1963685,
+      "end_ms": 2033942,
+      "text": "Yeah, I don't think imposter syndrome ever goes away. Yeah, even I mean, when it's, it's, it's your first, you know, job, it's, you know, for that you can't, it's hard to shake it. But even after your first job or, you know, other roles, and it's, it's something that never goes away. You just get better at handling it, right? And moving past it. So that's definitely something that people should expect. Like whenever you're going into a new role, you're gonna doubt yourself a bit, but at the same time, like Um, you got there because, you know, they thought you could do the job and, you know, you just need to fall on your strengths and also be curious, I guess, like to ask when you need help and stuff. So I'm not, I'm not surprised that that came up. Um, yeah, it happens to like all of us. Um, yeah. Are there like, um, you know, any other things or hobbies that you do outside of work that, you know, um, or you just stick to the nerd stuff and after, after work you still program some, something?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2033942,
+      "end_ms": 2035708,
+      "text": "Honestly, yes."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2035708,
+      "end_ms": 2039415,
+      "text": "Oh my goodness. I was hoping you'd say something else."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2039415,
+      "end_ms": 2111803,
+      "text": "So I do, I do do other things as well, but because I liked it so much when I first started in college, I got myself like controllers. And so I got myself an Arduino, I got myself a Freedom Board. And I got myself a Raspberry Pico so that I could— this was all before I got my job though. I was trying to recreate all the projects that I had done in school with controllers that I hadn't used before in C so that I could confidently say that I know how to make this thing on my own and I don't need other people like holding my hand to go through it, like I understood what we did in school. This was also because of the imposter syndrome and me believing that I didn't know how to do what I was doing. So, but it was a fun process, and I still have them just to do things. It's just nice for me to be able to do them on random days. But I crochet and I knit, and I like to read, and I like re-watching shows that I like. So I do that, I do that a lot. Yes, and crocheting and knitting definitely came in handy when it was winter over here because it's so cold."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2111803,
+      "end_ms": 2113649,
+      "text": "You made your own winter jackets and—"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2113649,
+      "end_ms": 2121660,
+      "text": "Well, I just did the scarves and then the beanies. I did not have the patience to make the sweaters and then the jackets."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2121660,
+      "end_ms": 2151110,
+      "text": "That's nice. All right, it's a skill that, uh, I don't think I can have the patience. I have a patience full of things, but, you know, just, you know, putting together those strings. Um, yeah, I don't think I can do that. Um, hey, thanks a lot for, you know, spending the time to talk us through like your journey. And I, I learned, um, some things about embedded systems engineering and how like, still, it still sounds, um, complex in my head."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2151110,
+      "end_ms": 2154269,
+      "text": "And it's really not. It's really not."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2154430,
+      "end_ms": 2156096,
+      "text": "Yeah. And I did—"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2156096,
+      "end_ms": 2158355,
+      "text": "maybe I'm just saying that because I've been doing this for a while."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2158355,
+      "end_ms": 2196519,
+      "text": "Yeah. I mean, you know the domain, like, so it's where you work. So yeah, for, for, for me, I did a bit of, you know, that in school. Um, but you know, there were some fun parts and there were, I liked tinkering with stuff and soldering stuff together, but I didn't like a lot of the theory and the circuitry and the calculations and stuff. But yeah, nice to see, you know, like you, you got in there and, uh, doing what you do and also like sharing your story to inspire other people. That's, that's really cool. So thanks a lot for, for joining the show."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2196519,
+      "end_ms": 2198484,
+      "text": "Thank you for having me."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2198484,
+      "end_ms": 2200936,
+      "text": "Okay, cheers."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2201317,
+      "end_ms": 2201491,
+      "text": "Bye."
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}
