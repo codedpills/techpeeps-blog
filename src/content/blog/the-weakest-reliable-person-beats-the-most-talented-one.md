@@ -33,7 +33,7 @@ I did not expect that answer. But the more he explained it, the more it reframed
 
 Richard is the founder and CEO of Codetrain Africa, and if you have spent any time in the Ghanaian tech scene, you have probably felt the ripple of what he built. I should know, because I came through the program myself. But before Codetrain existed, there was a math undergrad, a detour into tech, and a plane ticket to South America.
 
-He studied mathematics first, then went into tech at the Meltwater Entrepreneurial School of Technology, where for two years he learned "how to build, um, how to code, how to build apps," how to "pitch to investors," and how to start a startup. From there he landed a spot at a large accelerator in Santiago de Chile, an eight-month program that stretched his experience further.
+He studied mathematics first, then went into tech at the Meltwater Entrepreneurial School of Technology, where for two years he learned "how to code, how to build apps," how to "pitch to investors," and how to start a startup. From there he landed a spot at a large accelerator in Santiago de Chile, an eight-month program that stretched his experience further.
 
 But it was in Chile that the idea for Codetrain quietly assembled itself. Everywhere he looked, people wanted to build something extraordinary, and they all needed the same thing. As he put it, "anytime people wanted to hire developers, they always" reached for a software developer, and there simply were not enough of them. Meanwhile, back home, there was no shortage of smart people. That gap became his life's work.
 
