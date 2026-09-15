@@ -45,7 +45,7 @@ The design choice Richard emphasizes is atmosphere. He wants students to feel le
 
 Eighty-nine percent of students found jobs within the first nine months of graduating. Eighty percent within six months. And 31 percent found jobs "even before" they graduated. Over 500 developers trained so far, with a virtual program that now reaches a student in France and another in Qatar.
 
-What clearly excites him most, though, is not the stats. It is the idea that this could be "a new way of, um, education here." Most programs, he noted, are designed by "older people" for the youth, who then "really do not relate to it well." Codetrain, by contrast, is "designed by young people and, um, run by young people," with students acting as co-creators who keep giving feedback until it fits.
+What clearly excites him most, though, is not the stats. It is the idea that this could be "a new way of education here." Most programs, he noted, are designed by "older people" for the youth, who then "really do not relate to it well." Codetrain, by contrast, is "designed by young people and, um, run by young people," with students acting as co-creators who keep giving feedback until it fits.
 
 ## Why the opportunities go unclaimed
 
