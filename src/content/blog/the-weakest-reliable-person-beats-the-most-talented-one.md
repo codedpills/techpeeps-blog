@@ -83,4 +83,4 @@ For anyone reading this who wants in, Richard's practical advice is to find "a v
 
 After the year, students pass a technical interview to enter the three-month MAGIC program, which culminates in a Demo Day where they present the apps they have built to an audience of local and international employers. That, he said, is "the fun part."
 
-Talking to Richard, I kept noticing how little he talked about code and how much he talked about people: their confidence, their information, their reliability, their potential. The world is genuinely lucky to have someone spending his days trying to unlock all of it. You can find Richard and Codetrain at codetrain.africa, and the full conversation is worth watching for the parts I could not fit here.
+Talking to Richard, I kept noticing how little he talked about code and how much he talked about people: their confidence, their information, their reliability, their potential. The world is genuinely lucky to have someone spending his days trying to unlock all of it. You can find Richard and Codetrain at codetraingh.com, and the full conversation is worth watching for the parts I could not fit here.
