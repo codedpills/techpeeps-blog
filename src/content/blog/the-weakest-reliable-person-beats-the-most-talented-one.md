@@ -41,7 +41,7 @@ But it was in Chile that the idea for Codetrain quietly assembled itself. Everyw
 
 The mission is simple: "to train professional software developers and then find ways that they can start a career." The program runs as an 18 months bootcamp where students not only develop skills to solve problems using code, but also learn how to interview, get introduced to companies, and land jobs or internships.
 
-The design choice Richard keeps coming back to is atmosphere. He wants students to feel less like they are in a classroom and more like they are "working in a startup," so that the leap into real work feels natural rather than jarring. Woven through all of it is an insistence on a "global mindset," strong work ethic, and good values.
+The design choice Richard emphasizes is atmosphere. He wants students to feel less like they are in a classroom and more like they are "working in a startup," so that the leap into real work feels natural rather than jarring. Woven through all of it is an insistence on a "global mindset," strong work ethic, and good values.
 
 The numbers he shared are the kind that make you sit up. Eighty-nine percent of students found jobs within the first nine months of graduating. Eighty percent within six months. And 31 percent found jobs "even before" they graduated. Over 500 developers trained so far, with a virtual program that now reaches a student in France and another in Qatar.
 
