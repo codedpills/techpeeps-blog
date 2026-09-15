@@ -59,7 +59,7 @@ The deeper issue, he argued, is that the system rarely teaches young people to b
 
 For anyone convinced that tech means programming and nothing else, Richard rattled off a landscape that is refreshingly wide. DevOps engineers, frontend and backend engineers, UI designers, app testers, business analysts, data analysts, big data specialists, digital marketers, security and cybersecurity people, animators, content creators, and the investment side working in firms that fund "scalable startups."
 
-He made a point that reframes the whole thing: "every bank is a tech, tech company now." NGOs, schools, hospitals, and banks all need these people. There is fintech, agritech, mobility companies, supply chain infrastructure, even events, which he noted moved almost entirely online "after COVID."
+He made a point that puts things in perspective: "every bank is a tech, tech company now." NGOs, schools, hospitals, and banks all need these people. There is fintech, agritech, mobility companies, supply chain infrastructure, even events, which he noted moved almost entirely online "after COVID."
 
 And when people ask him what the "hotcake" is, the thing that guarantees a job, he pushes back on the whole framing. "The industry and the whole world needs people that are very good at what they do," he said. His advice is to "follow your own curiosity to become the master in whatever" your interest is, to find the work that "to you it's not work, But to you it is play." Because, he added, in tech "people work in teams," and "all angles are drawn into, into teams."
 
