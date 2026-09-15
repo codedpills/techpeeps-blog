@@ -39,7 +39,7 @@ But it was in Chile that the idea for Codetrain quietly assembled itself. Everyw
 
 ## What Codetrain actually does
 
-The mission is simple to state and hard to pull off: "to train professional software developers and then find ways that they can start a career." The program runs as a one-year bootcamp followed by a three-month career service phase, where students learn how to interview, get introduced to companies, and land jobs or internships.
+The mission is simple to state and hard to pull off: "to train professional software developers and then find ways that they can start a career." The program runs as an 18 months bootcamp where students not only develop skills to solve problems using code, but also learn how to interview, get introduced to companies, and land jobs or internships.
 
 The design choice Richard keeps coming back to is atmosphere. He wants students to feel less like they are in a classroom and more like they are "working in a startup," so that the leap into real work feels natural rather than jarring. Woven through all of it is an insistence on a "global mindset," strong work ethic, and good values.
 
