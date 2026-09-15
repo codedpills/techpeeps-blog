@@ -61,7 +61,7 @@ For anyone convinced that tech means programming and nothing else, Richard rattl
 
 He made a point that puts things in perspective: "every bank is a tech, tech company now." NGOs, schools, hospitals, and banks all need these people. There is fintech, agritech, mobility companies, supply chain infrastructure, even events, which he noted moved almost entirely online "after COVID."
 
-And when people ask him what the "hotcake" is, the thing that guarantees a job, he pushes back on the whole framing. "The industry and the whole world needs people that are very good at what they do," he said. His advice is to "follow your own curiosity to become the master in whatever" your interest is, to find the work that "to you it's not work, But to you it is play." Because, he added, in tech "people work in teams," and "all angles are drawn into, into teams."
+And when people ask him what the "hotcake" is, the thing that guarantees a job, he pushes back. "The industry and the whole world needs people that are very good at what they do," he said. His advice is to "follow your own curiosity to become the master in whatever" your interest is, to find the work that "to you it's not work, But to you it is play." Because, he added, in tech "people work in teams," and "all angles are drawn into teams."
 
 ## The one thing that actually matters
 
