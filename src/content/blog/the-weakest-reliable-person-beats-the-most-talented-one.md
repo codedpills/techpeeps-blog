@@ -25,7 +25,7 @@ draft: true
 interviewDate: '2022-08-08'
 ---
 
-When I asked Richard Brandt what separates the developers who make it from the ones who don't, I braced myself for the usual answer. Talent. Raw problem-solving ability. Maybe grit. Instead he said one word, almost before I finished the question: "Reliability." And then, in case I thought he was hedging, he doubled down with a line that has stuck with me since: "the weakest person that is reliable is, is better than the most talented person that is not reliable."
+When I asked Richard Brandt what separates the developers who make it from the ones who don't, I expected the usual answer. Talent. Raw problem-solving ability. Maybe grit. Instead he said one word, almost before I finished the question: "Reliability." And then, he doubled down with this: "the weakest person that is reliable is better than the most talented person that is not reliable."
 
 I did not expect that answer. But the more he explained it, the more it reframed everything else he had told me during this conversation.
 
