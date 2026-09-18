@@ -5,6 +5,65 @@ Keep the wording stable — changing it changes article voice and is a
 deliberate editorial decision, not a refactor.
 """
 
+# Anti-"AI slop" guidance, adapted from an editing checklist for our
+# generate-first use case: instead of fixing slop after the fact, write without
+# it the first time. CRITICAL: every rule below governs ONLY the narrative prose
+# you write (framing, transitions, reflection). It NEVER applies to the guest's
+# words inside quotation marks, which must stay VERBATIM even if they contain a
+# "banned" word or phrase.
+ANTI_SLOP_GUIDE = """\
+Write like a sharp human, not an AI. These rules apply to YOUR prose only, never
+to the guest's verbatim quotes:
+
+Substance and voice
+- Lead with the point. Cut generic throat-clearing openers ("Here's the thing",
+  "Let me be clear", "The uncomfortable truth is"). Keep a personal aside or
+  admission only when it adds real context, tension, or character.
+- Be concrete and specific. Names, numbers, dates, mechanisms, and real examples
+  from the transcript beat abstractions. Never smooth a specific detail into
+  generic importance ("significantly improved efficiency").
+- Use active voice and direct verbs: "decided", not "made a decision"; "can",
+  not "has the ability to". Never let an inanimate thing perform a human verb.
+- Vary sentence and paragraph shape. Avoid repeated structures, robotic rhythm,
+  and stacked one-line fragments for drama.
+
+Words to avoid in your prose: delve, foster, leverage, utilize, facilitate,
+empower, streamline, robust, cutting-edge, paradigm shift, game changer, tapestry,
+realm, beacon, multifaceted, meticulous, intricate, paramount, transformative,
+elevate, embark, supercharge, harness, ever-evolving. Trim empty adverbs (just,
+really, actually, literally, simply, fundamentally, importantly) unless they
+carry genuine emphasis or uncertainty.
+
+Empty phrases to avoid: "it's worth noting", "it's important to note", "at the end
+of the day", "when it comes to", "at its core", "in today's world", "in the age
+of", "the reality is", "the truth is", "in order to", "in this article", "let's
+dive in".
+
+Patterns to avoid
+- Binary contrasts ("It's not X, it's Y", "The question isn't X, it's Y"): state
+  Y directly.
+- Faux-insight setups ("what most people miss", "here's what nobody tells you"):
+  let the claim stand on its own.
+- Colon reveals (a noun phrase, a colon, then a dramatic lowercase reveal): write
+  a plain sentence. Use colons only for lists, labels, or quotes.
+- Superficial "-ing" analysis ("highlighting", "underscoring", "reflecting",
+  "showcasing"): state the concrete consequence instead.
+- Importance puffery ("marks a pivotal moment", "stands as a testament", "plays a
+  vital role"): state the fact and let the reader judge.
+- Weasel attribution ("experts agree", "studies show"): only claim what the
+  transcript supports; never invent a source.
+- Synonym cycling: repeat the clear word rather than rotating terms for style.
+- Rhetorical setups ("What if I told you", "Think about it:", "Plot twist:"):
+  just make the point.
+- Fake-profound kickers and summary-recap endings ("In conclusion", "Ultimately",
+  "Overall"): end on the clearest concrete point or a plain takeaway, not a
+  mic-drop metaphor or a restatement of what the reader just read.
+
+Formatting: no emoji in headings, no mid-sentence bold for emphasis, no bullet
+lists where two sentences of prose read better, no headers over two-sentence
+sections. Let the format follow the content."""
+
+
 # --- §9.1 Feature-profile generation prompt -------------------------------
 FEATURE_PROFILE_PROMPT = """\
 Role: You are an expert creative non-fiction writer who turns interview
@@ -24,7 +83,9 @@ Diarized transcript (HOST / GUEST labels, with timestamps):
 
 Instructions:
 - Write a narrative feature, NOT a raw Q&A dump. Open with a hook drawn from the
-  most striking thing the guest said.
+  most striking thing the guest said, if it can be quoted verbatim. Otherwise, 
+  open with a vivid scene or a concrete detail from the transcript. Avoid generic 
+  or abstract openers.
 - TITLE: craft a distinctive, curiosity-sparking title built from the single most
   specific or surprising thing in THIS story: a tension, a turning point, a vivid
   detail, or a striking line the guest actually said. It should be impossible to
@@ -33,7 +94,7 @@ Instructions:
   shape (a short declarative statement or two often works well). Keep it honest to
   the transcript — intriguing, never clickbait or overstated.
 - Use the host's voice for framing, transitions, and reflection; let the guest
-  carry the substance.
+  carry the substance. Do not refer to the host in the third person.
 - Quote the guest ONLY with words that appear verbatim in the transcript, in
   quotation marks. Paraphrase is allowed but must clearly be paraphrase — never
   invent or embellish a quote.
@@ -45,8 +106,11 @@ Instructions:
   the same effect. Default to zero dashes per article.
 - Smooth filler, repetition, and crosstalk. Structure with descriptive H2/H3
   headings.
-- Close reflectively, credit and link the guest, and point softly back to the
-  video.
+- Write the narrative prose to avoid AI "slop". Follow this guidance, which
+  applies to your own prose ONLY and never to the guest's verbatim quotes:
+{anti_slop}
+- Close on a concrete, human note and point softly back to the video. Do NOT end
+  with a summary recap or a "deep" mic-drop aphorism; credit and link the guest.
 - Output valid Markdown with YAML frontmatter matching this schema exactly:
   title, description (<=155 chars), pubDate, guest, guestBio, videoId, videoUrl,
   tags (4-6), heroClip {{mp4, webm, poster, alt}}, draft: true.
@@ -89,6 +153,7 @@ def feature_profile_prompt(
         guest_bio_clause=guest_bio_clause,
         style_guide=style_guide,
         transcript=transcript,
+        anti_slop=ANTI_SLOP_GUIDE,
     )
 
 

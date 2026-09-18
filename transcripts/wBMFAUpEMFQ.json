@@ -1,0 +1,767 @@
+{
+  "video_id": "wBMFAUpEMFQ",
+  "title": "Driving Business with Tech: A Conversation with a Customer Engineer",
+  "video_published_at": "2025-03-28",
+  "duration_sec": 2257,
+  "speakers_detected": 2,
+  "segments": [
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1313,
+      "end_ms": 26775,
+      "text": "Hello guys, and welcome to another episode of TechPeeps Diaspora. As usual on this show, we bring you stories of successful tech Africans, um, living around the world. And today we have yet another story for you. Um, probably something less technical than we usually have on the show. Um, yeah, help me welcome my guest, Isaac. Hi Isaac, welcome to the show."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 27481,
+      "end_ms": 28123,
+      "text": "Hey, how's it going?"
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 28123,
+      "end_ms": 37853,
+      "text": "Yeah, I'm doing pretty well. Um, so like, how is the winter in, um, US or what part of the US actually?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 37853,
+      "end_ms": 54142,
+      "text": "Yeah, so I'm based in Atlanta, Georgia. Um, and we typically don't have as much snow or cold. Uh, but over the past, I'll say 2 weeks, it has been very cold, but thankfully things have warmed up a little, so I think it's been very nice. At, at, at this point in time."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 54142,
+      "end_ms": 64575,
+      "text": "Yeah. Like at least I'm happy it's not as, you know, bad as Berlin. Not that it's like the winter this year has been very favorable, I'd say."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 65073,
+      "end_ms": 65410,
+      "text": "So nice."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 65796,
+      "end_ms": 79850,
+      "text": "Yeah. Um, so Isaac is a customer success engineer. That's right. Um, at Google. Um, and yeah, I'm not gonna take that away. So Isaac, could you, um, give a brief introduction about yourself? Sounds good."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 80190,
+      "end_ms": 171988,
+      "text": "Um, so my name is Isaac. I am originally from Accra, Ghana, and I currently work as a customer engineer at Google Cloud. Google Cloud is Google's cloud division within the company. I moved to the US in 2018, so I was actually, um, an international student at the University of Miami. So I went to college, I did high school and I did college in Ghana But I did college for only a year and eventually moved here. And in school, I majored in computer science and minored in math. And throughout my time in college, I got to try a variety of different things. One of the things I tried was being a tutor. So I tutored all my 4 years of college. I also was involved in a variety of different clubs and initiatives, some very technical, including Sturdy and Developer Student Club. Within Miami's campus sponsored by Google, as well as interning with a telecommunications API company called Twilio. So eventually all those experiences led me to an interview opportunity in August of 2021 with Google, and I eventually got a role called the Cloud Technical Residency role, which was a 9-month residency program That eventually placed me, um, as a customer engineer after the, the training. So I've been doing, I've been at Google for about 2 and a half years and I've been a customer engineer for a year and a half. And, and yeah, that's been my journey so far. So."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 171988,
+      "end_ms": 181955,
+      "text": "Yeah, sounds amazing. Um, I guess the natural question for me is what is a customer success engineer?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 181955,
+      "end_ms": 306669,
+      "text": "Sounds good. So I always use this analogy as a customer engineer is a technical liaison within a given engagement. Um, and typically, typically those engagements are sales engagements. So, um, in the cloud business in particular, you have different companies or individuals or startups that want to essentially buy services on the cloud. When people think about the cloud, they usually think about storage and storing devices, but the cloud comprises of a variety of different things. So it can include storage, data analytics, it can include compute, different services that companies will benefit from. So essentially the cloud business allows you to purchase a unit of that computation for your particular purpose. So usually you need sellers to actually sell a lot of these services. Um, but within those sales engagements, you always need someone technical to translate a lot of the, the technical jargon in between both parties, whether it's the seller's party or the buyer's party. Um, so a customer engineer essentially is that technical liaison who, um, does that translation and also helps enable that account where it is to make that purchasing decision. Um, so for example, if a startup wants to build, um, a service on the cloud essentially for data analytics. Let's, let's pick that for example. What a customer engineer would do within those sales engagements is they would have that initial discovery call to see what does this customer want to build, uh, what is this customer, or what does this customer see itself in the next 2 months, um, 6 months, a year. And we actually can help capacity plan for those changes. So Um, essentially you are like a technical guide, a guardian, a consultant, but you don't necessarily implement everything, but you provide that guidance, um, for the customer to move forward. So yeah, that's kind of like the, the details of how the role works."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 306669,
+      "end_ms": 351142,
+      "text": "Um, so I'm guessing the reason why, like, it's important, like this role has, like, sounds like it has a bridge between like technical and also having some sales experience and probably the reason why the technical bit is Um, important is, yeah, most likely interacting with, you know, like their customers are mostly like also technical people, like probably, um, software engineers, I'm guessing, or like, um, you know, data engineers, um, people who are technical. And therefore it's easier maybe for the salespeople, for someone who speaks the same language, right? To, to understand what Um, they need. Sounds like a really interesting role."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 351142,
+      "end_ms": 391350,
+      "text": "Yeah. Um, the cool thing, and you raised that in the earlier question, is that we talk to a variety of different people. Um, I will say the vast majority are technical, but sometimes you do have different personas. So you, okay, could be talking, um, on one call to a CEO and the next call is a data scientist. So that's basically where you have to kind of like navigate between the two cuz Depending on the person you're talking to, it would, it'll kind of like change the way you are even like talking about a particular technology and how you are value selling. That's the, the best way to describe it because at the end of the day, you are influencing a purchasing decision."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 391350,
+      "end_ms": 391570,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 391570,
+      "end_ms": 398010,
+      "text": "Um, there are companies that want to spend money to build a particular service. So technical jargon can only go so far."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 398010,
+      "end_ms": 398390,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 398390,
+      "end_ms": 406554,
+      "text": "Um, you want to kind of like phrase things and explain things in such a way that they know what they're getting into and can understand it within their own knowledge domains."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 406683,
+      "end_ms": 428187,
+      "text": "So yeah. Yeah. I've seen like, uh, different roles spun up, um, like within sometimes, you know, within different organizations, like, uh, for instance, developer advocates, also developer relations. Like, I'm curious, how does this differ to like a customer success engineer?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 428187,
+      "end_ms": 437909,
+      "text": "Yeah. So, um, Again, from the name, like customer engineer, customer success engineer, or solutions engineer, every company has the way it, it, it words that."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 437909,
+      "end_ms": 438342,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 438342,
+      "end_ms": 493541,
+      "text": "Um, those roles are mainly focused on one-to-one customer, um, engagements. So, for example, as a customer engineer, I would do like sales calls, like usually 30 minutes long, or emails that talk about a specific, um, customer problem and solution. That's kind of like one-to-one. Sometimes we do one-to-many stuff where we go to events and we give talks. So that, that typically is the case. But a developer advocate is more focused or it's more community focused. So that's kind of like the emphasis there where, um, there's a particular technology or a particular stack or particular methodology that they want to educate, uh, or advocate for within the community. Uh, so when I work at Twilio, that's one of the biggest things we would do. Um, there was always like a huge emphasis on education and educating developers on a particular API."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 493541,
+      "end_ms": 493766,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 493766,
+      "end_ms": 522747,
+      "text": "Um, so that's where a developer advocate is because essentially what their role is, is they're evangelizing that particular tool. And so they make videos, they might actually do one-to-one events, but the emphasis is more or less focused on community engagement. Mm-hmm. Whereas a customer engineer is more directly one-to-one because our incentives are kind of like to drive those individual, um, businesses. Uh, and Advocate is more focused on the wider audience and the wider community building. So."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 522747,
+      "end_ms": 552081,
+      "text": "Yeah. Interesting. So you mentioned earlier that, you know, you don't really get to implement some of these, you know, solutions. Yeah. Like I'm wondering how much technical does a person need to know how much technical stuff or how technical does a person need to be like to transition to a role or like to, to be in a role like this? Like what's the balance between technical and sales? If—"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 552081,
+      "end_ms": 602537,
+      "text": "That's a really good question. And I feel like in my domain I've met 2 different strands. So I think for a role like this, you definitely need to be technical. You need to have technical know-how of how the, a lot of the underlying technologies work, because you can only speak to something you've tried or know how it works, cuz you are speaking to audiences who need a lot of these things implemented. Uh, so that's the first thing. Um, I do think there are customer engineers who are more sales-centric, so they can talk about solutions or talk about, um, maybe specific architectures that are more like salesy. Uh, by the end of the day, every customer is also very different, right? And every customer is coming to you for something. So the sales skills or the technical skills can only go so far individually."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 602537,
+      "end_ms": 603162,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 603162,
+      "end_ms": 672812,
+      "text": "Um, so what I've seen has helped for me is just doing that initial discovery. What does this customer want? Why are they here? Where do they want to go? And trying to come up with a solution that fits their needs. And that comes more or less with like experience as opposed to like I know so much about something technically, or I know so much about how to sell a product. Um, so it's a weird, um, combination of customer empathy where you care about the person's needs, Mm-hmm. but you are also kind of like taking a lot of the technical stuff you've learned, whether about a particular technology or a stack, and trying to mesh all these together, um, to influence again that sales decision. Or because again, A customer is dedicating their time, energy, and resources to use a particular service. So you want to make sure that they're well informed about what they're doing, but at the same time also earn your trust about that particular solution. So, um, I will say it's a little bit of both. Um, but the cool, the amazing thing about just being in customer engineering is that you get to grow across both fields because a good software developer is only as good if they can sell their product."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 672812,
+      "end_ms": 672963,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 673563,
+      "end_ms": 679677,
+      "text": "And a good salesperson is only as good if their products are good. So it's kind of like the best of both worlds in my role."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 679677,
+      "end_ms": 699561,
+      "text": "I see. And now like, uh, yeah, I'm also curious, like how does it feel like? I, I want to get into your daily work. Like how, how is it usually like, um, you know, on a day-to-day basis, what's your, your work like?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 700203,
+      "end_ms": 729729,
+      "text": "Yeah, I can give a brief glimpse into it. So a lot of my day is typically, um, set managing like a book of business. So again, I said we are helping sellers, so our sellers typically have a book of business that they manage. Um, these book of businesses are essentially— it could be in any like CRM. CRM is a content management tool, and essentially like Salesforce or any tool they have a list of accounts that they need to kind of like, quote unquote, manage."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 729729,
+      "end_ms": 730564,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 730564,
+      "end_ms": 807960,
+      "text": "Um, and the way we businesses will track this management is through specific quarterly metrics. So there are specific sales targets that these accounts within a book of business must meet, um, for a rep, a sales rep or a salesperson to, to make profit. Um, so my typical day would be analyzing a lot of those metrics to see how those accounts are doing in terms of spend. A typical activity within that day would be customer calls. So usually I have like 30-minute calls spread across my day where we go onto calls, whether intro calls, learning about what a customer is doing and what they want to implement, or deep dive tech discovery calls. So for example, there are times where I hop onto a call and a customer wants to do an architecture review. They've designed a system, let's say a database system or like an AI system. that he wants my opinion on, and we can get to explain that to them and explain the products within Google Cloud or any cloud that fits that particular mode. So that's one part of my day. A lot of those video calls will transcend to like follow-up emails or follow-up messages on Slack or Google Chat. We also do a lot of one-to-many enablements. I think you asked the question about developer advocacy."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 807960,
+      "end_ms": 808178,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 808686,
+      "end_ms": 874750,
+      "text": "So that's one key part of being a customer engineer is that you also want to create content that other customer engineers can use and other people in the community can use. So we do a, a lot of events. So occasionally I have to plan a lot of outreach stuff either via email or via LinkedIn where I talk about particular technology. I cite customer examples and testimonials. Um, just mainly educating customers on everything. So. I would say about 60% of my day is a lot of the customer engagement, whether it's emails, video calls, actual calls. That's very rare, but sometimes those happen. I'll say another 20% is preparing for a lot of those big-scale events. We typically do them once a month. My company sometimes once a quarter. And I'll say the last 20% is also enablement. I need to make sure that I'm ramping up with a lot of the technology that's going on. So I know particularly in the realm of AI, things are changing every week or every day. So I have to make sure I'm educated and I can apply this to my engagement. So that's how, uh, things are."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 874750,
+      "end_ms": 908233,
+      "text": "Yeah. Um, um, you know, curious to see if, you know, I don't know if you're free to talk about like the compensation structure for like, uh, some of these roles. Um, but before we get to that, like, um, you know, what is usually the process for getting into a role like this in terms of, um, you know, job applications? Um, you know, what your CV should look like, uh, what kind of past experiences you can lean on, for example."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 908233,
+      "end_ms": 909034,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 909034,
+      "end_ms": 917447,
+      "text": "And also like, what is the interview process like, um, for people that want to like, um, apply for roles like this? What's that like?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 918073,
+      "end_ms": 979789,
+      "text": "Yeah, so I can talk about my experience. Um, I don't think it's applicable for everyone, but it might be very similar. So when I interned with Twilio my junior year— my junior year was my third year in the US— um, I, I ended up finishing the internship, and at the very end of it, I got approached by a recruiter on LinkedIn, and it was for a particular role at Google called the Cloud Technical Residency. So essentially this role was designed to train people to become technical sellers because a lot of people leaving college again have a lot of the technical knowledge but they don't have a lot of business savvy, sales rapport. So, um, I did the interview. I did like 4 rounds of different things we're testing for. So it was a very technical, um, from questions around how does the internet work, stuff like that, protocols, how to architect a solution, to very, very sales-specific questions, including coding as well."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 979789,
+      "end_ms": 980447,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 980447,
+      "end_ms": 1053154,
+      "text": "So typically for roles like this, I will say you want to kind of frame your experiences around how you've enabled customers and what impact you've had. I always talk to people when I'm reviewing resumes, or following bullet points that essentially show your impact. So let's say you were able to influence or lead a team, is there a percentage, is there a metric that shows that you moved something forward? So that's kind of like how you would stand out in that pool of like roles. I'll also say I also work as a tutor, and I also work in a lot of roles that involve community building and community enablement. And so those are things to point out and highlight because again, the technology stack and everything is good, but you also want to be able to highlight how that impacts a community and how many people you've been able to influence. So that's another thing. And the last thing is also just make sure that your experiences align with a lot of the requirements. Because again, it could be a customer engineer role, solution engineer role, but it might require 5 years of experience. And you might not have that 5 years of experience. So that's another thing to point out. And the last thing is also having relevant projects."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1053154,
+      "end_ms": 1053443,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1053443,
+      "end_ms": 1082293,
+      "text": "Because again, you can talk about having the customer engagement stuff, the metrics, but if there are no projects to show that you've built solutions that have affected communities, then that could be something where you may be lacking. And again, projects are very, very kind of like discretionary. Um, depending on the type of role you're applying for, you might not need as many heavy-hitting projects, but I think they sh— they, they differentiate you from a lot of people, um, looking into roles like that."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1082293,
+      "end_ms": 1093337,
+      "text": "Yeah. And about the projects, um, I'm guessing you probably also wanna have like some coding projects, for example."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1093337,
+      "end_ms": 1094108,
+      "text": "Absolutely."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1094108,
+      "end_ms": 1103076,
+      "text": "But also some projects around, you know, like something that should, you know, you, like you said, customer metrics, how are you able to influence customers?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1103620,
+      "end_ms": 1103797,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1104021,
+      "end_ms": 1121647,
+      "text": "Um, yeah, that's, yeah, it sounds a bit, you know, complicated, um, to, to navigate around. Um, but yeah, I guess in the end, like, it's, it's all worth it. Which brings me to like, again, the, the compensation structure."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1121647,
+      "end_ms": 1122544,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1122544,
+      "end_ms": 1142834,
+      "text": "Um, yeah, I know usually, um, at least one of my friends also works as a, It's also a role between sales, a hybrid role between sales and, um, technical. Um, but he like also implements some of these things, but more of like sometimes what the salespeople need to close a, a sale."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1143383,
+      "end_ms": 1143609,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1143770,
+      "end_ms": 1153633,
+      "text": "Um, and yeah, he explained like the compensation structure for their companies. Like you have a base and also you have like bonuses, like the sales whenever they make a sale."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1153633,
+      "end_ms": 1153762,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1153960,
+      "end_ms": 1154153,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1154620,
+      "end_ms": 1154766,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1154814,
+      "end_ms": 1161778,
+      "text": "I'm curious to, to know, like, is that similar or it depends on like, uh, company to company?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1161778,
+      "end_ms": 1195787,
+      "text": "Yeah, I'll say it depends. And I think sometimes a little, just backtrack, a little reason why things are a little complex is because every company has the way it does business and businesses vary across, unlike a field like software engineering where you have a lot of fixed methodologies like Agile, Scrum. Mm-hmm. like weekly or biweekly, like check-ins and everything. Sales teams have to change and adapt to different economic climates because they're making purchasing or they're influencing purchasing decisions."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1195787,
+      "end_ms": 1196348,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1196348,
+      "end_ms": 1217586,
+      "text": "So customer engineering will vary across the domain and different companies will look for different things. So my advice on having both might be relevant for my role or for specific roles, But in other roles they might want more technical projects on the resume or more sales-specific projects. So it varies. But in terms of compensation, I think it also varies as well."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1217586,
+      "end_ms": 1218169,
+      "text": "Okay."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1218169,
+      "end_ms": 1243526,
+      "text": "Um, for the longest time when I joined as a customer engineer, I was on a company plan. So essentially I wasn't compensated for closing deals, um, or having bonuses. Um, there, and, and this is something I, I can't really speak into, but there are other customer engineers who, um, are on a sales plan. So where it's like they have a base salary and they're compensated for closing deals as well."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1243526,
+      "end_ms": 1244348,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1244348,
+      "end_ms": 1270672,
+      "text": "Um, once I get to experience that, I can talk more about what that looks like. But, um, that's a position I, I've never been in, um, in particular. So I can't really speak into that. But yeah, um, depending on the firm, there might be, um, different salary structures. I will say a lot of the salary structures are uh, uh, uh, uh, sales-driven. So if you meet specific sales targets, you get compensated on those targets."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1270832,
+      "end_ms": 1271009,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1271057,
+      "end_ms": 1279773,
+      "text": "But you also have, um, scenarios like, like mine where it's mainly, um, um, um, um, just a base salary, like a regular salary."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1279821,
+      "end_ms": 1311245,
+      "text": "So, yeah, that's, uh, interesting. Um, so, um, one thing that I caught in your introduction was that, you know, you did one year at KNUST. Yeah, as a computer science major, and then you left, um, to, to Miami. Um, yeah, what was your experience in KNUST like? And also, like, I'm curious, how did you even get to that point, and what was the main decision to, like, leave KNUST to Miami to study?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1311245,
+      "end_ms": 1432906,
+      "text": "It's a really good question. Um, so I, I really enjoyed my time in KNUST. I was only there for a year, but I, I One of the things I remember back then was just the communities focused around enabling students to learn about technology. Granted, it was vastly different from what I experienced in Miami, but when I was there, I think there was Hack Lab in Kean University specifically and some other communities that were really focused on making sure students were like enabled, um, or like involved in like activities outside of the class. Um, I will say that with kind of like schooling in Ghana, it does get difficult with scale cuz you're in classes where it's like 250 students. Um, but I feel like I, I, I benefited from a lot of those earlier classes and a lot of early initiatives focused on technology and like hackathons and all those things that Mm-hmm. essentially like involved in like events and stuff. I saw a lot of that at Kean University, and especially being a part of it being a university, a science school, you could meet people who were like-minded. My reasons for leaving, mainly I always wanted to go to school abroad for just the opportunities and just kind of like the pipeline and getting access to different sorts of information because I schooled in Ghana all my life, and I feel like going abroad would have given me, or gave me, more exposure to just a lot more stuff and being close to a lot of the companies I learned about growing up. So that was always the plan. Um, actually, when I was in KNUST, I also took the SATs, um, and I also prepped for it before then. So it was always kind of like a plan I had in the back of my mind that if an opportunity opened up, I will take it. And, and that happened, I took it. So I, I did a year in Kenya and I eventually left, um, to finish my degree here in the US."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1432906,
+      "end_ms": 1450113,
+      "text": "Yeah, incredible. Um, I, I also know, um, at least read from your profile, like you're also involved in a couple of projects, um, as well, like the ShareCode initiatives. And could you speak a little bit But yeah."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1450113,
+      "end_ms": 1494340,
+      "text": "Yeah. So in 2017, um, I took part in a bootcamp called Project IceWest, and the aim of this bootcamp was to teach different STEM skills, um, to Ghanaian students who were interested. It was actually done at the University of Ghana. Um, so one of the courses we did was, um, um, programming using a language called Processing. So essentially this language is a very simple— it looks like JavaScript, very, very simple language. But the course was designed to take this language on mobile devices. So we could still use our computers, but we had a version that we could kind of like design games on our phones."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1494340,
+      "end_ms": 1495334,
+      "text": "Hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1495334,
+      "end_ms": 1554940,
+      "text": "So I did Processing for a couple months, ended up graduating from that course. Um, and an idea amongst the group, and it was a foundation called Nseta Foundation, um, was we wanted to scale this idea to a wider audience online. So from 2018 till I'll say 2021, I was involved in some of that early pilot of taking this course that we had done, uh, virtually— no, in person and offline— online. Um, so we had to design scripts and grade students. Um, and it was really interesting because in 2020 we did a cohort of about 1,000 students, and with that kind of scale, we had to literally design scripts to grade students' assignments because no— the few of us couldn't grade all of those things. So, um, I was pretty much involved in that community, and it really helped me see how, uh, to scale, like, or how to see how to see how products grow with scale."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1554940,
+      "end_ms": 1555240,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1555240,
+      "end_ms": 1612182,
+      "text": "Because we, we got to see the genesis of having 20 students in like 2017 to like 100 in like 2018, 2019, to about 1,000 students across Africa in 2020. And it was cool because we had about 700 students who actually finished the program. And for an online course, that was really impressive. So definitely a lot of learning from that. I feel like also being a tutor in college I also always developed that empathy for a lot of the, the struggle students were going through, um, especially doing an online course in Africa during COVID um, for a lot of students. Um, but it, it, it was really nice to see how that materialized. And I know the, the SWATCO team or, or CIACO team, um, is making more strides now with a lot of AI initiatives. Um, so it's pivoted to be more of like an AI-focused enablement, which has, which has been nice. But yeah, we saw the genesis of a lot of that in-person and also virtual, um, work."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1612182,
+      "end_ms": 1667638,
+      "text": "That's very impressive. Like, uh, yeah, it reminds me of also my time, um, during teaching and it was an in-person bootcamp as well. And then COVID hit. So making that adjustment, you know, you had to like think about, you know, solutions very quickly, how to continue the classes and how do you handle people being online and keeping the engagements going and, you know, like grading and stuff. So, mm-hmm, yeah, it's also very interesting to see like you guys had different approaches of, um, implementing the, the same things and glad to hear that it's still running even now. So that's also very, yeah, inspiring, I'd say. Um, yeah. Were there any particular challenges that you fa— you faced, like, uh, you know, from Ghana, obviously you moved to the US, which is a new, different continent, also a new country."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1668200,
+      "end_ms": 1668313,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1668474,
+      "end_ms": 1684138,
+      "text": "Uh, you probably had to adapt to like, uh, a lot of different things and yeah. Um, school and also like work. Uh, yeah. Like, I'm curious, were there any challenges that you had to navigate? Um, yeah."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1684350,
+      "end_ms": 1704537,
+      "text": "Um, I will say one of the biggest challenges, well, I'll speak from when I was in Ghana to when I transitioned here, is like in Ghana, a lot of the concepts, like, you know, Ghana is very like, quote unquote, Q and A. So you're learning a lot of concepts that you want to kind of like, um, provide answers to."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1704537,
+      "end_ms": 1704826,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1704826,
+      "end_ms": 1727987,
+      "text": "The exam. So a lot of that kind of learning is really promoted where it's like you want to memorize enough. to be able to do on the exams. Um, so that was kind of like, I think it's an okay framework, but what ends up happening is once you transition or you want to implement, you're not really, um, given the frameworks to implement stuff on your own. Um, because everything is like, as long as I memorize this, I'll get the answer."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1727987,
+      "end_ms": 1728549,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1728549,
+      "end_ms": 1778016,
+      "text": "Um, so that was initially a challenge, especially when I moved to the US where it's like, fine, you can still be okay with memorizing, but you're actually going to work on projects that involve actually collaborating and talking to people. I also feel like maybe it wasn't as encouraged as much when I was younger or growing up, but those people skills, I think we, or in my experience, those are not as emphasized until I came to the US where it's like you have to talk to people and talk about what you are doing, talking about yourself and how that relates to the work you're doing. So those are things I had to work on. And one of the biggest things was definitely culture shock, because when I went to school in Miami, it was the first time that I was in an environment where most people weren't like Ghanaian, first of all."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1778016,
+      "end_ms": 1778642,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1778642,
+      "end_ms": 1816076,
+      "text": "And you had different people from different cultural contexts, different worldviews, different ways of seeing the world. So getting used to that was, I'll say, definitely challenging at times, especially being in an environment where you have to learn different And even with how people talk and how people interact, it was very different. But I think what really helped me, and I think what still helps me today, is just being around community who is supportive of you. So I had a lot of friends, I had a lot of like teachers, professors, advisors who kind of like provided the guidance in those moments."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1816076,
+      "end_ms": 1816302,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1816302,
+      "end_ms": 1863598,
+      "text": "So that went a long way to making sure a lot of those challenges weren't too overwhelming. Too, too, too, too detrimental. So yeah, I would say culture shock was definitely the the height of everything over my couple years. And also being again immigrants in the U.S., you are competing against a lot of people who are looking for jobs. And with the U.S. system and the way immigration works, you want to be in a job that sponsors your internship or job. So that was definitely a hurdle for a while. One of the biggest reasons why. It took me a long time to even get an internship, was mainly getting sponsorship to intern. Um, but eventually it worked out in my, my scenario. So yeah, those were kind of like the unique ones I faced. Um, I definitely, um, have learned a lot from them."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1863598,
+      "end_ms": 1879151,
+      "text": "Yeah, that's, uh, it's very impressive. Like I can imagine, like it's usually, it sounds rosy, right? When you're talking about it now and other people might think, oh, you know, going to the US or something, you know, it's always that smooth."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1879151,
+      "end_ms": 1880017,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1880017,
+      "end_ms": 1893189,
+      "text": "Um, but again, like, you know, the kind of challenges you have to navigate to get to this point, sometimes it's, you know, underestimated. And yeah, it's good to hear, you know, uh, yeah, you're able to climb that hurdle."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1893189,
+      "end_ms": 1894087,
+      "text": "Yep."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1894087,
+      "end_ms": 1920932,
+      "text": "So, um, yeah. What would you say to, you know, people, um, that, you know, want to, let's say like also become a customer success engineer at a company like Google? Um, yeah, for people that are already in other roles that are considering like transitioning or like for someone that is starting afresh, like, uh, yeah."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1921322,
+      "end_ms": 1945320,
+      "text": "Um, so I'll start from just the beginning. I think especially in this age where you have a lot of like, quote unquote, hysteria around like AI replacing jobs, job changes, layoffs, government changes. I think people, um, or one thing I'll say to people is that you want to kind of like try to get as much like skills in different things."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1945320,
+      "end_ms": 1945800,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1945800,
+      "end_ms": 1963847,
+      "text": "Um, cuz I feel, and this happened to me when I moved to the US, um, I came in an era where people would post online like a day in the life of a software engineer, a day in the life of a, a project manager. And I'm like, those are cool, those are nice videos, but Um, remember that the job markets are hiring people who have specific skills."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1963847,
+      "end_ms": 1964280,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1964280,
+      "end_ms": 1976266,
+      "text": "So those skill sets or skill targets might change depending on how the economy changes or how, um, business need changes. So that's one thing I would say is like you want to kind of like get a broad range of skills."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 1976266,
+      "end_ms": 1977003,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 1977003,
+      "end_ms": 2006505,
+      "text": "Um, not necessarily like I want to learn one programming language or I want to know how to talk like this, but there are different things you want to be able to pick Um, and I think, but the value in school is that it gives you the knowledge, ability to learn different things. Um, so I would say, um, try to get as many marketable skills. So whether it's being able to talk to people, being able to explain technical concepts to different audiences, being able to implement a technology or build a program."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2006505,
+      "end_ms": 2007082,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2007082,
+      "end_ms": 2015427,
+      "text": "To solve a business use case, being able to understand business problems. 'Cause those will kind of like take you a long way, even if you grow deeply technical."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2015427,
+      "end_ms": 2016054,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2016054,
+      "end_ms": 2117408,
+      "text": "Um, I've learned this principle where it's like you can also do stuff in like focus bursts. So, um, I feel like sometimes when we try to pursue skills, and this happens to me a lot, it's like we try to do a lot at the same time. Mm-hmm. But maybe dedicating like 2 weeks, 3 weeks honing on a particular thing, or even a month, like maybe this month I'm gonna learn this particular, like, JavaScript or Python framework. The next month I'm going to focus on maybe packaging that framework to a particular audience. And the next month I'll focus on what does it mean to value sell a framework like this. So I think just kind of like in every experience you have, whether it's in school or in a career, focusing on skill building can take you a long way. For example, my case, I didn't know that being a tutor would help me so much in customer empathy. And that's a skill like I indirectly grew because I was in a tutoring environment. So I'll say that's the first thing. Second thing is also to be prepared. I feel like I lost a lot of opportunities because either I wasn't prepared or I entered to them like in a lackluster manner. So if you have LinkedIn or a resume, make sure you have sense, just details to show what you are doing, talking about what you're doing online on LinkedIn. One part of my story that I don't really, or haven't really talked about a lot is that during my years in college, I would always like update my LinkedIn to show some of the classes I had taken, some of the things I was doing, just being actively involved, even when it didn't have a lot of the clicks and the hype back then. Just creating that muscle and developing that skill of like personal branding and personal building. I follow people on LinkedIn who did that and kind of like tried to replicate a lot of the stuff they did."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2117698,
+      "end_ms": 2117971,
+      "text": "Mm-hmm."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2117971,
+      "end_ms": 2178817,
+      "text": "Um, so being prepared, um, having the skill. And I think the last thing is also just also, um, putting yourself out there. Um, I feel like a lot of people shoot themselves in the foot by not actually applying for opportunities. Um, but I feel like you want to build that muscle of like going for a lot of those opportunities. And it doesn't necessarily mean always applying to jobs en masse, but it could be different things. Like in the US specifically, we have a lot of conferences, a lot of summits where people of particular careers go. Um, so putting yourself out there is helpful, um, because you, you end up putting yourself in communities of people that can help you reach those places. And, um, the last thing is you also can't do it alone. Uh, you need people around, a support system that can help you reach those places, that can help you hone those skills, that can help you, um, be prepared. And I feel like community is very, very important, um, and very emphasized, especially when you have to be in a field or a career where you might be one of the only people or the only minority involved. So."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2178817,
+      "end_ms": 2206208,
+      "text": "Yeah, that's, um, really invaluable, um, advice. Uh, thanks a lot for, um, that. And also thanks a lot for, you know, making the time to join us on the show. I'm sure like there might be people that would be interested to connect with you or to reach out with you. Um, yeah. How, can people reach out to you, or are you okay with people reaching out to you on LinkedIn, for example, or emailing you?"
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2206208,
+      "end_ms": 2215183,
+      "text": "Yes, and thanks a lot for having me as well. Um, so I can— I'll share my LinkedIn, it should be in the show notes. Um, that's kind of like my primary way of communicating."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2215312,
+      "end_ms": 2215553,
+      "text": "Okay."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2215697,
+      "end_ms": 2244580,
+      "text": "Um, usually post a lot about a lot of the initiatives within Google Cloud, but there are also a lot of events we have, um, both abroad and I'm also back home that I'll be sharing, um, mm-hmm, for people who are interested in finding those communities. Um, and yeah, um, that's kind of like how I would love to contribute. Um, also thinking of ways of kind of like doing more to enable more people who are interested in fields like that. So if you have any questions or if any top of minds, um, LinkedIn will be the best place."
+    },
+    {
+      "speaker": "HOST",
+      "raw_speaker": "A",
+      "start_ms": 2244580,
+      "end_ms": 2252380,
+      "text": "Yeah, that's awesome, man. Thanks a lot for, um, joining us. Um, Isaac, and thank you. Yeah, good luck out there."
+    },
+    {
+      "speaker": "GUEST",
+      "raw_speaker": "B",
+      "start_ms": 2252380,
+      "end_ms": 2253600,
+      "text": "Awesome. Thank you so much."
+    }
+  ],
+  "mapping_confidence": "high",
+  "candidate_clip_windows": []
+}
